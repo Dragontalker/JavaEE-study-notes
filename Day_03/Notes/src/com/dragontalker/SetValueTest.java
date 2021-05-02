@@ -21,6 +21,9 @@ public class SetValueTest {
         s1 += 2;
         System.out.println(s1);
 
+        // Ways to incremental by 2
+        // 1st way: num = num + 2;
+        // 2nd way: num += 2;
         
     }
 }
