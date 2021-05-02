@@ -15,6 +15,7 @@ public class LogicTest {
         } else {
             System.out.println("我现在在南京");
         }
+        System.out.println(num1);
 
         boolean b2 = false;
         int num2 = 10;
@@ -23,5 +24,6 @@ public class LogicTest {
         } else {
             System.out.println("我现在在南京");
         }
+        System.out.println(num2);
     }
 }
