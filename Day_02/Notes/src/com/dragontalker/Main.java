@@ -4,8 +4,16 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Day 02");
+        // 变量的定义
+        int myAge = 12;
+        // 变量的使用
+        System.out.println(myAge);
 
-        int myNumber  = 20;
+        // 变量的声明
+        int myNumber;
+        // 变量的赋值
+        myNumber = 1001;
+
+        System.out.println(myNumber);
     }
 }
