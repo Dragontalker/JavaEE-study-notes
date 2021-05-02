@@ -60,5 +60,9 @@ public class AriTest {
         a3++;
         int b3 = a3;
         System.out.println("a3 = " + a3 + ", b3 = " + b3); // a3 = 11, b3 = 11
+
+        short s1 = 10;
+        s1 = (short)(s1 + 1);
+        System.out.println("s1 = " + s1); // 11
     }
 }
