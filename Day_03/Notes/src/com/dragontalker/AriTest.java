@@ -68,5 +68,12 @@ public class AriTest {
         short s2 = 10;
         s2++;
         System.out.println("s2 = " + s2); // 11
+
+        byte b4 = 127;
+        b4++;
+        System.out.println("b1 = " + b4); // -128
+
+
+        
     }
 }
