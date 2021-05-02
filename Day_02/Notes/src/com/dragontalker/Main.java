@@ -6,6 +6,7 @@ public class Main {
         byte b1 = 2;
         int i1 = 12;
         // the sum should be int
-        int sum1 = b1 + i1;
+        // this won't work: byte b2 = b1 + i1;
+        int i2 = b1 + i1;
     }
 }
