@@ -74,6 +74,9 @@ public class AriTest {
         System.out.println("b1 = " + b4); // -128
 
 
-        
+        // --
+        int a4 = 10;
+        int b5 = --a4;
+        System.out.println(b5); // 9
     }
 }
