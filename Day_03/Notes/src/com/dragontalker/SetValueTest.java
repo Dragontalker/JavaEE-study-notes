@@ -29,6 +29,5 @@ public class SetValueTest {
         // 1st way: num = num + 1;
         // 2nd way: num += 1; (Does not change data type)
         // Best way: num++;
-
     }
 }
