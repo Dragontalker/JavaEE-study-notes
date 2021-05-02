@@ -23,7 +23,12 @@ public class SetValueTest {
 
         // Ways to incremental by 2
         // 1st way: num = num + 2;
-        // 2nd way: num += 2; (Does not change data type)
+        // Best way: num += 2; (Does not change data type)
+
+        // Ways to incremental by 1
+        // 1st way: num = num + 1;
+        // 2nd way: num += 1; (Does not change data type)
+        // Best way: num++;
 
     }
 }
