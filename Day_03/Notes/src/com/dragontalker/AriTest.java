@@ -47,5 +47,18 @@ public class AriTest {
         System.out.println("m4 % n4 = " + m4 % n4); // -2
 
 
+        // ++
+        int a1 = 10;
+        int b1 = ++a1;
+        System.out.println("a1 = " + a1 + ", b1 = " + b1); // a1 = 11, b1 = 11
+
+        int a2 = 10;
+        int b2 = a2++;
+        System.out.println("a2 = " + a2 + ", b2 = " + b2); // a2 = 11, b2 = 10
+
+        int a3 = 10;
+        a3++;
+        int b3 = a3;
+        System.out.println("a3 = " + a3 + ", b3 = " + b3); // a3 = 11, b3 = 11
     }
 }
