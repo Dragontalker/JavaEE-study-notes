@@ -28,11 +28,20 @@ public class LogicTest {
 
         boolean b3 = false;
         int num3 = 10;
-        if(b3 && (num3++ > 0)) {
+        if(b3 | (num3++ > 0)) {
             System.out.println("我现在在北京");
         } else {
             System.out.println("我现在在南京");
         }
         System.out.println(num3);
+
+        boolean b4 = false;
+        int num4 = 10;
+        if(b4 || (num4++ > 0)) {
+            System.out.println("我现在在北京");
+        } else {
+            System.out.println("我现在在南京");
+        }
+        System.out.println(num4);
     }
 }
