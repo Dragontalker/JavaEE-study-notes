@@ -15,5 +15,12 @@ public class SetValueTest {
         int num1 = 10;
         num1 += 2;
         System.out.println(num1); // 12
+
+        short s1 = 10;
+        // s1 = s1 + 2; causing compile error
+        s1 += 2;
+        System.out.println(s1);
+
+        
     }
 }
