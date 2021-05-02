@@ -11,5 +11,9 @@ public class SetValueTest {
         i2 = j2 = 10;
 
         int i3 = 10, j3 = 10;
+
+        int num1 = 10;
+        num1 += 2;
+        System.out.println(num1); // 12
     }
 }
