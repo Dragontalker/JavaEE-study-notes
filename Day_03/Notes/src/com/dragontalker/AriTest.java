@@ -24,5 +24,8 @@ public class AriTest {
 
         double result6 = (double)num1 / num2;
         System.out.println(result6); // 2.4
+
+        double result7 = (double)(num1 / num2);
+        System.out.println(result7); // 2.0
     }
 }
