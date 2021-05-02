@@ -1,6 +1,7 @@
 package com.dragontalker;
 
 public class BinaryTest {
+
     public static void main(String[] args) {
         int num1 = 0b110;
         int num2 = 110;
