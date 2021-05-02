@@ -27,5 +27,11 @@ public class AriTest {
 
         double result7 = (double)(num1 / num2);
         System.out.println(result7); // 2.0
+
+
+        // remainder
+        int m1 = 12;
+        int n1 = 5;
+        System.out.println("m1 % n1 = " + m1 % n1); // 2
     }
 }
