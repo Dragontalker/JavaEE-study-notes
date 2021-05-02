@@ -26,6 +26,11 @@ public class LogicTest {
         }
         System.out.println(num2);
 
+
+        // 区分 | 与 ||
+        // 相同点1： | 与 || 的运算结果相同
+        // 相同点2： 当符号左边是false时，二者都会执行符号右边的运算
+        // 不同点：当符号左边是true时， |继续执行符号右边的运算，而||不再执行符号右边的运算
         boolean b3 = false;
         int num3 = 10;
         if(b3 | (num3++ > 0)) {
