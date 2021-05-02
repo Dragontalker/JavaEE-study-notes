@@ -12,5 +12,14 @@ public class AriTest {
 
         int result2 = num1 / num2 * num2;
         System.out.println(result2); // 10
+
+        double result3 = num1 / num2;
+        System.out.println(result3); // 2.0
+
+        double result4 = num1 / num2 + 0.0;
+        System.out.println(result4); // 2.0
+
+        double result5 = num1 / (num2 + 0.0);
+        System.out.println(result5); // 2.4
     }
 }
