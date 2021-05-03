@@ -10,6 +10,7 @@ public class SwitchTest3 {
         System.out.println("请输入年份");
         int year = scan.nextInt();
 
-
+        System.out.println("请输入月份");
+        int month = scan.nextInt();
     }
 }
