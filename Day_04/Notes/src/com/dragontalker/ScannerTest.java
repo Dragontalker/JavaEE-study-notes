@@ -7,7 +7,6 @@ package com.dragontalker;
 1. 导包： import java.util.Scanner;
 2. Scanner的实例化
 3. 调用Scanner类的相关方法( next() / nextXxx())， 来获取指定类型的变量
-
 */
 
 // 1. 导包： import java.util.Scanner;
