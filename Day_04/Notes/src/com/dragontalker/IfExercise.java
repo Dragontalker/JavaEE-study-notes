@@ -13,5 +13,8 @@ public class IfExercise {
             System.out.println("atguigu");
         } else
             System.out.println("x is " + x);
+
+        // 课后练习4： 如何获取一个随机数： 10 - 99
+        double value = Math.random(); // [0.0, 1.0]
     }
 }
