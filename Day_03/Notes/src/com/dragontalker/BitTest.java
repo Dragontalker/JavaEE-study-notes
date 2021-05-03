@@ -19,5 +19,30 @@ public class BitTest {
         System.out.println("m & n :" + (m & n));
         System.out.println("m | n :" + (m | n));
         System.out.println("m ^ n :" + (m ^ n));
+
+        // 练习: 交换两个变量的值
+        int num1 = 10;
+        int num2 = 20;
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+
+        // 方式一: 定义临时变量
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+
+        // 方式二:
+        // 好处: 不用定义临时变量
+        // 弊端: 1. 相加操作可能超出存储范围
+        //      2. 有局限性
+        num1 = num1 + num2;
+        num2 = num1 - num2;
+        num1 = num1 - num2;
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
+
+
     }
 }
