@@ -12,5 +12,8 @@ public class SwitchTest3 {
 
         System.out.println("请输入月份");
         int month = scan.nextInt();
+
+        System.out.println("请输入日期");
+        int day = scan.nextInt();
     }
 }
