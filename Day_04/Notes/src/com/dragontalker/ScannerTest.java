@@ -6,16 +6,21 @@ package com.dragontalker;
 具体实现步骤：
 1. 导包： import java.util.Scanner;
 2. Scanner的实例化
+3. 调用Scanner类的相关方法( next() / nextXxx())， 来获取指定类型的变量
 
 */
 
+// 1. 导包： import java.util.Scanner;
 import java.util.Scanner;
 
 public class ScannerTest {
 
     public static void main(String[] args) {
+        // 2. Scanner的实例化
         Scanner scan = new Scanner(System.in);
+
         System.out.println("请输入你的姓名：");
+        // 3. 调用Scanner类的相关方法( next() / nextXxx())， 来获取指定类型的变量
         String name = scan.next();
         System.out.println(name);
 
