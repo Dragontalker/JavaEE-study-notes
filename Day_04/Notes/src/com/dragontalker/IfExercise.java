@@ -15,6 +15,9 @@ public class IfExercise {
             System.out.println("x is " + x);
 
         // 课后练习4： 如何获取一个随机数： 10 - 99
-        double value = Math.random(); // [0.0, 1.0]
+        double value1 = Math.random(); // [0.0, 1.0)
+        double value2 = Math.random() * 90; // [0.0, 90.0)
+        double value3 = Math.random() * 90 + 10; // [10.0, 100.0)
+        int value4 = (int) (Math.random() * 90 + 10); // [10, 99]
     }
 }
