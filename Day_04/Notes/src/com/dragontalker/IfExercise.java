@@ -18,6 +18,8 @@ public class IfExercise {
         double value1 = Math.random(); // [0.0, 1.0)
         double value2 = Math.random() * 90; // [0.0, 90.0)
         double value3 = Math.random() * 90 + 10; // [10.0, 100.0)
-        int value4 = (int) (Math.random() * 90 + 10); // [10, 99]
+        int value4 = (int)(Math.random() * 90 + 10); // [10, 99]
+
+        // 公式: [a, b]: (int)(Math.random() * (b - a + 1) + a)
     }
 }
