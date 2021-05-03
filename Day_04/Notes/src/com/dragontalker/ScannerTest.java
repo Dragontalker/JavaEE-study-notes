@@ -30,5 +30,11 @@ public class ScannerTest {
         System.out.println("你是否单身？");
         boolean isSingle = scan.nextBoolean();
         System.out.println(isSingle);
+
+        // 对于char型的获取，Scanner没有提供相关的方法，只能获取一个字符串
+        System.out.println("请输入你的性别：（男、女）");
+        String gender = scan.next(); // "男"
+        char genderChar = gender.charAt(0);
+        System.out.println(genderChar);
     }
 }
