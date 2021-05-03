@@ -43,6 +43,12 @@ public class BitTest {
         System.out.println("num1 = " + num1);
         System.out.println("num2 = " + num2);
 
-
+        // 方式三: 使用位运算符
+        // 有局限性: 只能适用于数值类型
+        num1 = num1 ^ num2;
+        num2 = num1 ^ num2;
+        num1 = num1 ^ num2;
+        System.out.println("num1 = " + num1);
+        System.out.println("num2 = " + num2);
     }
 }
