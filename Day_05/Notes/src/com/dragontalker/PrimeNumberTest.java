@@ -11,15 +11,16 @@ public class PrimeNumberTest {
 
         for (int i = 2; i < 100; i++) {
 
-            int factorCount = 0;
+            boolean isFlag = true;
 
             for (int j = 2; j < i; j++) {
                 if (i % j == 0) {
-                    factorCount++;
+                    isFlag = false;
+                    break;
                 }
             }
 
-            if (factorCount == 0) {
+            if (isFlag) {
                 System.out.println(i + "是一个质数");
             }
         }
