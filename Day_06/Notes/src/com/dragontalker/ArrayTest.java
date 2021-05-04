@@ -54,5 +54,11 @@ public class ArrayTest {
         // 3. 如何获取数组的长度;
         // 属性: length
         System.out.println(names.length);
+        System.out.println(ids.length);
+
+        // 4. 如何遍历数组;
+        for (int i = 0; i < names.length; i++) {
+            System.out.println("#" + (i + 1) + ": " + names[i]);
+        }
     }
 }
