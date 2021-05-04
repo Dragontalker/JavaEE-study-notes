@@ -19,5 +19,8 @@ public class ForTest {
 
         System.out.println("请输入第二个正整数:");
         int n = scan.nextInt();
+
+        // 获取两个数的较小值
+        int smallerNumber = (m > n) ? n : m;
     }
 }
