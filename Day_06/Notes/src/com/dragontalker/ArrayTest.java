@@ -28,5 +28,8 @@ public class ArrayTest {
         int num; // 声明
         num = 10; // 初始化
         int id = 1001; // 声明 + 初始化
+
+        int[] ids; // 声明
+        ids = new int[]{1001, 1002, 1003, 1004}; // 初始化
     }
 }
