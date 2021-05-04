@@ -50,5 +50,9 @@ public class ArrayTest {
         names[2] = "张学良";
         names[3] = "孙君龙";
         names[4] = "王宏志";
+
+        // 3. 如何获取数组的长度;
+        // 属性: length
+        System.out.println(names.length);
     }
 }
