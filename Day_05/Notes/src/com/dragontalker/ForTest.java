@@ -7,9 +7,17 @@ package com.dragontalker;
 说明: break关键字的使用
 */
 
+import java.util.Scanner;
+
 public class ForTest {
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
 
+        System.out.println("请输入第一个正整数: ");
+        int m = scan.nextInt();
+
+        System.out.println("请输入第二个正整数:");
+        int n = scan.nextInt();
     }
 }
