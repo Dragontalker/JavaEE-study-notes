@@ -24,5 +24,9 @@ public class ArrayTest {
 
     public static void main(String[] args) {
 
+        // 1. 一维数组的声明和初始化;
+        int num; // 声明
+        num = 10; // 初始化
+        int id = 1001; // 声明 + 初始化
     }
 }
