@@ -30,6 +30,9 @@ public class ArrayTest {
         int id = 1001; // 声明 + 初始化
 
         int[] ids; // 声明
-        ids = new int[]{1001, 1002, 1003, 1004}; // 初始化
+        // 1.1 静态初始化
+        ids = new int[]{1001, 1002, 1003, 1004};
+        // 1.2 动态初始化
+        String[] names = new String[5];
     }
 }
