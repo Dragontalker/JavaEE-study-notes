@@ -23,11 +23,13 @@ public class BreakContinueTest {
         System.out.println();
 
         //****
-        for (int i = 1; i <= 4; i++) {
+        label: for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= 10; j++) {
                 if (j % 4 == 0) {
                     //break; // 默认跳出包裹此关键字最近的一层循环
-                    continue;
+                    //continue;
+                    //break label;
+                    continue label;
                 }
 
                 System.out.print(j);
