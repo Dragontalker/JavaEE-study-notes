@@ -34,5 +34,9 @@ public class ArrayTest {
         ids = new int[]{1001, 1002, 1003, 1004};
         // 1.2 动态初始化: 数组的初始化和数组元素的赋值操作分开进行
         String[] names = new String[5];
+
+        // 错误的写法
+        // int[] arr1 = new int[];
+        // int[5] arr2 = new int[];
     }
 }
