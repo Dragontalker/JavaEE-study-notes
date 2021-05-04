@@ -8,8 +8,6 @@ continue: 只能在循环结构中使用， 结束当次循环.
 相同点: 关键字后面不能声明执行语句.
  */
 
-import javax.swing.plaf.IconUIResource;
-
 public class BreakContinueTest {
 
     public static void main(String[] args) {
