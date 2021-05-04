@@ -23,9 +23,21 @@ public class ForTest {
         // 获取两个数的较小值
         int min = (m > n) ? n : m;
 
+        // 获取最大公约数
         for (int i = min; i > 0; i--) {
             if (m % i == 0 && n % i == 0) {
-                System.out.println(i);
+                System.out.println("最大公约数为 " + i);
+                break;
+            }
+        }
+
+        // 获取两个数的最小值
+        int max = (m > n) ? m : n;
+
+        // 获取最小公倍数
+        for (int i = 1; i <= min; i++) {
+            if ((i * max) % min == 0) {
+                System.out.println("最小公倍数为 " + i * max);
                 break;
             }
         }
