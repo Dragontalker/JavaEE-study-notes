@@ -21,6 +21,13 @@ public class ForTest {
         int n = scan.nextInt();
 
         // 获取两个数的较小值
-        int smallerNumber = (m > n) ? n : m;
+        int min = (m > n) ? n : m;
+
+        for (int i = min; i > 0; i--) {
+            if (m % i == 0 && n % i == 0) {
+                System.out.println(i);
+                break;
+            }
+        }
     }
 }
