@@ -2,8 +2,10 @@ package com.dragontalker;
 
 /*
 break和continue关键字的使用
-break: switch-case和循环都可以使用， 结束当前循环
-continue: 只能在循环结构中使用， 结束当次循环
+break: switch-case和循环都可以使用， 结束当前循环.
+continue: 只能在循环结构中使用， 结束当次循环.
+
+相同点: 关键字后面不能声明执行语句.
  */
 
 public class BreakContinueTest {
