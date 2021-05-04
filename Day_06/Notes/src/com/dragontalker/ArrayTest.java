@@ -38,5 +38,6 @@ public class ArrayTest {
         // 错误的写法
         // int[] arr1 = new int[];
         // int[5] arr2 = new int[];
+        // int[] arr3 = new int[3]{1, 2, 3}
     }
 }
