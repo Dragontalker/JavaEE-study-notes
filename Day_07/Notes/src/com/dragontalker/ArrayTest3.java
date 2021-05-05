@@ -23,5 +23,15 @@ public class ArrayTest3 {
         for (int i = 0; i < array1.length; i++) {
             System.out.println(array1[i] + "\t");
         }
+
+        // 赋值array2变量等于array1
+        array2 = array1;
+
+        // 修改array2中的偶索引元素, 使其等于索引值
+        for (int i = 0; i < array2.length; i++) {
+            if (i % 2 == 0) {
+                array2[i] = i;
+            }
+        }
     }
 }
