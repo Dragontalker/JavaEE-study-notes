@@ -38,6 +38,18 @@ public class SearchTest {
         // 查找或搜索
         // 线性查找:
         String target = "BB";
+        boolean found = false;
 
+        for (int i = 0; i < arr.length; i++) {
+            if (target.equals(arr[i])) {
+                System.out.println("找到了指定的元素, 位置为: " + i);
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("很遗憾, 没有找到");
+        }
     }
 }
