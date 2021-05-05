@@ -21,6 +21,12 @@ public class ArrayExercise2 {
         }
 
         // 4. 获取数组中的元素的最大值: 最高分.
+        int maxScore = 0;
+        for (int i = 0; i < scores.length; i++) {
+            if (scores[i] > maxScore) {
+                maxScore = scores[i];
+            }
+        }
 
         // 5. 根据每个学生成绩与最高分的差值, 得到每个学生的等级, 并输出等级和成绩.
     }
