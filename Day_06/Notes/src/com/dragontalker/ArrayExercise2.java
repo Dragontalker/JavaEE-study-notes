@@ -42,7 +42,7 @@ public class ArrayExercise2 {
                 level = 'D';
             }
 
-            System.out.println("学生#" + i + "的分数是: " + scores[i] + ", 等级是: " + level);
+            System.out.println("学生#" + (i + 1) + "的分数是: " + scores[i] + ", 等级是: " + level);
         }
 
     }
