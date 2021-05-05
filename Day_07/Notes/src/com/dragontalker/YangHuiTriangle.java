@@ -24,10 +24,8 @@ public class YangHuiTriangle {
             yangHui[i][0] = yangHui[i][i] = 1;
 
             // 2.2 给每行的非首末元素赋值
-            if (i > 1) {
-                for (int j = 1; j < yangHui[i].length - 1; j++) {
-                    yangHui[i][j] = yangHui[i - 1][j - 1] + yangHui[i - 1][j];
-                }
+            for (int j = 1; j < yangHui[i].length - 1; j++) {
+                yangHui[i][j] = yangHui[i - 1][j - 1] + yangHui[i - 1][j];
             }
         }
 
