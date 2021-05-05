@@ -65,6 +65,11 @@ public class SearchTest {
 
             if (arr2[middle] == targetNumber) {
                 System.out.println("找到了指定的元素, 位置为: " + middle);
+                break;
+            } else if (arr2[middle] > targetNumber) {
+                end = middle - 1;
+            } else {
+                head = middle + 1;
             }
         }
     }
