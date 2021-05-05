@@ -27,7 +27,11 @@ public class ArrayTest3 {
 
         // 赋值array2变量等于array1
         // 不能称作数组的复制
-        array2 = array1;
+        // array2 = array1;
+        array2 = new int[array1.length];
+        for (int i = 0; i < array2.length; i++) {
+            array2[i] = array1[i];
+        }
 
         // 修改array2中的偶索引元素, 使其等于索引值
         for (int i = 0; i < array2.length; i++) {
