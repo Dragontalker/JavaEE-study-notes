@@ -16,5 +16,9 @@ public class ArrayTest3 {
         System.out.println(arr[0]); // 内存地址 [I@e9e54c2
         System.out.println(arr[0][0]); // 0
         System.out.println(arr); // 内存地址 [[I@65ab7765
+
+        float[][] arr1 = new float[4][3];
+        System.out.println(arr1[0]); // 内存地址 [F@1b28cdfa
+        System.out.println(arr1); // 内存地址 [[F@eed1f14
     }
 }
