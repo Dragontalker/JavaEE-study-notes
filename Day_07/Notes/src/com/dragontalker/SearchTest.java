@@ -51,5 +51,10 @@ public class SearchTest {
         if (!found) {
             System.out.println("很遗憾, 没有找到");
         }
+
+        // 二分法:
+        // 前提: 所要查找的数组必须有序.
+        int[] arr2 = new int[]{-98, -34, 2, 3, 34, 54, 66, 79, 105, 210, 333};
+        int targetNumber = arr2[arr2.length / 2];
     }
 }
