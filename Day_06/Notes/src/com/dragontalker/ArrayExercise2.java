@@ -15,18 +15,16 @@ public class ArrayExercise2 {
         int[] scores = new int[number];
 
         // 3. 给数组中的元素赋值.
+        int maxScore = 0;
         System.out.println("请输入" + number + "个学生成绩: ");
         for (int i = 0; i < scores.length; i++) {
             scores[i] = scan.nextInt();
-        }
-
-        // 4. 获取数组中的元素的最大值: 最高分.
-        int maxScore = 0;
-        for (int i = 0; i < scores.length; i++) {
             if (scores[i] > maxScore) {
                 maxScore = scores[i];
             }
         }
+
+        // 4. 获取数组中的元素的最大值: 最高分.
 
         // 5. 根据每个学生成绩与最高分的差值, 得到每个学生的等级, 并输出等级和成绩.
         char level;
