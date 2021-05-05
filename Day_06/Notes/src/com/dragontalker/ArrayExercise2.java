@@ -12,7 +12,7 @@ public class ArrayExercise2 {
         int number = scan.nextInt();
 
         // 2. 创建数组, 储存学生成绩, 动态初始化.
-
+        int[] scores = new int[number];
 
         // 3. 给数组中的元素赋值.
 
