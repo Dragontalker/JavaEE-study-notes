@@ -24,5 +24,10 @@ public class ArrayTest3 {
         String[][] arr2 = new String[4][2];
         System.out.println(arr2[1]); // 内存地址 [Ljava.lang.String;@7229724f
         System.out.println(arr2[1][1]); // null
+
+        double[][] arr3 = new double[4][];
+        System.out.println(arr3[1]); // null
+        System.out.println(arr3[1][0]); // Error: null pointer exception
+
     }
 }
