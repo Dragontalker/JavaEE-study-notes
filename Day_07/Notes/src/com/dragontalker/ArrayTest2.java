@@ -21,6 +21,12 @@ public class ArrayTest2 {
         }
 
         // 求数组元素的最大值
+        int maxValue = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (maxValue < arr[i]) {
+                maxValue = arr[i];
+            }
+        }
 
         // 求数组元素的最小值
 
