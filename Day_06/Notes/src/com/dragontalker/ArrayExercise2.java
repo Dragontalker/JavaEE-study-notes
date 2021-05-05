@@ -15,6 +15,10 @@ public class ArrayExercise2 {
         int[] scores = new int[number];
 
         // 3. 给数组中的元素赋值.
+        System.out.println("请输入" + number + "个学生成绩: ");
+        for (int i = 0; i < scores.length; i++) {
+            scores[i] = scan.nextInt();
+        }
 
         // 4. 获取数组中的元素的最大值: 最高分.
 
