@@ -28,5 +28,10 @@ public class ArrayTest2 {
         // 正确
         int[] arr4[] = new int[][]{{1, 2, 3}, {4, 5}, {6, 7, 8}};
         int[] arr5[] = {{1, 2, 3}, {4, 5}, {6, 7, 8}}; // 类型推断
+
+        // 2. 如何调用数组的指定位置的元素
+        System.out.println(arr1[0][1]); // 2
+        System.out.println(arr2[1][1]); // null
+        // System.out.println(arr3[1][0]); // Error: null pointer exception
     }
 }
