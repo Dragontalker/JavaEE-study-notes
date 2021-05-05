@@ -39,5 +39,13 @@ public class ArrayTest2 {
         // 3. 获取数组的长度
         System.out.println(arr4.length); // 3
         System.out.println(arr4[1].length); // 2
+
+        // 4. 如何遍历二维数组
+        for (int i = 0; i < arr4.length; i++) {
+
+            for (int j = 0; j < arr4[i].length; j++) {
+                System.out.println(arr4[i][j]);
+            }
+        }
     }
 }
