@@ -6,6 +6,15 @@ public class ArrayExercise2 {
 
     public static void main(String[] args) {
 
+        // 1. 使用Scanner, 读取学生个数.
         Scanner scan = new Scanner(System.in);
+
+        // 2. 创建数组, 储存学生成绩, 动态初始化.
+
+        // 3. 给数组中的元素赋值.
+
+        // 4. 获取数组中的元素的最大值: 最高分.
+
+        // 5. 根据每个学生成绩与最高分的差值, 得到每个学生的等级, 并输出等级和成绩.
     }
 }
