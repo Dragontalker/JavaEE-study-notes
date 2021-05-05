@@ -59,18 +59,24 @@ public class SearchTest {
 
         int head = 0; // 初始的首索引
         int end = arr2.length - 1; // 初始的末索引
+        boolean isFlag = true;
 
         while (head <= end) {
             int middle = (head + end) / 2;
 
             if (arr2[middle] == targetNumber) {
                 System.out.println("找到了指定的元素, 位置为: " + middle);
+                isFlag = false;
                 break;
             } else if (arr2[middle] > targetNumber) {
                 end = middle - 1;
             } else {
                 head = middle + 1;
             }
+        }
+
+        if (isFlag) {
+            System.out.println("很遗憾, 没有找到");
         }
     }
 }
