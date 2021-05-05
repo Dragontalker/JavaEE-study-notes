@@ -19,5 +19,13 @@ public class ArrayTest2 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int)(Math.random() * (99 - 10 + 1) + 10);
         }
+
+        // 求数组元素的最大值
+
+        // 求数组元素的最小值
+
+        // 求数组元素的总和
+
+        // 求数组元素的平均数
     }
 }
