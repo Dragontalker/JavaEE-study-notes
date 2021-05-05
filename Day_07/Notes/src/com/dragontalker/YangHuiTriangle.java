@@ -19,6 +19,9 @@ public class YangHuiTriangle {
         // 2. 给数组的元素赋值
         for (int i = 0; i < yangHui.length; i++) {
             yangHui[i] = new int[i + 1];
+
+            // 2.1 给首末元素赋值
+            yangHui[i][0] = yangHui[i][i] = 1;
         }
 
         // 3. 遍历二维数组
