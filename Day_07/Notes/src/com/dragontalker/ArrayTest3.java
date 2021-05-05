@@ -33,5 +33,10 @@ public class ArrayTest3 {
                 array2[i] = i;
             }
         }
+
+        // 打印array1
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println(array1[i] + "\t");
+        }
     }
 }
