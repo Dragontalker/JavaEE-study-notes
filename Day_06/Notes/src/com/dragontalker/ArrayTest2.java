@@ -33,5 +33,7 @@ public class ArrayTest2 {
         System.out.println(arr1[0][1]); // 2
         System.out.println(arr2[1][1]); // null
         // System.out.println(arr3[1][0]); // Error: null pointer exception
+        arr3[1] = new String[4];
+        System.out.println(arr3[1][0]); // null
     }
 }
