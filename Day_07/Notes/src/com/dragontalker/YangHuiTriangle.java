@@ -22,5 +22,11 @@ public class YangHuiTriangle {
         }
 
         // 3. 遍历二维数组
+        for (int i = 0; i < yangHui.length; i++) {
+            for (int j = 0; j < yangHui[i].length; j++) {
+                System.out.print(yangHui[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
