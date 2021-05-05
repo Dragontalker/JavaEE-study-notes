@@ -20,5 +20,9 @@ public class ArrayTest3 {
         float[][] arr1 = new float[4][3];
         System.out.println(arr1[0]); // 内存地址 [F@1b28cdfa
         System.out.println(arr1); // 内存地址 [[F@eed1f14
+
+        String[][] arr2 = new String[4][2];
+        System.out.println(arr2[1]); // 内存地址 [Ljava.lang.String;@7229724f
+        System.out.println(arr2[1][1]); // null
     }
 }
