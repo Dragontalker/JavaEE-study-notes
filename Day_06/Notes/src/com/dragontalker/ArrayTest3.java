@@ -12,6 +12,10 @@ package com.dragontalker;
 针对于初始化方式一: 比如: int[][] arr = new int[4][3];
     外层元素的初始化值为: 地址值
     内层元素的初始化值为: 与一维数组的初始化情况相同
+
+针对于初始化方式二: 比如: int[][] arr = new int[4][];
+    外层元素的初始化值为: null
+    内层元素的初始化值为: 不能调用, 否则报错
  */
 
 public class ArrayTest3 {
