@@ -19,5 +19,13 @@ public class ArrayTest2 {
 
         // 动态初始化2
         String[][] arr3 = new String[3][];
+
+        // 错误的情况
+        // String[][] arr4 = new String[][4];
+        // String[4][3] arr5 = new String[][];
+        // int[][] arr6 = new int[4][3]{{1, 2, 3}, {4, 5}, {6, 7, 8}};
+
+        // 正确
+        int[] arr4[] = new int[][]{{1, 2, 3}, {4, 5}, {6, 7, 8}};
     }
 }
