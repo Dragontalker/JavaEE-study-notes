@@ -14,6 +14,7 @@ public class YangHuiTriangle {
 
     public static void main(String[] args) {
         // 1. 声明并初始化二维数组
+        int[][] yangHui = new int[10][];
 
         // 2. 给数组的元素赋值
 
