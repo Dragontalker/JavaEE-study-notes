@@ -38,5 +38,6 @@ public class ArrayTest2 {
 
         // 3. 获取数组的长度
         System.out.println(arr4.length); // 3
+        System.out.println(arr4[1].length); // 2
     }
 }
