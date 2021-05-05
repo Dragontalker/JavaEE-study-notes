@@ -35,5 +35,8 @@ public class ArrayTest2 {
         // System.out.println(arr3[1][0]); // Error: null pointer exception
         arr3[1] = new String[4];
         System.out.println(arr3[1][0]); // null
+
+        // 3. 获取数组的长度
+        System.out.println(arr4.length); // 3
     }
 }
