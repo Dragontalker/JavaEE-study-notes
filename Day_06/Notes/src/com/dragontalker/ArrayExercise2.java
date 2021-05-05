@@ -8,8 +8,11 @@ public class ArrayExercise2 {
 
         // 1. 使用Scanner, 读取学生个数.
         Scanner scan = new Scanner(System.in);
+        System.out.println("请输入学生人数: ");
+        int number = scan.nextInt();
 
         // 2. 创建数组, 储存学生成绩, 动态初始化.
+
 
         // 3. 给数组中的元素赋值.
 
