@@ -8,6 +8,7 @@ package com.dragontalker;
     4. 赋值array2变量等于array1, 修改array2中的偶索引元素, 使其等于索引值(如array[0]=0, array[2]=2). 打印出array1.
 
 思考: array1和array2是什么关系?
+    - array1和array2地址值相同, 都指向了堆空间中的唯一的一个数组.
 
 拓展: 修改题目, 实现array2对array1数组的复制
  */
@@ -25,6 +26,7 @@ public class ArrayTest3 {
         }
 
         // 赋值array2变量等于array1
+        // 不能称作数组的复制
         array2 = array1;
 
         // 修改array2中的偶索引元素, 使其等于索引值
