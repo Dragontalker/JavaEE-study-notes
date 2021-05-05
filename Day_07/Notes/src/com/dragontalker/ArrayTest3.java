@@ -15,6 +15,8 @@ package com.dragontalker;
 public class ArrayTest3 {
 
     public static void main(String[] args) {
+        int[] array1, array2;
+
 
     }
 }
