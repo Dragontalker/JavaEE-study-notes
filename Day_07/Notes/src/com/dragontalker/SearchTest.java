@@ -24,16 +24,20 @@ public class SearchTest {
         //}
 
         // 方法二:
-        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
-            String temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-        }
+        //for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
+            //String temp = arr[i];
+            //arr[i] = arr[j];
+            //arr[j] = temp;
+        //}
 
         // 遍历
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i] + "\t");
         }
+
+        // 查找或搜索
+        // 线性查找:
+        String target = "BB";
 
     }
 }
