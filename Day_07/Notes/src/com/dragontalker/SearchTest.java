@@ -16,10 +16,18 @@ public class SearchTest {
         }
 
         // 数组的反转
-        for (int i = 0; i < arr.length / 2; i++) {
+        // 方法一:
+        //for (int i = 0; i < arr.length / 2; i++) {
+            //String temp = arr[i];
+            //arr[i] = arr[arr.length - i - 1];
+            //arr[arr.length - i - 1] = temp;
+        //}
+
+        // 方法二:
+        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
             String temp = arr[i];
-            arr[i] = arr[arr.length - i - 1];
-            arr[arr.length - i - 1] = temp;
+            arr[i] = arr[j];
+            arr[j] = temp;
         }
 
         // 遍历
