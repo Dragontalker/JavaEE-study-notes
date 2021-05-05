@@ -29,5 +29,21 @@ public class ArrayExercise2 {
         }
 
         // 5. 根据每个学生成绩与最高分的差值, 得到每个学生的等级, 并输出等级和成绩.
+        char level;
+        for (int i = 0; i <scores.length; i++) {
+            int diff = maxScore - scores[i];
+            if (diff <= 10) {
+                level = 'A';
+            } else if (diff <= 20) {
+                level = 'B';
+            } else if (diff <= 30) {
+                level = 'C';
+            } else {
+                level = 'D';
+            }
+
+            System.out.println("学生#" + i + "的分数是: " + scores[i] + ", 等级是: " + level);
+        }
+
     }
 }
