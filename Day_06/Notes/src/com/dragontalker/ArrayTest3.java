@@ -7,6 +7,11 @@ package com.dragontalker;
     int[][] arr = new int[4][3]；
     外层元素: arr[0], arr[1]等
     内层元素: arr[0][0], arr[1][2]等
+
+数组元素的默认初始化值:
+针对于初始化方式一: 比如: int[][] arr = new int[4][3];
+    外层元素的初始化值为: 地址值
+    内层元素的初始化值为: 与一维数组的初始化情况相同
  */
 
 public class ArrayTest3 {
