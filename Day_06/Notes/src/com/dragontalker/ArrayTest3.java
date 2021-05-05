@@ -13,7 +13,8 @@ public class ArrayTest3 {
 
     public static void main(String[] args) {
         int[][] arr = new int[4][3];
-        System.out.println(arr[0]); // 内存地址
+        System.out.println(arr[0]); // 内存地址 [I@e9e54c2
         System.out.println(arr[0][0]); // 0
+        System.out.println(arr); // 内存地址 [[I@65ab7765
     }
 }
