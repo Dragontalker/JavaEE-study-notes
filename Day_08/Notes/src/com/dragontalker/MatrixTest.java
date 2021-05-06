@@ -5,6 +5,7 @@ public class MatrixTest {
         MatrixTest test = new MatrixTest();
         test.printMatrix();
         System.out.println("面积为: "+ test.getArea());
+        test.printCustomMatrix(3, 2);
     }
 
     public void printMatrix() {
@@ -18,5 +19,14 @@ public class MatrixTest {
 
     public int getArea() {
         return 10 * 8;
+    }
+
+    public void printCustomMatrix(int m, int n) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
     }
 }
