@@ -12,6 +12,8 @@ package com.dragontalker;
 
 三、如果创建了一个类的多个对象, 则每个对象都独立地拥有一套类的属性(非static)
     意味着: 如果我们修改一个对象的属性a, 则不影响另一个对象的属性a
+
+四、
  */
 
 public class PersonTest {
