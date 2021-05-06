@@ -11,8 +11,6 @@ package com.dragontalker;
     3. 通过“对象.属性”或“对象.方法()”调用对象的结构
  */
 
-
-
 public class PersonTest {
 
     public static void main(String[] args) {
