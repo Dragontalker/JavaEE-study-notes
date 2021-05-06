@@ -17,9 +17,10 @@ public class PersonTest {
 
     public static void main(String[] args) {
 
-        // 创建Person类的对象
+        // 2. 创建类的对象
         Person p1 = new Person();
 
+        // 3. 通过“对象.属性”或“对象.方法()”调用对象的结构
         // 调用对象的结构: 属性、方法
         // 调用属性: “对象.属性”
         p1.name = "Richard";
