@@ -9,6 +9,11 @@ package com.dragontalker;
          Array类: sort() \ binarySearch() \ toString() \ equals() \ ...
 
 方法的声明: 权限修饰符 返回值类型 方法名(形参列表) {方法体}
+    static, final, abstract 来修饰的方法, 后面再讲
+
+说明:
+    关于权限修饰符:
+        Java规定的4中权限修饰符: private, public, 缺省, protected
  */
 
 public class CustomerTest {
