@@ -22,7 +22,12 @@ class User {
     String name;
     int age;
 
-    public void talk(String language) { // language: 形参
+    public void talk(String language) { // language: 形参, 也是局部变量
         System.out.println("我们使用" + language + "进行交流");
+    }
+
+    public void eat() {
+        String food = "烙饼";
+        System.out.println("北方人喜欢吃: " + food);
     }
 }
