@@ -10,6 +10,9 @@ package com.dragontalker;
 public class PersonTest {
 
     // 属性
+    String name;
+    int age;
+    boolean isMale;
 
     // 方法
 }
