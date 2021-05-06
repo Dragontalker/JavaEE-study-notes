@@ -26,5 +26,10 @@ public class ArraysTest {
         // 4. Arrays.sort()
         Arrays.sort(arr2);
         System.out.println(Arrays.toString(arr2));
+
+        // 5. Arrays.binarySearch()
+        int[] arr3 = new int[]{43, 32, 76, -98, 0, 64, 33, -21, 32, 99};
+        int index = Arrays.binarySearch(arr3, 32);
+        System.out.println(index);
     }
 }
