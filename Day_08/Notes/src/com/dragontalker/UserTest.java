@@ -15,7 +15,18 @@ package com.dragontalker;
         局部变量: 声明在方法内、方法形参、代码快内、构造器形参、构造器内部的变量
     2.2. 关于权限修饰符的不同
         属性: 可以在声明属性时, 指明其权限, 使用权限修饰符.
-        常用的权限修饰符: private, public, 缺省, protected
+            - 常用的权限修饰符: private, public, 缺省, protected ---> 封装性
+            - 目前, 大家声明属性时, 都使用缺省就可以了.
+        局部变量: 不可以使用权限修饰符
+     2.3. 默认初始化值的情况
+        属性: 类的属性, 根据其类型, 都有默认初始化值.
+            整型(byte, short, int, long) ---> 0
+            浮点型(float, double) ---> 0.0
+            字符型(char): 0 或 '\u0000'
+            布尔型(boolean): false
+
+            引用数据类型(类、数组、接口): null
+
  */
 
 public class UserTest {
