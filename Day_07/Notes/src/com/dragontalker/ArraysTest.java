@@ -22,5 +22,9 @@ public class ArraysTest {
         // 3. Arrays.fill()
         Arrays.fill(arr1, 10);
         System.out.println(Arrays.toString(arr1));
+
+        // 4. Arrays.sort()
+        Arrays.sort(arr2);
+        System.out.println(Arrays.toString(arr2));
     }
 }
