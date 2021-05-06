@@ -2,7 +2,8 @@ package com.dragontalker;
 
 public class MatrixTest {
     public static void main(String[] args) {
-
+        MatrixTest test = new MatrixTest();
+        test.method();
     }
 
     public void method() {
