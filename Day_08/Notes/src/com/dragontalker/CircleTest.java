@@ -13,10 +13,15 @@ class Circle {
 
     // 属性
     double radius;
+    double area;
 
     // 求圆的面积
-    public double findArea() {
-        return Math.PI * radius * radius;
+    public void calculateArea() {
+        area =  Math.PI * radius * radius;
+    }
+
+    public double getArea() {
+        return area;
     }
 
 }
