@@ -27,9 +27,21 @@ package com.dragontalker;
 
             引用数据类型(类、数组、接口): null
 
+         局部变量: 没有默认初始化值
+            意味着, 我们在调用局部变量时
+
  */
 
 public class UserTest {
+
+    public static void main(String[] args){
+        User u1 = new User();
+        System.out.println(u1.age);
+        System.out.println(u1.isMale);
+
+        u1.talk("日语");
+    }
+
 
 }
 
