@@ -6,5 +6,8 @@ public class PersonExercise {
         p1.name = "Tom";
         p1.age = 18;
         p1.isMale = true;
+
+        Person p2 = new Person();
+
     }
 }
