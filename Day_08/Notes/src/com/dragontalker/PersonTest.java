@@ -38,6 +38,9 @@ public class PersonTest {
 
         Person p3 = p1;
         System.out.println(p3.name); // Richard
+
+        p3.age = 10;
+        System.out.println(p1.age); // 10
     }
 
 }
