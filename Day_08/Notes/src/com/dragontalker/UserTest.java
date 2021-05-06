@@ -46,8 +46,6 @@ public class UserTest {
 
         u1.talk("日语");
     }
-
-
 }
 
 class User {
