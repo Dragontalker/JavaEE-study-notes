@@ -11,3 +11,14 @@ package com.dragontalker;
 
 public class CustomerTest {
 }
+
+// 客户类
+class Customer {
+
+    // 属性
+    String name;
+    int age;
+    boolean isMale;
+
+
+}
