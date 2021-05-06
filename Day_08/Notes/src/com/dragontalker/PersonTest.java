@@ -36,6 +36,7 @@ public class PersonTest {
         System.out.println(p2.name); // null
         System.out.println(p2.isMale); // false
 
+        // 将p1变量保存的对象地址值赋给了p3, 导致p1和p3指向了堆空间中的同一个对象
         Person p3 = p1;
         System.out.println(p3.name); // Richard
 
