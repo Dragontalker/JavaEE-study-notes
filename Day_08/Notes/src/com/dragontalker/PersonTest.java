@@ -15,4 +15,15 @@ public class PersonTest {
     boolean isMale;
 
     // 方法
+    public void eat() {
+        System.out.println("人可以吃饭");
+    }
+
+    public void sleep() {
+        System.out.println("人可以睡觉");
+    }
+
+    public void talk(String language) {
+        System.out.println("人可以说话, 使用的是: " + language);
+    }
 }
