@@ -13,6 +13,8 @@ public class PersonTest {
 
     public static void main(String[] args) {
 
+        // 创建Person类的对象
+        Person p1 = new Person();
     }
 
 }
