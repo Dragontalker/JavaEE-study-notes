@@ -11,7 +11,7 @@ class Circle {
 
     // 求圆的面积
     public double findArea() {
-        return 3.14 * radius * radius;
+        return Math.PI * radius * radius;
     }
 
 }
