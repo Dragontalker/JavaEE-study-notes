@@ -15,6 +15,9 @@ public class PersonTest {
 
         // 创建Person类的对象
         Person p1 = new Person();
+        p1.eat();
+        p1.sleep();
+        p1.talk("Hello world!");
     }
 
 }
