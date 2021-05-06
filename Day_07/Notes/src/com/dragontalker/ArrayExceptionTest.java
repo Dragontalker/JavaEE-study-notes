@@ -30,8 +30,13 @@ public class ArrayExceptionTest {
         //System.out.println(arr1[0]);
 
         // 情况二
-        int[][] arr2 = new int[4][];
-        System.out.println(arr2[0]); // null
-        System.out.println(arr2[0][0]); // NullPointer
+        //int[][] arr2 = new int[4][];
+        //System.out.println(arr2[0]); // null
+        //System.out.println(arr2[0][0]); // NullPointer
+
+        // 情况三
+        String[] arr3 = new String[]{"AA", "BB", "CC"};
+        arr3[0] = null;
+        System.out.println(arr3[0].toString());
     }
 }
