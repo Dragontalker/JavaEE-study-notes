@@ -5,6 +5,11 @@ package com.dragontalker;
 
     属性 = 成员变量 = field = 域、字段
     方法 = 成员方法 = method = 函数
+
+二、类和对象的使用(面向对象思想落地的实现)
+    1. 创建类, 设计类的成员
+    2. 创建类的对象
+    3. 通过“对象.属性”或“对象.方法()”调用对象的结构
  */
 
 
@@ -29,6 +34,7 @@ public class PersonTest {
 
 }
 
+// 1. 创建类, 设计类的成员
 class Person {
     // 属性
     String name;
