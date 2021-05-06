@@ -15,5 +15,8 @@ public class ArraysTest {
         int [] arr2 = new int[]{1, 3, 2, 4};
         boolean isEquals = Arrays.equals(arr1, arr2);
         System.out.println(isEquals);
+
+        // 2. Arrays.toString()
+        System.out.println(Arrays.toString(arr1));
     }
 }
