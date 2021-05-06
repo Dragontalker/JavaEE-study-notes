@@ -7,8 +7,17 @@ package com.dragontalker;
     方法 = 成员方法 = method = 函数
  */
 
+
+
 public class PersonTest {
 
+    public static void main(String[] args) {
+
+    }
+
+}
+
+class Person {
     // 属性
     String name;
     int age;
