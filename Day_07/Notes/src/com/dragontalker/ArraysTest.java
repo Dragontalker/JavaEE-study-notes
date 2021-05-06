@@ -18,5 +18,9 @@ public class ArraysTest {
 
         // 2. Arrays.toString()
         System.out.println(Arrays.toString(arr1));
+
+        // 3. Arrays.fill()
+        Arrays.fill(arr1, 10);
+        System.out.println(Arrays.toString(arr1));
     }
 }
