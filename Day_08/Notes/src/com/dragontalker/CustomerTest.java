@@ -18,7 +18,8 @@ package com.dragontalker;
 
 public class CustomerTest {
     public static void main(String[] args) {
-
+        Customer customer1 = new Customer();
+        customer1.eat();
     }
 }
 
