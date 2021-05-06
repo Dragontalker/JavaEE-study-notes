@@ -13,10 +13,20 @@ public class ArrayExceptionTest {
         // 1. 数组角标越界的异常: ArrayIndexOutOfBoundsException
         int[] arr = new int[]{1, 2, 3, 4, 5};
 
+        // 情况一
         //for (int i = 0; i <= arr.length; i++) {
             //System.out.println(arr[i]);
         //}
 
+        // 情况2
         //System.out.println(arr[-2]);
+
+
+        // 2. 空指针异常: NullPointerException
+
+        // 情况一
+        //int[] arr1 = new int[]{1, 2, 3};
+        //arr1 = null;
+        //System.out.println(arr1[0]);
     }
 }
