@@ -12,8 +12,16 @@ package com.dragontalker;
     static, final, abstract 来修饰的方法, 后面再讲
 
 说明:
-    关于权限修饰符:
+    1. 关于权限修饰符: 默认方法的权限修饰符都使用public
         Java规定的4中权限修饰符: private, public, 缺省, protected
+
+    2. 返回值类型: 有返回值 vs 没有返回值
+        2.1. 如果方法有返回值, 则必须在方法声明时, 指定返回值的类型, 同时方法中使用return关键字
+            - 如果方法没有返回值, 使用void来表示
+            - 通常, 没有返回值的方法中不需要return, 如果使用的话, 只能 return;
+
+return关键字的使用:
+
  */
 
 public class CustomerTest {
