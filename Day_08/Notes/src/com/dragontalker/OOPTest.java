@@ -11,12 +11,10 @@ package com.dragontalker;
         this, super, static, final, abstract, interface, package, import
 
 二、"人把大象装进冰箱"
-
     1. 面向过程: 强调的是功能行为, 以函数为最小单位, 考虑怎么做.
         Step 1: 把冰箱门打开
         Step 2: 抬起大象, 塞进冰箱
         Step 3: 把冰箱门关闭
-
     2. 面向对象: 强调具备了功能的对象, 以类/对象为最小单位, 考虑谁来做
         人{
             打开(冰箱){
@@ -40,7 +38,6 @@ package com.dragontalker;
         大象{
             进入(){}
         }
-
 三、面向对象的两个要素:
     类: 对一类事物的描述, 是抽象的, 概念上的定义
     对象: 是实际存在的该类事物的每个个体, 因而也称为实例(instance)
