@@ -28,6 +28,9 @@ public class PersonTest {
         p1.eat();
         p1.sleep();
         p1.talk("Hello world!");
+
+        Person p2 = new Person();
+        System.out.println(p2.name); // null
     }
 
 }
