@@ -31,6 +31,7 @@ public class PersonTest {
 
         Person p2 = new Person();
         System.out.println(p2.name); // null
+        System.out.println(p2.isMale); // false
     }
 
 }
