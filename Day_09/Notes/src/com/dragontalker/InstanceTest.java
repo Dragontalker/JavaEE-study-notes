@@ -16,7 +16,11 @@ package com.dragontalker;
 
 public class InstanceTest {
     public static void main(String[] args) {
+        Phone p = new Phone();
+        System.out.println(p); // 内存地址
 
+        p.sendEmail();
+        p.playGame();
     }
 }
 
