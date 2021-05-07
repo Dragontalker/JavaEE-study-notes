@@ -31,8 +31,8 @@ public class StudentExercise {
 
     // 遍历Student[]的数组操作
     public void printStudentList(Student[] list) {
-        for (int i = 0; i < list.length; i++) {
-            System.out.println(list[i].info());
+        for (Student student : list) {
+            System.out.println(student.info());
         }
     }
 
