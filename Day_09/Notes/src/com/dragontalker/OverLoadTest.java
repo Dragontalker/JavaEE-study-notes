@@ -25,4 +25,7 @@ public class OverLoadTest {
     public void getSum(String s, int i) {}
 
     public void getSum(int i, String s) {}
+
+    // 这样就不可以
+    //public int getSum(int i, int j) {};
 }
