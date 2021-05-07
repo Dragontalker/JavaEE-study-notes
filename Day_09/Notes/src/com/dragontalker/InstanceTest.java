@@ -23,8 +23,10 @@ public class InstanceTest {
         p.playGame();
 
         // 匿名对象
-        new Phone().sendEmail();
-        new Phone().playGame();
+        //new Phone().sendEmail();
+        //new Phone().playGame();
+        new Phone().price = 1999;
+        new Phone().showPrice(); // 0.0
     }
 }
 
@@ -39,4 +41,7 @@ class Phone {
         System.out.println("玩游戏");
     }
 
+    public void showPrice() {
+        System.out.println("手机价格为: " + price);
+    }
 }
