@@ -13,7 +13,7 @@ public class StudentExercise {
         }
 
         for (int i = 0; i < students.length; i++) {
-            System.out.println(students[i].number + ", " + students[i].state + ", " + students[i].score);
+            System.out.println(students[i].info());
         }
 
     }
@@ -24,5 +24,7 @@ class Student {
     int state; // 年级
     int score; // 成绩
 
-
+    public String info() {
+        return "学号: " + number + ", 年级: " + state + ", 成绩: " + score;
+    }
 }
