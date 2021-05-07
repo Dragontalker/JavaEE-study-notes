@@ -17,17 +17,27 @@ package com.dragontalker;
  */
 
 public class OverLoadTest {
+    public static void main(String[] args) {
+        OverLoadTest test = new OverLoadTest();
+        test.getSum(1, 2);
+    }
 
     // 如下的4个方法构成了重载
     public void getSum(int i, int j) {
-        System.out.println(i + j);
+        System.out.println("1");
     }
 
-    public void getSum(double d1, double d2) {}
+    public void getSum(double d1, double d2) {
+        System.out.println("2");
+    }
 
-    public void getSum(String s, int i) {}
+    public void getSum(String s, int i) {
+        System.out.println("3");
+    }
 
-    public void getSum(int i, String s) {}
+    public void getSum(int i, String s) {
+        System.out.println("4");
+    }
 
     // 这样就不可以
     //public int getSum(int i, int j) {};
