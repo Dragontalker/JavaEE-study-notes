@@ -11,6 +11,9 @@ package com.dragontalker;
 
     2. 举例:
         - Arrays类中的sort(), binarySearch()
+
+    3. 判断是否是重载:
+        - 跟方法的权限修饰符、返回值类型、形参变量名、方法体都没有关系!
  */
 
 public class OverLoadTest {
