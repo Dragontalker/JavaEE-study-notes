@@ -38,5 +38,7 @@ public class MethodArgsTest {
 
     //public void show(String[] strs) {}
 
+    // Error: the variable argument type String of the method
+    // show must be the last parameter
     //public void show (String ... strs, int i) {}
 }
