@@ -21,6 +21,10 @@ public class InstanceTest {
 
         p.sendEmail();
         p.playGame();
+
+        // 匿名对象
+        new Phone().sendEmail();
+        new Phone().playGame();
     }
 }
 
