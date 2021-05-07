@@ -14,15 +14,7 @@ public class StudentExercise {
 
 
 
-        for (int i = 0; i < students.length - 1; i++) {
-            for (int j = 0; j < students.length - 1 - i; j++) {
-                if (students[j].score > students[j + 1].score) {
-                    Student temp = students[j];
-                    students[j] = students[j + 1];
-                    students[j + 1] = temp;
-                }
-            }
-        }
+
     }
 
     // 遍历Student[]的数组操作
@@ -36,6 +28,18 @@ public class StudentExercise {
         for (int i = 0; i < list.length; i++) {
             if (list[i].state == state) {
                 System.out.println(list[i].info());
+            }
+        }
+    }
+
+    public void bubbleSort(Student[] list) {
+        for (int i = 0; i < list.length - 1; i++) {
+            for (int j = 0; j < list.length - 1 - i; j++) {
+                if (list[j].score > list[j + 1].score) {
+                    Student temp = list[j];
+                    list[j] = list[j + 1];
+                    list[j + 1] = temp;
+                }
             }
         }
     }
