@@ -25,9 +25,9 @@ public class StudentExercise {
     }
 
     public void searchState(Student[] list, int state) {
-        for (int i = 0; i < list.length; i++) {
-            if (list[i].state == state) {
-                System.out.println(list[i].info());
+        for (Student student : list) {
+            if (student.state == state) {
+                System.out.println(student.info());
             }
         }
     }
