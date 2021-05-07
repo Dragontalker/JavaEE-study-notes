@@ -30,6 +30,14 @@ public class InstanceTest {
     }
 }
 
+class PhoneMall {
+
+    public void show(Phone phone) {
+        phone.sendEmail();
+        phone.playGame();
+    }
+}
+
 class Phone {
     double price; // 价格
 
