@@ -7,6 +7,8 @@ package com.dragontalker;
 2. 具体使用:
     2.1 可变个数形参的格式: 数据类型 ... 变量名
     2.2 当调用可变个数形参的方法时, 传入的参数个数可以是: 0个, 1个, ....
+    2.3 可变个数形参的方法与本类中方法名相同, 形参不同的方法之间构成重载
+    2.4 可变个数形参的方法与本类方法名相同, 形参类型也相同的数组之间不构成重载
  */
 
 public class MethodArgsTest {
@@ -27,5 +29,11 @@ public class MethodArgsTest {
 
     public void show(String ... strs) {
         System.out.println("Method 3 called.");
+
+        for (int i = 0; i < strs.length; i++) {
+            System.out.println(strs[i]);
+        }
     }
+
+    //public void show(String[] strs) {}
 }
