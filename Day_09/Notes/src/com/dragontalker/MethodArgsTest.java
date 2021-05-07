@@ -10,10 +10,22 @@ package com.dragontalker;
  */
 
 public class MethodArgsTest {
+    public static void main(String[] args) {
+        MethodArgsTest test = new MethodArgsTest();
+        test.show(12);
+        test.show("Hello");
+        test.show("Hello", "World");
+    }
 
-    public void show(int i) {}
+    public void show(int i) {
+        System.out.println("Method 1 called.");
+    }
 
-    public void show(String s) {}
+    public void show(String s) {
+        System.out.println("Method 2 called.");
+    }
 
-    public void show(String ... strs) {}
+    public void show(String ... strs) {
+        System.out.println("Method 3 called.");
+    }
 }
