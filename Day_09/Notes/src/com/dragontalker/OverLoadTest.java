@@ -14,6 +14,9 @@ package com.dragontalker;
 
     3. 判断是否是重载:
         - 跟方法的权限修饰符、返回值类型、形参变量名、方法体都没有关系!
+
+    4. 在通过对象调用方法时, 如何确定某一个指定的方法:
+        - 方法名 ---> 参数列表
  */
 
 public class OverLoadTest {
