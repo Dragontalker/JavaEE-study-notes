@@ -14,8 +14,11 @@ public class StudentExercise {
 
         StudentExercise test = new StudentExercise();
         test.printStudentList(students);
-
-
+        System.out.println("***************");
+        test.searchState(students, 3);
+        test.bubbleSort(students);
+        System.out.println("***************");
+        test.printStudentList(students);
     }
 
     // 遍历Student[]的数组操作
