@@ -28,10 +28,27 @@ public class ArrayUtil {
     }
 
     // 反转数组
+    public void reverse(int[] arr) {
+
+    }
 
     // 复制数组
+    public int[] copy(int[] arr) {
+        return null;
+    }
 
     // 数组排序
+    public void sort(int[] arr) {
+
+    }
 
     // 遍历数组
+    public void print(int[] arr) {
+
+    }
+
+    // 查找指定元素
+    public int getIndex(int[] arr) {
+        return 0;
+    }
 }
