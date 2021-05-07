@@ -27,6 +27,9 @@ public class InstanceTest {
         //new Phone().playGame();
         new Phone().price = 1999;
         new Phone().showPrice(); // 0.0
+
+        PhoneMall newMall = new PhoneMall();
+        newMall.show(new Phone());
     }
 }
 
