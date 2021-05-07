@@ -12,11 +12,7 @@ public class StudentExercise {
             students[i].score = (int)(Math.random() * (100 - 0 + 1) + 1);
         }
 
-        for (int i = 0; i < students.length; i++) {
-            if (students[i].state == 3) {
-                System.out.println(students[i].info());
-            }
-        }
+
 
         for (int i = 0; i < students.length - 1; i++) {
             for (int j = 0; j < students.length - 1 - i; j++) {
@@ -33,6 +29,14 @@ public class StudentExercise {
     public void printStudentList(Student[] list) {
         for (Student student : list) {
             System.out.println(student.info());
+        }
+    }
+
+    public void searchState(Student[] list, int state) {
+        for (int i = 0; i < list.length; i++) {
+            if (list[i].state == state) {
+                System.out.println(list[i].info());
+            }
         }
     }
 
