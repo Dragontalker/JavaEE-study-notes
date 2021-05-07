@@ -12,7 +12,8 @@ public class StudentExercise {
             students[i].score = (int)(Math.random() * (100 + 1) + 1);
         }
 
-
+        StudentExercise test = new StudentExercise();
+        test.printStudentList(students);
 
 
     }
