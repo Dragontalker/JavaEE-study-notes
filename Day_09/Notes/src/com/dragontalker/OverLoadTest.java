@@ -28,4 +28,7 @@ public class OverLoadTest {
 
     // 这样就不可以
     //public int getSum(int i, int j) {};
+    //public void getSum(int m, int n) {};
+    //private void getSum(int i, int j) {};
+
 }
