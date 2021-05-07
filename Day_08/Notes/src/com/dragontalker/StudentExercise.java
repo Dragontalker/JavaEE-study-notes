@@ -7,6 +7,9 @@ public class StudentExercise {
 
         for (int i = 0; i < students.length; i++) {
             students[i] = new Student();
+            students[i].number = i + 1;
+            students[i].state = (int)(Math.random() * (6 - 1 + 1) + 1);
+            students[i].score = (int)(Math.random() * (100 - 0 + 1) + 1);
         }
 
     }
