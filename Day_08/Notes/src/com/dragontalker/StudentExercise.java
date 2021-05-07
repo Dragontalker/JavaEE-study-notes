@@ -12,6 +12,10 @@ public class StudentExercise {
             students[i].score = (int)(Math.random() * (100 - 0 + 1) + 1);
         }
 
+        for (int i = 0; i < students.length; i++) {
+            System.out.println(students[i].number + ", " + students[i].state + ", " + students[i].score);
+        }
+
     }
 }
 
@@ -19,4 +23,6 @@ class Student {
     int number; // 学号
     int state; // 年级
     int score; // 成绩
+
+
 }
