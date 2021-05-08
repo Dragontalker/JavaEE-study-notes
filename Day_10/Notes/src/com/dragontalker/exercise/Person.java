@@ -21,6 +21,14 @@ public class Person {
         return age;
     }
 
+    public void setName(String n) {
+        name = n;
+    }
+
+    public String getName() {
+        return name;
+    }
+
     // 绝对不要这样写!!
     //public int doAge(int a) {
         //age = a;
