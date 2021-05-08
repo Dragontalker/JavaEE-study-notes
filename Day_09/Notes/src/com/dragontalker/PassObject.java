@@ -5,7 +5,11 @@ public class PassObject {
     public static void main(String[] args) {
         PassObject test = new PassObject();
 
-        test.printAreas(new Circle(), 5);
+        Circle c = new Circle();
+
+        test.printAreas(c, 5);
+
+        System.out.println("now radius is " + c.radius);
     }
 
     public void printAreas(Circle c, int time) {
@@ -18,5 +22,7 @@ public class PassObject {
             c.radius = i;
             System.out.println(c.radius + "\t\t" + c.findArea());
         }
+
+        c.radius++;
     }
 }
