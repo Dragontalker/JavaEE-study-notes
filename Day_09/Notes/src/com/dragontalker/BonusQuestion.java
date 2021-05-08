@@ -8,4 +8,13 @@ public class BonusQuestion {
         System.out.println("a=" + a);
         System.out.println("b=" + b);
     }
+
+    // 方法一:
+    public static void method(int a, int b) {
+        a = a * 10;
+        b = b * 20;
+        System.out.println("a=" + a);
+        System.out.println("b=" + b);
+        System.exit(0);
+    }
 }
