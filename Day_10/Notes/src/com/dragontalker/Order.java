@@ -5,7 +5,7 @@ public class Order {
     int orderDefault;
     public int orderPublic;
 
-    public void methodPrivate() {}
+    private void methodPrivate() {}
 
     void methodDefault() {}
 
