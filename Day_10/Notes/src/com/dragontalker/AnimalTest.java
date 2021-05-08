@@ -10,6 +10,9 @@ package com.dragontalker;
     - 这个条件不能在属性声明时体现, 我们只能通过方法进行限制条件的添加.
     - 同时, 我们需要避免用户再使用"对象.属性"进行赋值.
     ---> 此时, 体现了封装性.
+
+二、封装性的体现:
+    - 我们将类的属性私有化(private), 同时, 提供公共的(public)方法来获取(getXxx)和设置(setXxx).
  */
 
 public class AnimalTest {
@@ -31,6 +34,7 @@ class Animal {
     int age;
     private int legs;
 
+    // 对属性的设置
     public void setLegs(int num) {
         if (num >= 0 && num % 2 == 0) {
             legs = num;
@@ -39,6 +43,7 @@ class Animal {
         }
     }
 
+    // 对属性的获取
     public int getLegs() {
         return legs;
     }
