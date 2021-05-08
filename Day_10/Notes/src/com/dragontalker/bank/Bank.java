@@ -12,7 +12,7 @@ public class Bank {
     }
 
     public int getNumberOfCustomers() {
-
+        return this.numberOfCustomers;
     }
 
     public Customer getCustomer(int index) {
