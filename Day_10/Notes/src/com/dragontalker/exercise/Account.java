@@ -34,4 +34,13 @@ public class Account {
     public double getAnnualInterestRate() {
         return this.annualInterestRate;
     }
+
+    public void withdraw(double amount) {
+        if (this.balance < amount) {
+            System.out.println("余额不足, 取款失败!");
+            return;
+        }
+        this.balance -= amount;
+        System.out.println("成功取出￥" + amount);
+    }
 }
