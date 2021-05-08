@@ -5,6 +5,12 @@ package com.dragontalker;
  */
 
 public class AnimalTest {
+    public static void main(String[] args) {
+        Animal a = new Animal();
+        a.name = "大黄";
+        a.age = 1;
+        a.legs = 4;
+    }
 }
 
 class Animal {
