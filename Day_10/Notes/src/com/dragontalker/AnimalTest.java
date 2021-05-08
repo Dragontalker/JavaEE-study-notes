@@ -13,6 +13,11 @@ package com.dragontalker;
 
 二、封装性的体现:
     - 我们将类的属性私有化(private), 同时, 提供公共的(public)方法来获取(getXxx)和设置(setXxx).
+    - 拓展: 封装性的体现:
+        1. 如上
+        2. 不对外暴露的私有的方法
+        3. 单例模式 ...
+
  */
 
 public class AnimalTest {
