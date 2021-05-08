@@ -18,21 +18,17 @@ package com.dragontalker;
 public class AnimalTest {
     public static void main(String[] args) {
         Animal a = new Animal();
-        a.name = "大黄";
-        //a.age = 1;
-        //a.legs = 4; // The field Animal.legs is not visible
-
         a.setLegs(6); // a.legs = 6
-        a.setLegs(-6); // a.legs = 0
+        a.setAge(10);
+
         a.show();
         System.out.println(a.getLegs());
-        a.setAge(10);
         System.out.println(a.getAge());
     }
 }
 
 class Animal {
-    String name;
+    private String name;
     private int age;
     private int legs;
 
