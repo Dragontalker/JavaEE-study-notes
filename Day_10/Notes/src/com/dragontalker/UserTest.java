@@ -15,8 +15,8 @@ public class UserTest {
         User u = new User();
         System.out.println(u.age);
 
-        //User u1 = new User(2);
-        //System.out.println(u1.age);
+        User u1 = new User(2);
+        System.out.println(u1.age);
     }
 }
 
@@ -24,9 +24,9 @@ class User {
     String name;
     int age = 1;
 
-    public void User() {}
+    public User() {}
 
-    public void User(int a) {
+    public User(int a) {
         age = a;
     }
 }
