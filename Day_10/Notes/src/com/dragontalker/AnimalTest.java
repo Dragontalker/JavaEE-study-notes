@@ -19,7 +19,7 @@ public class AnimalTest {
     public static void main(String[] args) {
         Animal a = new Animal();
         a.name = "大黄";
-        a.age = 1;
+        //a.age = 1;
         //a.legs = 4; // The field Animal.legs is not visible
 
         a.setLegs(6); // a.legs = 6
@@ -31,7 +31,7 @@ public class AnimalTest {
 
 class Animal {
     String name;
-    int age;
+    private int age;
     private int legs;
 
     // 对属性的设置
