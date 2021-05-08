@@ -2,6 +2,12 @@ package com.dragontalker.exercise;
 
 public class Person {
     private int age;
+    private String name;
+
+    public void Person(int a) {
+        age = 18;
+        name = "John Doe";
+    }
 
     public void setAge(int a) {
         if (a < 0 || a > 130) {
