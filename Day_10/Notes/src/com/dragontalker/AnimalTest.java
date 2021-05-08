@@ -9,6 +9,7 @@ package com.dragontalker;
     - 但是, 在实际问题中, 我们往往需要给属性赋值加入额外的条件.
     - 这个条件不能在属性声明时体现, 我们只能通过方法进行限制条件的添加.
     - 同时, 我们需要避免用户再使用"对象.属性"进行赋值.
+    ---> 此时, 体现了封装性.
  */
 
 public class AnimalTest {
@@ -21,6 +22,7 @@ public class AnimalTest {
         a.setLegs(6); // a.legs = 6
         a.setLegs(-6); // a.legs = 0
         a.show();
+        System.out.println(a.getLegs());
     }
 }
 
@@ -35,6 +37,10 @@ class Animal {
         } else {
             legs = 0;
         }
+    }
+
+    public int getLegs() {
+        return legs;
     }
 
     public void eat() {
