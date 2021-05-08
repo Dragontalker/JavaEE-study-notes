@@ -8,5 +8,10 @@ public class CustomerTest {
         customer.getAccount().deposit(100);
         customer.getAccount().withdraw(960);
         customer.getAccount().withdraw(2000);
+
+        System.out.println("Customer[" + customer.getLastName() + ", "
+                + customer.getFirstName() + "] has an account: with ID: " +
+                "Annual Interest Rate: " + customer.getAccount().getAnnualInterestRate() +
+                "%");
     }
 }
