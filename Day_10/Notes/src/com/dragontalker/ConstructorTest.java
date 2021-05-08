@@ -14,6 +14,9 @@ package com.dragontalker;
 public class ConstructorTest {
     public static void main(String[] args) {
         Person p = new Person();
+
+        Person p1 = new Person("Tom");
+        System.out.println(p1.name);
     }
 }
 
@@ -24,5 +27,9 @@ class Person {
     // 构造器
     public Person() {
         System.out.println("Person().....");
+    }
+
+    public Person(String str) {
+        name = str;
     }
 }
