@@ -48,6 +48,14 @@ class Animal {
         return legs;
     }
 
+    public void setAge(int num) {
+        if (num > 0) {
+            age = num;
+        } else {
+            age = 0;
+        }
+    }
+
     public void eat() {
         System.out.println("动物进食");
     }
