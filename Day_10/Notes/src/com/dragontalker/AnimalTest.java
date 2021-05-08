@@ -26,6 +26,8 @@ public class AnimalTest {
         a.setLegs(-6); // a.legs = 0
         a.show();
         System.out.println(a.getLegs());
+        a.setAge(10);
+        System.out.println(a.getAge());
     }
 }
 
@@ -54,6 +56,10 @@ class Animal {
         } else {
             age = 0;
         }
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public void eat() {
