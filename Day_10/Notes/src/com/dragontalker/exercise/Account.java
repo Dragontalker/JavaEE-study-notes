@@ -18,4 +18,13 @@ public class Account {
     public int getId() {
         return this.id;
     }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double getBalance() {
+        return this.balance;
+    }
+
 }
