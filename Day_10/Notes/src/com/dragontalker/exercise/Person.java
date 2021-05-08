@@ -10,4 +10,8 @@ public class Person {
 
         age = a;
     }
+
+    public int getAge() {
+        return age;
+    }
 }
