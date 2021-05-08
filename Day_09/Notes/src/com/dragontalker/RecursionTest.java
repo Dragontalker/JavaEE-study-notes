@@ -13,7 +13,8 @@ public class RecursionTest {
         RecursionTest test = new RecursionTest();
         System.out.println(test.getSum(5));
         System.out.println(test.getProduct(5));
-        System.out.println(test.getCustom(2));
+        System.out.println(test.getCustom(10));
+        System.out.println(test.getFibonacci(4));
     }
 
     public int getSum(int n) {
@@ -32,6 +33,8 @@ public class RecursionTest {
         }
     }
 
+    // 例3: 已知有一个数列: f(0)=1, f(1)=4, f(n+2)=2*f(n+1)+f(n),
+    // 其中n是大于0的整数, 求f(10)的值.
     public int getCustom(int n) {
         if (n == 0) {
             return 1;
@@ -39,6 +42,15 @@ public class RecursionTest {
             return 4;
         } else {
             return 2 * getCustom(n - 1) + getCustom(n - 2);
+        }
+    }
+
+    // 例4: Fibonacci
+    public int getFibonacci(int n) {
+        if (n < 3) {
+            return 1;
+        } else {
+            return getFibonacci(n - 1) + getFibonacci(n - 2);
         }
     }
 }
