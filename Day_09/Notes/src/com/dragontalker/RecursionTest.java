@@ -9,4 +9,16 @@ package com.dragontalker;
  */
 
 public class RecursionTest {
+    public static void main(String[] args) {
+        RecursionTest test = new RecursionTest();
+        System.out.println(test.getSum(5));
+    }
+
+    public int getSum(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n + getSum(n - 1);
+        }
+    }
 }
