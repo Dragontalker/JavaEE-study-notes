@@ -9,7 +9,7 @@ public class AnimalTest {
         Animal a = new Animal();
         a.name = "大黄";
         a.age = 1;
-        a.legs = 4;
+        //a.legs = 4; // The field Animal.legs is not visible
 
         a.setLegs(6);
         a.setLegs(-6);
@@ -20,7 +20,7 @@ public class AnimalTest {
 class Animal {
     String name;
     int age;
-    int legs;
+    private int legs;
 
     public void setLegs(int num) {
         if (num >= 0 && num % 2 == 0) {
