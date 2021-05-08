@@ -10,6 +10,8 @@ public class AnimalTest {
         a.name = "大黄";
         a.age = 1;
         a.legs = 4;
+
+        a.show();
     }
 }
 
@@ -18,7 +20,11 @@ class Animal {
     int age;
     int legs;
 
-    public  void eat() {
+    public void eat() {
         System.out.println("动物进食");
+    }
+
+    public void show() {
+        System.out.println("name = " + name + ", age = " + age + ", legs = " + legs);
     }
 }
