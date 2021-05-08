@@ -8,6 +8,8 @@ this关键字的使用:
     - 在类的方法中, 我们可以使用“this.属性”或“this.方法”
     - 通常情况下, 我们都选择省略"this"
     - 特殊情况下, 如果方法的形参和类的属性同名时, 我们必须显式的使用"this.变量"的方式, 表明此变量是属性, 而不是形参
+
+    3. this调用构造器
  */
 
 public class PersonTest {
@@ -18,6 +20,8 @@ public class PersonTest {
         System.out.println(p.getAge());
         System.out.println(p.getName());
         p.eat();
+
+        Person p1 = new Person("Tom");
     }
 }
 
@@ -25,9 +29,12 @@ class Person {
     private String name;
     private int age;
 
-    public Person() {}
+    public Person() {
+        this.eat();
+    }
 
     public Person(String name) {
+        this();
         this.name = name;
     }
 
