@@ -12,6 +12,7 @@ public class AnimalTest {
         a.legs = 4;
 
         a.setLegs(6);
+        a.setLegs(-6);
         a.show();
     }
 }
@@ -22,8 +23,10 @@ class Animal {
     int legs;
 
     public void setLegs(int num) {
-        if (num % 2 == 0) {
+        if (num >= 0 && num % 2 == 0) {
             legs = num;
+        } else {
+            legs = 0;
         }
     }
 
