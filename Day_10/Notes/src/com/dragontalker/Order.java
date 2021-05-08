@@ -1,7 +1,7 @@
 package com.dragontalker;
 
 public class Order {
-    private  int prderPrivate;
+    private  int orderPrivate;
     int orderDefault;
     public int orderPublic;
 
