@@ -11,6 +11,7 @@ public class AnimalTest {
         a.age = 1;
         a.legs = 4;
 
+        a.setLegs(6);
         a.show();
     }
 }
@@ -19,6 +20,12 @@ class Animal {
     String name;
     int age;
     int legs;
+
+    public void setLegs(int num) {
+        if (num % 2 == 0) {
+            legs = num;
+        }
+    }
 
     public void eat() {
         System.out.println("动物进食");
