@@ -27,4 +27,11 @@ public class Account {
         return this.balance;
     }
 
+    public void setAnnualInterestRate(double annualInterestRate) {
+        this.annualInterestRate = annualInterestRate;
+    }
+
+    public double getAnnualInterestRate() {
+        return this.annualInterestRate;
+    }
 }
