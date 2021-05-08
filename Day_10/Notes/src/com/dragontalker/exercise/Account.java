@@ -43,4 +43,11 @@ public class Account {
         this.balance -= amount;
         System.out.println("成功取出￥" + amount);
     }
+
+    public void deposit (double amount) {
+        if (amount > 0) {
+            this.balance += amount;
+            System.out.println("成功存入￥" + amount);
+        }
+    }
 }
