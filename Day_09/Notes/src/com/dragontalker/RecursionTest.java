@@ -12,6 +12,7 @@ public class RecursionTest {
     public static void main(String[] args) {
         RecursionTest test = new RecursionTest();
         System.out.println(test.getSum(5));
+        System.out.println(test.getProduct(5));
     }
 
     public int getSum(int n) {
@@ -19,6 +20,14 @@ public class RecursionTest {
             return 1;
         } else {
             return n + getSum(n - 1);
+        }
+    }
+
+    public int getProduct(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n * getProduct(n - 1);
         }
     }
 }
