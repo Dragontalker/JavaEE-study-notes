@@ -13,6 +13,7 @@ public class RecursionTest {
         RecursionTest test = new RecursionTest();
         System.out.println(test.getSum(5));
         System.out.println(test.getProduct(5));
+        System.out.println(test.getCustom(2));
     }
 
     public int getSum(int n) {
@@ -28,6 +29,16 @@ public class RecursionTest {
             return 1;
         } else {
             return n * getProduct(n - 1);
+        }
+    }
+
+    public int getCustom(int n) {
+        if (n == 0) {
+            return 1;
+        } else if (n == 1) {
+            return 4;
+        } else {
+            return 2 * getCustom(n - 1) + getCustom(n - 2);
         }
     }
 }
