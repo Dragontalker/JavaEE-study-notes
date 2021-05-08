@@ -11,8 +11,8 @@ public class AnimalTest {
         a.age = 1;
         //a.legs = 4; // The field Animal.legs is not visible
 
-        a.setLegs(6);
-        a.setLegs(-6);
+        a.setLegs(6); // a.legs = 6
+        a.setLegs(-6); // a.legs = 0
         a.show();
     }
 }
