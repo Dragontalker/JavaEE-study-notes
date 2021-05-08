@@ -19,4 +19,16 @@ public class Boy {
     public int getAge() {
         return this.age;
     }
+
+    public void marry(Girl girl) {
+        System.out.println("我想娶: " + girl.getName());
+    }
+
+    public void shout() {
+        if (this.age > 22) {
+            System.out.println("你可以去合法等级结婚了!");
+        } else {
+            System.out.println("先多谈一谈恋爱~~");
+        }
+    }
 }
