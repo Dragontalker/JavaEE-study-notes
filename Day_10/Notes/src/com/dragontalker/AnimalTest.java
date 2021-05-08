@@ -20,6 +20,9 @@ package com.dragontalker;
 
 三、封装性的体现, 需要权限修饰符来配合.
     1. Java规定的4种权限(从小到达排列): private, default, protected, public
+    2. 4种权限可以用来修饰类及类的内部结构: 属性、方法、构造器、内部类
+    3. 具体的, 4种权限都可以用来修饰类的内部结构:
+        - 修饰类的话, 只能用default和public
  */
 
 public class AnimalTest {
