@@ -21,4 +21,8 @@ public class Girl {
         System.out.println("我想嫁给" + boy.getName());
         boy.marry(this);
     }
+
+    public int compare(Girl girl) {
+        return this.age - girl.age;
+    }
 }
