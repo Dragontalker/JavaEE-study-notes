@@ -19,7 +19,7 @@ package com.dragontalker;
         3. 单例模式 ...
 
 三、封装性的体现, 需要权限修饰符来配合.
-    1. Java规定的4种权限(从小到达排列): private, 缺省, protect, public
+    1. Java规定的4种权限(从小到达排列): private, default, protected, public
  */
 
 public class AnimalTest {
