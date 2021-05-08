@@ -9,6 +9,11 @@ public class ValueTransferTest2 {
         data.n = 20;
 
         System.out.println("m = " + data.m + ", n = " + data.n);
+
+        ValueTransferTest2 test = new ValueTransferTest2();
+        test.swap(data);
+
+        System.out.println("m = " + data.m + ", n = " + data.n);
     }
 
     public void swap (Data data) {
