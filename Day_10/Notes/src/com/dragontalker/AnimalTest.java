@@ -6,3 +6,13 @@ package com.dragontalker;
 
 public class AnimalTest {
 }
+
+class Animal {
+    String name;
+    int age;
+    int legs;
+
+    public  void eat() {
+        System.out.println("动物进食");
+    }
+}
