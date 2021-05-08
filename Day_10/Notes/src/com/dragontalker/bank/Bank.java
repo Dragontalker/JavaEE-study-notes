@@ -16,6 +16,9 @@ public class Bank {
     }
 
     public Customer getCustomer(int index) {
-
+        if (index >= 0 && index < numberOfCustomers) {
+            return customers[index];
+        }
+        return null;
     }
 }
