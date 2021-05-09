@@ -19,6 +19,8 @@ public class Student extends Person{
 
     public void study() {
         System.out.println("学生: 学习知识");
+        this.eat();
+        super.eat();
     }
 
     public void show() {
