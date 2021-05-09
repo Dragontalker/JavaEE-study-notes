@@ -20,6 +20,7 @@ package com.dragontalker;
     6. 如果使用的类或接口是java.lang包下定义的, 则可以省略import结构
     7. 如果使用的类或接口是本包下定义的, 则也可以省略import结构
     8. 如果在源文件中, 使用了不同包下的同名的类, 则必须至少有一个类需要以全类名的方式显示
+    9. 如果我们去使用"xxx.*"方式表明可以调用xxx包下的所有结构, 但是如果使用的是xxx子包下的结构, 则需要额外导入
  */
 
 import com.dragontalker.bank.Bank;
