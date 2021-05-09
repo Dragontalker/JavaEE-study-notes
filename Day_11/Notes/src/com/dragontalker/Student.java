@@ -17,5 +17,7 @@ public class Student extends Person{
 
     public void show() {
         System.out.println("名字是" + this.name);
+        sleep();
+        eat();
     }
 }
