@@ -13,6 +13,7 @@ public class Student extends Person{
         System.out.println("学习");
     }
 
+    // 对父类中的eat方法进行重写
     public void eat() {
         System.out.println("学生应该多吃有营养的食物");
     }
