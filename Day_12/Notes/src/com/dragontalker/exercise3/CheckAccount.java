@@ -7,4 +7,14 @@ public class CheckAccount extends Account{
         super(id, balance, annualInterestRate);
         this.overdraft = overdraft;
     }
+
+    @Override
+    public void withdraw(double amount) {
+        if (getBalance() >= amount) {
+            super.withdraw(amount);
+        } else {
+            this.overdraft = amount - getBalance();
+            super.withdraw(getBalance());
+        }
+    }
 }
