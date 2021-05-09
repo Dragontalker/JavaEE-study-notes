@@ -1,6 +1,6 @@
 package com.dragontalker;
 
-public class Person {
+public class Person extends Creature{
     protected String name;
     protected int age;
 

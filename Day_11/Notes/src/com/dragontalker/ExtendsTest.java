@@ -37,5 +37,6 @@ public class ExtendsTest {
         Student s1 = new Student();
         s1.eat();
         s1.sleep();
+        s1.breath();
     }
 }
