@@ -11,6 +11,8 @@ package com.dragontalker;
 二、继承性的格式: class A extends B {}
     A: 子类、派生类、subclass
     B: 父类、超类、基类、superclass
+
+    体现: 一旦子类A继承父类B以后, 子类A中就获取了父类B中声明的结构、属性、方法
  */
 
 public class ExtendsTest {

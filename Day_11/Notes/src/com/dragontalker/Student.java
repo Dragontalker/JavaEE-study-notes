@@ -14,4 +14,8 @@ public class Student extends Person{
     public void study() {
         System.out.println("学习");
     }
+
+    public void show() {
+        System.out.println("名字是" + this.name);
+    }
 }
