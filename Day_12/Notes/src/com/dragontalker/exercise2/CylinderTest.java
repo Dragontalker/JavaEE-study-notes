@@ -10,6 +10,6 @@ public class CylinderTest {
         System.out.println("圆柱的体积为: " + volume);
 
         double area = cylinder.findArea();
-        System.out.println("底面圆的面积为: " + area);
+        System.out.println("圆柱的表面积为: " + area);
     }
 }
