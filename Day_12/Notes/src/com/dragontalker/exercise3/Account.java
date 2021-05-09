@@ -39,4 +39,14 @@ public class Account {
     public double getMonthlyInterest() {
         return annualInterestRate / 12;
     }
+
+    public void withdraw(double amount) {
+        if (balance >= amount) {
+            this.balance -= amount;
+            return;
+        }
+        System.out.println("余额不足");
+    }
+
+
 }
