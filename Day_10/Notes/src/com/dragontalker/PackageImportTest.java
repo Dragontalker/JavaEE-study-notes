@@ -21,7 +21,7 @@ package com.dragontalker;
 
 import com.dragontalker.bank.Bank;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class PackageImportTest {
     public static void main(String[] args) {
@@ -29,5 +29,6 @@ public class PackageImportTest {
         System.out.println(info);
 
         Bank bank = new Bank(10);
+        Scanner scanner = new Scanner(System.in);
     }
 }
