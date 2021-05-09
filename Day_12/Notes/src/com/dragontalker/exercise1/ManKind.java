@@ -1,4 +1,4 @@
-package com.dragontalker.exercise;
+package com.dragontalker.exercise1;
 
 public class ManKind {
     private int sex;

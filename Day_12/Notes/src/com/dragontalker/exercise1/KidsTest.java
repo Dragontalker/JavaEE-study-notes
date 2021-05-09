@@ -1,4 +1,4 @@
-package com.dragontalker.exercise;
+package com.dragontalker.exercise1;
 
 public class KidsTest {
     public static void main(String[] args) {
