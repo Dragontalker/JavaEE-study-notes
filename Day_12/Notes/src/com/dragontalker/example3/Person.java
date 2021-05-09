@@ -1,8 +1,8 @@
 package com.dragontalker.example3;
 
 public class Person {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person() {}
 

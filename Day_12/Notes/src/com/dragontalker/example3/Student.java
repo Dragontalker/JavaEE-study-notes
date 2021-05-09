@@ -9,11 +9,16 @@ public class Student extends Person{
         this.major = major;
     }
 
+    @Override
     public void eat() {
         System.out.println("学生: 多吃有营养的食物");
     }
 
     public void study() {
         System.out.println("学生: 学习知识");
+    }
+
+    public void show() {
+        System.out.println("name = " + super.name + ", age = " + super.age);
     }
 }
