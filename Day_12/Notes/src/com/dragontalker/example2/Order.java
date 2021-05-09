@@ -10,5 +10,11 @@ public class Order {
     protected int orderProtected;
     public int orderPublic;
 
+    private  void methodPrivate() {}
 
+    void methodDefault() {}
+
+    protected void methodProtected() {}
+
+    public void methodPublic() {}
 }
