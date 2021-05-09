@@ -1,8 +1,6 @@
 package com.dragontalker;
 
-public class Student {
-    String name;
-    int age;
+public class Student extends Person{
     String major;
 
     public Student() {}
@@ -11,14 +9,6 @@ public class Student {
         this.name = name;
         this.age = age;
         this.major = major;
-    }
-
-    public void eat() {
-        System.out.println("吃饭");
-    }
-
-    public void sleep() {
-        System.out.println("睡觉");
     }
 
     public void study() {
