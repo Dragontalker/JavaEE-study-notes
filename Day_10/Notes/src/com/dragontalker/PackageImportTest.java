@@ -16,6 +16,7 @@ package com.dragontalker;
     2. 在源文件中显式的使用import结构导入指定包下的类、接口
     3. 声明在包的声明和类的声明之间
     4. 如果需要导入多个结构, 则并列写出即可
+    5. 可以使用"xxx.*"的方式, 表示可以导入xxx包下的所有结构
  */
 
 import com.dragontalker.bank.Bank;
