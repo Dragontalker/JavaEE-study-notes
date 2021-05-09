@@ -34,4 +34,9 @@ public class Account {
     public void setAnnualInterestRate(double annualInterestRate) {
         this.annualInterestRate = annualInterestRate;
     }
+
+    // 返回月利率
+    public double getMonthlyInterest() {
+        return annualInterestRate / 12;
+    }
 }
