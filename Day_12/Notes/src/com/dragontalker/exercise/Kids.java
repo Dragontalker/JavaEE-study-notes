@@ -1,6 +1,6 @@
 package com.dragontalker.exercise;
 
-public class Kids {
+public class Kids extends ManKind{
     private int yearsOld;
 
     public Kids() {}
@@ -18,6 +18,6 @@ public class Kids {
     }
 
     public void printAge() {
-        System.out.println("I am " + yearsOld + "years old.");
+        System.out.println("I am " + yearsOld + " years old.");
     }
 }
