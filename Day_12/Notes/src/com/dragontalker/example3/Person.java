@@ -3,8 +3,11 @@ package com.dragontalker.example3;
 public class Person {
     protected String name;
     protected int age;
+    protected int id;
 
-    public Person() {}
+    public Person() {
+        this.id = 1001;
+    }
 
     public Person(String name) {
         this.name = name;

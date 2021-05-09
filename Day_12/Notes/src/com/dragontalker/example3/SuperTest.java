@@ -8,6 +8,7 @@ super关键字的使用:
 
 public class SuperTest {
     public static void main(String[] args) {
-
+        Student s1 = new Student();
+        s1.show();
     }
 }
