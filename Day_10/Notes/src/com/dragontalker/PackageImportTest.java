@@ -17,6 +17,8 @@ package com.dragontalker;
     3. 声明在包的声明和类的声明之间
     4. 如果需要导入多个结构, 则并列写出即可
     5. 可以使用"xxx.*"的方式, 表示可以导入xxx包下的所有结构
+    6. 如果使用的类或接口是java.lang包下定义的, 则可以省略import结构
+    7. 如果使用的类或接口是本包下定义的, 则也可以省略import结构
  */
 
 import com.dragontalker.bank.Bank;
@@ -30,5 +32,6 @@ public class PackageImportTest {
 
         Bank bank = new Bank(10);
         Scanner scanner = new Scanner(System.in);
+        Person p = new Person();
     }
 }
