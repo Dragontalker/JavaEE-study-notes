@@ -15,4 +15,16 @@ public class ManKind {
     public int getSex() {
         return this.sex;
     }
+
+    public void setSalary(int salary) {
+        if (salary < 0) {
+            System.out.println("错误！Salary不能为负!");
+        } else {
+            this.salary = salary;
+        }
+    }
+
+    public int getSalary() {
+        return this.salary;
+    }
 }
