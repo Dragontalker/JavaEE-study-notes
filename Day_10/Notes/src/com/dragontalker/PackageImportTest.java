@@ -15,7 +15,10 @@ package com.dragontalker;
     1. import: 导入
     2. 在源文件中显式的使用import结构导入指定包下的类、接口
     3. 声明在包的声明和类的声明之间
+    4. 如果需要导入多个结构, 则并列写出即可
  */
+
+import com.dragontalker.bank.Bank;
 
 import java.util.Arrays;
 
@@ -23,5 +26,7 @@ public class PackageImportTest {
     public static void main(String[] args) {
         String info = Arrays.toString(new int[]{1, 2, 3});
         System.out.println(info);
+
+        Bank bank = new Bank(10);
     }
 }
