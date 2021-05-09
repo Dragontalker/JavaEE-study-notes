@@ -38,5 +38,9 @@ public class ExtendsTest {
         s1.eat();
         s1.sleep();
         s1.breath();
+
+        // Create的父类是java.lang.Object
+        Creature c = new Creature();
+
     }
 }
