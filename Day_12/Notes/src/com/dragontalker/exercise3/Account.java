@@ -48,5 +48,9 @@ public class Account {
         System.out.println("余额不足");
     }
 
-
+    public void deposit(double amount) {
+        if (amount > 0) {
+            this.balance =+ amount;
+        }
+    }
 }
