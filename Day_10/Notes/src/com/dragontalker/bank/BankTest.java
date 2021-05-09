@@ -9,6 +9,9 @@ public class BankTest {
         bank.getCustomer(0).getAccount().withdraw(500);
         double balance = bank.getCustomer(0).getAccount().getBalance();
         System.out.println("客户: " + bank.getCustomer(0).getFirstName() +
-                "的账户余额为: " + balance);
+                "的账户余额为$" + balance);
+
+        bank.addCustomer("万里", "杨");
+        System.out.println("银行客户的个数为: " + bank.getNumberOfCustomers());
     }
 }
