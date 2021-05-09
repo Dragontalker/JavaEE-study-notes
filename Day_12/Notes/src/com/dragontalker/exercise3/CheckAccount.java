@@ -8,6 +8,10 @@ public class CheckAccount extends Account{
         this.overdraft = overdraft;
     }
 
+    public double getOverdraft() {
+        return this.overdraft;
+    }
+
     @Override
     public void withdraw(double amount) {
         if (getBalance() >= amount) {
