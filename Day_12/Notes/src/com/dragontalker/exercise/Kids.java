@@ -9,6 +9,13 @@ public class Kids {
         this.yearsOld = yearsOld;
     }
 
+    public void setYearsOld(int yearsOld) {
+        this.yearsOld = yearsOld;
+    }
+
+    public int getYearsOld() {
+        return this.yearsOld;
+    }
 
     public void printAge() {
         System.out.println("I am " + yearsOld + "years old.");
