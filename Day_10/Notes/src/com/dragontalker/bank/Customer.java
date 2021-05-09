@@ -1,7 +1,5 @@
 package com.dragontalker.bank;
 
-import com.dragontalker.exercise.Account;
-
 public class Customer {
     private String firstName;
     private String lastName;
@@ -20,7 +18,7 @@ public class Customer {
         return this.lastName;
     }
 
-    public com.dragontalker.exercise.Account getAccount() {
+    public Account getAccount() {
         return this.account;
     }
 
