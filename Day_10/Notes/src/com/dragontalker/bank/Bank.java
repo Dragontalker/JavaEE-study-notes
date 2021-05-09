@@ -4,7 +4,9 @@ public class Bank {
     private Customer[] customers;
     private int numberOfCustomers;
 
-    public Bank() {}
+    public Bank(int reserve) {
+        this.customers = new Customer[reserve];
+    }
 
     public void addCustomer(String firstName, String lastName) {
         Customer customer = new Customer(firstName, lastName);
