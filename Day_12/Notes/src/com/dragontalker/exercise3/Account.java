@@ -50,7 +50,7 @@ public class Account {
 
     public void deposit(double amount) {
         if (amount > 0) {
-            this.balance =+ amount;
+            this.balance += amount;
         }
     }
 }
