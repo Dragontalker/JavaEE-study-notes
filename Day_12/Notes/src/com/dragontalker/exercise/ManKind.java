@@ -35,4 +35,9 @@ public class ManKind {
             System.out.println("woman");
         }
     }
+
+    public void employed() {
+        String jobInfo = (salary > 0) ? "Employed!" : "Unemployed!";
+        System.out.println(jobInfo);
+    }
 }
