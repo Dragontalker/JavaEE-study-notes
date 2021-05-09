@@ -10,4 +10,16 @@ public class Account {
         this.balance = balance;
         this.annualInterestRate = annualInterestRate;
     }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public double getBalance() {
+        return this.balance;
+    }
+
+    public double getAnnualInterestRate() {
+        return this.annualInterestRate;
+    }
 }
