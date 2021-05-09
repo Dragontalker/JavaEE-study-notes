@@ -12,9 +12,11 @@ public class CheckAccount extends Account{
     public void withdraw(double amount) {
         if (getBalance() >= amount) {
             super.withdraw(amount);
-        } else {
-            this.overdraft = amount - getBalance();
+        } else if (this.overdraft >= amount - getBalance()){
+            this.overdraft -= amount - getBalance();
             super.withdraw(getBalance());
+        } else {
+            System.out.println("超过可透支限额！");
         }
     }
 }
