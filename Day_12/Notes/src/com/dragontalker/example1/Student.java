@@ -17,4 +17,10 @@ public class Student extends Person{
     public void eat() {
         System.out.println("学生应该多吃有营养的食物");
     }
+
+    // Wrong return type from inheritence.
+    //public int info1() {
+        //return 1;
+    //}
+
 }

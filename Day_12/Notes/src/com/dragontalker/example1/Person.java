@@ -18,4 +18,8 @@ public class Person {
     public void walk(int distance) {
         System.out.println("走了" + distance + "公里");
     }
+
+    public double info1() {
+        return 1.0;
+    }
 }
