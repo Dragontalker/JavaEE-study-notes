@@ -27,4 +27,12 @@ public class ManKind {
     public int getSalary() {
         return this.salary;
     }
+
+    public void manOrWoman() {
+        if (sex == 1) {
+            System.out.println("man");
+        } else {
+            System.out.println("woman");
+        }
+    }
 }
