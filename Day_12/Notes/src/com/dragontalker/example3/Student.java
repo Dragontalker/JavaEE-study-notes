@@ -12,6 +12,11 @@ public class Student extends Person{
         this.major = major;
     }
 
+    public Student(String name, int age, String major) {
+        super(name, age);
+        this.major = major;
+    }
+
     @Override
     public void eat() {
         System.out.println("学生: 多吃有营养的食物");
