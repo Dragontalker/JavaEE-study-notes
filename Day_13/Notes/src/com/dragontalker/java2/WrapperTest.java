@@ -14,14 +14,23 @@ import java.net.InetSocketAddress;
 
 public class WrapperTest {
 
-    // 基本数据类型、包装类 ---> String类型
+    // 基本数据类型、包装类 ---> String类型: 调用String重载的valueOf(Xxx)
     @Test
     public void test4() {
         int num1 = 10;
 
-        // 方式一: 连接运算
+        // 方式1: 连接运算
         String str1 = num1 + "";
 
+        // 方式2: 调用String的valueOf(Xxx xxx)
+        float f1 = 12.3f;
+        String str2 = String.valueOf(f1);
+        System.out.println(str2);
+
+        Double d1 = new Double(12.4);
+        String str3 = String.valueOf(d1);
+        System.out.println(str2);
+        System.out.println(str3);
     }
 
     /*
