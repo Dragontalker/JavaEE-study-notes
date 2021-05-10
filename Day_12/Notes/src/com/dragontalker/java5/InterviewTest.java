@@ -27,4 +27,15 @@ class Sheep extends Animal {
     }
 }
 
-
+public class InterviewTest {
+    public static Animal getInstance(int key) {
+        switch (key) {
+            case 0:
+                return new Cat();
+            case 1:
+                return new Dog();
+            default:
+                return new Sheep();
+        }
+    }
+}
