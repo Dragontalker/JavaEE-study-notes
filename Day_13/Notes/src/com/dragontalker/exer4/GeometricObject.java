@@ -1,6 +1,22 @@
 package com.dragontalker.exer4;
 
 public class GeometricObject {
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
     protected String color;
     protected double weight;
 
