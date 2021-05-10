@@ -17,12 +17,15 @@ public class WrapperTest {
     // 基本数据类型 ---> 包装类: 调用包装类的构造器
     @Test
     public void test1() {
-         int num1 = 10;
-         Integer in1 = new Integer(num1);
-         System.out.println(in1.toString());
+        int num1 = 10;
+        Integer in1 = new Integer(num1);
+        System.out.println(in1.toString());
 
-         Integer in2 = new Integer("123");
+        Integer in2 = new Integer("123");
         System.out.println(in2.toString());
+
+        //Integer in3 = new Integer("123abc");
+        //System.out.println(in3.toString());
     }
 
 }
