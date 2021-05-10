@@ -28,4 +28,18 @@ public class Circle extends GeometricObject{
     public double findArea() {
         return Math.PI * this.radius * this.radius;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj instanceof Circle) {
+            Circle c = (Circle)obj;
+            return this.radius == c.radius;
+        }
+
+        return false;
+    }
 }
