@@ -3,7 +3,10 @@ package com.dragontalker.interview;
 public class InterviewTest1 {
     public static void main(String[] args) {
         Base1 base = new Sub1();
-        base.add(1, 2, 3);
+        base.add(1, 2, 3); // sub_1 虚拟调用
+
+        Sub1 s= (Sub1)base;
+        s.add(1, 2, 3); // sub_2 方法重载
     }
 }
 
@@ -16,5 +19,9 @@ class Base1 {
 class Sub1 extends Base1 {
     public void add(int a, int[] arr) {
         System.out.println("sub_1");
+    }
+
+    public void add(int a, int b, int c) {
+        System.out.println("sub_2");
     }
 }
