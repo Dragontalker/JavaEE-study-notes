@@ -19,5 +19,11 @@ public class MyRectangle extends GeometricObject{
         return this.width;
     }
 
+    public void setHeight(double height) {
+        this.height = height;
+    }
 
+    public double getHeight() {
+        return this.height;
+    }
 }
