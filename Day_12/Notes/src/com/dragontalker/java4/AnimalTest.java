@@ -65,5 +65,8 @@ class Driver {
     public void getConnection(Connection connection) {
         // conn = new MySQLConnection
         // 规范的步骤去操作数据
+        // conn.method1();
+        // conn.method2();
+        // conn.method3();
     }
 }
