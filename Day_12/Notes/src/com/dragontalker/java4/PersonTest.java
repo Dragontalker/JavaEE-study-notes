@@ -11,6 +11,8 @@ package com.dragontalker.java4;
 4. 多态性的使用前提:
     4.1 要有类的继承关系
     4.2 方法的重写
+
+5. 对象的多态性: 只适用于方法, 不适用于属性(编译和运行都看左边)
  */
 
 public class PersonTest {
