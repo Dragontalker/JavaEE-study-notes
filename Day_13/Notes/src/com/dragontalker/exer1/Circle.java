@@ -8,4 +8,17 @@ public class Circle extends GeometricObject{
         super(color, weight);
         this.radius = radius;
     }
+
+    public void setRadius(double radius) {
+       this.radius = radius;
+    }
+
+    public double getRadius() {
+        return this.radius;
+    }
+
+    @Override
+    public double findArea() {
+        return Math.PI * this.radius * this.radius;
+    }
 }
