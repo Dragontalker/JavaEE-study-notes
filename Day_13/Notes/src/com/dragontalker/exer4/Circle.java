@@ -42,4 +42,11 @@ public class Circle extends GeometricObject{
 
         return false;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
