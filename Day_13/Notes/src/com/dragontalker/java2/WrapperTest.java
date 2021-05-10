@@ -14,6 +14,14 @@ import java.net.InetSocketAddress;
 
 public class WrapperTest {
 
+    // 包装类 ---> 基本数据类型
+    @Test
+    public void test2() {
+        Integer in1 = new Integer(12);
+        int i1 = in1.intValue();
+        System.out.println(i1 + 1);
+    }
+
     // 基本数据类型 ---> 包装类: 调用包装类的构造器
     @Test
     public void test1() {
