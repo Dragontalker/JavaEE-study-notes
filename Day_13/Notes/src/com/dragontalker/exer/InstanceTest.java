@@ -8,6 +8,14 @@ class Person {
     protected int age = 50;
 
     public String getInfo() {
-        return "Name: " + name + "\n" + "age: " + age;
+        return "Name: " + name + "\nage: " + age;
+    }
+}
+
+class Student extends Person {
+    protected String school = "pku";
+
+    public String getInfo() {
+        return "Name: " + name + "\nage: " + age + "\nschool: " + school;
     }
 }
