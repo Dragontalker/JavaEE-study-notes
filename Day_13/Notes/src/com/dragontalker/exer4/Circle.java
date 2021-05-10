@@ -3,9 +3,9 @@ package com.dragontalker.exer4;
 public class Circle extends GeometricObject{
     private double radius;
 
-    public Circle() {
+    public Circle(double radius) {
         super();
-        this.weight = 1.0;
+        this.radius = radius;
     }
 
     public Circle(String color, double weight) {
