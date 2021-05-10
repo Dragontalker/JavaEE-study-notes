@@ -34,9 +34,11 @@ public class PersonTest {
                 2. 我们在向下转型之前, 先进行instanceof的判断
                 3. 一旦返回true, 就向下转型
                 4. 如果返回false, 不进行向下转型
+            - 如果 a instanceof A返回true, a instanceof B也返回true， 则B是A的父类
 
          */
-
+        System.out.println(p2 instanceof Man);
+        System.out.println(p2 instanceof Object);
 
 
     }
