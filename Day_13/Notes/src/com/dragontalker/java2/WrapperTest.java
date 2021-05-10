@@ -36,6 +36,14 @@ public class WrapperTest {
         Boolean b2 = new Boolean("true");
         Boolean b3 = new Boolean("true123");
         System.out.println(b3);
-    }
 
+        Order order = new Order();
+        System.out.println(order.isMale);
+        System.out.println(order.isFemale);
+    }
+}
+
+class Order {
+    boolean isMale;
+    Boolean isFemale;
 }
