@@ -11,6 +11,9 @@ public class GeometricTest {
 
         boolean isEquals = test.equalsArea(c1, c2);
         System.out.println("c1和c2的面积是否相等？" + isEquals);
+
+        MyRectangle rect = new MyRectangle(2.1, 3.4, "red", 2.0);
+        test.displayGeometricObject(rect);
     }
 
     public void displayGeometricObject(GeometricObject o) {
