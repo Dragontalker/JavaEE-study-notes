@@ -25,5 +25,7 @@ public class Circle extends GeometricObject{
         this.radius = radius;
     }
 
-
+    public double findArea() {
+        return Math.PI * this.radius * this.radius;
+    }
 }
