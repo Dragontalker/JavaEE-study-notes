@@ -40,6 +40,9 @@ public class PersonTest {
         System.out.println(p2 instanceof Man);
         System.out.println(p2 instanceof Object);
 
-
+        // 练习:
+        // 问题一: 编译时通过, 运行时不通过
+        Person p3 = new Woman();
+        Man m3 = (Man)p3;
     }
 }
