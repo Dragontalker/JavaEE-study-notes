@@ -20,6 +20,9 @@ package com.dragontalker.java1;
 
     4. 像String, Date, File, 包装类等重写了Object类中的equals()方法.
         - 重写之后, 比较的不是两个引用的地址是否相同, 而是比较两个对象的"实体内容"是否相同
+
+    5. 通常情况下, 我们自定义的类如果使用equals()的话, 也通常是比较两个对象的"实体内容"是否相同
+        - 就需要对equals()进行重写
  */
 
 public class EqualsTest {
