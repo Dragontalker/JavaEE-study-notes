@@ -23,6 +23,7 @@ public class WrapperTest {
         //int num1 = (int)str1;
         //Integer in1 = (Integer)str1; Integer和String没有子父类的关系
 
+        // 可能会报NumberFormatException
         int num2 = Integer.parseInt(str1);
         System.out.println(num2 + 1);
 
