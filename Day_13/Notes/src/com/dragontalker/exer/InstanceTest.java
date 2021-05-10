@@ -1,6 +1,10 @@
 package com.dragontalker.exer;
 
 public class InstanceTest {
+    public void method(Person e) {
+        String info = e.getInfo(); // 虚拟方法调用
+        System.out.println(info);
+    }
 }
 
 class Person {
