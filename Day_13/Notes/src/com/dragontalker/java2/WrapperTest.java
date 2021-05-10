@@ -25,12 +25,18 @@ public class WrapperTest {
         // 基本数据类型 ---> 包装类的对象
         //method(num1);
 
-        // 自动装箱
+        // 自动装箱: 基本数据类型 ---> 包装类的对象
         int num2 =10;
         Integer in1 = num2;
 
         boolean b1 = true;
         Boolean b2 = b1;
+
+        // 自动拆箱: 包装类 ---> 基本数据类型
+        System.out.println(in1.toString());
+
+        int num3 = in1; // 自动拆箱
+
     }
 
     public void method(Object obj) {
