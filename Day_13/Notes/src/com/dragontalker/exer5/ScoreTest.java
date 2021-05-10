@@ -1,8 +1,11 @@
 package com.dragontalker.exer5;
 
+import java.util.Scanner;
+
 public class ScoreTest {
     public static void main(String[] args) {
         // 1. 实例化Scanner, 用于从键盘获取学生成绩
+        Scanner scan = new Scanner(System.in);
 
         // 2. 创建Vector对象: Vector v = new Vector(); 相当于数组
 
