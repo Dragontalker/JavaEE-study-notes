@@ -1,6 +1,6 @@
 package com.dragontalker.java;
 
-public class Woman {
+public class Woman extends Person{
 
     boolean isBeauty;
 

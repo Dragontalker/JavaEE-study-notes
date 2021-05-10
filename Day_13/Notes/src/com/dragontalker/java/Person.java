@@ -6,6 +6,8 @@ public class Person {
 
     int id = 1001;
 
+    public Person() {}
+
     public void eat() {
         System.out.println("人: 吃饭");
     }

@@ -1,10 +1,11 @@
 package com.dragontalker.java;
 
-public class Man {
+public class Man extends Person{
 
     boolean isSmoking;
 
     int id = 1002;
+
 
     public void earnMoney() {
         System.out.println("男人负责挣钱养家");
