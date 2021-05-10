@@ -20,6 +20,10 @@ public class WrapperTest {
         Integer in1 = new Integer(12);
         int i1 = in1.intValue();
         System.out.println(i1 + 1);
+
+        Float f1 = new Float(12.3);
+        float f2 = f1.floatValue();
+        System.out.println(f2 + 1);
     }
 
     // 基本数据类型 ---> 包装类: 调用包装类的构造器
