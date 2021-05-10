@@ -10,4 +10,14 @@ public class MyRectangle extends GeometricObject{
         this.width = width;
         this.height = height;
     }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public double getWidth() {
+        return this.width;
+    }
+
+
 }
