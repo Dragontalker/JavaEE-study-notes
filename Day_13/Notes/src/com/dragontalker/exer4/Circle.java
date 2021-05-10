@@ -7,4 +7,14 @@ public class Circle extends GeometricObject{
         super();
         this.weight = 1.0;
     }
+
+    public Circle(String color, double weight) {
+        super(color, weight);
+    }
+
+    public Circle(double radius, String color, double weight) {
+        super(color, weight);
+        this.radius = radius;
+    }
+
 }
