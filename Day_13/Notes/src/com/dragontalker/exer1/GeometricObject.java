@@ -20,4 +20,12 @@ public class GeometricObject {
     public void setWeight(double weight) {
         this.weight = weight;
     }
+
+    public GeometricObject(String color, double weight) {
+        super();
+        this.color = color;
+        this.weight = weight;
+    }
+
+
 }
