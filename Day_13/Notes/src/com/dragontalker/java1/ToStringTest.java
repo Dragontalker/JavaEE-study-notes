@@ -5,6 +5,8 @@ Object类中toString()的使用:
 
  */
 
+import java.util.Date;
+
 public class ToStringTest {
     public static void main(String[] args) {
         Customer c1 = new Customer("Tom", 22);
@@ -13,5 +15,8 @@ public class ToStringTest {
 
         String str = new String("MM");
         System.out.println(str);
+
+        Date date = new Date(2312312321312L);
+        System.out.println(date);
     }
 }
