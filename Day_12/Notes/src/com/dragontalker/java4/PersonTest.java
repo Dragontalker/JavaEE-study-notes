@@ -19,6 +19,10 @@ public class PersonTest {
         //*************
         // (对象的)多态性: 父类的引用指向子类的对象
         Person p2 = new Man();
-        Person p3 = new Woman();
+        //Person p3 = new Woman();
+
+        // 多态的使用:
+        p2.eat();
+        p2.walk();
     }
 }
