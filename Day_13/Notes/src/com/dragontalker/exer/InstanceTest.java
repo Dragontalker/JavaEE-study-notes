@@ -19,3 +19,11 @@ class Student extends Person {
         return "Name: " + name + "\nage: " + age + "\nschool: " + school;
     }
 }
+
+class Graduate extends Student {
+    public String major = "IT";
+
+    public String getInfo() {
+        return "Name: " + name + "\nage: " + age + "\nschool: " + school;
+    }
+}
