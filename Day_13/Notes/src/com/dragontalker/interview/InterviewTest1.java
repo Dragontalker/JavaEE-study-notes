@@ -1,6 +1,10 @@
 package com.dragontalker.interview;
 
 public class InterviewTest1 {
+    public static void main(String[] args) {
+        Base1 base = new Sub1();
+        base.add(1, 2, 3);
+    }
 }
 
 class Base1 {
