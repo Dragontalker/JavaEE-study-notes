@@ -9,5 +9,7 @@ public class CircleTest {
 
         System.out.println("半径是否相等: " + c1.equals(c2));
 
+        System.out.println(c1.toString());
+        System.out.println(c2.toString());
     }
 }
