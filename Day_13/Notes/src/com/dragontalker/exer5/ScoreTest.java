@@ -28,16 +28,30 @@ public class ScoreTest {
 
             // 3.1 添加操作, v.addElement(Object obj)
             v.addElement(score);
+
+            // 4. 获取学生成绩的最大值
             if (maxScore < score) {
                 maxScore = score;
             }
         }
 
-
-
-
-        // 4. 获取学生成绩的最大值
-
         // 5. 遍历Vector, 得到每个学生的成绩, 并与最大成绩比较, 得到每个学生的成绩
+        char level;
+        for (int i = 0; i < v.size(); i++) {
+            Object obj = v.elementAt(i);
+            int score = (int)obj;
+
+            if (maxScore - score <= 10) {
+                level = 'A';
+            } else if (maxScore - score <= 20) {
+                level = 'B';
+            } else if (maxScore - score <= 30) {
+                level = 'C';
+            } else {
+                level= 'D';
+            }
+
+            System.out.println("student-" + i + " score is " + score + ", level " + level);
+        }
     }
 }
