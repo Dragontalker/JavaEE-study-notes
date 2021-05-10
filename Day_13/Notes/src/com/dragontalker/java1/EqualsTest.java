@@ -8,6 +8,15 @@ package com.dragontalker.java1;
         1. 可以使用在基本数据类型变量和引用数据类型变量中
         2. 如果比较的是基本数据变量: 比较两个变量保存的数据是否相等(不一定类型要相同)
         3. 如果比较的是引用数据变量: 比较两个对象的地址值是否相同(即两个引用是否指向同一个对象)
+
+二、equals()方法的使用:
+    1. 是一个方法, 而非运算符
+    2. 只能适用于引用数据类型
+    3. Object类中equals()的定义:
+        public boolean equals(Object ob) {
+            return (this == obj);
+        }
+      说明: 还是比较两个对象的地址值
  */
 
 public class EqualsTest {
