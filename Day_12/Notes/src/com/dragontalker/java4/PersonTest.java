@@ -21,8 +21,10 @@ public class PersonTest {
         Person p2 = new Man();
         //Person p3 = new Woman();
 
-        // 多态的使用:
+        // 多态的使用, 当调用子父类同名同参数的方法时, 实际执行的是子类重写父类的方法---虚拟方法调用
         p2.eat();
         p2.walk();
+
+        //p2.earnMoney(); 父类中没有声明的方法不能调用
     }
 }
