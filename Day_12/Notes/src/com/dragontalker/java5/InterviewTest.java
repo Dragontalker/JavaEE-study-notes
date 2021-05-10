@@ -18,4 +18,8 @@ class Cat extends Animal {
     }
 }
 
-
+class Dog extends Animal {
+    public void eat() {
+        System.out.println("Dog eat bone");
+    }
+}
