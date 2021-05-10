@@ -2,7 +2,12 @@ package com.dragontalker.exer1;
 
 public class GeometricTest {
     public static void main(String[] args) {
+        GeometricTest test = new GeometricTest();
 
+        Circle c1 = new Circle(2.3, "white", 1.0);
+        test.displayGeometricObject(c1);
+        Circle c2 = new Circle(3.3, "white", 1.0);
+        test.displayGeometricObject(c2);
     }
 
     public void displayGeometricObject(GeometricObject o) {
