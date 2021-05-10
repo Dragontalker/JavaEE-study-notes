@@ -26,6 +26,18 @@ public class PersonTest {
         // 使用强转时, 可能出现ClassCastException的异常
         //Woman w1 = (Woman)p2; 子类之间无法转换
 
-        // instanceof:
+        /*
+        instanceof关键字的使用:
+            - x instanceof X: 判断对象x是否是类X的实例, return boolean
+            - 使用情景:
+                1. 为了避免在向下转型时出现ClassCastException的异常
+                2. 我们在向下转型之前, 先进行instanceof的判断
+                3. 一旦返回true, 就向下转型
+                4. 如果返回false, 不进行向下转型
+
+         */
+
+
+
     }
 }
