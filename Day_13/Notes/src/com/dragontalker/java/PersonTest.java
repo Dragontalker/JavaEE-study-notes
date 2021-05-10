@@ -22,5 +22,10 @@ public class PersonTest {
         m1.isSmoking = true;
         m1.eat();
         m1.walk();
+
+        // 使用强转时, 可能出现ClassCastException的异常
+        //Woman w1 = (Woman)p2; 子类之间无法转换
+
+        // instanceof:
     }
 }
