@@ -14,6 +14,16 @@ import java.net.InetSocketAddress;
 
 public class WrapperTest {
 
+    // 基本数据类型、包装类 ---> String类型
+    @Test
+    public void test4() {
+        int num1 = 10;
+
+        // 方式一: 连接运算
+        String str1 = num1 + "";
+
+    }
+
     /*
     JDK5.0新特性: 自动装箱与自动拆箱
      */
