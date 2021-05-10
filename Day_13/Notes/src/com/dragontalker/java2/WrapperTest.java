@@ -14,6 +14,29 @@ import java.net.InetSocketAddress;
 
 public class WrapperTest {
 
+    /*
+    JDK5.0新特性: 自动装箱与自动拆箱
+     */
+
+    @Test
+    public void test3() {
+        //int num1 = 10;
+
+        // 基本数据类型 ---> 包装类的对象
+        //method(num1);
+
+        // 自动装箱
+        int num2 =10;
+        Integer in1 = num2;
+
+        boolean b1 = true;
+        Boolean b2 = b1;
+    }
+
+    public void method(Object obj) {
+        System.out.println(obj);
+    }
+
     // 包装类 ---> 基本数据类型
     @Test
     public void test2() {
