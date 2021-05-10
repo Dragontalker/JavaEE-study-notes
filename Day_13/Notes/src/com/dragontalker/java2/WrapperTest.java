@@ -14,6 +14,19 @@ import java.net.InetSocketAddress;
 
 public class WrapperTest {
 
+    // String类型 ---> 基本数据类型、包装类: 调用包装类的parseXxx()
+    @Test
+    public void test5() {
+        String str1 = "123";
+
+        // 错误的情况:
+        //int num1 = (int)str1;
+        //Integer in1 = (Integer)str1; Integer和String没有子父类的关系
+
+        int num2 = Integer.parseInt(str1);
+        System.out.println(num2 + 1);
+    }
+
     // 基本数据类型、包装类 ---> String类型: 调用String重载的valueOf(Xxx)
     @Test
     public void test4() {
