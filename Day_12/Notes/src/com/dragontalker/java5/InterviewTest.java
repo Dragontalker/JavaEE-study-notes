@@ -3,6 +3,8 @@ package com.dragontalker.java5;
 // 面试题: 多态是编译行为还是运行时行为?
 // 证明如下:
 
+import java.util.Random;
+
 class Animal {
     protected void eat() {
         System.out.println("animal eat food");
@@ -37,5 +39,13 @@ public class InterviewTest {
             default:
                 return new Sheep();
         }
+    }
+
+    public static void main(String[] args) {
+        int key = new Random().nextInt(3);
+        System.out.println(key);
+
+        Animal animal = getInstance(key);
+        animal.eat();
     }
 }
