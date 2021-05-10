@@ -27,5 +27,7 @@ public class GeometricObject {
         this.weight = weight;
     }
 
-
+    public double findArea() {
+        return 0.0;
+    }
 }
