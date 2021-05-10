@@ -14,5 +14,11 @@ public class PersonTest {
 
         Man man = new Man();
         man.eat();
+        man.earnMoney();
+
+        //*************
+        // (对象的)多态性: 父类的引用指向子类的对象
+        Person p2 = new Man();
+        Person p3 = new Woman();
     }
 }
