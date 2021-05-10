@@ -25,6 +25,10 @@ public class WrapperTest {
 
         int num2 = Integer.parseInt(str1);
         System.out.println(num2 + 1);
+
+        String str2 = "true1";
+        boolean b1 = Boolean.parseBoolean(str2);
+        System.out.println(b1);
     }
 
     // 基本数据类型、包装类 ---> String类型: 调用String重载的valueOf(Xxx)
