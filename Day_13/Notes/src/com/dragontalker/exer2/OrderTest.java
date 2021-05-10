@@ -27,4 +27,20 @@ class Order {
     public void setOrderName(String orderName) {
         this.orderName = orderName;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj instanceof Order) {
+            Order order = (Order)obj;
+            boolean sameId = this.orderId == order.orderId;
+            boolean sameName = this.orderName.equals(order.orderName);
+            return sameId && sameName;
+        }
+
+        return false;
+    }
 }
