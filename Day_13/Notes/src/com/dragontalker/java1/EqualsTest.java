@@ -15,5 +15,15 @@ public class EqualsTest {
         double d = 10.0;
         System.out.println(i == j); //true
         System.out.println(i == d); //true 类型提升
+
+        boolean b = true;
+        //System.out.println(i == b); 布尔型不参与类型提升
+
+        char c = 10;
+        System.out.println(i == c); // true
+
+        char c1 = 'A';
+        char c2 = 65;
+        System.out.println(c1 == c2); // true
     }
 }
