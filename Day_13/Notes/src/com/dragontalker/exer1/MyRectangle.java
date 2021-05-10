@@ -26,4 +26,9 @@ public class MyRectangle extends GeometricObject{
     public double getHeight() {
         return this.height;
     }
+
+    @Override
+    public double findArea() {
+        return this.width * this.height;
+    }
 }
