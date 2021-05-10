@@ -54,6 +54,8 @@ public class PersonTest {
         Object obj = new Woman();
         Person p = (Person)obj;
 
-
+        // 问题三: 编译不通过
+        //Man m5 = new Woman();
+        //String str = new Data();
     }
 }
