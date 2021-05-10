@@ -22,6 +22,7 @@ public class InterviewTest {
             o2 = new Integer(1);
         else
             o2 = new Double(2.0);
-        System.out.println(o2);
+        System.out.println(o2); // 1
+        // 没有要求类型统一
     }
 }
