@@ -17,6 +17,9 @@ package com.dragontalker.java1;
             return (this == obj);
         }
       说明: 还是比较两个对象的地址值
+
+    4. 像String, Date, File, 包装类等重写了Object类中的equals()方法.
+        - 重写之后, 比较的不是两个引用的地址是否相同, 而是比较两个对象的"实体内容"是否相同
  */
 
 public class EqualsTest {
