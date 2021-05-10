@@ -2,7 +2,7 @@ package com.dragontalker.java;
 
 public class PersonTest {
     public static void main(String[] args) {
-        Person p2 = new Man();
+        Man p2 = new Man();
         p2.eat();
         p2.walk();
 
@@ -17,7 +17,10 @@ public class PersonTest {
 
         // 如何才能调用子类特有的属性和方法？
         // 使用强制类型转换符 ---> 向下转型
-        Man m1 = (Man) p2;
-
+        Man m1 = (Man)p2;
+        m1.earnMoney();
+        m1.isSmoking = true;
+        m1.eat();
+        m1.walk();
     }
 }
