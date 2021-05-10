@@ -12,4 +12,10 @@ class Animal {
     }
 }
 
+class Cat extends Animal {
+    protected void eat() {
+        System.out.println("cat eat fish");
+    }
+}
+
 
