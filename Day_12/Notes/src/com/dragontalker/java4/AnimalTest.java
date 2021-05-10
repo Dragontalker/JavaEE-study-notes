@@ -4,7 +4,19 @@ package com.dragontalker.java4;
 多态性的使用举例一:
  */
 
+import java.sql.Connection;
+
 public class AnimalTest {
+    public static void main(String[] args) {
+        AnimalTest test = new AnimalTest();
+        test.func(new Dog());
+        test.func(new Cat());
+    }
+
+    public void func(Animal animal) {
+        animal.eat();
+        animal.shout();
+    }
 }
 
 class Animal {
@@ -34,5 +46,24 @@ class Cat extends Animal {
 
     public void shout() {
         System.out.println("喵！喵！喵！");
+    }
+}
+
+/*
+举例二
+ */
+
+class Order {
+    public void method(Object obj) {}
+}
+
+/*
+举例三
+ */
+
+class Driver {
+    public void getConnection(Connection connection) {
+        // conn = new MySQLConnection
+        // 规范的步骤去操作数据
     }
 }
