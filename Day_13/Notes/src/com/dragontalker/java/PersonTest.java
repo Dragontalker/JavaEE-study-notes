@@ -57,5 +57,9 @@ public class PersonTest {
         // 问题三: 编译不通过
         //Man m5 = new Woman();
         //String str = new Data();
+
+        // 骗过编译器
+        //Object o = new Date();
+        //String str = (String)o;
     }
 }
