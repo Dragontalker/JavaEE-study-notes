@@ -63,7 +63,8 @@ class Order {
 
 class Driver {
     public void getConnection(Connection connection) {
-        // conn = new MySQLConnection
+        // Connection conn = new MySQLConnection
+        // Connection conn = new OracleConnection
         // 规范的步骤去操作数据
         // conn.method1();
         // conn.method2();
