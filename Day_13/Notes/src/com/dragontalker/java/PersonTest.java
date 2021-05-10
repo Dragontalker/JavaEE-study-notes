@@ -42,7 +42,18 @@ public class PersonTest {
 
         // 练习:
         // 问题一: 编译时通过, 运行时不通过
-        Person p3 = new Woman();
-        Man m3 = (Man)p3;
+        // 举例一:
+        //Person p3 = new Woman();
+        //Man m3 = (Man)p3;
+
+        // 举例二:
+        //Person p4 = new Person();
+        //Man m4 = (Man)p4;
+
+        // 问题二: 编译时通过, 运行时不通过
+        Object obj = new Woman();
+        Person p = (Person)obj;
+
+
     }
 }
