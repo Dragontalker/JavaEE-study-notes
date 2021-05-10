@@ -26,3 +26,13 @@ class Dog extends Animal {
         System.out.println("汪！汪！汪！");
     }
 }
+
+class Cat extends Animal {
+    public void eat() {
+        System.out.println("猫吃鱼");
+    }
+
+    public void shout() {
+        System.out.println("喵！喵！喵！");
+    }
+}
