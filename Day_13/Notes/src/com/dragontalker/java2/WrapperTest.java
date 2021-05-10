@@ -31,6 +31,11 @@ public class WrapperTest {
         Float f2 = new Float("12.3");
         System.out.println(f1);
         System.out.println(f2);
+
+        Boolean b1 = new Boolean(true);
+        Boolean b2 = new Boolean("true");
+        Boolean b3 = new Boolean("true123");
+        System.out.println(b3);
     }
 
 }
