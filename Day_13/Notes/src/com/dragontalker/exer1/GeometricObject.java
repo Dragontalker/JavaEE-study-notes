@@ -9,9 +9,15 @@ public class GeometricObject {
         return this.color;
     }
 
-    public void setColor() {
+    public void setColor(String color) {
         this.color = color;
     }
 
+    public double getWeight() {
+        return this.weight;
+    }
 
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
 }
