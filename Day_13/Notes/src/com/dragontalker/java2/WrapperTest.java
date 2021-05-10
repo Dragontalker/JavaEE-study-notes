@@ -26,6 +26,11 @@ public class WrapperTest {
 
         //Integer in3 = new Integer("123abc");
         //System.out.println(in3.toString());
+
+        Float f1 = new Float(12.3f);
+        Float f2 = new Float("12.3");
+        System.out.println(f1);
+        System.out.println(f2);
     }
 
 }
