@@ -9,6 +9,7 @@ final: 最终的
     - 比如: String类、System类、StringBuffer类
 
 3. final用来修饰一个方法: 表明此方法不能被重写
+    - 比如: Object类中的getClass()
  */
 
 public class FinalTest {
