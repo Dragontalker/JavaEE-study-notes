@@ -14,9 +14,12 @@ static关键字的使用
 public class StaticTest {
     public static void main(String[] args) {
         Chinese c1 = new Chinese();
+        c1.name = "迪丽热巴";
+        c1.age = 25;
     }
 }
 
 class Chinese {
-
+    String name;
+    int age;
 }
