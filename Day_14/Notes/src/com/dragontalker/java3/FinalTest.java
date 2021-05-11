@@ -10,6 +10,8 @@ final: 最终的
 
 3. final用来修饰一个方法: 表明此方法不能被重写
     - 比如: Object类中的getClass()
+
+4. final用来修饰变量: 此时的“变量”就称为是一个常量
  */
 
 public class FinalTest {
