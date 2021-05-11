@@ -23,6 +23,22 @@ public class FinalTest {
     public void changeWidth() {
         //width = 20;
     }
+
+    final int WIDTH = 0;
+    final int LEFT;
+    final int RIGHT;
+
+    {
+        LEFT = 1;
+    }
+
+    public FinalTest() {
+        RIGHT = 2;
+    }
+
+    public FinalTest(int n) {
+        RIGHT = n;
+    }
 }
 
 final class FinalA {
