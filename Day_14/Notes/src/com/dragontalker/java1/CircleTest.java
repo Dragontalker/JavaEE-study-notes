@@ -16,11 +16,16 @@ public class CircleTest {
 
 class Circle {
     private double radius;
-    private int id;
+    private int id; // 自动复制
 
     public Circle() {
         id = init++;
         total++;
+    }
+
+    public Circle(double radius) {
+        this();
+        this.radius = radius;
     }
 
     // 创造圆的个数
