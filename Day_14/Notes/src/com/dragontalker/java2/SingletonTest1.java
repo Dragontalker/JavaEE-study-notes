@@ -20,4 +20,9 @@ class Bank {
 
     //2.内部创建类的对象
     private Bank instance = new Bank();
+
+    //3.提供公共的方法, 返回类的对象
+    public Bank getInstance() {
+        return instance;
+    }
 }
