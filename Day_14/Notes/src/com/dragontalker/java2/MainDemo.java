@@ -2,10 +2,10 @@ package com.dragontalker.java2;
 
 public class MainDemo {
     public static void main(String[] args) {
-        for(int i = 0; i < args.length; i++) {
-            System.out.println("*****" + args[i]);
+        for (String arg : args) {
+            System.out.println("*****" + arg);
 
-            int num = Integer.parseInt(args[i]);
+            int num = Integer.parseInt(arg);
             System.out.println("#####" + num);
         }
     }
