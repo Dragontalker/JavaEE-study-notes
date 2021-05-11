@@ -4,6 +4,13 @@ public class CircleTest {
     public static void main(String[] args) {
 
         Circle c1 = new Circle();
+
+        Circle c2 = new Circle();
+
+        System.out.println("c1的id: " + c1.getId());
+        System.out.println("c2的id: " + c2.getId());
+
+        System.out.println("创建圆的个数为: " + Circle.getTotal());
     }
 }
 
@@ -13,6 +20,7 @@ class Circle {
 
     public Circle() {
         id = init++;
+        total++;
     }
 
     // 创造圆的个数
@@ -25,6 +33,10 @@ class Circle {
 
     public int getId() {
         return id;
+    }
+
+    public static int getTotal() {
+        return total;
     }
 
     public double findArea() {
