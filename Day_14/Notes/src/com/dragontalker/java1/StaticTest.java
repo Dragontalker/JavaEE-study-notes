@@ -41,6 +41,7 @@ static关键字的使用
 
 public class StaticTest {
     public static void main(String[] args) {
+        Chinese.show();
         Chinese.nation = "中国";
         Chinese.show();
         System.out.println(Chinese.nation);
@@ -71,6 +72,6 @@ class Chinese {
     }
 
     public static void show() {
-        System.out.println("我是一个中国人");
+        System.out.println("我来自" + nation);
     }
 }
