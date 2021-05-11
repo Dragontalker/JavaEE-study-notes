@@ -10,4 +10,25 @@ public class BlockTest {
     }
 }
 
+class Person {
+    String name;
+    int age;
+    static String decs = "我是一个人";
+
+    public Person() {}
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
+}
+
 
