@@ -12,4 +12,11 @@ static关键字的使用
  */
 
 public class StaticTest {
+    public static void main(String[] args) {
+        Chinese c1 = new Chinese();
+    }
+}
+
+class Chinese {
+
 }
