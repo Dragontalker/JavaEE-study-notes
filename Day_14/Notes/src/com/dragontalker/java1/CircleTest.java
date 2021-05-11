@@ -4,11 +4,13 @@ public class CircleTest {
     public static void main(String[] args) {
 
         Circle c1 = new Circle();
-
         Circle c2 = new Circle();
+
+        Circle c3 = new Circle(3.4);
 
         System.out.println("c1的id: " + c1.getId());
         System.out.println("c2的id: " + c2.getId());
+        System.out.println("c3的id: " + c3.getId());
 
         System.out.println("创建圆的个数为: " + Circle.getTotal());
     }
