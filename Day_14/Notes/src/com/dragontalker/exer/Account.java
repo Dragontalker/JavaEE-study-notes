@@ -44,6 +44,10 @@ public class Account {
         Account.minMoney = minMoney;
     }
 
+    public static double getMinMoney() {
+        return minMoney;
+    }
+
     @Override
     public String toString() {
         return "Account{" +
