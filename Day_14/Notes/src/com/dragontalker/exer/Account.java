@@ -10,4 +10,27 @@ public class Account {
     private static double minMoney = 1.0;
     private static int init = 1001; //用于自动生成id使用的
 
+    public Account() {
+        id = init++;
+    }
+
+    public String getPwd() {
+        return pwd;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public static double getInterestRate() {
+        return interestRate;
+    }
+
+    public void setPwd(String pwd) {
+        this.pwd = pwd;
+    }
+
+    public static void setInterestRate(double interestRate) {
+        Account.interestRate = interestRate;
+    }
 }
