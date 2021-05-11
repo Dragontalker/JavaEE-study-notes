@@ -20,10 +20,14 @@ public class StaticTest {
         Chinese c2 = new Chinese();
         c2.name = "高圆圆";
         c2.age = 39;
+
+        c1.nation = "CHN";
+        System.out.println(c2.nation);
     }
 }
 
 class Chinese {
     String name;
     int age;
+    static String nation;
 }
