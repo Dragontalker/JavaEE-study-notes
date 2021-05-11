@@ -13,5 +13,15 @@ class Father {
     }
 }
 
-public class Son {
+public class Son extends Father{
+    static {
+        System.out.println("4444444444444444");
+    }
+    {
+        System.out.println("5555555555555555");
+    }
+
+    public Son() {
+        System.out.println("6666666666666666");
+    }
 }
