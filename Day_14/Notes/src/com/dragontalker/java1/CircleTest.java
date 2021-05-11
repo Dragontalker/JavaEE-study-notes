@@ -18,7 +18,7 @@ public class CircleTest {
 
 class Circle {
     private double radius;
-    private int id; // 自动复制
+    private final int id; // 自动赋值的常量
 
     public Circle() {
         id = init++;
