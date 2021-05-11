@@ -1,5 +1,9 @@
 package com.dragontalker.java3;
 
+/*
+总结: 由父及子, 静态优先
+ */
+
 class Root {
     static {
         System.out.println("Root的静态初始化快");
@@ -50,6 +54,9 @@ class Leaf extends Mid {
 public class LeafTest {
     public static void main(String[] args) {
         new Leaf();
-        //new Leaf();
+
+        System.out.println("********");
+
+        new Leaf();
     }
 }
