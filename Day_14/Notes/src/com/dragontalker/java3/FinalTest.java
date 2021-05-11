@@ -17,3 +17,4 @@ final class FinalA {
 }
 
 //class B extends FinalA {}
+//class C extends String {}
