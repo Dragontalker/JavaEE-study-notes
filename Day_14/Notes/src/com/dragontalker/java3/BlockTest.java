@@ -43,6 +43,10 @@ class Person {
         System.out.println("Hello! Non-static block!");
     }
 
+    public static void info() {
+        System.out.println("我是一个快乐的人!");
+    }
+
     @Override
     public String toString() {
         return "Person{" +
