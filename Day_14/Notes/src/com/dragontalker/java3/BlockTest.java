@@ -11,15 +11,22 @@ public class BlockTest {
 }
 
 class Person {
+    //属性
     String name;
     int age;
     static String decs = "我是一个人";
 
+    //构造器
     public Person() {}
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    //代码块
+    {
+
     }
 
     @Override
