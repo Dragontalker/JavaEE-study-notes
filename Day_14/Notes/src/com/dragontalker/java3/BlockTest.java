@@ -18,6 +18,7 @@ package com.dragontalker.java3;
 public class BlockTest {
     public static void main(String[] args) {
         String desc = Person.decs;
+        Person p1 = new Person();
     }
 }
 
