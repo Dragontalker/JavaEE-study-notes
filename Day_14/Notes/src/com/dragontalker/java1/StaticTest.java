@@ -71,14 +71,20 @@ class Chinese {
     static String nation;
 
     public void eat() {
+        // 调用非静态结构
+        this.info();
         System.out.println("中国人吃中餐");
     }
 
+    public void info() {
+        System.out.println("我们是中国人");
+    }
+
     public static void show() {
-        System.out.println("我来自" + nation); // nation其实是Chinese.nation
+        System.out.println("我来自" + Chinese.nation); // nation其实是Chinese.nation
 
         // 可以调用静态的结构
-        walk();
+        Chinese.walk();
     }
 
     public static void walk() {}
