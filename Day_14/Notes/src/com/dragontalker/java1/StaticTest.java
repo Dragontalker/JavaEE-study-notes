@@ -16,6 +16,10 @@ public class StaticTest {
         Chinese c1 = new Chinese();
         c1.name = "迪丽热巴";
         c1.age = 25;
+
+        Chinese c2 = new Chinese();
+        c1.name = "高圆圆";
+        c1.age = 39;
     }
 }
 
