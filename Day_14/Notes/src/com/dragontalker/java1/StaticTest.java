@@ -28,7 +28,12 @@ static关键字的使用
 
 4. 使用static修饰方法:
 
-    4.1
+    4.1 随着类的加载而加载, 可以通过"类.静态方法"的方式进行调用
+
+                    | 类变量(static) | 实例变量(non-static)
+        类               yes                 no(编译不通过)
+        对象              yes                 yes
+
  */
 
 public class StaticTest {
