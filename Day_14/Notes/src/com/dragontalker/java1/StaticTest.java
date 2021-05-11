@@ -34,6 +34,7 @@ static关键字的使用
 public class StaticTest {
     public static void main(String[] args) {
         Chinese.nation = "中国";
+        Chinese.show();
         System.out.println(Chinese.nation);
 
         Chinese c1 = new Chinese();
