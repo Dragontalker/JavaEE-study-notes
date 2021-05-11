@@ -23,6 +23,9 @@ public class StaticTest {
 
         c1.nation = "CHN";
         System.out.println(c2.nation);
+
+        c2.nation = "CHINA";
+        System.out.println(c1.nation);
     }
 }
 
