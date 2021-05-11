@@ -13,4 +13,9 @@ public class SingletonTest2 {
 
 class Order {
 
+    //1.私有化类的构造器
+    private Order() {}
+
+    //2.声明当前类的对象, 没有初始化
+    private Order instance = null;
 }
