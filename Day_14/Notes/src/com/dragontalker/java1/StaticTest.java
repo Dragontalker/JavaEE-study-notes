@@ -37,6 +37,9 @@ static关键字的使用
     4.2 静态方法中只能调用静态的方法或属性, 因为它们的生命周期一致
         - 非静态方法中, 既可以调用非静态的方法或属性, 也可以调用静态的方法或属性
 
+5. static注意点
+    - 在静态的方法内, 不能使用this或者super关键字
+
  */
 
 public class StaticTest {
@@ -72,6 +75,11 @@ class Chinese {
     }
 
     public static void show() {
-        System.out.println("我来自" + nation);
+        System.out.println("我来自" + nation); // nation其实是Chinese.nation
+
+        // 可以调用静态的结构
+        walk();
     }
+
+    public static void walk() {}
 }
