@@ -13,12 +13,14 @@ package com.dragontalker.java3;
 
 5. 非静态代码块
     >内部可以有输出语句
+    >随着对象的创建而执行
  */
 
 public class BlockTest {
     public static void main(String[] args) {
         String desc = Person.decs;
         Person p1 = new Person();
+        Person p2 = new Person();
     }
 }
 
