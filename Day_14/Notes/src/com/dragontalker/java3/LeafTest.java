@@ -48,4 +48,8 @@ class Leaf extends Mid {
 }
 
 public class LeafTest {
+    public static void main(String[] args) {
+        new Leaf();
+        //new Leaf();
+    }
 }
