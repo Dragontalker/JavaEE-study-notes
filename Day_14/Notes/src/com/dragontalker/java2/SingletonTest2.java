@@ -8,6 +8,10 @@ package com.dragontalker.java2;
 public class SingletonTest2 {
     public static void main(String[] args) {
 
+        Order order1 = Order.getInstance();
+        Order order2 = Order.getInstance();
+
+        System.out.println(order1 == order2); //true 地址值一样
     }
 }
 
