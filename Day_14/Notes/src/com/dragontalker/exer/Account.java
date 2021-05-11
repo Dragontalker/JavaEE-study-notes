@@ -14,6 +14,12 @@ public class Account {
         id = init++;
     }
 
+    public Account(String pwd, double balance) {
+        this();
+        this.pwd = pwd;
+        this.balance = balance;
+    }
+
     public String getPwd() {
         return pwd;
     }
