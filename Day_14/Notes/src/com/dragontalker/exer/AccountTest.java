@@ -12,10 +12,8 @@ public class AccountTest {
         System.out.println(acct1);
         System.out.println(acct2);
 
-        System.out.println(acct1.getInterestRate());
-        System.out.println(acct2.getInterestRate());
+        System.out.println(Account.getInterestRate());
+        System.out.println(Account.getMinMoney());
 
-        System.out.println(acct1.getMinMoney());
-        System.out.println(acct2.getMinMoney());
     }
 }
