@@ -8,11 +8,14 @@ package com.dragontalker.java3;
 3. 分类: 静态代码块 vs 非静态代码块
 
 4. 静态代码块
+
+5. 非静态代码块
+    >内部可以有输出语句
  */
 
 public class BlockTest {
     public static void main(String[] args) {
-
+        String desc = Person.decs;
     }
 }
 
@@ -32,12 +35,12 @@ class Person {
 
     //静态代码块
     static {
-
+        System.out.println("Hello! Static block!");
     }
 
     //非静态代码块
     {
-
+        System.out.println("Hello! Non-static block!");
     }
 
     @Override
