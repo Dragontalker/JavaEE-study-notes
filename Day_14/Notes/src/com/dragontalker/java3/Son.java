@@ -24,4 +24,18 @@ public class Son extends Father{
     public Son() {
         System.out.println("6666666666666666");
     }
+
+    public static void main(String[] args) {
+        System.out.println("7777777777777777");
+        System.out.println("****************");
+
+        new Son();
+        System.out.println("****************");
+
+        new Son();
+        System.out.println("****************");
+
+        new Father();
+
+    }
 }
