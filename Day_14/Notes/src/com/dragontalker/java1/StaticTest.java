@@ -27,6 +27,8 @@ static关键字的使用
     3.3 静态属性举例: System.out; Math.PI;
 
 4. 使用static修饰方法:
+
+    4.1
  */
 
 public class StaticTest {
@@ -54,4 +56,12 @@ class Chinese {
     String name;
     int age;
     static String nation;
+
+    public void eat() {
+        System.out.println("中国人吃中餐");
+    }
+
+    public static void show() {
+        System.out.println("我是一个中国人");
+    }
 }
