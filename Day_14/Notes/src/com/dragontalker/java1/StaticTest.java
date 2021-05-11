@@ -20,9 +20,11 @@ static关键字的使用
         - 静态变量的加载早于对象的创建
         - 由于类只会加载一次, 则静态变量在内存中也只会存在一份, 存在方法区的静态域中
 
-        -       | 类变量(static) | 实例变量(non-static)
+                | 类变量(static) | 实例变量(non-static)
         类             yes               no(编译不通过)
         对象           yes               yes
+
+    3.3 静态属性举例: System.out; Math.PI;
 
 4. 使用static修饰方法:
  */
