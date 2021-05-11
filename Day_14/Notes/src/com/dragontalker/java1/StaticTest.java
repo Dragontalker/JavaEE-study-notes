@@ -18,8 +18,8 @@ public class StaticTest {
         c1.age = 25;
 
         Chinese c2 = new Chinese();
-        c1.name = "高圆圆";
-        c1.age = 39;
+        c2.name = "高圆圆";
+        c2.age = 39;
     }
 }
 
