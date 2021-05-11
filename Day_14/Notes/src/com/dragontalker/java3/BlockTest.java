@@ -2,6 +2,12 @@ package com.dragontalker.java3;
 
 /*
 类的成员之四: 代码块(或初始块)
+
+1. 代码快的作用: 用来初始化类、对象
+2. 代码快如果有修饰的话, 只能使用static
+3. 分类: 静态代码块 vs 非静态代码块
+
+4. 静态代码块
  */
 
 public class BlockTest {
@@ -24,7 +30,12 @@ class Person {
         this.age = age;
     }
 
-    //代码块
+    //静态代码块
+    static {
+
+    }
+
+    //非静态代码块
     {
 
     }
