@@ -39,4 +39,17 @@ public class Account {
     public static void setInterestRate(double interestRate) {
         Account.interestRate = interestRate;
     }
+
+    public static void setMinMoney(double minMoney) {
+        Account.minMoney = minMoney;
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", pwd='" + pwd + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

@@ -5,5 +5,8 @@ public class AccountTest {
 
         Account acct1 = new Account();
         Account acct2 = new Account("password", 2000);
+
+        Account.setInterestRate(0.012);
+        Account.setMinMoney(100);
     }
 }
