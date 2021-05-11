@@ -12,9 +12,17 @@ final: 最终的
     - 比如: Object类中的getClass()
 
 4. final用来修饰变量: 此时的“变量”就称为是一个常量
+    4.1 final修饰属性: 可以考虑赋值的位置有: 显式初始化
  */
 
 public class FinalTest {
+
+    //final int width; 不允许
+    final int width = 10;
+
+    public void changeWidth() {
+        //width = 20;
+    }
 }
 
 final class FinalA {
