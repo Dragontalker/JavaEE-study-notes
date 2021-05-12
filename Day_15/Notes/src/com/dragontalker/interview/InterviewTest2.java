@@ -24,7 +24,7 @@ class Ball implements Rollable {
     }
 
     public void play() {
-        ball = new Ball("Football"); //ball是常量, 所以不能调用
+        //ball = new Ball("Football"); //ball是常量, 所以不能调用
         System.out.println(ball.getName());
     }
 }
