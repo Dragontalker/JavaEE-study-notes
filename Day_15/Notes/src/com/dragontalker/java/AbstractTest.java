@@ -25,7 +25,11 @@ public class AbstractTest {
     }
 }
 
-abstract class Person {
+abstract class Creature {
+    public abstract void breath();
+}
+
+abstract class Person extends Creature{
     String name;
     int age;
 
@@ -56,5 +60,10 @@ class Student extends Person {
     @Override
     public void eat() {
         System.out.println("学生吃饭");
+    }
+
+    @Override
+    public void breath() {
+        System.out.println("学生呼吸");
     }
 }
