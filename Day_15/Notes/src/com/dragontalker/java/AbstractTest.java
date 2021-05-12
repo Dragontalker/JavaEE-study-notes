@@ -7,6 +7,11 @@ abstract关键字的使用
  */
 
 public class AbstractTest {
+    public static void main(String[] args) {
+
+        Person p1 = new Person();
+        p1.eat();
+    }
 }
 
 class Person {
