@@ -1,7 +1,12 @@
 package com.dragontalker.exer2;
 
 public class SalariedEmployee extends Employee{
+    private int monthlySalary;
+
+
 
     @Override
-    public void earnings() {}
+    public double earnings() {
+        return monthlySalary;
+    }
 }

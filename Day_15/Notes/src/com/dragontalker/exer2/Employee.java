@@ -7,7 +7,7 @@ public abstract class Employee {
 
     public Employee() {}
 
-    public abstract void earnings();
+    public abstract double earnings();
 
     @Override
     public String toString() {
