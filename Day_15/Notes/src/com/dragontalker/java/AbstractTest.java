@@ -10,6 +10,7 @@ abstract关键字的使用
         > 开发中, 都会提供抽象类的子类, 让子类对象实例化, 完成相关的操作
 
     4. abstract修饰方法: 抽象方法
+        >
  */
 
 public class AbstractTest {
@@ -32,9 +33,11 @@ abstract class Person {
         this.age = age;
     }
 
-    public void eat() {
-        System.out.println("人吃饭");
-    }
+    //不是抽象方法:
+    //public void eat() {}
+
+    //抽象方法:
+    public abstract void eat();
 
     public void walk() {
         System.out.println("人走路");
