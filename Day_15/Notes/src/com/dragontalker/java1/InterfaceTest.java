@@ -21,6 +21,9 @@ package com.dragontalker.java1;
         - 如果实现类没有覆盖接口中的所有抽象方法, 则此类仍是抽象类
 
     6. Java类可以实现多个接口 ---> 弥补了Java单继承性的局限性
+        - 格式: class AA extends BB implements CC, DD, EE
+
+    7. 接口与接口之间可以继承, 而且可以多继承
  */
 
 public class InterfaceTest {
@@ -90,3 +93,14 @@ class Bullet implements Flyable, Attackable {
         System.out.println("中弹了....");
     }
 }
+
+
+interface AA {
+    void method1();
+}
+
+interface BB {
+    void method2();
+}
+
+interface CC extends AA, BB {}
