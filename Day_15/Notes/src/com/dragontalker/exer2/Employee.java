@@ -5,7 +5,11 @@ public abstract class Employee {
     private int number;
     private MyDate birthday;
 
-    public Employee() {}
+    public Employee(String name, int number, MyDate birthday) {
+        this.name = name;
+        this.number = number;
+        this.birthday = birthday;
+    }
 
     public abstract double earnings();
 
