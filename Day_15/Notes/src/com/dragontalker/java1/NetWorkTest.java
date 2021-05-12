@@ -25,7 +25,6 @@ class Server implements NetWork {
     }
 }
 
-
 //被代理类
 class ProxyServer implements NetWork {
     private NetWork work;
