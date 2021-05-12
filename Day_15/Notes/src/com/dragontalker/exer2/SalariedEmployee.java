@@ -7,6 +7,11 @@ public class SalariedEmployee extends Employee{
         super(name, number, birthday);
     }
 
+    public SalariedEmployee(String name, int number, MyDate birthday, int monthlySalary) {
+        super(name, number, birthday);
+        this.monthlySalary = monthlySalary;
+    }
+
     public int getMonthlySalary() {
         return monthlySalary;
     }
