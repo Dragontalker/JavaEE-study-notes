@@ -33,6 +33,20 @@ public class USBTest {
         };
         com.transferData(phone);
 
+        //4. 创建了接口的匿名实现类的匿名对象
+        com.transferData(new USB() {
+
+            @Override
+            public void start() {
+                System.out.println("MP3开始工作");
+            }
+
+            @Override
+            public void stop() {
+                System.out.println("MP3停止工作");
+            }
+        });
+
     }
 }
 
