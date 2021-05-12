@@ -10,6 +10,10 @@ public class HourlyEmployee extends Employee{
 
     @Override
     public double earnings() {
-        return 0;
+        return wage * hour;
+    }
+
+    public String toString() {
+        return "HourlyEmployee[" + super.toString() + "]";
     }
 }
