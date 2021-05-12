@@ -18,7 +18,7 @@ public class SubClassTest {
     }
 }
 
-class SubClass extends SuperClass implements CompareA {
+class SubClass extends SuperClass implements CompareA, CompareB {
 
     @Override
     public void method2() {
