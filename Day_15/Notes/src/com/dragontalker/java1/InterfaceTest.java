@@ -57,3 +57,7 @@ class Plane implements Flyable {
         System.out.println("驾驶员减速停止");
     }
 }
+
+abstract class Kite implements Flyable {
+    public abstract void floating();
+}
