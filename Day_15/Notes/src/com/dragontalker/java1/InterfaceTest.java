@@ -16,7 +16,9 @@ package com.dragontalker.java1;
 
     4. 接口中不能定义构造器的! 意味着接口不能实例化!
 
-    5. Java开发中, 接口通过让类去实现(implements)的
+    5. Java开发中, 接口通过让类去实现(implements)的方式来使用
+        - 如果实现类覆盖了接口中的所有抽象方法, 则此实现类就可以实例化
+        - 如果实现类没有覆盖接口中的所有抽象方法, 则此类仍是抽象类
  */
 
 public class InterfaceTest {
@@ -43,11 +45,11 @@ class Plane implements Flyable {
 
     @Override
     public void fly() {
-
+        System.out.println("通过引擎起飞");
     }
 
     @Override
     public void stop() {
-
+        System.out.println("驾驶员减速停止");
     }
 }
