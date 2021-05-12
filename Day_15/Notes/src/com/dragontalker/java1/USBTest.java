@@ -5,6 +5,19 @@ package com.dragontalker.java1;
  */
 
 public class USBTest {
+    public static void main(String[] args) {
+        Computer com = new Computer();
+        FlashDrive fd1 = new FlashDrive();
+        com.transferData(fd1);
+    }
+}
+
+class Computer {
+    public void transferData(USB usb) {
+        usb.start();
+        System.out.println("具体的传输数据的细节");
+        usb.stop();
+    }
 }
 
 interface USB {
