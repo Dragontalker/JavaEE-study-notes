@@ -1,6 +1,6 @@
 package com.dragontalker.exer1;
 
-public class Employee {
+public abstract class Employee {
     private String name;
     private int id;
     private double salary;
@@ -12,4 +12,6 @@ public class Employee {
         this.id = id;
         this.salary = salary;
     }
+
+    public abstract void work();
 }
