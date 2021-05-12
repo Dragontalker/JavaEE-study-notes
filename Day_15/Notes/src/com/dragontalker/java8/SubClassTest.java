@@ -15,13 +15,22 @@ public class SubClassTest {
         //那么子类在没有重写此方法的情况下, 默认调用的是父类中的同名同参数的方法
         //---> 类优先原则
         s.method3();
+
+        //知识点4: 如果实现了多个接口, 而这多个接口中定义了同名同参数的默认方法,
+        //那么在实现类没有重写的此方法的情况下, 报错 ---> 接口冲突
+        //这就需要我们必须在实现类中重写此方法
     }
 }
 
-class SubClass extends SuperClass implements CompareA, CompareB {
+class SubClass implements CompareA, CompareB {
 
     @Override
     public void method2() {
         System.out.println("SubClass: 上海");
+    }
+
+    @Override
+    public void method3() {
+        System.out.println("SubClass: 深圳");
     }
 }
