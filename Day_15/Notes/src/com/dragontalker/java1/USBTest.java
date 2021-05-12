@@ -4,13 +4,20 @@ package com.dragontalker.java1;
 接口的使用
 1. 接口使用上也满足多态性
 2. 接口, 实际上就是定义了一种规范
+3. 开发中, 体会面向接口编程
  */
 
 public class USBTest {
     public static void main(String[] args) {
         Computer com = new Computer();
+
+        //1. 创建了接口的非匿名实现类的非匿名对象
         FlashDrive fd1 = new FlashDrive();
         com.transferData(fd1);
+
+        //2. 创建了接口的非匿名的匿名对象
+        com.transferData(new Printer());
+
     }
 }
 
