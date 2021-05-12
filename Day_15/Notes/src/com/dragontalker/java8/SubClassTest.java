@@ -19,10 +19,12 @@ public class SubClassTest {
         //知识点4: 如果实现了多个接口, 而这多个接口中定义了同名同参数的默认方法,
         //那么在实现类没有重写的此方法的情况下, 报错 ---> 接口冲突
         //这就需要我们必须在实现类中重写此方法
+
+        s.myMethod();
     }
 }
 
-class SubClass implements CompareA, CompareB {
+class SubClass extends SuperClass implements CompareA, CompareB {
 
     @Override
     public void method2() {
@@ -32,5 +34,12 @@ class SubClass implements CompareA, CompareB {
     @Override
     public void method3() {
         System.out.println("SubClass: 深圳");
+    }
+
+    //知识点5: 如何在子类(或实现类)的方法中调用父类、接口中重写的方法
+    public void myMethod() {
+        method3(); //自己定义的重写的方法
+        super.method3(); //调用的是父类中声明的
+        CompareA.super.method3(); //调用接口中的方法
     }
 }
