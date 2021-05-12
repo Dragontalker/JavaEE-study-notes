@@ -5,6 +5,11 @@ package com.dragontalker.java;
  */
 
 public class TemplateTest {
+    public static void main(String[] args) {
+
+        Template t = new SubTemplate();
+        t.spendTime();
+    }
 }
 
 abstract class Template {
@@ -17,7 +22,7 @@ abstract class Template {
 
         long end = System.currentTimeMillis();
 
-        System.out.println("花费的时间为: " + (end - start));
+        System.out.println("花费的时间为: " + (end - start) + "ms");
     }
 
     public abstract void code();
