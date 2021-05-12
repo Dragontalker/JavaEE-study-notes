@@ -11,6 +11,10 @@ public class MyDate {
         this.day = day;
     }
 
+    public int getMonth() {
+        return month;
+    }
+
     public String toDateString() {
         return year + "年" + month + "月" + day + "日";
     }

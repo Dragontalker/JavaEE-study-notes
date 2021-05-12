@@ -11,6 +11,10 @@ public abstract class Employee {
         this.birthday = birthday;
     }
 
+    public MyDate getBirthday() {
+        return birthday;
+    }
+
     public abstract double earnings();
 
     @Override
