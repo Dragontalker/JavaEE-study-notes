@@ -1,7 +1,9 @@
 package com.dragontalker.exer3;
 
 public class ComparableCircle extends Circle implements CompareObject{
-
+    public ComparableCircle(double radius) {
+        super(radius);
+    }
 
     @Override
     public int compareTo(Object o) {
