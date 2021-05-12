@@ -13,6 +13,10 @@ final: 最终的
 
 4. final用来修饰变量: 此时的“变量”就称为是一个常量
     4.1 final修饰属性: 可以考虑赋值的位置有: 显式初始化、代码块初始化、构造器中初始化
+    4.2 final修饰局部变量:
+        - 尤其是使用final修饰形参时, 表明此形参是一个常量.
+        - 当我们调用此方法时, 给常量形参赋一个实参.
+        - 一旦赋值以后, 就只能在方法体内使用形参, 但不能进行重新赋值.
  */
 
 public class FinalTest {
@@ -44,6 +48,23 @@ public class FinalTest {
 //    public void setDown(int down) {
 //        this.DOWN = down;
 //    }
+
+    public void show() {
+        final int NUM = 10; //常量
+
+    }
+
+    public void show(final int num) {
+
+    }
+
+    public static void main(String[] args) {
+        int num = 10;
+        num = num + 5;
+
+        FinalTest test = new FinalTest();
+        test.show(10);
+    }
 }
 
 final class FinalA {
