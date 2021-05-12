@@ -5,6 +5,11 @@ package com.dragontalker.java1;
  */
 
 public class NetWorkTest {
+    public static void main(String[] args) {
+        Server server = new Server();
+        ProxyServer proxyServer = new ProxyServer(server);
+        proxyServer.browse();
+    }
 }
 
 interface NetWork {
@@ -23,7 +28,7 @@ class Server implements NetWork {
 
 //被代理类
 class ProxyServer implements NetWork {
-    private final NetWork work;
+    private NetWork work;
 
     public ProxyServer(NetWork work) {
         this.work = work;
