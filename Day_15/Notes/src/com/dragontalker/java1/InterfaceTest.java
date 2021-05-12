@@ -19,6 +19,8 @@ package com.dragontalker.java1;
     5. Java开发中, 接口通过让类去实现(implements)的方式来使用
         - 如果实现类覆盖了接口中的所有抽象方法, 则此实现类就可以实例化
         - 如果实现类没有覆盖接口中的所有抽象方法, 则此类仍是抽象类
+
+    6. Java类可以实现多个接口 ---> 弥补了Java单继承性的局限性
  */
 
 public class InterfaceTest {
