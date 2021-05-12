@@ -7,6 +7,14 @@ public class SalariedEmployee extends Employee{
         super(name, number, birthday);
     }
 
+    public int getMonthlySalary() {
+        return monthlySalary;
+    }
+
+    public void setMonthlySalary(int monthlySalary) {
+        this.monthlySalary = monthlySalary;
+    }
+
     @Override
     public double earnings() {
         return monthlySalary;
