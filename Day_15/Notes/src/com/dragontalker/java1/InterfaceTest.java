@@ -31,7 +31,16 @@ public class InterfaceTest {
         Plane plane = new Plane();
         plane.fly();
         plane.stop();
+
+        Bullet bullet = new Bullet();
+        bullet.attack();
+        bullet.fly();
+        bullet.stop();
     }
+}
+
+interface Attackable {
+    void attack();
 }
 
 interface Flyable {
@@ -62,4 +71,22 @@ class Plane implements Flyable {
 
 abstract class Kite implements Flyable {
     public abstract void floating();
+}
+
+class Bullet implements Flyable, Attackable {
+
+    @Override
+    public void attack() {
+        System.out.println("子弹发射!");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("让子弹飞一会儿~");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("中弹了....");
+    }
 }
