@@ -15,5 +15,7 @@ public class ComparableCircleTest {
             System.out.println("c1与c2一样大");
         }
 
+        int compareValue1 = c1.compareTo(new String("AA"));
+        System.out.println(compareValue1);
     }
 }

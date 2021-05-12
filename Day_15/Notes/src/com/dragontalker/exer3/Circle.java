@@ -2,13 +2,13 @@ package com.dragontalker.exer3;
 
 public class Circle {
 
-    private double radius;
+    private Double radius;
 
-    public double getRadius() {
+    public Double getRadius() {
         return radius;
     }
 
-    public void setRadius(double radius) {
+    public void setRadius(Double radius) {
         this.radius = radius;
     }
 
