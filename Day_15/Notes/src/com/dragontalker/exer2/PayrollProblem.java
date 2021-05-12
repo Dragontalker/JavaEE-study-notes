@@ -6,5 +6,11 @@ public class PayrollProblem {
 
         emps[0] = new SalariedEmployee("马森", 1002, new MyDate(1992, 2, 28), 10000);
         emps[1] = new HourlyEmployee("潘雨生", 2001, new MyDate(1991, 5, 6), 60, 240);
+
+        for (Employee emp : emps) {
+            System.out.println(emp);
+            double salary = emp.earnings();
+            System.out.println("月工资为￥" + salary);
+        }
     }
 }
