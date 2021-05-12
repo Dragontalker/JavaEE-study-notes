@@ -24,6 +24,11 @@ package com.dragontalker.java1;
         - 格式: class AA extends BB implements CC, DD, EE
 
     7. 接口与接口之间可以继承, 而且可以多继承
+
+    8. 接口的使用, 能体现多态性
+    9. 接口, 实际上可以看作是一种规范
+
+面试题: 抽象类和接口有哪些异同?
  */
 
 public class InterfaceTest {
