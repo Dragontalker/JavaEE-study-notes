@@ -2,6 +2,8 @@ package com.dragontalker.java1;
 
 /*
 接口的使用
+1. 接口使用上也满足多态性
+2. 接口, 实际上就是定义了一种规范
  */
 
 public class USBTest {
