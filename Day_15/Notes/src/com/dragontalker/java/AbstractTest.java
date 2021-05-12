@@ -6,6 +6,9 @@ abstract关键字的使用
     2. abstract可以用来修饰的结构、类、方法
     3. abstract修饰类: 抽象类
         > 此类不能实例化
+        > 抽象类中一定有构造器, 便于子类实例化时调用(涉及: 子类对象实例化的全过程)
+
+    4. abstract修饰方法: 抽象方法
  */
 
 public class AbstractTest {
@@ -34,5 +37,11 @@ abstract class Person {
 
     public void walk() {
         System.out.println("人走路");
+    }
+}
+
+class Student extends Person {
+    public Student(String name, int age) {
+        super(name, age);
     }
 }
