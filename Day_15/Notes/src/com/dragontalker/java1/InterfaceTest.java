@@ -21,5 +21,6 @@ public class InterfaceTest {
 interface Flyable {
 
     //全局常量
-    public static final int MAX_SPEED = 7900; //第一宇宙速度
+    int MAX_SPEED = 7900; //第一宇宙速度
+    int MIN_SPEED = 1;
 }
