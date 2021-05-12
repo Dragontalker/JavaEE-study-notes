@@ -12,7 +12,7 @@ public abstract class Employee {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", number=" + number +
-                ", birthday=" + birthday +
+                ", birthday=" + birthday.toDateString() +
                 '}';
     }
 }
