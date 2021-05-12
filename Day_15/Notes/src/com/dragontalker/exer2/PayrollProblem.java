@@ -1,12 +1,18 @@
 package com.dragontalker.exer2;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class PayrollProblem {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("请输入当月的月份: ");
-        int month = scanner.nextInt();
+        //方式一:
+        //Scanner scanner = new Scanner(System.in);
+        //System.out.println("请输入当月的月份: ");
+        //int month = scanner.nextInt();
+
+        //方式二:
+        //Calendar calendar = Calendar.getInstance();
+        //int month = calendar.get(Calendar.MONTH);
 
         Employee[] emps = new Employee[2];
 
