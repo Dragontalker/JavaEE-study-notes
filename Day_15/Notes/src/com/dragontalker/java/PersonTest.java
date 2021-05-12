@@ -14,16 +14,22 @@ public class PersonTest {
         //创建了一个匿名类的对象: p, 右边可以看作一个匿名的子类
         Person p = new Person(){
             @Override
-            public void eat() {}
+            public void eat() {
+                System.out.println("好好吃饭");
+            }
 
             @Override
-            public void breath() {}
+            public void breath() {
+                System.out.println("好好呼吸");
+            }
         };
+
+        method1(p);
     }
 
     public static void method1(Person p) {
         p.eat();
-        p.walk();
+        p.breath();
     }
 
     public static void method(Student s) {}
