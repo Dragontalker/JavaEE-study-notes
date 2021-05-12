@@ -56,6 +56,8 @@ class Student extends Person {
         super(name, age);
     }
 
+    public Student() {}
+
     //子类一定会继承抽象方法, 第一种方式是重写, 否则子类也必须是抽象类
     @Override
     public void eat() {
