@@ -10,7 +10,8 @@ abstract关键字的使用
         > 开发中, 都会提供抽象类的子类, 让子类对象实例化, 完成相关的操作
 
     4. abstract修饰方法: 抽象方法
-        >
+        > 抽象方法只有方法的声明, 没有方法体
+        > 包含抽象方法的类, 一定是一个抽象类
  */
 
 public class AbstractTest {
@@ -47,5 +48,10 @@ abstract class Person {
 class Student extends Person {
     public Student(String name, int age) {
         super(name, age);
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("学生吃饭");
     }
 }
