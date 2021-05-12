@@ -1,9 +1,9 @@
 package com.dragontalker.exer2;
 
 public abstract class Employee {
-    private String name;
-    private int number;
-    private MyDate birthday;
+    private final String name;
+    private final int number;
+    private final MyDate birthday;
 
     public Employee(String name, int number, MyDate birthday) {
         this.name = name;
