@@ -18,6 +18,21 @@ public class USBTest {
         //2. 创建了接口的非匿名的匿名对象
         com.transferData(new Printer());
 
+        //3. 创建了接口的匿名实现类的非匿名对象
+        USB phone = new USB() {
+
+            @Override
+            public void start() {
+                System.out.println("手机开始工作");
+            }
+
+            @Override
+            public void stop() {
+                System.out.println("手机结束工作");
+            }
+        };
+        com.transferData(phone);
+
     }
 }
 
