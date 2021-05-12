@@ -12,7 +12,7 @@ final: 最终的
     - 比如: Object类中的getClass()
 
 4. final用来修饰变量: 此时的“变量”就称为是一个常量
-    4.1 final修饰属性: 可以考虑赋值的位置有: 显式初始化
+    4.1 final修饰属性: 可以考虑赋值的位置有: 显式初始化、代码块初始化、构造器中初始化
  */
 
 public class FinalTest {
@@ -27,6 +27,7 @@ public class FinalTest {
     final int WIDTH = 0;
     final int LEFT;
     final int RIGHT;
+    //final int DOWN;
 
     {
         LEFT = 1;
@@ -39,6 +40,10 @@ public class FinalTest {
     public FinalTest(int n) {
         RIGHT = n;
     }
+
+//    public void setDown(int down) {
+//        this.DOWN = down;
+//    }
 }
 
 final class FinalA {
