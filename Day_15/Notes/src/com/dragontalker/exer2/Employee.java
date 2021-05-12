@@ -5,6 +5,8 @@ public abstract class Employee {
     private int number;
     private MyDate birthday;
 
+    public Employee() {}
+
     public abstract void earnings();
 
     @Override
