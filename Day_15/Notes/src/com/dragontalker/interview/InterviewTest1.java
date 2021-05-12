@@ -10,7 +10,9 @@ class B {
 
 class C extends B implements A {
     public void pX() {
-        System.out.println(x);
+        //System.out.println(x); Error: ambiguous definition of x
+        System.out.println(super.x); //1
+        System.out.println(A.x); //0 记住接口中的是全局常量
     }
     public static void main(String[] args) {
         new C().pX();
