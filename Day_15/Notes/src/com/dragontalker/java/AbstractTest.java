@@ -11,7 +11,9 @@ abstract关键字的使用
 
     4. abstract修饰方法: 抽象方法
         > 抽象方法只有方法的声明, 没有方法体
-        > 包含抽象方法的类, 一定是一个抽象类
+        > 包含抽象方法的类, 一定是一个抽象类. 反之, 抽象类中可以没有抽象方法
+        > 若子类重写了父类中的所有的抽象方法后, 此子类方可实例化
+          若子类没有重写父类中的所有的抽象方法, 则此子类也是一个抽象类, 需要使用abstract修饰
  */
 
 public class AbstractTest {
@@ -50,6 +52,7 @@ class Student extends Person {
         super(name, age);
     }
 
+    //子类一定会继承抽象方法, 第一种方式是重写, 否则子类也必须是抽象类
     @Override
     public void eat() {
         System.out.println("学生吃饭");
