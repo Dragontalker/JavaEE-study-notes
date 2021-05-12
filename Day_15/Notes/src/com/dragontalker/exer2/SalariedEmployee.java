@@ -11,4 +11,8 @@ public class SalariedEmployee extends Employee{
     public double earnings() {
         return monthlySalary;
     }
+
+    public String toString() {
+        return "SalariedEmployee[" + super.toString() + "]";
+    }
 }
