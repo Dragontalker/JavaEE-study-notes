@@ -30,11 +30,13 @@ public class InnerClassTest {
         Person p = new Person();
         Person.Bird bird = p.new Bird();
         bird.sing();
+
+        bird.display("黄鹂");
     }
 }
 
 class Person {
-    String name;
+    String name = "小明";
     int age;
 
     public void eat() {
@@ -53,7 +55,7 @@ class Person {
 
     //成员内部类
     class Bird {
-        String name;
+        String name = "杜鹃";
 
         public Bird() {}
 
