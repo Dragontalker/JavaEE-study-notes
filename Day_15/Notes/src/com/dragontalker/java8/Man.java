@@ -12,7 +12,13 @@ interface Spoony {
     }
 }
 
-public class Man implements Filial, Spoony{
+class Father {
+    public void help() {
+        System.out.println("儿子, 救我媳妇!");
+    }
+}
+
+public class Man extends Father implements Filial, Spoony{
 
     @Override
     public void help() {
