@@ -25,8 +25,23 @@ try {
 finally {
     //一定会执行的代码
 }
+
+说明:
  */
+
+import org.junit.Test;
 
 public class ExceptionTest1 {
 
+    @Test
+    public void test1() {
+        String str = "123";
+        str = "abc";
+
+        try {
+            int num = Integer.parseInt(str);
+        } catch (NumberFormatException e) {
+            System.out.println("出现数值转化异常了, 不要着急....");
+        }
+    }
 }
