@@ -17,6 +17,13 @@ public class InnerClassTest {
 }
 
 class Person {
+    String name;
+    int age;
+
+    public void eat() {
+        System.out.println("人: 吃饭");
+    }
+
     //静态成员内部类
     static class Dog {
         String name;
@@ -28,13 +35,14 @@ class Person {
     }
 
     //成员内部类
-    abstract class Bird {
+    class Bird {
         String name;
 
         public Bird() {}
 
         public void sing() {
             System.out.println("我是一只小小鸟");
+            eat();
         }
     }
 
