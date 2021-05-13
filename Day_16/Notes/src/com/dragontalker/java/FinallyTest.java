@@ -16,7 +16,7 @@ public class FinallyTest {
     public int method() {
         try {
             int[] arr = new int[10];
-            System.out.println(arr[10]);
+            //System.out.println(arr[10]);
             return 1;
         } catch (ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
