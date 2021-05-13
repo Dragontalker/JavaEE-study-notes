@@ -4,7 +4,9 @@ package com.dragontalker.java;
 try-catch-finally当中finally的使用
 
 1. finally是可选的
-2.
+2. finally中声明的是一定会被执行的代码. 即使catch中又出现异常了,
+    - try中有return语句,
+    - catch中有return语句.
  */
 
 import org.junit.Test;
