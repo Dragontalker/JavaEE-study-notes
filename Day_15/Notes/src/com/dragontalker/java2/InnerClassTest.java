@@ -42,7 +42,7 @@ class Person {
 
         public void sing() {
             System.out.println("我是一只小小鸟");
-            eat();
+            Person.this.eat(); // 调用外部类的属性(非静态)
         }
     }
 
