@@ -1,4 +1,4 @@
-package com.dragontalker.java;
+package com.dragontalker.java1;
 
 /*
 异常方处理的方式二: throws + 异常类型

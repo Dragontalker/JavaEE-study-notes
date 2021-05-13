@@ -1,4 +1,4 @@
-package com.dragontalker.java;
+package com.dragontalker.java1;
 
 /*
 一、异常的体系结构
