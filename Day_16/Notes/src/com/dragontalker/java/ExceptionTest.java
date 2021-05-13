@@ -71,4 +71,13 @@ public class ExceptionTest {
         //int score  = scanner.nextInt();
         //System.out.println(score);
     }
+
+    //ArithmeticException
+    @Test
+    public void test7() {
+        int a = 10;
+        int b = 0;
+        System.out.println(a / b);
+
+    }
 }
