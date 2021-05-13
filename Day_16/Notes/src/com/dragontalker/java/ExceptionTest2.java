@@ -11,11 +11,21 @@ import java.io.IOException;
 
 public class ExceptionTest2 {
 
-    public void method2() throws FileNotFoundException, IOException{
+    public static void main(String[] args) {
+        try {
+            method2();
+        } catch (FileNotFoundException e) {
+            System.out.println("File NOT FOUND!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void method2() throws FileNotFoundException, IOException{
         method1();
     }
 
-    public void method1() throws FileNotFoundException, IOException {
+    public static void method1() throws FileNotFoundException, IOException {
         File file = new File("hello.txt");
         FileInputStream fis = new FileInputStream(file);
 
