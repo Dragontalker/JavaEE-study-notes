@@ -23,11 +23,14 @@ java.lang.Throwable
 
 import org.junit.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Scanner;
 
 public class ExceptionTest {
 
+    //*****************以下是运行时异常*****************
     //NullPointerException
     @Test
     public void test1() {
@@ -79,5 +82,20 @@ public class ExceptionTest {
         int b = 0;
         System.out.println(a / b);
 
+    }
+
+    //*****************以下是编译时异常*****************
+    @Test
+    public void test8() {
+//        File file = new File("hello.txt");
+//        FileInputStream fis = new FileInputStream(file);
+//
+//        int data = fis.read();
+//        while(data != -1) {
+//            System.out.println((char)data);
+//            data = fis.read();
+//        }
+//
+//        fis.close();
     }
 }
