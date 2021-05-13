@@ -16,13 +16,14 @@ public class StudentTest {
 class Student {
     int id;
 
-    public void register(int id) throws RuntimeException{
+    public void register(int id) throws MyException{
         if (id > 0) {
             this.id = id;
         } else {
             //System.out.println("您输入的数据非法!");
             //手动抛出异常对象
-            throw new RuntimeException("您输入的数据非法!");
+            //throw new RuntimeException("您输入的数据非法!");
+            throw new MyException("不能输入负数");
         }
     }
 }
