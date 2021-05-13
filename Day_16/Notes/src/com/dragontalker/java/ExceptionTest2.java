@@ -19,6 +19,15 @@ public class ExceptionTest2 {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        method3();
+    }
+
+    public static void method3() {
+        try {
+            method2();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void method2() throws FileNotFoundException, IOException{
