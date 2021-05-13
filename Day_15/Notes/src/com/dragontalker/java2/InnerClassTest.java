@@ -10,6 +10,9 @@ public class InnerClassTest {
 }
 
 class Person {
+    //静态成员内部类
+    static class Cat {}
+
     //成员内部类
     class Dog {}
 
