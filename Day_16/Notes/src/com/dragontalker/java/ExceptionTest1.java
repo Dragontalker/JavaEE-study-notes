@@ -44,6 +44,12 @@ finally {
 
 import org.junit.Test;
 
+import javax.imageio.IIOException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class ExceptionTest1 {
 
     @Test
@@ -69,5 +75,24 @@ public class ExceptionTest1 {
         System.out.println(num);
 
         System.out.println("Hello----2");
+    }
+
+    @Test
+    public void test2() {
+        try {
+            File file = new File("hello.txt");
+            FileInputStream fis = new FileInputStream(file);
+
+            int data = fis.read();
+            while(data != -1) {
+                System.out.println((char)data);
+                data = fis.read();
+            }
+            fis.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
