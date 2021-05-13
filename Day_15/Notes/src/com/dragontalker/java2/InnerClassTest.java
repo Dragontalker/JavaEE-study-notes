@@ -20,6 +20,12 @@ package com.dragontalker.java2;
  */
 
 public class InnerClassTest {
+    public static void main(String[] args) {
+
+        //创建Dog实例(静态的成员内部类)
+        Person.Dog dog = new Person.Dog();
+        dog.show();
+    }
 }
 
 class Person {
