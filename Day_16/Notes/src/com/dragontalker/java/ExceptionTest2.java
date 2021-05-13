@@ -2,6 +2,10 @@ package com.dragontalker.java;
 
 /*
 异常方处理的方式二: throws + 异常类型
+
+1. "throws + 异常类型"写在方法的声明处, 指明此方法执行时, 可能会抛出的异常类型
+    - 一旦当方法体执行时, 出现异常, 仍会在异常代码处生成一个异常类的对象, 此对象满足throws后异常类型时, 就会被抛出.
+
  */
 
 import java.io.File;
@@ -44,5 +48,6 @@ public class ExceptionTest2 {
             data = fis.read();
         }
         fis.close();
+        System.out.println("哈哈哈！");
     }
 }
