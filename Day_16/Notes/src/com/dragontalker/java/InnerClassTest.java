@@ -6,11 +6,14 @@ public class InnerClassTest {
 
     //安卓开发的例子, view model, 类似React中的state不能被method改变
     public void onCreate() {
-        button.setOnClickListener(new View.OnClickListener)() {
+        int num = 10;
+        View.OnClickListener listener = new View.OnClickListener() {
             public void onClick() {
                 System.out.println("Hello!");
+                System.out.println(num);
             }
-        }
+        };
+        button.setOnClickListener(listener);
     }
 
 
