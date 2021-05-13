@@ -40,6 +40,10 @@ finally {
     - printStackTrace()
 
 6. 在try结构中声明的变量, 在出了try结构以后, 就不能被调用
+
+
+体会: 使用try-catch-finally处理编译时异常, 使得程序在编译时就不再报错.
+    - 但是运行时仍可能报错
  */
 
 import org.junit.Test;
