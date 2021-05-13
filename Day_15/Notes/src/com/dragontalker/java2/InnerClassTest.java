@@ -11,6 +11,12 @@ package com.dragontalker.java2;
             > 类内可以定义属性、方法、构造器等
             > 可以被final修饰, 表示不能被继承, 言外之意, 不使用final就可以被继承
             > 可以被abstract修饰, 表示不能被实例化
+            >
+
+    4. 关注如下的3个问题
+        4.1 如何实例化成员内部类的对象
+        4.2 如何在成员内部类中区分调用外部类的结构
+        4.3 开发中局部内部类的使用
  */
 
 public class InnerClassTest {
