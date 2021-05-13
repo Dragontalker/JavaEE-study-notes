@@ -28,7 +28,10 @@ finally {
 
 说明:
 1. finally是可选的
-2.
+2. 使用try将可能出现异常代码包装起来, 在执行过程中, 一旦出现异常, 就会生成一个异常类的对象
+    - 根据对象的类型, 去catch中机型匹配
+3. 一旦try中的异常对象匹配到某一个catch时, 就进入catch中进行异常的处理.
+    - 一旦处理完成, 就跳出当前的try-catch结构
  */
 
 import org.junit.Test;
@@ -45,6 +48,10 @@ public class ExceptionTest1 {
             System.out.println("Hello----1");
         } catch (NumberFormatException e) {
             System.out.println("出现数值转化异常了, 不要着急....");
+        } catch (NullPointerException e) {
+            System.out.println("出现空指针异常了, 不要着急....");
+        } catch (Exception e) {
+            System.out.println("出现异常了, 不要着急....");
         }
 
         System.out.println("Hello----2");
