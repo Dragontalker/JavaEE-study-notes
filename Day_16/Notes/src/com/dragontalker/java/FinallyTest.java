@@ -16,6 +16,11 @@ try-catch-finally当中finally的使用
 
 import org.junit.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class FinallyTest {
 
     public int method() {
@@ -52,7 +57,26 @@ public class FinallyTest {
 
     @Test
     public void test2() {
-        int num = method();
-        System.out.println(num);
+        FileInputStream fis = null;
+        try {
+            File file = new File("hello.txt");
+            fis = new FileInputStream(file);
+
+            int data = fis.read();
+            while(data != -1) {
+                System.out.println((char)data);
+                data = fis.read();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fis.close();
+            } catch (NullPointerException | IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
