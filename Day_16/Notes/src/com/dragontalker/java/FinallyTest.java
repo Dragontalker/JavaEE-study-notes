@@ -20,7 +20,9 @@ public class FinallyTest {
             int b = 0;
             System.out.println(a / b);
         } catch (ArithmeticException e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            int[] arr = new int[10];
+            System.out.println(arr[10]);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
