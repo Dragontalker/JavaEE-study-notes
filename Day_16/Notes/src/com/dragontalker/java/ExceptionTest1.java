@@ -38,6 +38,8 @@ finally {
 5. 常用的异常对象处理的方式:
     - String getMessage()
     - printStackTrace()
+
+6. 在try结构中声明的变量, 在出了try结构以后, 就不能被调用
  */
 
 import org.junit.Test;
@@ -49,8 +51,9 @@ public class ExceptionTest1 {
         String str = "123";
         str = "abc";
 
+        int num = 0;
         try {
-            int num = Integer.parseInt(str);
+            num = Integer.parseInt(str);
             System.out.println("Hello----1");
         } catch (NumberFormatException e) {
             //System.out.println("出现数值转化异常了, 不要着急....");
@@ -63,6 +66,7 @@ public class ExceptionTest1 {
         } catch (Exception e) {
             System.out.println("出现异常了, 不要着急....");
         }
+        System.out.println(num);
 
         System.out.println("Hello----2");
     }
