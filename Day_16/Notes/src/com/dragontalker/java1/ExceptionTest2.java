@@ -11,6 +11,10 @@ package com.dragontalker.java1;
 2. 体会: try-catch-finally: 真正的将异常给处理掉了.
         throws的方式只是将异常抛给了方法的调用者, 并没有真正的将异常处理掉.
 
+3. 开发中如何选择使用try-catch-finally还是使用throws?
+    3.1 如果父类中被重写的方法没有throws方式处理异常, 则子类重写的方法也不能使用throws,
+        - 意味着如果子类重写的方法中有异常, 必须使用try-catch-finally方式处理.
+
  */
 
 import java.io.File;

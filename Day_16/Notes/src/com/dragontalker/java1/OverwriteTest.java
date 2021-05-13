@@ -9,6 +9,18 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class OverwriteTest {
+    public static void main(String[] args) {
+        OverwriteTest test = new OverwriteTest();
+        test.display(new SubClass());
+    }
+
+    public void display(SuperClass s) {
+        try {
+            s.method();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
 class SuperClass {
