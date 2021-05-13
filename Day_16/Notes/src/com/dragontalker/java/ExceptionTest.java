@@ -11,6 +11,12 @@ java.lang.Throwable
                 |---> FileNotFoundException
             |---> ClassNotFoundException
         |---> 运行时异常(unchecked)
+            |---> NullPointerException
+            |---> ArrayIndexOutOfBoundsException
+            |---> ClassCastException
+            |---> NumberFormatException
+            |---> InputMismatchException
+            |---> ArithmeticException
  */
 
 public class ExceptionTest {
