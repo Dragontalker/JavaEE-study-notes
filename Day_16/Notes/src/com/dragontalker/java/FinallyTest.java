@@ -13,6 +13,19 @@ import org.junit.Test;
 
 public class FinallyTest {
 
+    public int method() {
+        try {
+            int[] arr = new int[10];
+            System.out.println(arr[10]);
+            return 1;
+        } catch (ArrayIndexOutOfBoundsException e) {
+            e.printStackTrace();
+            return 2;
+        } finally {
+            System.out.println("我一定会被执行！");
+        }
+    }
+
     @Test
     public void test1() {
         try {
@@ -29,5 +42,11 @@ public class FinallyTest {
             System.out.println("我好帅啊~~~");
         }
         //System.out.println("我好帅啊！！！");
+    }
+
+    @Test
+    public void test2() {
+        int num = method();
+        System.out.println(num);
     }
 }
