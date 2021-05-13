@@ -18,4 +18,13 @@ public class ReturnExceptionDemo {
             System.out.println("调用B方法的finally");
         }
     }
+
+    public static void main(String[] args) {
+        try {
+            methodA();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        methodB();
+    }
 }
