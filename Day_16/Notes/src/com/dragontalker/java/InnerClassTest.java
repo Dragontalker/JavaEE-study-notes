@@ -1,6 +1,19 @@
 package com.dragontalker.java;
 
+import javax.swing.text.View;
+
 public class InnerClassTest {
+
+    //安卓开发的例子, view model, 类似React中的state不能被method改变
+    public void onCreate() {
+        button.setOnClickListener(new View.OnClickListener)() {
+            public void onClick() {
+                System.out.println("Hello!");
+            }
+        }
+    }
+
+
     /*
     在局部内部类的方法中(比如: show) 如果调用局部内部类所声明的方法(比如:method)中的局部变量
     (num)要求此局部变量声明为final的
