@@ -61,6 +61,12 @@ class Person {
             System.out.println("我是一只小小鸟");
             Person.this.eat(); // 调用外部类的属性(非静态)
         }
+
+        public void display(String name) {
+            System.out.println(name); //方法的形参
+            System.out.println(this.name); //内部类的属性
+            System.out.println(Person.this.name); //外部类的属性
+        }
     }
 
     public void method() {
