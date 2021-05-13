@@ -23,6 +23,9 @@ java.lang.Throwable
 
 import org.junit.Test;
 
+import java.util.Date;
+import java.util.Scanner;
+
 public class ExceptionTest {
 
     //NullPointerException
@@ -45,5 +48,27 @@ public class ExceptionTest {
     public void test3() {
         String str = "abc";
         System.out.println(str.charAt(3));
+    }
+
+    //ClassCastException
+    @Test
+    public void test4() {
+        Object obj = new Date();
+        String str = (String)obj;
+    }
+
+    //NumberFormatException
+    @Test
+    public void test5() {
+        String str = "123abc";
+        Integer.parseInt(str);
+    }
+
+    //InputMismatchException
+    @Test
+    public void test6() {
+        //Scanner scanner = new Scanner(System.in);
+        //int score  = scanner.nextInt();
+        //System.out.println(score);
     }
 }
