@@ -16,7 +16,14 @@ public class InnerClassTest {
 
 class Person {
     //静态成员内部类
-    static class Dog {}
+    static class Dog {
+        String name;
+        int age;
+
+        public void show() {
+            System.out.println("卡拉是条狗");
+        }
+    }
 
     //成员内部类
     class Bird {
