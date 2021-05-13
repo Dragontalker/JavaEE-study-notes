@@ -9,5 +9,6 @@ public class EcmDef {
         if (i < 0 || j < 0) {
             return 0;
         }
+        return 1;
     }
 }
