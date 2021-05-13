@@ -27,6 +27,8 @@ finally {
 }
 
 说明:
+1. finally是可选的
+2.
  */
 
 import org.junit.Test;
@@ -40,8 +42,11 @@ public class ExceptionTest1 {
 
         try {
             int num = Integer.parseInt(str);
+            System.out.println("Hello----1");
         } catch (NumberFormatException e) {
             System.out.println("出现数值转化异常了, 不要着急....");
         }
+
+        System.out.println("Hello----2");
     }
 }
