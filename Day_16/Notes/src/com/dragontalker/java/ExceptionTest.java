@@ -17,6 +17,8 @@ java.lang.Throwable
             |---> NumberFormatException
             |---> InputMismatchException
             |---> ArithmeticException
+
+面试题: 常见的异常都有哪些？举例说明: 空指针、角标越界
  */
 
 public class ExceptionTest {
