@@ -9,8 +9,8 @@ package com.dragontalker.java2;
         - 一方面, 作为外部类的成员:
         - 另一方面, 作为一个类:
             > 类内可以定义属性、方法、构造器等
-            > 可以被final修饰, 表示不能被继承
-            > 言外之意, 不使用final就可以被继承
+            > 可以被final修饰, 表示不能被继承, 言外之意, 不使用final就可以被继承
+            > 可以被abstract修饰, 表示不能被实例化
  */
 
 public class InnerClassTest {
@@ -28,7 +28,7 @@ class Person {
     }
 
     //成员内部类
-    class Bird {
+    abstract class Bird {
         String name;
 
         public Bird() {}
