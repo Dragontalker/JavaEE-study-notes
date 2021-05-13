@@ -21,6 +21,9 @@ public class FinallyTest {
             e.printStackTrace();
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("我好帅啊~~~");
         }
+        //System.out.println("我好帅啊！！！");
     }
 }
