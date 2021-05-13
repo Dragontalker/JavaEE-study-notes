@@ -49,7 +49,9 @@ public class ExceptionTest1 {
             int num = Integer.parseInt(str);
             System.out.println("Hello----1");
         } catch (NumberFormatException e) {
-            System.out.println("出现数值转化异常了, 不要着急....");
+            //System.out.println("出现数值转化异常了, 不要着急....");
+            //String getMessage():
+            System.out.println(e.getMessage());
         } catch (NullPointerException e) {
             System.out.println("出现空指针异常了, 不要着急....");
         } catch (Exception e) {
