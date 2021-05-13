@@ -23,6 +23,7 @@ public class FinallyTest {
             return 2;
         } finally {
             System.out.println("我一定会被执行！");
+            return 3;
         }
     }
 
