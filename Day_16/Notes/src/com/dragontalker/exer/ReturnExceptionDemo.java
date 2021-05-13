@@ -10,4 +10,12 @@ public class ReturnExceptionDemo {
         }
     }
 
+    static void methodB() {
+        try {
+            System.out.println("进入方法B");
+            return;
+        } finally {
+            System.out.println("调用B方法的finally");
+        }
+    }
 }
