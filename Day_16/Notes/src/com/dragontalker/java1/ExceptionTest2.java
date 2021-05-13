@@ -14,6 +14,9 @@ package com.dragontalker.java1;
 3. 开发中如何选择使用try-catch-finally还是使用throws?
     3.1 如果父类中被重写的方法没有throws方式处理异常, 则子类重写的方法也不能使用throws,
         - 意味着如果子类重写的方法中有异常, 必须使用try-catch-finally方式处理.
+    3.2 执行的方法中, 先后又调用了另外的几个方法, 这几个方法是递进关系进行的.
+        - 我们建议这几个方法使用throws的方式进行处理.
+        - 而执行的方法a可以考虑使用try-catch-finally方式进行处理
 
  */
 
