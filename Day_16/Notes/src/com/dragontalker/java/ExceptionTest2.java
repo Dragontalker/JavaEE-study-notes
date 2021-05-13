@@ -10,6 +10,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ExceptionTest2 {
+
+    public void method2() throws FileNotFoundException, IOException{
+        method1();
+    }
+
     public void method1() throws FileNotFoundException, IOException {
         File file = new File("hello.txt");
         FileInputStream fis = new FileInputStream(file);
