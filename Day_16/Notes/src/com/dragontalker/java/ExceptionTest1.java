@@ -51,7 +51,9 @@ public class ExceptionTest1 {
         } catch (NumberFormatException e) {
             //System.out.println("出现数值转化异常了, 不要着急....");
             //String getMessage():
-            System.out.println(e.getMessage());
+            //System.out.println(e.getMessage());
+            //printStackTrace():
+            e.printStackTrace();
         } catch (NullPointerException e) {
             System.out.println("出现空指针异常了, 不要着急....");
         } catch (Exception e) {
