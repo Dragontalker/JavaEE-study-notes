@@ -13,12 +13,21 @@ public class InnerClassTest1 {
     public Comparable getComparable() {
 
         //创建了一个实现了Comparable接口类的: 局部内部类
-        class MyComparable implements Comparable {
+        //方式一:
+//        class MyComparable implements Comparable {
+//            @Override
+//            public int compareTo(Object o) {
+//                return 0;
+//            }
+//        }
+//        return new MyComparable();
+
+        //方式二
+        return new Comparable() {
             @Override
             public int compareTo(Object o) {
                 return 0;
             }
-        }
-        return new MyComparable();
+        };
     }
 }
