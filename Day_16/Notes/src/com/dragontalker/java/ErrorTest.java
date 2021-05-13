@@ -10,4 +10,9 @@ Error:
  */
 
 public class ErrorTest {
+    public static void main(String[] args) {
+
+        //1. 栈溢出: java.lang.StackOverflowError
+        //main(args);
+    }
 }
