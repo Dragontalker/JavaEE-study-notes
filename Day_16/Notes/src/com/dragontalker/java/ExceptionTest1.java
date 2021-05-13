@@ -21,6 +21,10 @@ try {
 } catch(异常类型3 变量名3) {
     //处理异常的方式3
 }
+...
+finally {
+    //一定会执行的代码
+}
  */
 
 public class ExceptionTest1 {
