@@ -34,6 +34,10 @@ finally {
     - 一旦处理完成, 就跳出当前的try-catch结构(在没有写finally的情况下), 继续执行其后的代码
 4. catch中的异常类型如果没有子父类关系, 则谁声明在上, 谁声明在下无所谓.
    catch中的异常类性如果满足子父类的关系, 则子类一定要声明在父类上面, 否则, 报错
+
+5. 常用的异常对象处理的方式:
+    - String getMessage()
+    - printStackTrace()
  */
 
 import org.junit.Test;
