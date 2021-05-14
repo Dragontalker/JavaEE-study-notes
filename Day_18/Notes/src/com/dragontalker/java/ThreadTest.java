@@ -33,6 +33,9 @@ public class ThreadTest {
         //  2) 调用当前线程的run()
         myThread.start();
 
+        //问题一: 我们不能通过直接调用run()的方式启动线程
+        //t1.run();
+
 
 
         //如下操作仍然是在main线程中执行的
