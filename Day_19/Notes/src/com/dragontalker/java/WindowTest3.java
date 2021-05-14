@@ -9,21 +9,22 @@ class Window3 implements Runnable {
 
     @Override
     public void run() {
-        while(true) {
-            if (ticket > 0) {
+        while(ticket > 0) {
+            show();
+        }
+    }
 
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+    public synchronized void show() {
+        if (ticket > 0) {
 
-                System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
-                ticket--;
-            } else {
-                break;
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
 
+            System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
+            ticket--;
         }
     }
 }
