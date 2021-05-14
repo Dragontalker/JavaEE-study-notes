@@ -13,10 +13,12 @@ class Bank {
     private static Bank instance = null;
 
     public static Bank getInstance() {
-        if (instance == null) {
-            instance = new Bank();
+        //方式一: 效率稍差
+        synchronized (Bank.class) {
+            if (instance == null) {
+                instance = new Bank();
+            }
+            return instance;
         }
-        return instance;
-
     }
 }
