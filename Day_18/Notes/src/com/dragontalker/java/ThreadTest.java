@@ -31,6 +31,10 @@ public class ThreadTest {
         //4. 通过此对调用start()方法
         myThread.start();
 
-        System.out.println("hello");
+        for (int i =0; i < 100; i++) {
+            if (i % 2 == 0){
+                System.out.println("*");
+            }
+        }
     }
 }
