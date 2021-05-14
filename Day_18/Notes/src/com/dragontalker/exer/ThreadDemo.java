@@ -27,4 +27,11 @@ class OddThread extends Thread {
 }
 
 public class ThreadDemo {
+    public static void main(String[] args) {
+        EvenThread t1 = new EvenThread();
+        t1.start();
+
+        OddThread t2 = new OddThread();
+        t2.start();
+    }
 }
