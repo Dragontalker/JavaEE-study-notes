@@ -16,6 +16,8 @@ package com.dragontalker.java;
         synchronized (同步监视器) {
             //需要被同步的代码
         }
+        - 说明: 操作共享数据的代码, 即为需要被同步的代码
+            > 共享数据: 多个线程共同操作的变量, 比如: ticket就是共享数据
 
     方式二: 同步方法
  */
