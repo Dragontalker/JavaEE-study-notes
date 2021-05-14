@@ -25,5 +25,14 @@ public class ThreadMethodTest {
         HelloThread t1 = new HelloThread();
         t1.setName("线程一");
         t1.start();
+
+        //给主线程命名
+        Thread.currentThread().setName("主线程");
+
+        for (int i = 0; i < 100; i++) {
+            if(i % 2 != 0) {
+                System.out.println(Thread.currentThread().getName() + ": " + i);
+            }
+        }
     }
 }
