@@ -35,12 +35,15 @@ public class ThreadDemo {
         t2.start();
 
         //创建Thread类的匿名子类的方式
-        new Thread(() -> {
-            for (int i =0; i < 100; i++) {
-                if (i % 2 == 0){
-                    System.out.println("Running on: "+ Thread.currentThread().getName() + ", Output: " + "*");
+        new Thread() {
+            @Override
+            public void run() {
+                for (int i =0; i < 100; i++) {
+                    if (i % 2 == 0){
+                        System.out.println("Running on: "+ Thread.currentThread().getName() + ", Output: " + "*");
+                    }
                 }
             }
-        }).start();
+        }.start();
     }
 }
