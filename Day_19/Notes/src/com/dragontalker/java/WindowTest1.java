@@ -9,6 +9,15 @@ package com.dragontalker.java;
     - 当一个线程在操作ticket的时候, 其他线程不能参与进来.
     - 直到线程a操作完ticket的时候, 其他线程才可以开始操作ticket.
     - 这种情况即使线程a出现了阻塞, 也不能被改变.
+
+4. 在Java中, 我们通过同步机制, 来解决线程的安全问题.
+
+    方式一: 同步代码块
+        synchronized (同步监视器) {
+            //需要被同步的代码
+        }
+
+    方式二: 同步方法
  */
 
 class Window1 implements Runnable {
