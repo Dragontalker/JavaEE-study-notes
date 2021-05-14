@@ -16,30 +16,35 @@ package com.dragontalker.java;
         synchronized (同步监视器) {
             //需要被同步的代码
         }
-        - 说明: 操作共享数据的代码, 即为需要被同步的代码
-            > 共享数据: 多个线程共同操作的变量, 比如: ticket就是共享数据
+        - 说明:
+            1. 操作共享数据的代码, 即为需要被同步的代码
+            2. 共享数据: 多个线程共同操作的变量, 比如: ticket就是共享数据
+            3. 同步监视器, 俗称: 锁. 任何一个类的对象, 都可以充当锁
+                - 要求: 多个线程必须共用同一把锁
 
     方式二: 同步方法
  */
 
 class Window1 implements Runnable {
-    private int ticket = 100;
+    private int ticket = 10000;
 
     @Override
     public void run() {
         while(true) {
-            if (ticket > 0) {
+            synchronized (this) {
+                if (ticket > 0) {
 
 //                try {
-//                    Thread.sleep(200);
+//                    Thread.sleep(100);
 //                } catch (InterruptedException e) {
 //                    e.printStackTrace();
 //                }
 
-                System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
-                ticket--;
-            } else {
-                break;
+                    System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
+                    ticket--;
+                } else {
+                    break;
+                }
             }
         }
     }
