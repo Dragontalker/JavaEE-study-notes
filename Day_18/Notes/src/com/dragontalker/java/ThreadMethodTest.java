@@ -7,6 +7,7 @@ package com.dragontalker.java;
     3. currentThread(): 静态方法, 返回执行当前代码的线程
     4. getName(): 获取当前线程的名字
     5. setName(): 设置当前线程的名字
+    6. yield(): 释放当前cpu的执行权
  */
 
 class HelloThread extends Thread {
