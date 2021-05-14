@@ -11,7 +11,9 @@ package com.dragontalker.java;
     7. join(): 在线程a中调用线程b的join()方法, 此时线程a就进入阻塞状态
         - 直到线程b完全执行完之后, 线程a才结束阻塞状态
     8. stop(): 已过时. 当执行此方法时, 强制结束当前线程.
-    9. sleep(long mi
+    9. sleep(long ms): 让当前线程"睡眠"指定的ms毫秒
+        -   在指定的毫秒时间内, 当前线程是阻塞状态
+    10. isAlive(): 判断当前线程是否存活
  */
 
 class HelloThread extends Thread {
@@ -20,7 +22,7 @@ class HelloThread extends Thread {
         for (int i = 0; i < 100; i++) {
             if(i % 2 == 0) {
                 try {
-                    sleep(1000);
+                    sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -55,5 +57,6 @@ public class ThreadMethodTest {
                 }
             }
         }
+        System.out.println(t1.isAlive());
     }
 }
