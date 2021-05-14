@@ -26,7 +26,7 @@ class HelloThread extends Thread {
 
 public class ThreadMethodTest {
     public static void main(String[] args) {
-        HelloThread t1 = new HelloThread("线程一");
+        HelloThread t1 = new HelloThread("我是线程一, 喵~~~");
         t1.start();
 
         //给主线程命名
