@@ -5,7 +5,7 @@ package com.dragontalker.java;
  */
 
 class Window3 implements Runnable {
-    private static int ticket = 100;
+    private static int ticket = 10000;
 
     @Override
     public void run() {
@@ -18,7 +18,7 @@ class Window3 implements Runnable {
         if (ticket > 0) {
 
             try {
-                Thread.sleep(100);
+                Thread.sleep(10);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
