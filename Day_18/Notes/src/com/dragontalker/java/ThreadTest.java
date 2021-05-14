@@ -10,17 +10,27 @@ package com.dragontalker.java;
 例子: 遍历100以内的所有的偶数
  */
 
-public class ThreadTest {
-    class MyThread extends Thread {
-        //2. 重写Thread类的run()方法
+class MyThread extends Thread {
+    //2. 重写Thread类的run()方法
 
-        @Override
-        public void run() {
-            for (int i =0; i < 100; i++) {
-                if (i % 2 == 0){
-                    System.out.println(i);
-                }
+    @Override
+    public void run() {
+        for (int i =0; i < 100; i++) {
+            if (i % 2 == 0){
+                System.out.println(i);
             }
         }
+    }
+}
+
+public class ThreadTest {
+    public static void main(String[] args) {
+        //3. 创建Thread类的子类的对象
+        MyThread myThread = new MyThread();
+
+        //4. 通过此对调用start()方法
+        myThread.start();
+
+        System.out.println("hello");
     }
 }
