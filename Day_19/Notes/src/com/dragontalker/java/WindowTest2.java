@@ -4,6 +4,9 @@ package com.dragontalker.java;
 使用同步代码块
     - 如果使用多个subclass, 那么定义 private static Object lock = new Object();
     - 如果使用Runnable interface, 用this所谓线程锁
+
+说明: 在继承Thread类创建多线程的方式中, 慎用this充当同步监视器
+    - 我们可以考虑使用当前类充当同步监视器
  */
 
 class Window2 implements Runnable {
@@ -12,6 +15,7 @@ class Window2 implements Runnable {
     @Override
     public void run() {
         while(true) {
+            //Window2只会加载一次
             synchronized (Window2.class) {//Class clazz = Window2.class
                 if (ticket > 0) {
 
