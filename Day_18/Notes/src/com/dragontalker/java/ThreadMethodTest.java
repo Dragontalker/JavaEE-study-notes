@@ -8,6 +8,8 @@ package com.dragontalker.java;
     4. getName(): 获取当前线程的名字
     5. setName(): 设置当前线程的名字
     6. yield(): 释放当前cpu的执行权
+    7. join(): 在线程a中调用线程b的join()方法, 此时线程a就进入阻塞状态
+        - 直到线程b完全执行完之后, 线程a才结束阻塞状态
  */
 
 class HelloThread extends Thread {
@@ -36,6 +38,14 @@ public class ThreadMethodTest {
         for (int i = 0; i < 100; i++) {
             if(i % 2 != 0) {
                 System.out.println(Thread.currentThread().getName() + ": " + i);
+            }
+
+            if (i == 20) {
+                try {
+                    t1.join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
