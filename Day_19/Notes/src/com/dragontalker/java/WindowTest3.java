@@ -14,7 +14,7 @@ class Window3 implements Runnable {
         }
     }
 
-    public synchronized void show() {
+    private synchronized void show() {//同步监视器: this
         if (ticket > 0) {
 
             try {
