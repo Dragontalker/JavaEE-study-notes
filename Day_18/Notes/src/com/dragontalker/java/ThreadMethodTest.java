@@ -31,12 +31,13 @@ class HelloThread extends Thread {
     public void run() {
         for (int i = 0; i < 100; i++) {
             if(i % 2 == 0) {
-                try {
-                    sleep(10);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                System.out.println(Thread.currentThread().getName() + ": " + i);
+//                try {
+//                    sleep(10);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+                System.out.println(Thread.currentThread().getName() + ": " + i +
+                        ", 优先级: "+ Thread.currentThread().getPriority());
             }
         }
     }
@@ -53,19 +54,21 @@ public class ThreadMethodTest {
 
         //给主线程命名
         Thread.currentThread().setName("主线程");
+        Thread.currentThread().setPriority(Thread.MIN_PRIORITY);
 
         for (int i = 0; i < 100; i++) {
             if(i % 2 != 0) {
-                System.out.println(Thread.currentThread().getName() + ": " + i);
+                System.out.println(Thread.currentThread().getName() + ": " + i +
+                        "优先级: " + Thread.currentThread().getPriority());
             }
 
-            if (i == 20) {
-                try {
-                    t1.join();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
+//            if (i == 20) {
+//                try {
+//                    t1.join();
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
         }
         System.out.println(t1.isAlive());
     }
