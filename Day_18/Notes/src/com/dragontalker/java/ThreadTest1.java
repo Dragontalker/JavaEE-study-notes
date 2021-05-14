@@ -31,6 +31,8 @@ public class ThreadTest1 {
         Thread t1 = new Thread(mThread);
 
         //5. 通过Thread类的对象调用start()
+        // ---> 1. 启动线程
+        // ---> 2. 调用当前线程的run() 源码: 如果Runnable不为Null, 则启动Runnable的run()
         t1.start();
     }
 }
