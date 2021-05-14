@@ -29,6 +29,8 @@ public class ThreadTest {
         MyThread myThread = new MyThread();
 
         //4. 通过此对调用start()方法
+        //  1) 启动当前线程
+        //  2) 调用当前线程的run()
         myThread.start();
 
         for (int i =0; i < 100; i++) {
