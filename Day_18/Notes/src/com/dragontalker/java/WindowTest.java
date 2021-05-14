@@ -30,5 +30,9 @@ public class WindowTest {
         w1.setName("窗口1");
         w2.setName("窗口2");
         w3.setName("窗口3");
+
+        w1.start();
+        w2.start();
+        w3.start();
     }
 }
