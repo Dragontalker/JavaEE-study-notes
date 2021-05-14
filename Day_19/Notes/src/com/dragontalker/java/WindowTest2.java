@@ -31,16 +31,14 @@ class Window2 extends Thread {
 
 public class WindowTest2 {
     public static void main(String[] args) {
-        Window2 w1 = new Window2();
-        Window2 w2 = new Window2();
-        Window2 w3 = new Window2();
+        Window2 w = new Window2();
 
-        w1.setName("窗口1");
-        w2.setName("窗口2");
-        w3.setName("窗口3");
+        Thread t1 = new Thread(w);
+        Thread t2 = new Thread(w);
+        Thread t3 = new Thread(w);
 
-        w1.start();
-        w2.start();
-        w3.start();
+        t1.start();
+        t2.start();
+        t3.start();
     }
 }
