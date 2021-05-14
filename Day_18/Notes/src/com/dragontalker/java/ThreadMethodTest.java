@@ -21,4 +21,9 @@ class HelloThread extends Thread {
 }
 
 public class ThreadMethodTest {
+    public static void main(String[] args) {
+        HelloThread t1 = new HelloThread();
+        t1.setName("线程一");
+        t1.start();
+    }
 }
