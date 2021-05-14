@@ -12,6 +12,9 @@ package com.dragontalker.java;
     - 开发中: 优先选择: 实现Runnable接口的方式
     - 原因: 1. 实现的方式没有类的但继承的局限性
            2. 实现的方式更适合来处理多个线程共享数据的情况
+
+    - 联系: public class Thread implements Runnable
+    - 相同点: 两种方式都需要重写run(), 将线程要执行的逻辑声明在run()中
  */
 
 class MThread implements Runnable {
