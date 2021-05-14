@@ -8,6 +8,7 @@ package com.dragontalker.java;
 3. 如何解决:
     - 当一个线程在操作ticket的时候, 其他线程不能参与进来.
     - 直到线程a操作完ticket的时候, 其他线程才可以开始操作ticket.
+    - 这种情况即使线程a出现了阻塞, 也不能被改变.
  */
 
 class Window1 implements Runnable {
