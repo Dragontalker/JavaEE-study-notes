@@ -16,7 +16,7 @@ class MThread implements Runnable {
     public void run() {
         for (int i = 0; i < 100; i++) {
             if (i % 2 == 0) {
-                System.out.println(i);
+                System.out.println(Thread.currentThread().getName() + ": " + i);
             }
         }
     }
@@ -34,5 +34,9 @@ public class ThreadTest1 {
         // ---> 1. 启动线程
         // ---> 2. 调用当前线程的run() 源码: 如果Runnable不为Null, 则启动Runnable的run()
         t1.start();
+
+        //再启动一个线程, 遍历100以内的偶数
+        Thread t2 = new Thread(mThread);
+        t2.start();
     }
 }
