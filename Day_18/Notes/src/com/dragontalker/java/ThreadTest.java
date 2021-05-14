@@ -6,7 +6,17 @@ package com.dragontalker.java;
     2. 重写Thread类的run()方法
     3. 创建Thread类的子类的对象
     4. 通过此对调用start()方法
+
+例子: 遍历100以内的所有的偶数
  */
 
 public class ThreadTest {
+    class MyThread extends Thread {
+        //2. 重写Thread类的run()方法
+
+        @Override
+        public void run() {
+
+        }
+    }
 }
