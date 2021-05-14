@@ -14,6 +14,16 @@ package com.dragontalker.java;
     9. sleep(long ms): 让当前线程"睡眠"指定的ms毫秒
         -   在指定的毫秒时间内, 当前线程是阻塞状态
     10. isAlive(): 判断当前线程是否存活
+
+
+线程的优先级:
+    1. - int MAX_PRIORITY = 10
+       - int MIN_PRIORITY = 1
+       - int NORM_PRIORITY = 5
+
+    2. 如何获取和设置当前的线程优先级
+        - getPriority();
+        - setPriority(int priority);
  */
 
 class HelloThread extends Thread {
