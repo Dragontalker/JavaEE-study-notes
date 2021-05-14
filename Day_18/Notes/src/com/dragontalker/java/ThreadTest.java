@@ -17,7 +17,7 @@ class MyThread extends Thread {
     public void run() {
         for (int i =0; i < 100; i++) {
             if (i % 2 == 0){
-                System.out.println(i);
+                System.out.println("Running on: "+ Thread.currentThread().getName() + ", Output: " + i);
             }
         }
     }
@@ -33,9 +33,12 @@ public class ThreadTest {
         //  2) 调用当前线程的run()
         myThread.start();
 
+
+
+        //如下操作仍然是在main线程中执行的
         for (int i =0; i < 100; i++) {
             if (i % 2 == 0){
-                System.out.println("*");
+                System.out.println("Running on: "+ Thread.currentThread().getName() + ", Output: " + i);
             }
         }
     }
