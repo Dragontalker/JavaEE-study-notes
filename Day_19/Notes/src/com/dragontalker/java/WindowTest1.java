@@ -11,6 +11,13 @@ class Window1 implements Runnable {
     public void run() {
         while(true) {
             if (ticket > 0) {
+
+                try {
+                    Thread.sleep(100);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
                 System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
                 ticket--;
             } else {
