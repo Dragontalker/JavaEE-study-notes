@@ -27,6 +27,8 @@ public class WindowTest {
         Window w2 = new Window();
         Window w3 = new Window();
 
-
+        w1.setName("窗口1");
+        w2.setName("窗口2");
+        w3.setName("窗口3");
     }
 }
