@@ -18,12 +18,15 @@ class HelloThread extends Thread {
             }
         }
     }
+
+    public HelloThread(String name) {
+        super(name);
+    }
 }
 
 public class ThreadMethodTest {
     public static void main(String[] args) {
-        HelloThread t1 = new HelloThread();
-        t1.setName("线程一");
+        HelloThread t1 = new HelloThread("线程一");
         t1.start();
 
         //给主线程命名
