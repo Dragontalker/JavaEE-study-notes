@@ -1,5 +1,14 @@
 package com.dragontalker.java;
 
+/*
+使用同步方法解决事项Runnable接口的线程安全问题
+
+关于同步方法的总结:
+1. 同步方法仍然涉及到同步监视器, 只是不需要我们显式的声明
+2. 非静态的同步方法, 同步监视器是: this
+3. 静态的同步方法, 同步监视器是: 当前类本身
+ */
+
 class Window4 extends Thread {
     private static int ticket = 100;
 
