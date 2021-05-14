@@ -24,6 +24,11 @@ package com.dragontalker.java;
     2. 如何获取和设置当前的线程优先级
         - getPriority();
         - setPriority(int priority);
+
+    说明:
+     - 高优先级的线程要抢占低优先级线程cpu的执行权, 但是只是从概率上讲
+     - 高优先级的线程高概率的被执行
+     - 并不意味着只有当高优先级的线程执行完以后, 低优先级的线程才执行
  */
 
 class HelloThread extends Thread {
