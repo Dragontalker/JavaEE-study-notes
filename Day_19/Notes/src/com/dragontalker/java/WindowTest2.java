@@ -12,7 +12,7 @@ class Window2 implements Runnable {
     @Override
     public void run() {
         while(true) {
-            synchronized (this) {
+            synchronized (Window2.class) {//Class clazz = Window2.class
                 if (ticket > 0) {
 
                 try {
