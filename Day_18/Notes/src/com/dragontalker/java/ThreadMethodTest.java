@@ -9,5 +9,16 @@ package com.dragontalker.java;
     5. setName(): 设置当前线程的名字
  */
 
+class HelloThread extends Thread {
+    @Override
+    public void run() {
+        for (int i = 0; i < 100; i++) {
+            if(i % 2 == 0) {
+                System.out.println(Thread.currentThread().getName() + ": " + i);
+            }
+        }
+    }
+}
+
 public class ThreadMethodTest {
 }
