@@ -5,7 +5,7 @@ package com.dragontalker.java;
  */
 
 class Window2 extends Thread {
-    private int ticket = 100;
+    private static int ticket = 100;
 
     @Override
     public void run() {
@@ -13,11 +13,11 @@ class Window2 extends Thread {
             synchronized (this) {
                 if (ticket > 0) {
 
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    Thread.sleep(100);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
 
                     System.out.println(Thread.currentThread().getName() + ": 卖票, 票号为: " + ticket);
                     ticket--;
