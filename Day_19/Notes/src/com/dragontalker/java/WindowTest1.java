@@ -2,6 +2,9 @@ package com.dragontalker.java;
 
 /*
 例子: 创建三个窗口卖票, 总票数为100张, 使用实现Runnable接口的方式
+
+1. 问题: 卖票过程中, 出现了重票、错票 ---> 出现了线程安全问题
+2. 问题出现的原因:
  */
 
 class Window1 implements Runnable {
@@ -13,7 +16,7 @@ class Window1 implements Runnable {
             if (ticket > 0) {
 
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(200);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
