@@ -15,5 +15,16 @@ class EvenThread extends Thread {
     }
 }
 
+class OddThread extends Thread {
+    @Override
+    public void run() {
+        for (int i =0; i < 100; i++) {
+            if (i % 2 != 0){
+                System.out.println("Running on: "+ Thread.currentThread().getName() + ", Output: " + i);
+            }
+        }
+    }
+}
+
 public class ThreadDemo {
 }
