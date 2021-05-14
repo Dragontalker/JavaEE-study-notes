@@ -9,5 +9,18 @@ package com.dragontalker.java;
     5. 通过Thread类的对象调用start()
  */
 
+class MThread implements Runnable {
+
+    //2. 实现类去实现Runnable中的抽象方法: run()
+    @Override
+    public void run() {
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+}
+
 public class ThreadTest1 {
 }
