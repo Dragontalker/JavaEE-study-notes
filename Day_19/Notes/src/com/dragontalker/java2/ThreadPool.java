@@ -2,6 +2,10 @@ package com.dragontalker.java2;
 
 /*
 创建线程的方式四: 使用线程池
+
+好处:
+    1. 提高响应速度(减少了创建新线程的时间)
+    2. 降低资源消耗(重复利用线程池中线程, 不需要每次都创建)
  */
 
 import java.util.concurrent.Callable;
