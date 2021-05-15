@@ -26,6 +26,13 @@ class Clerk {
 
     //生产产品
     public void consumeProduct() {
+        if (productCount > 0) {
+            System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
+                    productCount + "个产品");
+            productCount--;
+        } else {
+            //wait();
+        }
     }
 }
 
