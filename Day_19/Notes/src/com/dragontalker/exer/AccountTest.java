@@ -20,12 +20,12 @@ class Account {
     }
 
     //存钱
-    public void deposit(double amt) {
+    public synchronized void deposit(double amt) {
         if (amt > 0) {
             balance += amt;
 
             try {
-                Thread.sleep(1000);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -36,7 +36,7 @@ class Account {
 }
 
 class Customer extends Thread {
-    private Account acct;
+    private final Account acct;
 
     public Customer(Account acct) {
         this.acct = acct;
