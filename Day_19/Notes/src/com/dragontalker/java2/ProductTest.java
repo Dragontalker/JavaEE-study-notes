@@ -19,6 +19,7 @@ class Clerk {
             productCount++;
             System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
                     productCount + "个产品");
+            notify();
         } else {
             try {
                 wait();
@@ -31,9 +32,10 @@ class Clerk {
     //生产产品
     public synchronized void consumeProduct() {
         if (productCount > 0) {
-            System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
+            System.out.println(Thread.currentThread().getName() + ": 开始消费第" +
                     productCount + "个产品");
             productCount--;
+            notify();
         } else {
             try {
                 wait();
@@ -80,7 +82,7 @@ class Consumer extends Thread{
         System.out.println(getName() + ": 开始消费产品....");
         while(true) {
             try {
-                Thread.sleep(10);
+                Thread.sleep(20);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -100,5 +102,11 @@ public class ProductTest {
         Consumer c1 = new Consumer(clerk);
         c1.setName("Consumer#1");
 
+        Consumer c2 = new Consumer(clerk);
+        c2.setName("Consumer#2");
+
+        p1.start();
+        c1.start();
+        c2.start();
     }
 }
