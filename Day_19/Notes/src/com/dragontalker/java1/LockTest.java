@@ -7,6 +7,11 @@ package com.dragontalker.java1;
     - 相同: 二者都可以解决线程安全问题
     - 不同: synchronized机制在执行完相应的同步代码后, 自动的释放同步监视器
            Lock需要手动的启动同步(Lock), 同时结束同步也需要手动的实现(Unlock)
+
+2. 优先使用顺序:
+    Lock -> 同步代码块(已经进入了方法体, 分配了相应资源) -> 同步方法(在方法体之外)
+
+3. 面试题: 如何解决线程安全问题? 3种
  */
 
 import java.util.concurrent.locks.ReentrantLock;
