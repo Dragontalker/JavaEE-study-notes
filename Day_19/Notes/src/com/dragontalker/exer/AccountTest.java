@@ -11,5 +11,17 @@ package com.dragontalker.exer;
 4. 需要考虑如何解决线程安全问题? 同步机制: 有三种方式.
  */
 
+class Account {
+
+}
+
+class Customer extends Thread {
+    private Account acct;
+
+    public Customer(Account acct) {
+        this.acct = acct;
+    }
+}
+
 public class AccountTest {
 }
