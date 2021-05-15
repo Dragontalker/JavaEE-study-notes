@@ -62,5 +62,10 @@ public class StringTest {
         //方式二: 通过new + 构造器的方式: 此时的s3和s4保存的地址值, 是数据在堆空间中开辟空间以后
         String s3 = new String("javaEE");
         String s4 = new String("javaEE");
+
+        System.out.println(s1 == s2); //true
+        System.out.println(s1 == s3); //false
+        System.out.println(s1 == s4); //false
+        System.out.println(s3 == s4); //false
     }
 }
