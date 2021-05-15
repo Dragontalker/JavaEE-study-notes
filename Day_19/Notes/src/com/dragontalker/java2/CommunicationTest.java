@@ -21,6 +21,14 @@ class Number implements Runnable {
 
                     System.out.println(Thread.currentThread().getName() +
                             ": " + number++);
+
+                    try {
+                        //使得调用如下wait()方法的线程进入阻塞状态
+                        wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                 } else {
                     break;
                 }
