@@ -13,6 +13,19 @@ package com.dragontalker.exer;
 
 class Account {
 
+    private double balance;
+
+    public Account(double balance) {
+        this.balance = balance;
+    }
+
+    //存钱
+    public void deposit(double amt) {
+        if (amt > 0) {
+            balance += amt;
+            System.out.println("存储成功！余额为￥" + balance);
+        }
+    }
 }
 
 class Customer extends Thread {
@@ -21,11 +34,18 @@ class Customer extends Thread {
     public Customer(Account acct) {
         this.acct = acct;
     }
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 3; i++) {
+
+        }
+    }
 }
 
 public class AccountTest {
     public static void main(String[] args) {
-        Account acct = new Account();
+        Account acct = new Account(500);
         Customer c1 = new Customer(acct);
         Customer c2 = new Customer(acct);
 
