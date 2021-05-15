@@ -23,6 +23,13 @@ class Account {
     public void deposit(double amt) {
         if (amt > 0) {
             balance += amt;
+
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
             System.out.println("存储成功！余额为￥" + balance);
         }
     }
@@ -38,7 +45,7 @@ class Customer extends Thread {
     @Override
     public void run() {
         for (int i = 0; i < 3; i++) {
-
+            acct.deposit(1000);
         }
     }
 }
