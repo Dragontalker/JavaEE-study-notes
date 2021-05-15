@@ -42,6 +42,7 @@ public class ThreadPool {
         service.execute(new EvenThread()); //适合使用于Callable
         //service.submit(Callable callable);
 
+        //3. 关闭连接池
         service.shutdown();
     }
 }
