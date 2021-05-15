@@ -7,17 +7,22 @@ package com.dragontalker.java2;
 wait(): 一旦执行此方法, 当前线程就进入阻塞状态, 并释放同步监视器
 notify(): 一旦执行此方法, 就会唤醒被wait的一个线程. 如果有多个线程被wait, 就唤醒优先级高的那个
 notifyAll(): 一旦执行此方法, 就唤醒所有被wait的线程
+
+说明:
+1. wait(), notify(), notifyAll()这三个方法必须使用在同步代码块或同步方法中
+2.
  */
 
 class Number implements Runnable {
     private int number = 1;
+    private Object obj = new Object();
 
     @Override
     public void run() {
         while(true) {
-            synchronized (this) {
+            synchronized (obj) {
 
-                notifyAll();
+                obj.notifyAll();
 
                 if (number <= 100) {
 
@@ -32,7 +37,7 @@ class Number implements Runnable {
 
                     try {
                         //使得调用如下wait()方法的线程进入阻塞状态
-                        wait();
+                        obj.wait();
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
