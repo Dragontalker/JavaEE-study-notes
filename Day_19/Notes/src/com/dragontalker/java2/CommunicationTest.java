@@ -14,6 +14,14 @@ notifyAll(): 一旦执行此方法, 就唤醒所有被wait的线程
     否则, 会出现IllegalMonitorStateException异常
 3. wait(), notify(), notifyAll()三个方法定义在java.lang.Object类中
 
+面试题: sleep()和wait()的异同?
+1. 相同点: 一旦执行方法, 都可以使得当前线程进入阻塞状态
+2. 不同点:
+    1) 两个方法声明的位置不同: Thread类中声明sleep(), Object类中声明wait()
+    2) 调用的范围不同: sleep()可以在任何需要的场景下调用, wait()必须使用在同步代码块或同步方法中
+
+
+
  */
 
 class Number implements Runnable {
