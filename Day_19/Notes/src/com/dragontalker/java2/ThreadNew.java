@@ -28,6 +28,9 @@ public class ThreadNew {
         NumThread numThread = new NumThread();
         FutureTask futureTask = new FutureTask(numThread);
 
+        Thread thread = new Thread(futureTask);
+        thread.start();
+
         try {
             //get()返回值即为FutureTask的构造器参数Callable实现类重写的call()的返回值
             Object sum = futureTask.get();
