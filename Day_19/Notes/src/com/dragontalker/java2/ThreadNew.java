@@ -34,6 +34,7 @@ public class ThreadNew {
         try {
             //get()返回值即为FutureTask的构造器参数Callable实现类重写的call()的返回值
             Object sum = futureTask.get();
+            System.out.println("总和为:" + sum);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
