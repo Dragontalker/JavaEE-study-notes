@@ -5,25 +5,39 @@ package com.dragontalker.java1;
 
  */
 
+import java.util.concurrent.locks.ReentrantLock;
+
 class Window implements Runnable {
 
     private int ticket = 100;
 
+    //1. 实例化ReentrantLock
+    private ReentrantLock lock = new ReentrantLock();
+
     @Override
     public void run() {
         while(true) {
-            if (ticket > 0) {
+            try {
 
-                try {
-                    Thread.sleep(100);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+                //2. 调用lock()
+                lock.lock();
+
+                if (ticket > 0) {
+
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
+                    System.out.println(Thread.currentThread().getName() +
+                            ": 售票, 票号为: " + ticket--);
+                } else {
+                    break;
                 }
-
-                System.out.println(Thread.currentThread().getName() +
-                        ": 售票, 票号为: " + ticket--);
-            } else {
-                break;
+            } finally {
+                //3. 调用解锁方法: unlock()
+                lock.unlock();
             }
         }
     }
