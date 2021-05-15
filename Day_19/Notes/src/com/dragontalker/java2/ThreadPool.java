@@ -10,6 +10,8 @@ package com.dragontalker.java2;
         - corePoolSize: 核心池大小
         - maximumPoolSize: 最大线程数
         - keepAliveTime: 线程没有任务时最多保持多长时间后会终止
+
+面试题: 创建多线程有几种方式？4种
  */
 
 import java.util.concurrent.Callable;
