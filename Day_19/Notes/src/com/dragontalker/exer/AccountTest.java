@@ -29,6 +29,7 @@ public class AccountTest {
         Customer c1 = new Customer(acct);
         Customer c2 = new Customer(acct);
 
-
+        c1.setName("甲");
+        c2.setName("乙");
     }
 }
