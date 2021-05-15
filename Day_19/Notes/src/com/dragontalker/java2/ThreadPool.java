@@ -6,6 +6,10 @@ package com.dragontalker.java2;
 好处:
     1. 提高响应速度(减少了创建新线程的时间)
     2. 降低资源消耗(重复利用线程池中线程, 不需要每次都创建)
+    3. 便于线程管理
+        - corePoolSize: 核心池大小
+        - maximumPoolSize: 最大线程数
+        - keepAliveTime: 线程没有任务时最多保持多长时间后会终止
  */
 
 import java.util.concurrent.Callable;
