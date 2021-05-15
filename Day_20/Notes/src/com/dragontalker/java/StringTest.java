@@ -67,5 +67,10 @@ public class StringTest {
         System.out.println(s1 == s3); //false
         System.out.println(s1 == s4); //false
         System.out.println(s3 == s4); //false
+
+        Person p1 = new Person("Tom", 12);
+        Person p2 = new Person("Tom", 12);
+        System.out.println(p1.name.equals(p2.name));
+        System.out.println(p1.name == p2.name);
     }
 }
