@@ -14,24 +14,32 @@ class Clerk {
     private int productCount = 0;
 
     //生产产品
-    public void produceProduct() {
+    public synchronized void produceProduct() {
         if (productCount < 20) {
             productCount++;
             System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
                     productCount + "个产品");
         } else {
-            //wait();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
     //生产产品
-    public void consumeProduct() {
+    public synchronized void consumeProduct() {
         if (productCount > 0) {
             System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
                     productCount + "个产品");
             productCount--;
         } else {
-            //wait();
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
