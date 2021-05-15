@@ -12,6 +12,11 @@ package com.dragontalker.java2;
 
 class Clerk {
 
+    public void produceProduct() {
+    }
+
+    public void consumeProduct() {
+    }
 }
 
 class Producer extends Thread{
@@ -21,6 +26,20 @@ class Producer extends Thread{
     public Producer(Clerk clerk) {
         this.clerk = clerk;
     }
+    
+    @Override
+    public void run() {
+        System.out.println(getName() + ": 开始生产产品....");
+        while(true) {
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            clerk.produceProduct();
+        }
+    }
 }
 
 class Consumer extends Thread{
@@ -29,6 +48,20 @@ class Consumer extends Thread{
 
     public Consumer(Clerk clerk) {
         this.clerk = clerk;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(getName() + ": 开始消费产品....");
+        while(true) {
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            clerk.consumeProduct();
+        }
     }
 }
 
