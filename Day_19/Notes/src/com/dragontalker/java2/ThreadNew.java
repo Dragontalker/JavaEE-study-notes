@@ -17,6 +17,7 @@ class NumThread implements Callable {
                 sum += i;
             }
         }
+        return sum;
     }
 }
 
