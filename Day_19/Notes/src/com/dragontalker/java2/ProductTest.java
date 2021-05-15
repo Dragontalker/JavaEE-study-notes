@@ -11,10 +11,20 @@ package com.dragontalker.java2;
  */
 
 class Clerk {
+    private int productCount = 0;
 
+    //生产产品
     public void produceProduct() {
+        if (productCount < 20) {
+            productCount++;
+            System.out.println(Thread.currentThread().getName() + ": 开始生产第" +
+                    productCount + "个产品");
+        } else {
+            //wait();
+        }
     }
 
+    //生产产品
     public void consumeProduct() {
     }
 }
