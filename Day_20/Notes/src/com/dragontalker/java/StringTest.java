@@ -47,12 +47,18 @@ public class StringTest {
         System.out.println(s5);
     }
 
+
+    /*
+    String的实例化方式:
+    方式一: 通过字面量定义的方式
+    方式二: 通过new + 构造器的方式
+     */
     @Test
     public void test2() {
-        /*
-        String的实例化方式:
-        方式一: 通过字面量定义的方式
-        方式二: 通过new + 构造器的方式
-         */
+        //方式一: 通过字面量定义的方式: 此时的s1和s2的数据javaEE声明在方法区的字符串常量池中
+        String s1 = "javaEE";
+        String s2 = "javaEE";
+
+
     }
 }
