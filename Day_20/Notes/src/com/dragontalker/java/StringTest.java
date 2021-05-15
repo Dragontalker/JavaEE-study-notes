@@ -46,4 +46,13 @@ public class StringTest {
         System.out.println(s4);
         System.out.println(s5);
     }
+
+    @Test
+    public void test2() {
+        /*
+        String的实例化方式:
+        方式一: 通过字面量定义的方式
+        方式二: 通过new + 构造器的方式
+         */
+    }
 }
