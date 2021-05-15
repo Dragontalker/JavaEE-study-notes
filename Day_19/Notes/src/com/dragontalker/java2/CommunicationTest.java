@@ -12,6 +12,7 @@ notifyAll(): 一旦执行此方法, 就唤醒所有被wait的线程
 1. wait(), notify(), notifyAll()这三个方法必须使用在同步代码块或同步方法中
 2. wait(), notify(), notifyAll()这三个方法的调用者必须是同步代码块或同步方法中的同步监视器
     否则, 会出现IllegalMonitorStateException异常
+3. wait(), notify(), notifyAll()三个方法定义在java.lang.Object类中
 
  */
 
