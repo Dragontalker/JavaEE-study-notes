@@ -3,6 +3,10 @@ package com.dragontalker.java1;
 /*
 解决线程安全问题的方式三: Lock锁 --- JDK5.0新增
 
+1. 面试题: synchronized与Lock的异同？
+    - 相同: 二者都可以解决线程安全问题
+    - 不同: synchronized机制在执行完相应的同步代码后, 自动的释放同步监视器
+           Lock需要手动的启动同步(Lock), 同时结束同步也需要手动的实现(Unlock)
  */
 
 import java.util.concurrent.locks.ReentrantLock;
