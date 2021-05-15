@@ -19,9 +19,13 @@ public class StringTest {
 
     @Test
     public void test1() {
-        String s1 = "abc";
+        String s1 = "abc"; //字面量的定义方式, 不需要new, 只有String才可以这样
         String s2 = "abc";
+
+        System.out.println(s1 == s2);
+
         s1 = "hello";
+        System.out.println(s1 == s2);
 
         System.out.println(s1);
         System.out.println(s2);
