@@ -24,4 +24,11 @@ class Customer extends Thread {
 }
 
 public class AccountTest {
+    public static void main(String[] args) {
+        Account acct = new Account();
+        Customer c1 = new Customer(acct);
+        Customer c2 = new Customer(acct);
+
+
+    }
 }
