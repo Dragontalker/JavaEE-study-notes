@@ -30,7 +30,7 @@ class Account {
                 e.printStackTrace();
             }
 
-            System.out.println("存储成功！余额为￥" + balance);
+            System.out.println(Thread.currentThread().getName() + "存储成功！余额为￥" + balance);
         }
     }
 }
@@ -52,11 +52,14 @@ class Customer extends Thread {
 
 public class AccountTest {
     public static void main(String[] args) {
-        Account acct = new Account(500);
+        Account acct = new Account(0);
         Customer c1 = new Customer(acct);
         Customer c2 = new Customer(acct);
 
         c1.setName("甲");
         c2.setName("乙");
+
+        c1.start();
+        c2.start();
     }
 }
