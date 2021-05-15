@@ -14,11 +14,16 @@ class Clerk {
 
 }
 
-class Producer {
+class Producer extends Thread{
 
+    private Clerk clerk;
+
+    public Producer(Clerk clerk) {
+        this.clerk = clerk;
+    }
 }
 
-class Consumer {
+class Consumer extends Thread{
 
 }
 
