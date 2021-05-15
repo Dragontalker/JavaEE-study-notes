@@ -10,5 +10,17 @@ package com.dragontalker.java2;
 4. 是否涉及到线程的通信? 是
  */
 
+class Clerk {
+
+}
+
+class Producer {
+
+}
+
+class Consumer {
+
+}
+
 public class ProductTest {
 }
