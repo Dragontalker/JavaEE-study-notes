@@ -25,6 +25,11 @@ class Producer extends Thread{
 
 class Consumer extends Thread{
 
+    private Clerk clerk;
+
+    public Consumer(Clerk clerk) {
+        this.clerk = clerk;
+    }
 }
 
 public class ProductTest {
