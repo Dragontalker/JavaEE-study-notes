@@ -18,7 +18,7 @@ public class StringTest {
             - 体现:
                 4.1 当对字符串重新赋值时, 需要重写指定内存区域赋值, 不能使用原有的value进行赋值
                 4.2 当对现有的字符串进行连接操作时, 也需要重新指定, 不能使用原有的value
-
+                4.3 当调用String的replace()方法修改字符或字符串时, 也必须重新制定内存区域赋值
         5. 通过字面量的方式(区别于new)给一个字符串赋值, 此时的字符串声明在字符串常量池当中
         6. 字符串常量池当中是不会存储相同内容的字符串的
      */
@@ -40,5 +40,10 @@ public class StringTest {
         s3 += "def";
         System.out.println(s3);
         System.out.println(s2);
+
+        String s4 = "abc";
+        String s5 = s4.replace("a", "m");
+        System.out.println(s4);
+        System.out.println(s5);
     }
 }
