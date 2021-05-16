@@ -94,6 +94,9 @@ public class StringTest {
         String s5 = s1 + "hadoop";
         String s6 = "javaEE" + s2;
 
-
+        System.out.println(s3 == s4); //true
+        System.out.println(s3 == s5); //false
+        System.out.println(s3 == s6); //false
+        System.out.println(s5 == s6); //false
     }
 }
