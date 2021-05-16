@@ -64,4 +64,15 @@ public class StringMethodTest {
 
         System.out.println(s7.substring(2, 5));
     }
+
+    /*
+
+     */
+    @Test
+    public void test3() {
+        //1. boolean endsWith()/startsWith()
+        String s1 = "Hello world!";
+        System.out.println(s1.startsWith("h"));
+        System.out.println(s1.endsWith("e"));
+    }
 }
