@@ -104,5 +104,8 @@ public class StringTest {
         System.out.println(s3 == s7); //false
         System.out.println(s5 == s7); //false
         System.out.println(s6 == s7); //false
+
+        String s8 = s5.intern(); //返回得到的s8使用的常量池中已经存在的"javaEEhadoop"
+        System.out.println(s3 == s8); //true
     }
 }
