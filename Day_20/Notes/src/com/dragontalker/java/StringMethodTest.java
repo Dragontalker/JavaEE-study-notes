@@ -11,8 +11,10 @@ public class StringMethodTest {
     public void test1() {
         String s1 = "Hello world!";
 
-        //int length()
+        //1. int length()
         System.out.println(s1.length());
 
+        //2. char charAt(int index)
+        System.out.println(s1.charAt(0));
     }
 }
