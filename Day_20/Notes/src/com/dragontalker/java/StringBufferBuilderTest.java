@@ -25,6 +25,11 @@ public class StringBufferBuilderTest {
 
     //问题1: System.out.println(sb2.length());
      - 底层返回的是count而不是value.length()
+
+    //问题2: 扩容问题: 如果要添加的数据底层数据盛不下了, 那就需要扩容底层的数组
+     - 底层会call一个叫ensureCapacityInternal()的方法
+     - 牵扯到Arrays.copyOf()
+     - 新的capacity是原有的2倍再加2, 如果还不满足就需要多少装多少
      */
 
     @Test
