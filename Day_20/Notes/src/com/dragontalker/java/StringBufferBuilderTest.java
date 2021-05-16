@@ -20,6 +20,11 @@ public class StringBufferBuilderTest {
     StringBuffer sb1 = new StringBuffer(); //char[] value = new char[16]; 底层创建了一个长度是16的数组
     sb1.append('a'); // value[count] = 'a'; (count = 0)
     sb1.append('b'); // value[count] = 'b'; (count = 1)
+
+    StringBuffer sb2 = new StringBuffer("abc"); //char[] value = new char["abc".length() + 16]
+
+    //问题1: System.out.println(sb2.length());
+     - 底层返回的是count而不是value.length()
      */
 
     @Test
@@ -27,5 +32,8 @@ public class StringBufferBuilderTest {
         StringBuffer sb1 = new StringBuffer("abc");
         sb1.setCharAt(0, 'm');
         System.out.println(sb1);
+
+        StringBuffer sb2 = new StringBuffer();
+        System.out.println(sb2.length()); //0
     }
 }
