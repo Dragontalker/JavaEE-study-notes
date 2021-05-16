@@ -74,5 +74,8 @@ public class StringTest1 {
         String s3 = s2 + "hadoop";
         System.out.println(s1 == s3);
 
+        final String s4 = "javaEE";
+        String s5 = s4 + "hadoop";
+        System.out.println(s1 == s5);
     }
 }
