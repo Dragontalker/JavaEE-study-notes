@@ -40,6 +40,9 @@ public class StringBufferBuilderTest {
      查: charAt(int n)
      长度: length()
      遍历: for + charAt()
+
+     对比String, StringBuff, StringBuilder三者的效率
+     StringBuilder >> StringBuffer >> String
      */
 
     @Test
