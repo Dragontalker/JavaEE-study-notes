@@ -42,7 +42,7 @@ public class StringTest1 {
     //编码: 字符串 ---> 字节 (看得懂 ---> 看不懂的二进制数据)
     //解码: 字节 ---> 字符串 (看不懂的二进制数据 ---> 看得懂)
     @Test
-    public void test3() {
+    public void test3() throws UnsupportedEncodingException {
         //String ---> byte[]: 调用String的getBytes()
         String str1 = "abc123中国";
         byte[] bytes = str1.getBytes(); //使用默认的utf-8进行转换
@@ -54,5 +54,11 @@ public class StringTest1 {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
+
+        String str2 = new String(bytes);
+        System.out.println(str2);
+
+        String str3 = new String(str1.getBytes("gbk"));
+        System.out.println(str3);
     }
 }
