@@ -40,4 +40,14 @@ public class StringMethodTest {
         //6. boolean equals()
         System.out.println(s1.equals(s4.trim()));
     }
+
+    @Test
+    public void test2() {
+
+        //7. boolean equalsIgnoreCase()
+        String s1 = "Hello world!";
+        String s2 = "hello world!";
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equalsIgnoreCase(s2));
+    }
 }
