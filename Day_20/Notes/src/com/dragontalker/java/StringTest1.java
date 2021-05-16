@@ -66,4 +66,13 @@ public class StringTest1 {
 
         //说明: 解码时, 要求解码使用的字符集必须和编码时使用的字符集一致, 否则会出现乱码
     }
+
+    @Test
+    public void test4() {
+        String s1 = "javaEEhadoop";
+        String s2 = "javaEE";
+        String s3 = s2 + "hadoop";
+        System.out.println(s1 == s3);
+
+    }
 }
