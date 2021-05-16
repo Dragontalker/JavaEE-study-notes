@@ -85,5 +85,15 @@ public class StringMethodTest {
         //2. int indexOf(String s)
         System.out.println(s1.indexOf("world"));
         System.out.println(s1.indexOf("LOL"));
+        //indexOf和lastIndexOf方法如果未找到都是返回-1
+        System.out.println(s1.indexOf("world", 7));
+
+        //3. int lastIndexOf(String s)
+        String str3 = "hellorworld";
+        System.out.println(s1.lastIndexOf("or", 6));
+
+        //什么情况下, indexOf(str)和lastIndexOf(str)返回值相同？
+        //情况一: 存在唯一的一个str
+        //情况而: 不存在, 返回值都是-1
     }
 }
