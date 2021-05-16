@@ -18,7 +18,8 @@ public class StringBufferBuilderTest {
     String str1 = new String("abc"); //new char[]{'a', 'b', 'c'};
 
     StringBuffer sb1 = new StringBuffer(); //char[] value = new char[16]; 底层创建了一个长度是16的数组
-    sb1.append('a'); // value[0] = 'a';
+    sb1.append('a'); // value[count] = 'a'; (count = 0)
+    sb1.append('b'); // value[count] = 'b'; (count = 1)
      */
 
     @Test
