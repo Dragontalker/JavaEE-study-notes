@@ -57,5 +57,9 @@ public class StringBufferBuilderTest {
 
         s1.insert(2, false);
         System.out.println(s1);
+        System.out.println(s1.length());
+
+        s1.reverse();
+        System.out.println(s1);
     }
 }
