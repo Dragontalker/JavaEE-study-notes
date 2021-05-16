@@ -51,7 +51,11 @@ public class StringBufferBuilderTest {
         s1.append('1');
         System.out.println(s1);
 
-        s1.delete(2, 4);
+        //s1.delete(2, 4);
+        s1.replace(2, 4, "hello");
+        System.out.println(s1);
+
+        s1.insert(2, false);
         System.out.println(s1);
     }
 }
