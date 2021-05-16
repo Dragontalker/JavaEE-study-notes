@@ -63,5 +63,7 @@ public class StringTest1 {
 
         String str4 = new String(str1.getBytes("gbk"), "gbk");
         System.out.println(str4);
+
+        //说明: 解码时, 要求解码使用的字符集必须和编码时使用的字符集一致, 否则会出现乱码
     }
 }
