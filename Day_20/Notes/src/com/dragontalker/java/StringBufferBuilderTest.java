@@ -30,6 +30,8 @@ public class StringBufferBuilderTest {
      - 底层会call一个叫ensureCapacityInternal()的方法
      - 牵扯到Arrays.copyOf()
      - 新的capacity是原有的2倍再加2, 如果还不满足就需要多少装多少
+
+     指导意义: 开发中建议使用StringBuffer(int capacity)来自定义容量
      */
 
     @Test
@@ -40,5 +42,16 @@ public class StringBufferBuilderTest {
 
         StringBuffer sb2 = new StringBuffer();
         System.out.println(sb2.length()); //0
+    }
+
+    @Test
+    public void test2() {
+        StringBuffer s1 = new StringBuffer("abc");
+        s1.append(1);
+        s1.append('1');
+        System.out.println(s1);
+
+        s1.delete(2, 4);
+        System.out.println(s1);
     }
 }
