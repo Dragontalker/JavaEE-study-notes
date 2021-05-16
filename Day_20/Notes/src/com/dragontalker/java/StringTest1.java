@@ -15,6 +15,8 @@ public class StringTest1 {
         System.out.println(str1);
         System.out.println(int1);
 
-
+        //基本数据类型、包装类 ---> String: 调用String重载的valueOf(xxx)
+        String str2 = String.valueOf(int1);
+        System.out.println(str2);
     }
 }
