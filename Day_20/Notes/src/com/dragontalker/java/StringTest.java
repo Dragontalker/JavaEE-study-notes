@@ -72,5 +72,8 @@ public class StringTest {
         Person p2 = new Person("Tom", 12);
         System.out.println(p1.name.equals(p2.name));
         System.out.println(p1.name == p2.name);
+
+        p1.name = "Jerry";
+        System.out.println(p2.name);
     }
 }
