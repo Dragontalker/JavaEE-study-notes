@@ -79,4 +79,21 @@ public class StringTest {
         p1.name = "Jerry";
         System.out.println(p2.name);
     }
+
+    /*
+
+     */
+
+    @Test
+    public void test3() {
+        String s1 = "javaEE";
+        String s2 = "hadoop";
+
+        String s3 = "javaEEhadoop";
+        String s4 = "javaEE" + "hadoop";
+        String s5 = s1 + "hadoop";
+        String s6 = "javaEE" + s2;
+
+
+    }
 }
