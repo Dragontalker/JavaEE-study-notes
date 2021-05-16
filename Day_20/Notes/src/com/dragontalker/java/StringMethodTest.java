@@ -36,5 +36,8 @@ public class StringMethodTest {
         String s4 = " Hello world! ";
         System.out.println(s4.length());
         System.out.println(s4.trim().length());
+
+        //6. boolean equals()
+        System.out.println(s1.equals(s4.trim()));
     }
 }
