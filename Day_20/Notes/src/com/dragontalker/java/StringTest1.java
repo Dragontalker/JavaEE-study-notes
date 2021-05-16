@@ -72,10 +72,10 @@ public class StringTest1 {
         String s1 = "javaEEhadoop";
         String s2 = "javaEE";
         String s3 = s2 + "hadoop";
-        System.out.println(s1 == s3);
+        System.out.println(s1 == s3); //false
 
         final String s4 = "javaEE";
-        String s5 = s4 + "hadoop";
-        System.out.println(s1 == s5);
+        String s5 = s4 + "hadoop"; // s4也出于常量池中
+        System.out.println(s1 == s5); //true
     }
 }
