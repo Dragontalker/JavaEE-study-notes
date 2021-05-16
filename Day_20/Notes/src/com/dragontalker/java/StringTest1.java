@@ -19,4 +19,19 @@ public class StringTest1 {
         String str2 = String.valueOf(int1);
         System.out.println(str2);
     }
+
+    @Test
+    public void test2() {
+        //String ---> char型数组
+        String str1 = "abc123";
+        char[] charArray = str1.toCharArray();
+        for (char c : charArray) {
+            System.out.println(c);
+        }
+
+        //char型数组 ---> String
+        char[] arr = new char[]{'h', 'e', 'l', 'l', 'o'};
+        String str2 = new String(arr);
+        System.out.println(str2);
+    }
 }
