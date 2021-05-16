@@ -39,8 +39,8 @@ public class StringTest1 {
     }
 
     //String和字节数组的转换
-    //编码: 字符串 ---> 字节
-    //解码: 字节 ---> 字符串
+    //编码: 字符串 ---> 字节 (看得懂 ---> 看不懂的二进制数据)
+    //解码: 字节 ---> 字符串 (看不懂的二进制数据 ---> 看得懂)
     @Test
     public void test3() {
         //String ---> byte[]: 调用String的getBytes()
