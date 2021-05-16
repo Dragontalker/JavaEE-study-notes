@@ -32,6 +32,14 @@ public class StringBufferBuilderTest {
      - 新的capacity是原有的2倍再加2, 如果还不满足就需要多少装多少
 
      指导意义: 开发中建议使用StringBuffer(int capacity)来自定义容量
+
+     总结:
+     增: append(xxx)
+     删: delete(int start, int end)
+     改: setCharAt(int n, char ch) / replace (int start, int end, String str)
+     查: charAt(int n)
+     长度: length()
+     遍历: for + charAt()
      */
 
     @Test
