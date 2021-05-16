@@ -96,4 +96,16 @@ public class StringMethodTest {
         //情况一: 存在唯一的一个str
         //情况而: 不存在, 返回值都是-1
     }
+
+    @Test
+    public void test5() {
+        //替换
+        String str1 = "北京尚硅谷教育北京北京北京";
+        String str2 = str1.replace('北', '东');
+        System.out.println(str1);
+        System.out.println(str2);
+
+        String str3 = str1.replace("北京", "上海");
+        System.out.println(str3);
+    }
 }
