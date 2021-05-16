@@ -49,5 +49,19 @@ public class StringMethodTest {
         String s2 = "hello world!";
         System.out.println(s1.equals(s2));
         System.out.println(s1.equalsIgnoreCase(s2));
+
+        //8. int compareTo()
+        //涉及到字符串的排序
+        String s5 = "abc"; //a, b, c ---> 97, 98, 99
+        String s6 = new String("abe"); //a, b, e ---> 97, 98, 101
+        System.out.println(s5.compareTo(s6)); //99 - 101 = -2
+
+        //9 String substring()
+        String s7 = "北京尚硅谷教育";
+        String s8 = s7.substring(2);
+        System.out.println(s7);
+        System.out.println(s8);
+
+        System.out.println(s7.substring(2, 5));
     }
 }
