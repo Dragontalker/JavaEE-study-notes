@@ -59,6 +59,9 @@ public class StringTest1 {
         System.out.println(str2);
 
         String str3 = new String(str1.getBytes("gbk"));
-        System.out.println(str3);
+        System.out.println(str3); //出现乱码, 原因: 编码集和解码集不一致！
+
+        String str4 = new String(str1.getBytes("gbk"), "gbk");
+        System.out.println(str4);
     }
 }
