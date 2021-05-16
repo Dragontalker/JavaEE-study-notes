@@ -16,5 +16,8 @@ public class StringMethodTest {
 
         //2. char charAt(int index)
         System.out.println(s1.charAt(0));
+
+        //3. boolean isEmpty()
+        System.out.println(s1.isEmpty());
     }
 }
