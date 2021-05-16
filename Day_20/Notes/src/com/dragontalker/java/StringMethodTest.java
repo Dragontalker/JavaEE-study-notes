@@ -74,5 +74,8 @@ public class StringMethodTest {
         String s1 = "Hello world!";
         System.out.println(s1.startsWith("h"));
         System.out.println(s1.endsWith("e"));
+
+        //2 boolean startsWith(String prefix, int toffset)
+        System.out.println(s1.startsWith("ll", 2));
     }
 }
