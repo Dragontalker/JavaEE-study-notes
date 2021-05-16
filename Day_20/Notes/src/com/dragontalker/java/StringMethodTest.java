@@ -31,5 +31,10 @@ public class StringMethodTest {
         String s3 = s1.toUpperCase();
         System.out.println(s3);
         System.out.println(s1);
+
+        //5. String trim()
+        String s4 = " Hello world! ";
+        System.out.println(s4.length());
+        System.out.println(s4.trim().length());
     }
 }
