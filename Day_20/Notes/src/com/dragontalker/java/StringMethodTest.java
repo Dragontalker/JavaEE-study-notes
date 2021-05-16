@@ -81,5 +81,9 @@ public class StringMethodTest {
         //1. boolean contains(CharSequence s)
         String s1 = "Hello world!";
         System.out.println(s1.contains("world"));
+
+        //2. int indexOf(String s)
+        System.out.println(s1.indexOf("world"));
+        System.out.println(s1.indexOf("LOL"));
     }
 }
