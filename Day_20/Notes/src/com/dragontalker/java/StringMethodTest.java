@@ -65,9 +65,6 @@ public class StringMethodTest {
         System.out.println(s7.substring(2, 5));
     }
 
-    /*
-
-     */
     @Test
     public void test3() {
         //1. boolean endsWith()/startsWith()
@@ -77,5 +74,12 @@ public class StringMethodTest {
 
         //2 boolean startsWith(String prefix, int toffset)
         System.out.println(s1.startsWith("ll", 2));
+    }
+
+    @Test
+    public void test4() {
+        //1. boolean contains(CharSequence s)
+        String s1 = "Hello world!";
+        System.out.println(s1.contains("world"));
     }
 }
