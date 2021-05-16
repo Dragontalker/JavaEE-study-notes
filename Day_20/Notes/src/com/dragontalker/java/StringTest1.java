@@ -39,6 +39,8 @@ public class StringTest1 {
     }
 
     //String和字节数组的转换
+    //编码: 字符串 ---> 字节
+    //解码: 字节 ---> 字符串
     @Test
     public void test3() {
         //String ---> byte[]: 调用String的getBytes()
@@ -47,7 +49,7 @@ public class StringTest1 {
         System.out.println(Arrays.toString(bytes));
 
         try {
-            byte[] bytes1 = str1.getBytes("gbk");
+            byte[] bytes1 = str1.getBytes("gbk"); //使用gbk字符集进行编码
             System.out.println(Arrays.toString(bytes1));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
