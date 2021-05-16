@@ -6,6 +6,9 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+
 public class StringTest1 {
     @Test
     public void test1() {
@@ -33,5 +36,21 @@ public class StringTest1 {
         char[] arr = new char[]{'h', 'e', 'l', 'l', 'o'};
         String str2 = new String(arr);
         System.out.println(str2);
+    }
+
+    //String和字节数组的转换
+    @Test
+    public void test3() {
+        //String ---> byte[]: 调用String的getBytes()
+        String str1 = "abc123中国";
+        byte[] bytes = str1.getBytes(); //使用默认的utf-8进行转换
+        System.out.println(Arrays.toString(bytes));
+
+        try {
+            byte[] bytes1 = str1.getBytes("gbk");
+            System.out.println(Arrays.toString(bytes1));
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 }
