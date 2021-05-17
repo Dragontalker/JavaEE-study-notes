@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.time.temporal.TemporalAccessor;
 import java.util.Date;
 
@@ -112,5 +113,11 @@ public class JDK8DateTimeTest {
         //解析: 字符串 ---> 日期
         TemporalAccessor parse = formatter.parse("2021-05-17T15:45:16.7164804");
         System.out.println(parse);
+
+        //方式二: 本地化相关的格式
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+        //格式化
+        String str2 = formatter1.format(localDateTime);
+        System.out.println(str2);
     }
 }
