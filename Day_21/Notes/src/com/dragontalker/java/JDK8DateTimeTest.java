@@ -115,9 +115,9 @@ public class JDK8DateTimeTest {
         System.out.println(parse);
 
         //方式二: 本地化相关的格式
-        DateTimeFormatter formatter1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG);
+        DateTimeFormatter formatter1 = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
         //格式化
-        String str2 = formatter1.format(localDateTime);
+        String str2 = formatter1.format(LocalDate.now());
         System.out.println(str2);
     }
 }
