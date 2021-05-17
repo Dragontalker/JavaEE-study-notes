@@ -16,4 +16,13 @@ public class DateTimeTest {
         //称为时间戳
         System.out.println(time);
     }
+
+    /*
+    java.util.Date类
+        |---java.sql.Date类
+
+    1. 两个构造器的使用
+
+    2. 两个方法的使用
+     */
 }
