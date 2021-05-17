@@ -6,6 +6,9 @@ jdk 8中日期时间API的测试
 
 import org.junit.Test;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Date;
 
 public class JDK8DateTimeTest {
@@ -23,6 +26,12 @@ public class JDK8DateTimeTest {
      */
     @Test
     public void test1() {
+        LocalDate localeDate = LocalDate.now();
+        LocalTime localTime = LocalTime.now();
+        LocalDateTime localDateTIme = LocalDateTime.now();
 
+        System.out.println(localeDate);
+        System.out.println(localTime);
+        System.out.println(localDateTIme);
     }
 }
