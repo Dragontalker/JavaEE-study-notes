@@ -53,5 +53,9 @@ public class JDK8DateTimeTest {
         LocalDateTime localDateTIme1 = localDateTime.withDayOfMonth(22);
         System.out.println(localDateTime); //不可变性
         System.out.println(localDateTime1);
+
+        LocalDateTime localDateTime2 = localDateTime.withHour(4);
+        System.out.println(localDateTime);
+        System.out.println(localDateTime2);
     }
 }
