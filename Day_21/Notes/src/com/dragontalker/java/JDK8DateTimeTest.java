@@ -58,5 +58,15 @@ public class JDK8DateTimeTest {
         LocalDateTime localDateTime2 = localDateTime.withHour(4);
         System.out.println(localDateTime);
         System.out.println(localDateTime2);
+
+        //plusXxx()
+        LocalDateTime localDateTime3 = localDateTime.plusMonths(3);
+        System.out.println(localDateTime); //不可变性
+        System.out.println(localDateTime3);
+
+        //minusXxx()
+        LocalDateTime localDateTime4 = localDateTime.minusDays(6);
+        System.out.println(localDateTime);
+        System.out.println(localDateTime4);
     }
 }
