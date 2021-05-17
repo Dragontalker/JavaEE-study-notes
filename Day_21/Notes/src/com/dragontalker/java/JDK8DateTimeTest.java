@@ -32,15 +32,21 @@ public class JDK8DateTimeTest {
         //now(): 获取当前的日期、时间、日期+时间
         LocalDate localeDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
-        LocalDateTime localDateTIme = LocalDateTime.now();
+        LocalDateTime localDateTime = LocalDateTime.now();
 
         System.out.println(localeDate);
         System.out.println(localTime);
-        System.out.println(localDateTIme);
+        System.out.println(localDateTime);
 
-        //of():
+        //of(): 设置指定的年、月、时、分、喵, 没有偏移量
         LocalDateTime localDateTime1 = LocalDateTime.of(2020, 10, 6, 13, 23, 43);
         System.out.println(localDateTime1);
 
+        //getXxx()
+        System.out.println(localDateTime.getDayOfMonth());
+        System.out.println(localDateTime.getDayOfWeek());
+        System.out.println(localDateTime.getMonth());
+        System.out.println(localDateTime.getMonthValue());
+        System.out.println(localDateTime.getMinute());
     }
 }
