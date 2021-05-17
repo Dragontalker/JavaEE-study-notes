@@ -30,6 +30,9 @@ public class DateTimeTest {
     2. 两个方法的使用
         > toString(): 显示当前的年、月、日、时、分、秒
         > getTime(): 获取当前Date对象的毫秒数(时间戳)
+
+    3. java.sql.Date对应的是数据库中的日期类型的变量
+        > 如何实例化
      */
     @Test
     public void test2() {
@@ -41,5 +44,10 @@ public class DateTimeTest {
         //构造器二: Date(long date): 创建指定好毫秒数的Date对象
         Date date2 = new Date(1621210012282L);
         System.out.println(date2);
+
+        //创建了java.sql.Date对象
+        java.sql.Date date3 = new java.sql.Date(1621210012282L);
+        System.out.println(date3); //2021-05-16
+        System.out.println(date3.getTime());
     }
 }
