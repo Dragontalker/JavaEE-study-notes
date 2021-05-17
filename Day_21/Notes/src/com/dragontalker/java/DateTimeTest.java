@@ -11,6 +11,7 @@ import org.junit.Test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 public class DateTimeTest {
@@ -88,11 +89,14 @@ public class DateTimeTest {
     }
 
     /*
-    Calender日历类的使用
+    Calender(抽象类)日历类的使用
      */
     @Test
     public void testCalender() {
         //1. 实例化
-
+        //方式一: 创建其子类(GeorgianCalender)的对象
+        //方式二: 调用其静态方法getInstance()
+        Calendar calender = Calendar.getInstance();
+        System.out.println(calender);
     }
 }
