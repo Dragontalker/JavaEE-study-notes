@@ -6,6 +6,8 @@ JDK 8之前日期和时间的API测试
 
 import org.junit.Test;
 
+import java.util.Date;
+
 public class DateTimeTest {
 
     //1. System类中的currentTimeMillis()
@@ -24,5 +26,12 @@ public class DateTimeTest {
     1. 两个构造器的使用
 
     2. 两个方法的使用
+        > toString()
      */
+    @Test
+    public void test2() {
+        //构造器一: Date()
+        Date date1 = new Date();
+        System.out.println(date1.toString());
+    }
 }
