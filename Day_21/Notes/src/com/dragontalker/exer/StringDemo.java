@@ -47,6 +47,12 @@ public class StringDemo {
 
             //第1部分:
             builder.append(str.substring(0, startIndex));
+            //第2部分:
+            for (int i = endIndex; i >= startIndex; i--) {
+                builder.append(str.charAt(i));
+            }
+            //第3部分:
+
             return null;
         } else {
             return str;
