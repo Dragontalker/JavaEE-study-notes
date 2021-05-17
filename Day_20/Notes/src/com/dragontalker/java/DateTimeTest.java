@@ -24,6 +24,8 @@ public class DateTimeTest {
         |---java.sql.Date类
 
     1. 两个构造器的使用
+        > 构造器一: Date(): 创建了一个对应当前时间的Date对象
+        > 构造器二: Date(long date): 创建指定好毫秒数的Date对象
 
     2. 两个方法的使用
         > toString(): 显示当前的年、月、日、时、分、秒
@@ -31,9 +33,13 @@ public class DateTimeTest {
      */
     @Test
     public void test2() {
-        //构造器一: Date()
+        //构造器一: Date(): 创建了一个对应当前时间的Date对象
         Date date1 = new Date();
         System.out.println(date1); //Sun May 16 20:06:52 EDT 2021
         System.out.println(date1.getTime()); //1621210012282
+
+        //构造器二: Date(long date): 创建指定好毫秒数的Date对象
+        Date date2 = new Date(1621210012282L);
+        System.out.println(date2);
     }
 }
