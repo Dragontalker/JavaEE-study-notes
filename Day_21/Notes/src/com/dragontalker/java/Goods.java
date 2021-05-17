@@ -28,6 +28,14 @@ public class Goods implements Comparable {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     //指定商品比较大小的方式: 按照价格从低到高
     @Override
     public int compareTo(Object o) {
