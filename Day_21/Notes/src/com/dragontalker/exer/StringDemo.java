@@ -40,6 +40,19 @@ public class StringDemo {
         }
     }
 
+    //方式三: 使用StringBuffer/StringBuilder替换String
+    public  String reverse2(String str, int startIndex, int endIndex) {
+        if (str != null && str.length() != 0){
+            StringBuilder builder = new StringBuilder(str.length());
+
+            //第1部分:
+            builder.append(str.substring(0, startIndex));
+            return null;
+        } else {
+            return str;
+        }
+    }
+
     @Test
     public void testReverse() {
         String str = "abcdefg";
