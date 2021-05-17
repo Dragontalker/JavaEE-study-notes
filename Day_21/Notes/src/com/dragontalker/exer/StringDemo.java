@@ -52,8 +52,8 @@ public class StringDemo {
                 builder.append(str.charAt(i));
             }
             //第3部分:
-
-            return null;
+            builder.append(str.substring(endIndex + 1));
+            return builder.toString();
         } else {
             return str;
         }
