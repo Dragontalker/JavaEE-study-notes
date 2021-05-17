@@ -32,16 +32,19 @@ public class Goods implements Comparable {
     @Override
     public int compareTo(Object o) {
         if (o instanceof Goods) {
-            //方式一:
             Goods goods = (Goods)o;
-            if (this.price > goods.price) {
-                return 1;
-            } else if (this.price < goods.price) {
-                return -1;
-            } else {
-                return 0;
-            }
+            //方式一:
+//            if (this.price > goods.price) {
+//                return 1;
+//            } else if (this.price < goods.price) {
+//                return -1;
+//            } else {
+//                return 0;
+//            }
+
+            //方式二:
+            return Double.compare(this.price, goods.price);
         }
-        return 0;
+        throw new RuntimeException("传入的数据类型不一致！");
     }
 }
