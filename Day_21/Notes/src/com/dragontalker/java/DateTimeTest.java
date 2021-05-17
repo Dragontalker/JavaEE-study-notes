@@ -56,6 +56,13 @@ public class DateTimeTest {
 
     /*
     练习一: 字符串"2020-09-08"转换为java.sql.Date
+
+    练习二: "三天打鱼两天晒网" 1990-01-01 xxxx-xx-xx 打渔？晒网？
+
+    举例: 2020-09-08 ? 需要计算总天数
+
+    总天数 % 5 == 1, 2, 3: 打渔
+    总天数 % 5 == 4, 0 晒网
      */
     @Test
     public void testExercise() throws ParseException {
