@@ -42,14 +42,15 @@ public class JDK8DateTimeTest {
         LocalDateTime localDateTime1 = LocalDateTime.of(2020, 10, 6, 13, 23, 43);
         System.out.println(localDateTime1);
 
-        //getXxx()
+        //getXxx(): 获取相关属性
         System.out.println(localDateTime.getDayOfMonth());
         System.out.println(localDateTime.getDayOfWeek());
         System.out.println(localDateTime.getMonth());
         System.out.println(localDateTime.getMonthValue());
         System.out.println(localDateTime.getMinute());
 
-        //withXxxxx(): 体现不可变性
+        //体现不可变性
+        //withXxx(): 设置相关属性
         LocalDateTime localDateTIme1 = localDateTime.withDayOfMonth(22);
         System.out.println(localDateTime); //不可变性
         System.out.println(localDateTime1);
