@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class StringDemo2 {
     //获取两个字符串中最大相同的字串
-
+    //前提: 两个字符串中只有一个最大相同字串
     public String getMaxSameString(String str1, String str2) {
         if (str1 != null && str2 != null) {
             String maxStr = (str1.length() >= str2.length()) ? str1 : str2;
@@ -26,8 +26,8 @@ public class StringDemo2 {
 
     @Test
     public void test1() {
-        String str1 = "abcwerthelloyuiodef";
-        String str2 = "cvhellobnm";
+        String str1 = "abcwerthello12345yuiodef";
+        String str2 = "cvhello12345bnm";
         String result = getMaxSameString(str1, str2);
         System.out.println(result);
     }
