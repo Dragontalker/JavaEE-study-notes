@@ -22,6 +22,11 @@ public class StringDemo {
         }
     }
 
+    //方式二: 使用String的拼接操作
+    public  String reverse1(String str, int startIndex, int endIndex) {
+        return null;
+    }
+
     @Test
     public void testReverse() {
         String str = "abcdefg";
