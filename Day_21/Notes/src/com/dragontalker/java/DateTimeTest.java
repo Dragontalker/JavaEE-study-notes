@@ -63,6 +63,16 @@ public class DateTimeTest {
 
     总天数 % 5 == 1, 2, 3: 打渔
     总天数 % 5 == 4, 0 晒网
+
+    总天数的计算?
+    方式一:
+        1. date1.getTime() - 得到对应的毫秒数
+        2. date2.getTime() - 得到对应的毫秒数
+        3. date2.getTime() - date1.getTime() 得到差值
+        4. / (1000 * 60 & 60 * 24) 除以每天的毫秒数
+        5. + 1 考虑到余数
+
+
      */
     @Test
     public void testExercise() throws ParseException {
