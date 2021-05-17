@@ -17,6 +17,9 @@ import java.util.Arrays;
 public class CompareTest {
     /*
     Comparable接口的使用举例:
+        1. 像String、包装类等事项了Comparable接口: 重写了compareTo()方法
+            - 给出了比较两个对象大小的方法
+        2. 重写compareTo()的规则:
      */
     @Test
     public void test1() {
