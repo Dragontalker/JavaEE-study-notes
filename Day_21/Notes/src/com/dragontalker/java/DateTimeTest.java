@@ -72,7 +72,9 @@ public class DateTimeTest {
         4. / (1000 * 60 & 60 * 24) 除以每天的毫秒数
         5. + 1 考虑到余数
 
-
+    方式二:
+        1. 2019-12-31 - 1990-01-01 得到天数
+        2. 2020-09-08 - 2020-01-01 得到天数
      */
     @Test
     public void testExercise() throws ParseException {
