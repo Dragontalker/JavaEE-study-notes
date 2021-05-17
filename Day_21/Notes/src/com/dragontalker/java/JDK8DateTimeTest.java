@@ -48,5 +48,10 @@ public class JDK8DateTimeTest {
         System.out.println(localDateTime.getMonth());
         System.out.println(localDateTime.getMonthValue());
         System.out.println(localDateTime.getMinute());
+
+        //withXxxxx(): 体现不可变性
+        LocalDateTime localDateTIme1 = localDateTime.withDayOfMonth(22);
+        System.out.println(localDateTime); //不可变性
+        System.out.println(localDateTime1);
     }
 }
