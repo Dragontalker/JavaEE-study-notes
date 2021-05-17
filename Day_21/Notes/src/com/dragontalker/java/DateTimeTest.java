@@ -9,6 +9,7 @@ jdk 8之前的日期时间的API测试
 
 import org.junit.Test;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -24,7 +25,7 @@ public class DateTimeTest {
      */
 
     @Test
-    public void testSimpleDateFormat() {
+    public void testSimpleDateFormat() throws ParseException {
         //实例化SimpleDateFormat
         SimpleDateFormat sdf = new SimpleDateFormat();
 
@@ -34,5 +35,10 @@ public class DateTimeTest {
 
         String format = sdf.format(date);
         System.out.println(format);
+
+        //解析: 格式化的逆过程, 字符串 ---> 日期
+        String str = "2019-08-09";
+        Date date1 = sdf.parse(str);
+        System.out.println(date1);
     }
 }
