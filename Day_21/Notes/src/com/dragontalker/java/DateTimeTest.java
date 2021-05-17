@@ -32,5 +32,7 @@ public class DateTimeTest {
         Date date = new Date();
         System.out.println(date);
 
+        String format = sdf.format(date);
+        System.out.println(format);
     }
 }
