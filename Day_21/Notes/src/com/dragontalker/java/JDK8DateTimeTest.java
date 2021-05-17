@@ -23,9 +23,13 @@ public class JDK8DateTimeTest {
 
     /*
     LocalDate, LocalTime, LocalDateTime的使用
+
+    说明:
+        1. LocalDateTime相较于LocalDate、LocalTime, 使用频率要高
      */
     @Test
     public void test1() {
+        //now(): 获取当前的日期、时间、日期+时间
         LocalDate localeDate = LocalDate.now();
         LocalTime localTime = LocalTime.now();
         LocalDateTime localDateTIme = LocalDateTime.now();
