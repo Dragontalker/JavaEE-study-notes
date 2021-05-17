@@ -9,6 +9,8 @@ jdk 8之前的日期时间的API测试
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
+
 public class DateTimeTest {
     /*
     SimpleDateFormat的使用: SimpleDateFormat对日期Date类的格式化和解析
@@ -22,6 +24,10 @@ public class DateTimeTest {
 
     @Test
     public void testSimpleDateFormat() {
+        //实例化SimpleDateFormat
+        SimpleDateFormat sdf = new SimpleDateFormat();
+
+
 
     }
 }
