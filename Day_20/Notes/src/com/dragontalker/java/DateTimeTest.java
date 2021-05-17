@@ -4,5 +4,16 @@ package com.dragontalker.java;
 JDK 8之前日期和时间的API测试
  */
 
+import org.junit.Test;
+
 public class DateTimeTest {
+
+    //1. System类中的currentTimeMillis()
+    @Test
+    public void test1() {
+        long time = System.currentTimeMillis();
+        //返回当前时间与1970年1月1日0时0分0秒之间以毫秒为单位的时间差
+        //称为时间戳
+        System.out.println(time);
+    }
 }
