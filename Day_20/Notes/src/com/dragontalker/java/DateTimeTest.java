@@ -56,5 +56,9 @@ public class DateTimeTest {
         //情况一:
         //Date date4 = new java.sql.Date(1621210012282L);
         //java.sql.Date date5 = (java.sql.Date) date4;
+
+        //情况二: 违反多态原则, new的父类不能强转子类
+        //Date date6 = new Date();
+        //java.sql.Date date7 = (java.sql.Date) date6;
     }
 }
