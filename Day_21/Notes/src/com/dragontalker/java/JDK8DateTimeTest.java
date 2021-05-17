@@ -119,5 +119,11 @@ public class JDK8DateTimeTest {
         //格式化
         String str2 = formatter1.format(LocalDate.now());
         System.out.println(str2);
+
+        //重点: 方式三: 自定义的格式
+        DateTimeFormatter formatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss");
+        //格式化
+        String str3 = formatter2.format(LocalDateTime.now());
+        System.out.println(str3);
     }
 }
