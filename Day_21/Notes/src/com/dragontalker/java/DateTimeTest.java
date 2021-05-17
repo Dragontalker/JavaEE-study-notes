@@ -101,6 +101,8 @@ public class DateTimeTest {
 
         //2. 常用方法
         //get()
+        int days = calender.get(Calendar.DAY_OF_MONTH);
+        System.out.println(days);
 
         //set()
 
