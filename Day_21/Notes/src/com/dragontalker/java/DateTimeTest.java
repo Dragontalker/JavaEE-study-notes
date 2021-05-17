@@ -48,7 +48,8 @@ public class DateTimeTest {
         String format1 = sdf1.format(date);
         System.out.println(format1); //2021-05-17 11:38:26 a.m.
 
-        //解析
+        //解析: 要求字符串必须是符合SimpleDateFormat识别的格式(通过构造器参数实现)
+        //否则, 就会抛异常
         Date date2 = sdf1.parse("2021-05-17 11:38:26 a.m.");
         System.out.println(date2);
 
