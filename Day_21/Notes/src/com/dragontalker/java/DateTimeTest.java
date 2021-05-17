@@ -42,7 +42,8 @@ public class DateTimeTest {
         System.out.println(date1);
 
         //************
-        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MMMM.dd GGG hh:mm aaa");
+        //SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MMMM.dd GGG hh:mm aaa");
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss aaa");
         String format1 = sdf1.format(date);
         System.out.println(format1);
 
