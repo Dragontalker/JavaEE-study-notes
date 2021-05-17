@@ -33,6 +33,8 @@ public class DateTimeTest {
 
     3. java.sql.Date对应的是数据库中的日期类型的变量
         > 如何实例化
+        > sql.Date ---> util.Date对象, 使用多态
+        > util.Date ---> sql.Date对象
      */
     @Test
     public void test2() {
@@ -49,5 +51,10 @@ public class DateTimeTest {
         java.sql.Date date3 = new java.sql.Date(1621210012282L);
         System.out.println(date3); //2021-05-16
         System.out.println(date3.getTime());
+
+        //如何将java.util.Date对象转换为java.sql.Date对象
+        //情况一:
+        //Date date4 = new java.sql.Date(1621210012282L);
+        //java.sql.Date date5 = (java.sql.Date) date4;
     }
 }
