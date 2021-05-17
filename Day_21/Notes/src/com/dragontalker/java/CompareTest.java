@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * 一、说明: Java中的对象, 正常情况下, 只能进行比较: == 或 !=.
@@ -57,4 +58,14 @@ public class CompareTest {
     2. 重写compare(Object o1, Object o2)方法, 比较o1和o2的大小:
         - 规则和compareTo()一样
      */
+    @Test
+    public void test3() {
+        String[] arr = new String[]{"AA", "CC", "MM", "GG", "JJ", "DD"};
+        Arrays.sort(arr, new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return 0;
+            }
+        });
+    }
 }
