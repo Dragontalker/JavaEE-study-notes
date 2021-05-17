@@ -2,6 +2,8 @@ package com.dragontalker.exer;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 public class StringDemo2 {
     //获取两个字符串中最大相同的字串
     //前提: 两个字符串中只有一个最大相同字串
@@ -41,7 +43,7 @@ public class StringDemo2 {
                         sBuffer.append(subStr + ",");
                     }
                 }
-                System.out.println(sBuffer);
+                //System.out.println(sBuffer);
                 if (sBuffer.length() != 0) {
                     break;
                 };
@@ -59,5 +61,13 @@ public class StringDemo2 {
         String str2 = "cvhello12345bnm";
         String result = getMaxSameString(str1, str2);
         System.out.println(result);
+    }
+
+    @Test
+    public void test2() {
+        String str1 = "abcwerthello12345yuiodef";
+        String str2 = "cvhello12345bnm";
+        String[] result = getMaxSameString1(str1, str2);
+        System.out.println(Arrays.toString(result));
     }
 }
