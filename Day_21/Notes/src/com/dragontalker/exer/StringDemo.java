@@ -24,20 +24,33 @@ public class StringDemo {
 
     //方式二: 使用String的拼接操作
     public  String reverse1(String str, int startIndex, int endIndex) {
-        //第1部分
-        String reverseStr = str.substring(0, startIndex);
-        //第2部分
-        for (int i = endIndex; i >= startIndex; i--) {
-            reverseStr += str.charAt(i);
-        }
+        if (str != null && str.length() != 0){
+            //第1部分
+            String reverseStr = str.substring(0, startIndex);
+            //第2部分
+            for (int i = endIndex; i >= startIndex; i--) {
+                reverseStr += str.charAt(i);
+            }
+            //第3部分
+            reverseStr += str.substring(endIndex + 1);
 
-        return null;
+            return reverseStr;
+        } else {
+            return str;
+        }
     }
 
     @Test
     public void testReverse() {
         String str = "abcdefg";
         String reverse = reverse(str, 2, 5);
+        System.out.println(reverse);
+    }
+
+    @Test
+    public void testReverse1() {
+        String str = "abcdefg";
+        String reverse = reverse1(str, 2, 5);
         System.out.println(reverse);
     }
 }
