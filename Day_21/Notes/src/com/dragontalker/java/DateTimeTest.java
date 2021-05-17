@@ -26,7 +26,7 @@ public class DateTimeTest {
 
     @Test
     public void testSimpleDateFormat() throws ParseException {
-        //实例化SimpleDateFormat
+        //实例化SimpleDateFormat: 使用默认的构造器
         SimpleDateFormat sdf = new SimpleDateFormat();
 
         //格式化: 日期 ---> 字符串
@@ -37,8 +37,14 @@ public class DateTimeTest {
         System.out.println(format);
 
         //解析: 格式化的逆过程, 字符串 ---> 日期
-        String str = "2019-08-09";
+        String str = "2021-05-17, 11:33 a.m.";
         Date date1 = sdf.parse(str);
         System.out.println(date1);
+
+        //************
+        SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MMMM.dd GGG hh:mm aaa");
+        String format1 = sdf1.format(date);
+        System.out.println(format1);
+
     }
 }
