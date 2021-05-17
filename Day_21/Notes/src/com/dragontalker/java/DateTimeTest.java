@@ -46,7 +46,11 @@ public class DateTimeTest {
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss aaa");
         //格式化
         String format1 = sdf1.format(date);
-        System.out.println(format1);
+        System.out.println(format1); //2021-05-17 11:38:26 a.m.
+
+        //解析
+        Date date2 = sdf1.parse("2021-05-17 11:38:26 a.m.");
+        System.out.println(date2);
 
     }
 }
