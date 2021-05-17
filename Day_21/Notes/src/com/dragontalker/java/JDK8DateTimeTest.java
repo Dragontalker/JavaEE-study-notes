@@ -125,5 +125,9 @@ public class JDK8DateTimeTest {
         //格式化
         String str3 = formatter2.format(LocalDateTime.now());
         System.out.println(str3);
+
+        //解析
+        TemporalAccessor parse1 = formatter2.parse("2021-05-17 03:53:22");
+        System.out.println(parse1);
     }
 }
