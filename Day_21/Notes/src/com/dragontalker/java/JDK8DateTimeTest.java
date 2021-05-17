@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.TemporalAccessor;
 import java.util.Date;
 
 public class JDK8DateTimeTest {
@@ -102,10 +103,14 @@ public class JDK8DateTimeTest {
     public void test3() {
         //方式一: 预定义的标准格式
         DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
-        //格式化:
+        //格式化: 日期 ---> 字符串
         LocalDateTime localDateTime = LocalDateTime.now();
         String str1 = formatter.format(localDateTime);
         System.out.println(localDateTime);
         System.out.println(str1);
+
+        //解析: 字符串 ---> 日期
+        TemporalAccessor parse = formatter.parse("2021-05-17T15:45:16.7164804");
+        System.out.println(parse);
     }
 }
