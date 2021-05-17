@@ -8,6 +8,11 @@ public class StringDemo {
      */
     public  String reverse(String str, int startIndex, int endIndex) {
         char[] arr = str.toCharArray();
-        return null;
+        for (int x = startIndex, y = endIndex; x < y ;x++, y--) {
+            char temp = arr[x];
+            arr[x] = arr[y];
+            arr[y] = temp;
+        }
+        return new String(arr);
     }
 }
