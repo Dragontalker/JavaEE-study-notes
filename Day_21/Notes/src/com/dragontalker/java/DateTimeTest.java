@@ -116,6 +116,8 @@ public class DateTimeTest {
         System.out.println(days);
 
         //getTime()
+        Date date = calendar.getTime();
+        System.out.println(date);
 
         //setTime()
     }
