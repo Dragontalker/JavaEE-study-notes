@@ -97,6 +97,17 @@ public class DateTimeTest {
         //方式一: 创建其子类(GeorgianCalender)的对象
         //方式二: 调用其静态方法getInstance()
         Calendar calender = Calendar.getInstance();
-        System.out.println(calender);
+        //System.out.println(calender);
+
+        //2. 常用方法
+        //get()
+
+        //set()
+
+        //add()
+
+        //getTime()
+
+        //setTime()
     }
 }
