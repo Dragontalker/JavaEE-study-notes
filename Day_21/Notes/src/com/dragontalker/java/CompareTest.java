@@ -45,4 +45,13 @@ public class CompareTest {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
     }
+
+    /*
+    Comparator接口的使用: 定制排序
+
+    1. 背景
+        - 当元素的类型没有实现java.lang.Comparable接口而又不方便修改代码,
+        - 或者实现了java.lang.Comparable接口的排序规则不适合当前的操作,
+        - 那么可以考虑使用Comparator的对象来排序
+     */
 }
