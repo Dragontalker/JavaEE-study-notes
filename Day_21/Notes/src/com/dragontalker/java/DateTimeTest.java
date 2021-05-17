@@ -86,4 +86,13 @@ public class DateTimeTest {
         java.sql.Date birthDate = new java.sql.Date(date.getTime());
         System.out.println(birthDate);
     }
+
+    /*
+    Calender日历类的使用
+     */
+    @Test
+    public void testCalender() {
+        //1. 实例化
+
+    }
 }
