@@ -7,6 +7,7 @@ jdk 8中日期时间API的测试
 import org.junit.Test;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class JDK8DateTimeTest {
@@ -90,6 +91,21 @@ public class JDK8DateTimeTest {
         //通过给定的毫秒数, 获取Instant实例 ---> Date(long millis)
         Instant instant1 = Instant.ofEpochMilli(1621278495854L);
         System.out.println(instant1);
+    }
 
+    /*
+    DateTimeFormatter: 格式化或解析日期、时间
+        - 类似于SimpleDateFormat
+     */
+
+    @Test
+    public void test3() {
+        //方式一: 预定义的标准格式
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
+        //格式化:
+        LocalDateTime localDateTime = LocalDateTime.now();
+        String str1 = formatter.format(localDateTime);
+        System.out.println(localDateTime);
+        System.out.println(str1);
     }
 }
