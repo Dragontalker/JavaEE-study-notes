@@ -72,4 +72,11 @@ public class StringDemo {
         String reverse = reverse1(str, 2, 5);
         System.out.println(reverse);
     }
+
+    @Test
+    public void testReverse2() {
+        String str = "abcdefg";
+        String reverse = reverse2(str, 2, 5);
+        System.out.println(reverse);
+    }
 }
