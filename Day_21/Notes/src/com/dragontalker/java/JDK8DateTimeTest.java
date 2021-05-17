@@ -17,4 +17,12 @@ public class JDK8DateTimeTest {
         Date date1 = new Date(2020 - 1900, 9 - 1, 8);
         System.out.println(date1); //Fri Oct 08 00:00:00 EDT 3920
     }
+
+    /*
+    LocalDate, LocalTime, LocalDateTime的使用
+     */
+    @Test
+    public void test1() {
+
+    }
 }
