@@ -1,6 +1,6 @@
 package com.dragontalker.java;
 
-public class Goods {
+public class Goods implements Comparable {
 
     private String name;
     private double price;
@@ -26,5 +26,22 @@ public class Goods {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    //指定商品比较大小的方式: 按照价格从低到高
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Goods) {
+            //方式一:
+            Goods goods = (Goods)o;
+            if (this.price > goods.price) {
+                return 1;
+            } else if (this.price < goods.price) {
+                return -1;
+            } else {
+                return 0;
+            }
+        }
+        return 0;
     }
 }
