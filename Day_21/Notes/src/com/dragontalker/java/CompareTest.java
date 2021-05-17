@@ -7,11 +7,13 @@ import java.util.Comparator;
 
 /**
  * 一、说明: Java中的对象, 正常情况下, 只能进行比较: == 或 !=.
- *  - 不能使用 > 或 <, 但是在开发的场景中, 我们需要对多个对象进行排序
- *  - 言外之意, 就需要比较对象的大小
- *  - 如何实现？使用两个接口中的任何一个: Comparable 或 Comparator
+ *      - 不能使用 > 或 <, 但是在开发的场景中, 我们需要对多个对象进行排序
+ *      - 言外之意, 就需要比较对象的大小
+ *      - 如何实现？使用两个接口中的任何一个: Comparable 或 Comparator
  *
- *  二、Comparable接口的使用
+ *  二、Comparable接口与Comparator接口的使用和对比:
+ *      - Comparable接口的方式一旦确定, 保证Comparable接口实现类的对象在任何位置都可以比较大小
+ *      - Comparator接口属于临时性的比较
  *
  */
 
@@ -102,5 +104,6 @@ public class CompareTest {
                 throw new RuntimeException("输入的数据类型不一致");
             }
         });
+        System.out.println(Arrays.toString(arr));
     }
 }
