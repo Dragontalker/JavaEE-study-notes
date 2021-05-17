@@ -26,6 +26,7 @@ public class JDK8DateTimeTest {
 
     说明:
         1. LocalDateTime相较于LocalDate、LocalTime, 使用频率要高
+        2. 类似于Calendar, 但是加入了不可变性
      */
     @Test
     public void test1() {
