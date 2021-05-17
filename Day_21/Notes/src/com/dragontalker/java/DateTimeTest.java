@@ -41,9 +41,10 @@ public class DateTimeTest {
         Date date1 = sdf.parse(str);
         System.out.println(date1);
 
-        //************
+        //************用指定的方式进行格式化: 调用带参的构造器************
         //SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy.MMMM.dd GGG hh:mm aaa");
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss aaa");
+        //格式化
         String format1 = sdf1.format(date);
         System.out.println(format1);
 
