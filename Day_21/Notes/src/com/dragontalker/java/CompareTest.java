@@ -53,5 +53,8 @@ public class CompareTest {
         - 当元素的类型没有实现java.lang.Comparable接口而又不方便修改代码,
         - 或者实现了java.lang.Comparable接口的排序规则不适合当前的操作,
         - 那么可以考虑使用Comparator的对象来排序
+
+    2. 重写compare(Object o1, Object o2)方法, 比较o1和o2的大小:
+        - 规则和compareTo()一样
      */
 }
