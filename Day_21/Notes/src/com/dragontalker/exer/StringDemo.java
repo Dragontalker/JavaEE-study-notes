@@ -1,5 +1,7 @@
 package com.dragontalker.exer;
 
+import org.junit.Test;
+
 public class StringDemo {
     /*
     将一个字符串进行反装, 将字符串中指定部分进行反转.
@@ -18,5 +20,12 @@ public class StringDemo {
         } else {
             return str;
         }
+    }
+
+    @Test
+    public void testReverse() {
+        String str = "abcdefg";
+        String reverse = reverse(str, 2, 5);
+        System.out.println(reverse);
     }
 }
