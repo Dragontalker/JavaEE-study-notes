@@ -37,5 +37,10 @@ public class JDK8DateTimeTest {
         System.out.println(localeDate);
         System.out.println(localTime);
         System.out.println(localDateTIme);
+
+        //of():
+        LocalDateTime localDateTime1 = LocalDateTime.of(2020, 10, 6, 13, 23, 43);
+        System.out.println(localDateTime1);
+
     }
 }
