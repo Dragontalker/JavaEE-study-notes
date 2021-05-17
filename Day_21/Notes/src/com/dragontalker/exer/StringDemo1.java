@@ -12,14 +12,22 @@ public class StringDemo1 {
         int mainLength = mainStr.length();
         int subLength = subStr.length();
         int count = 0;
-        int index = mainStr.indexOf(subStr);;
+        int index = mainStr.indexOf(subStr, 0);;
 
         if (mainLength >= subLength) {
 
-            while (index != -1) {
+            //方式一:
+//            while (index != -1) {
+//                count++;
+//                mainStr = mainStr.substring(index + subLength);
+//                index = mainStr.indexOf(subStr);
+//            }
+
+            //方式二:
+            while(index != -1) {
                 count++;
-                mainStr = mainStr.substring(index + subLength);
-                index = mainStr.indexOf(subStr);
+                index += subLength;
+                index = mainStr.indexOf(subStr, index);
             }
 
         } else {
