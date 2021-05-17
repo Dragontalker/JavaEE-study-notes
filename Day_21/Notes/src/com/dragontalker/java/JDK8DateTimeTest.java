@@ -70,4 +70,12 @@ public class JDK8DateTimeTest {
         System.out.println(localDateTime);
         System.out.println(localDateTime4);
     }
+
+    /*
+    Instant的使用
+     */
+    @Test
+    public void test2() {
+
+    }
 }
