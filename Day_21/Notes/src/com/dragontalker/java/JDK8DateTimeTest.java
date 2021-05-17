@@ -6,9 +6,7 @@ jdk 8中日期时间API的测试
 
 import org.junit.Test;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.*;
 import java.util.Date;
 
 public class JDK8DateTimeTest {
@@ -76,6 +74,12 @@ public class JDK8DateTimeTest {
      */
     @Test
     public void test2() {
+        //now(): 获取本初子午线对应的标准时间
+        Instant instant = Instant.now();
+        System.out.println(instant); //UTC Time: 2021-05-17T19:03:24.349888300Z
 
+        //添加时间的偏移量
+        OffsetDateTime offsetDateTime = instant.atOffset(ZoneOffset.ofHours(8));
+        System.out.println(offsetDateTime);
     }
 }
