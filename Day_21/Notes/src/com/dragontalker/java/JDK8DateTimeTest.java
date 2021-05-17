@@ -81,5 +81,9 @@ public class JDK8DateTimeTest {
         //添加时间的偏移量
         OffsetDateTime offsetDateTime = instant.atOffset(ZoneOffset.ofHours(8));
         System.out.println(offsetDateTime);
+
+        //获取对应的毫秒数
+        long toEpochMilli = instant.toEpochMilli();
+        System.out.println(toEpochMilli);
     }
 }
