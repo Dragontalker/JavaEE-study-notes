@@ -71,6 +71,7 @@ public class JDK8DateTimeTest {
 
     /*
     Instant的使用
+        - 类似于java.util.Date类
      */
     @Test
     public void test2() {
@@ -84,6 +85,11 @@ public class JDK8DateTimeTest {
 
         //获取对应的毫秒数
         long toEpochMilli = instant.toEpochMilli();
-        System.out.println(toEpochMilli);
+        System.out.println(toEpochMilli); //1621278495854
+
+        //通过给定的毫秒数, 获取Instant实例 ---> Date(long millis)
+        Instant instant1 = Instant.ofEpochMilli(1621278495854L);
+        System.out.println(instant1);
+
     }
 }
