@@ -12,8 +12,15 @@ public class StringDemo1 {
         int mainLength = mainStr.length();
         int subLength = subStr.length();
         int count = 0;
+        int index;
 
         if (mainLength >= subLength) {
+
+            index = mainStr.indexOf(subStr);
+            if (index != -1) {
+                count++;
+                mainStr = mainStr.substring(index + subLength);
+            }
 
         } else {
             return count;
@@ -25,6 +32,7 @@ public class StringDemo1 {
     public void testGetCount() {
         String mainStr = "abkkcadkabkebfkabkskab";
         String subStr = "ab";
-
+        int count = getCount(mainStr, subStr);
+        System.out.println(count);
     }
 }
