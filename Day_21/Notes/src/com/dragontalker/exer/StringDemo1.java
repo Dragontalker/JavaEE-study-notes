@@ -12,7 +12,7 @@ public class StringDemo1 {
         int mainLength = mainStr.length();
         int subLength = subStr.length();
         int count = 0;
-        int index = mainStr.indexOf(subStr, 0);;
+        int index = mainStr.indexOf(subStr);;
 
         if (mainLength >= subLength) {
 
