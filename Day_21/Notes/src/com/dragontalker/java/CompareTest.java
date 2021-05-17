@@ -62,6 +62,8 @@ public class CompareTest {
     public void test3() {
         String[] arr = new String[]{"AA", "CC", "MM", "GG", "JJ", "DD"};
         Arrays.sort(arr, new Comparator() {
+
+            //按照字符串从大到小的顺序排列
             @Override
             public int compare(Object o1, Object o2) {
                 if (o1 instanceof String && o2 instanceof String) {
@@ -72,5 +74,6 @@ public class CompareTest {
                 throw new RuntimeException("输入的数据类型不一致");
             }
         });
+        System.out.println(Arrays.toString(arr));
     }
 }
