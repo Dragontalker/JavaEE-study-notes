@@ -65,8 +65,8 @@ public class StringDemo2 {
 
     @Test
     public void test2() {
-        String str1 = "abcwerthello12345yuiodef";
-        String str2 = "cvhello12345bnm";
+        String str1 = "abcdewerthelloyuiodef12345";
+        String str2 = "cabcdevhellobnm12345";
         String[] result = getMaxSameString1(str1, str2);
         System.out.println(Arrays.toString(result));
     }
