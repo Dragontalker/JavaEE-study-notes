@@ -26,7 +26,7 @@ public class StringDemo2 {
 
     //如果存在多个长度相同的最大相同字串
     //此时先返回String[], 后面可以用集合中的ArrayList替换, 较方便
-    public String getMaxSameString1(String str1, String str2) {
+    public String[] getMaxSameString1(String str1, String str2) {
         if (str1 != null && str2 != null) {
             StringBuffer sBuffer = new StringBuffer();
             String maxStr = (str1.length() >= str2.length()) ? str1 : str2;
@@ -46,7 +46,10 @@ public class StringDemo2 {
                     break;
                 };
             }
+            String[] split = sBuffer.toString().replaceAll(",$", "").split("\\,");
+            return split;
         }
+
         return null;
     }
 
