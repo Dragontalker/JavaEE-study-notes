@@ -52,6 +52,19 @@ public class DateTimeTest {
         //否则, 就会抛异常
         Date date2 = sdf1.parse("2021-05-17 11:38:26 a.m.");
         System.out.println(date2);
+    }
 
+    /*
+    练习一: 字符串"2020-09-08"转换为java.sql.Date
+     */
+    @Test
+    public void testExercise() throws ParseException {
+        String birth = "2020-09-08";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf.parse(birth);
+        //System.out.println(birth);
+
+        java.sql.Date birthDate = new java.sql.Date(date.getTime());
+        System.out.println(birthDate);
     }
 }
