@@ -43,6 +43,6 @@ public class CompareTest {
         arr[3] = new Goods("HuaWeiMouse", 65);
 
         Arrays.sort(arr);
-        System.out.println(arr.toString());
+        System.out.println(Arrays.toString(arr));
     }
 }
