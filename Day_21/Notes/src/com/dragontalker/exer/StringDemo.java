@@ -7,12 +7,16 @@ public class StringDemo {
     方式一: 转换为char[]
      */
     public  String reverse(String str, int startIndex, int endIndex) {
-        char[] arr = str.toCharArray();
-        for (int x = startIndex, y = endIndex; x < y ;x++, y--) {
-            char temp = arr[x];
-            arr[x] = arr[y];
-            arr[y] = temp;
+        if (str != null && str.length() != 0) {
+            char[] arr = str.toCharArray();
+            for (int x = startIndex, y = endIndex; x < y ;x++, y--) {
+                char temp = arr[x];
+                arr[x] = arr[y];
+                arr[y] = temp;
+            }
+            return new String(arr);
+        } else {
+            return str;
         }
-        return new String(arr);
     }
 }
