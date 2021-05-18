@@ -35,6 +35,10 @@ import java.lang.annotation.Annotation;
  *  - Inherited: 被它修饰的Annotation具有继承性
  *
  * 5. 通过放射获取注解信息 --- 到反射内容时系统讲解
+ *
+ * 6. jdk8中注解的新特性: 可重复注解、类型注解
+ *  6.1 可重复注解:
+ *
  */
 
 public class AnnotationTest {
