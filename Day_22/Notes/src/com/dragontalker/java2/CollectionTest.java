@@ -19,11 +19,14 @@ package com.dragontalker.java2;
  *
  *
  * 二、结合框架
- *      |--->Collection接口: 单列集合, 用来存储一个一个的对象
- *              |---list接口
+ *      |----Collection接口: 单列集合, 用来存储一个一个的对象
+ *              |----list接口: 存储有序的、可重复的数据 ---> "动态"数组
  *              |
- *              |---Set接口
+ *              |----Set接口: 存储无序的、不可重复的数据 ---> "静态"数组
+ *
+ *      |----Map接口: 双列结合, 用来存储一对(key--value)一对的数据
  */
+
 
 public class CollectionTest {
 }
