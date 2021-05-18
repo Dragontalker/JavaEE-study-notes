@@ -14,6 +14,9 @@ package com.dragontalker.java1;
  *
  * 3. 如何自定义注解: 参照SuppressWarnings定义
  *  3.1 注解声明为: @interface
+ *  3.2 内部定义成员, 通常用value表示
+ *  3.3 可以指定成员的默认值, 使用default定义
+ *  3.4 如果自定义注解没有成员, 表明是一个表示作用
  */
 
 public class AnnotationTest {
