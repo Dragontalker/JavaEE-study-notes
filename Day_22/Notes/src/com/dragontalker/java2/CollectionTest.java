@@ -45,11 +45,23 @@ public class CollectionTest {
     public void test1() {
         Collection col = new ArrayList();
 
-        //add(Object obj)
+        //add(Object obj): 将元素obj添加到集合之中
         col.add("AA");
         col.add("BB");
         col.add("CC");
         col.add(123); //自动装箱
         col.add(new Date());
+
+        //size(): 获取添加的元素的个数
+        System.out.println(col.size());
+
+        //addAll():
+        Collection col1 = new ArrayList();
+        col1.add(456);
+        col1.add("CC");
+        col1.addAll(col);
+
+        System.out.println(col1.size());
+        System.out.println(col1);
     }
 }
