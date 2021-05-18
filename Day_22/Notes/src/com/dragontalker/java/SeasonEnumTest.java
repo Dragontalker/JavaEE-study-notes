@@ -2,6 +2,7 @@ package com.dragontalker.java;
 
 /**
  * 使用Enum关键字来定义枚举类
+ * 说明: 定义的枚举类默认继承于Enum类
  */
 
 public class SeasonEnumTest {
@@ -10,6 +11,8 @@ public class SeasonEnumTest {
         System.out.println(summer);
         System.out.println(summer.getSeasonName());
         System.out.println(summer.getSeasonDesc());
+
+        System.out.println(EnumSeason.class.getSuperclass());
     }
 }
 
