@@ -24,4 +24,12 @@ class Person {
         this.name = name;
         this.age = age;
     }
+
+    public void walk() {
+        System.out.println("人走路");
+    }
+
+    public void eat() {
+        System.out.println("人吃饭");
+    }
 }
