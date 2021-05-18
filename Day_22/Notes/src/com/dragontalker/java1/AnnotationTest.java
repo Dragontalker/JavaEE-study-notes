@@ -36,9 +36,18 @@ class Person {
     }
 }
 
-class Student extends Person {
+interface Info {
+    void show();
+}
+
+class Student extends Person implements Info{
     @Override
     public void walk() {
         System.out.println("学生走路");
+    }
+
+    @Override
+    public void show() {
+        System.out.println("这是一个学生");
     }
 }
