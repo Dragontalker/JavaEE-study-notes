@@ -1,5 +1,7 @@
 package com.dragontalker.java1;
 
+import org.junit.Test;
+
 /**
  * 注解的使用
  *
@@ -29,12 +31,19 @@ package com.dragontalker.java1;
  *  - Target: 用于修饰Annotation的定义, 用于指定能修饰哪些元素
  *  - Documented: 表示所修饰的注解在被javadoc解析时, 保留下来
  *  - Inherited: 被它修饰的Annotation具有继承性
+ *
+ * 5. 通过放射获取注解信息 --- 到反射内容时系统讲解
  */
 
 public class AnnotationTest {
     public static void main(String[] args) {
         Person p = new Student();
         p.walk();
+    }
+
+    @Test
+    public void testGetAnnotation() {
+
     }
 }
 
