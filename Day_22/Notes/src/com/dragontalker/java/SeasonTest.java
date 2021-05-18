@@ -16,6 +16,8 @@ package com.dragontalker.java;
  *  - toString()
  *
  * 四、使用enum关键字定义的枚举类实现接口的情况
+ *  情况一: 实现接口: 在enum类中实现抽象方法
+ *  情况二:
  *
  */
 

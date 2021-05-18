@@ -34,6 +34,8 @@ public class SeasonEnumTest {
         //如果没有objName的枚举类对象, 则抛异常
         //EnumSeason winter1 = EnumSeason.valueOf("WINTER1");
         //System.out.println(winter1); // IllegalArgumentException
+
+        winter.show();
     }
 }
 
@@ -44,10 +46,30 @@ interface Info {
 //使用enum关键字枚举类
 enum EnumSeason implements Info{
     //1. 提供当前枚举类的对象, 多个对象之间用","隔开, 末尾的对象用";"结束
-    SPRING ("春天", "春暖花开"),
-    SUMMER ("夏天", "夏日炎炎"),
-    AUTUMN ("秋天", "秋高气爽"),
-    WINTER ("冬天", "冰天雪地");
+    SPRING ("春天", "春暖花开") {
+        @Override
+        public void show() {
+            System.out.println("春天在哪里？");
+        }
+    },
+    SUMMER ("夏天", "夏日炎炎") {
+        @Override
+        public void show() {
+            System.out.println("宁夏");
+        }
+    },
+    AUTUMN ("秋天", "秋高气爽") {
+        @Override
+        public void show() {
+            System.out.println("秋天不回来");
+        }
+    },
+    WINTER ("冬天", "冰天雪地") {
+        @Override
+        public void show() {
+            System.out.println("大约在冬季");
+        }
+    };
 
     //2. 声明Season对象的属性: private final 修饰
     private final String seasonName;
