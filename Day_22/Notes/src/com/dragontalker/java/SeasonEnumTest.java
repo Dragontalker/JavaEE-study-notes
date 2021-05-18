@@ -22,6 +22,11 @@ public class SeasonEnumTest {
             System.out.println(value);
         }
 
+        Thread.State[] values1 = Thread.State.values();
+        for (Thread.State state : values1) {
+            System.out.println(state);
+        }
+
     }
 }
 
