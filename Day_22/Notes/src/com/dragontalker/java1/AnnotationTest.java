@@ -37,7 +37,7 @@ public class AnnotationTest {
     }
 }
 
-@MyAnnotation
+
 class Person {
     private String name;
     private int age;
@@ -49,6 +49,7 @@ class Person {
         this.age = age;
     }
 
+    @MyAnnotation
     public void walk() {
         System.out.println("人走路");
     }
