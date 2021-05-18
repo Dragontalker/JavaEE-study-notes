@@ -35,3 +35,10 @@ class Person {
         System.out.println("人吃饭");
     }
 }
+
+class Student extends Person {
+    @Override
+    public void walk() {
+        System.out.println("学生走路");
+    }
+}
