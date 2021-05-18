@@ -5,6 +5,12 @@ package com.dragontalker.java;
  */
 
 public class SeasonEnumTest {
+    public static void main(String[] args) {
+        EnumSeason summer = EnumSeason.SUMMER;
+        System.out.println(summer);
+        System.out.println(summer.getSeasonName());
+        System.out.println(summer.getSeasonDesc());
+    }
 }
 
 //使用enum关键字枚举类
@@ -23,5 +29,14 @@ enum EnumSeason {
     private EnumSeason(String seasonName, String seasonDesc) {
         this.seasonName = seasonName;
         this.seasonDesc = seasonDesc;
+    }
+
+    //4. 其他诉求1: 获取枚举类对象的属性
+    public String getSeasonName() {
+        return seasonName;
+    }
+
+    public String getSeasonDesc() {
+        return seasonDesc;
     }
 }
