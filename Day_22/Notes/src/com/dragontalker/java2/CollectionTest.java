@@ -64,7 +64,10 @@ public class CollectionTest {
         System.out.println(col1.size());
         System.out.println(col1);
 
+        //clear(): 清空集合元素
+        col1.clear();
+
         //isEmpty(): 判断当前集合是否为空
-        System.out.println(col.isEmpty());
+        System.out.println(col1.isEmpty());
     }
 }
