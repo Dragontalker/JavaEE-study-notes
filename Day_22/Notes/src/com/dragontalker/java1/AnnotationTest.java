@@ -13,7 +13,7 @@ package com.dragontalker.java1;
  *  示例二: @Override @Deprecated @SuppressWarnings
  *
  * 3. 如何自定义注解: 参照SuppressWarnings定义
- *
+ *  3.1 注解声明为: @interface
  */
 
 public class AnnotationTest {
