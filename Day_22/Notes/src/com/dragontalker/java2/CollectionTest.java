@@ -68,6 +68,6 @@ public class CollectionTest {
         col1.clear();
 
         //isEmpty(): 判断当前集合是否为空
-        System.out.println(col1.isEmpty());
+        System.out.println(col1.isEmpty()); //不会空指针, 只是清空了元素, 对象依然存在
     }
 }
