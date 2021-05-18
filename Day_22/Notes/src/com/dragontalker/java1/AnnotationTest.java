@@ -2,6 +2,8 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
+import java.lang.annotation.Annotation;
+
 /**
  * 注解的使用
  *
@@ -43,7 +45,11 @@ public class AnnotationTest {
 
     @Test
     public void testGetAnnotation() {
-
+        Class<Student> clazz = Student.class;
+        Annotation[] annotations = clazz.getAnnotations();
+        for (Annotation annotation : annotations) {
+            System.out.println(annotation);
+        }
     }
 }
 
