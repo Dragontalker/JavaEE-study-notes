@@ -25,7 +25,7 @@ package com.dragontalker.java1;
  *  - 元注解: 对现有的注解进行解释说明的注解
  *  - Retention: 指定所修饰的Annotation的生命周期: Source(默认行为), Class, RUNTIME
  *      - 只有声明为RUNTIME生命周期的注解, 才能通过反射获取
- *  - Target
+ *  - Target: 用于修饰Annotation的定义, 用于指定能修饰哪些元素
  *  - Documented
  *  - Inherited
  */
