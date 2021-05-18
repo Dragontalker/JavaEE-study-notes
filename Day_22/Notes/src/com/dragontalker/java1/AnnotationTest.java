@@ -40,7 +40,7 @@ import java.util.ArrayList;
  * 6. jdk8中注解的新特性: 可重复注解、类型注解
  *  6.1 可重复注解:
  *      - 在MyAnnotation上声明@Repeatable, 成员值为MyAnnotations.class
- *      - MyAnnotation的Target和Retention, 与MyAnnotation相同
+ *      - MyAnnotation的Target和Retention等元注解, 与MyAnnotation相同
  *
  *  6.2 类型注解:
  *      - TYPE_PARAMETER:
