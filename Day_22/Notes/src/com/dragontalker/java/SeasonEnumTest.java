@@ -31,6 +31,9 @@ public class SeasonEnumTest {
         EnumSeason winter = EnumSeason.valueOf("WINTER");
         System.out.println(winter);
 
+        //如果没有objName的枚举类对象, 则抛异常
+        //EnumSeason winter1 = EnumSeason.valueOf("WINTER1");
+        //System.out.println(winter1); // IllegalArgumentException
     }
 }
 
