@@ -42,5 +42,13 @@ class Season {
         return seasonDesc;
     }
 
+    //5. 其他诉求2: 提供toString()方法
 
+    @Override
+    public String toString() {
+        return "Season{" +
+                "seasonName='" + seasonName + '\'' +
+                ", seasonDesc='" + seasonDesc + '\'' +
+                '}';
+    }
 }
