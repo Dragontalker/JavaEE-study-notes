@@ -1,5 +1,5 @@
 package com.dragontalker.java1;
 
 public @interface MyAnnotation {
-    String value();
+    String value() default "hello";
 }
