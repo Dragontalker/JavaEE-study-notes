@@ -14,6 +14,10 @@ package com.dragontalker.java1;
  */
 
 public class AnnotationTest {
+    public static void main(String[] args) {
+        Person p = new Student();
+        p.walk();
+    }
 }
 
 class Person {
