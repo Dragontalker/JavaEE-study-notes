@@ -23,6 +23,10 @@ package com.dragontalker.java1;
  *
  * 4. jdk提供的4种元注解:
  *  - 元注解: 对现有的注解进行解释说明的注解
+ *  - Retention
+ *  - Target
+ *  - Documented
+ *  - Inherited
  */
 
 public class AnnotationTest {
