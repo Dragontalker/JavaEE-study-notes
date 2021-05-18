@@ -11,6 +11,9 @@ package com.dragontalker.java1;
  * 2. Annotation的使用实例
  *  示例一: 生成文档时的注解
  *  示例二: @Override @Deprecated @SuppressWarnings
+ *
+ * 3. 如何自定义注解: 参照SuppressWarnings定义
+ *
  */
 
 public class AnnotationTest {
