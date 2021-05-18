@@ -3,6 +3,7 @@ package com.dragontalker.java1;
 import org.junit.Test;
 
 import java.lang.annotation.Annotation;
+import java.util.ArrayList;
 
 /**
  * 注解的使用
@@ -106,4 +107,8 @@ class Student extends Person implements Info{
 
 class Generic<@MyAnnotation T> {
 
+    public void show() {
+        ArrayList<@MyAnnotation String> list = new ArrayList<>();
+        int num = (@MyAnnotation int) 10L;
+    }
 }
