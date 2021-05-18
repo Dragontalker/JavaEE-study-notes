@@ -10,6 +10,11 @@ package com.dragontalker.java;
  *  方式一: jdk5.0之前, 自定义枚举类
  *  方式二: jdk5.0时, 我们可以使用enum关键字定义枚举类
  *
+ * 三、Enum类中的常用方法:
+ *  - values()
+ *  - valueOf(String str)
+ *  - toString()
+ *
  */
 
 public class SeasonTest {

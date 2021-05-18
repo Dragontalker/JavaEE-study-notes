@@ -8,11 +8,20 @@ package com.dragontalker.java;
 public class SeasonEnumTest {
     public static void main(String[] args) {
         EnumSeason summer = EnumSeason.SUMMER;
+
+        //toString()
         System.out.println(summer);
         System.out.println(summer.getSeasonName());
         System.out.println(summer.getSeasonDesc());
 
-        System.out.println(EnumSeason.class.getSuperclass());
+        //System.out.println(EnumSeason.class.getSuperclass());
+
+        //values()
+        EnumSeason[] values = EnumSeason.values();
+        for (EnumSeason value : values) {
+            System.out.println(value);
+        }
+
     }
 }
 
