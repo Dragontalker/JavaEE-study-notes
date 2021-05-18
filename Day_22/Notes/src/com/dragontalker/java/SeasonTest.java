@@ -15,6 +15,8 @@ package com.dragontalker.java;
  *  - valueOf(String str)
  *  - toString()
  *
+ * 四、使用enum关键字定义的枚举类实现接口的情况
+ *
  */
 
 public class SeasonTest {

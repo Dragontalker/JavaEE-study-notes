@@ -37,8 +37,12 @@ public class SeasonEnumTest {
     }
 }
 
+interface Info {
+    void show();
+}
+
 //使用enum关键字枚举类
-enum EnumSeason {
+enum EnumSeason implements Info{
     //1. 提供当前枚举类的对象, 多个对象之间用","隔开, 末尾的对象用";"结束
     SPRING ("春天", "春暖花开"),
     SUMMER ("夏天", "夏日炎炎"),
@@ -62,5 +66,10 @@ enum EnumSeason {
 
     public String getSeasonDesc() {
         return seasonDesc;
+    }
+
+    @Override
+    public void show() {
+        System.out.println("这是一个季节");
     }
 }
