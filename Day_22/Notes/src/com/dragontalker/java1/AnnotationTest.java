@@ -107,7 +107,7 @@ class Student extends Person implements Info{
 
 class Generic<@MyAnnotation T> {
 
-    public void show() {
+    public void show() throws @MyAnnotation RuntimeException{
         ArrayList<@MyAnnotation String> list = new ArrayList<>();
         int num = (@MyAnnotation int) 10L;
     }
