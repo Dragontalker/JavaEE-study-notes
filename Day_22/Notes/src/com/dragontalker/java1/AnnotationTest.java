@@ -64,6 +64,7 @@ interface Info {
     void show();
 }
 
+//这里自动继承了MyAnnotation
 class Student extends Person implements Info{
     @Override
     public void walk() {
