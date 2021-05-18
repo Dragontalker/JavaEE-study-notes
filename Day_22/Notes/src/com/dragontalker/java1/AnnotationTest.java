@@ -74,6 +74,8 @@ class Person {
         System.out.println("人走路");
     }
 
+    //jdk8之前的写法
+    //@MyAnnotations({@MyAnnotation(value = "hi"), @MyAnnotation(value = "yo")})
     public void eat() {
         System.out.println("人吃饭");
     }
