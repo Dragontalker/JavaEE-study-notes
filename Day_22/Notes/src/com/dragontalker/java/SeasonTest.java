@@ -14,3 +14,10 @@ package com.dragontalker.java;
 
 public class SeasonTest {
 }
+
+//自定义枚举类
+class Season {
+
+    //1. 私有化类的构造器
+    private Season() {}
+}
