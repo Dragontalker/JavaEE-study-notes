@@ -21,10 +21,12 @@ package com.dragontalker.java2;
  * 二、结合框架
  *      |----Collection接口: 单列集合, 用来存储一个一个的对象
  *              |----list接口: 存储有序的、可重复的数据 ---> "动态"数组
- *              |
+ *                      |----ArrayList, LinkedList, Vector
  *              |----Set接口: 存储无序的、不可重复的数据 ---> 类似数学中的集合概念: 无序性、确定性、互异性
+ *                      |----HashSet, LinkedHashSet, TreeSet
  *
  *      |----Map接口: 双列结合, 用来存储一对(key--value)一对的数据 ---> 类似数学的函数: y=f(x)
+ *              |----HashMap, LinkedHashMap, TreeMap, HashTable, Properties
  */
 
 
