@@ -17,6 +17,9 @@ public class SeasonTest {
 
 //自定义枚举类
 class Season {
+    //声明Season对象的属性
+    private String seasonName;
+    private String seasonDescription;
 
     //1. 私有化类的构造器
     private Season() {}
