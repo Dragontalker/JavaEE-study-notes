@@ -41,6 +41,10 @@ import java.lang.annotation.Annotation;
  *      - 在MyAnnotation上声明@Repeatable, 成员值为MyAnnotations.class
  *      - MyAnnotation的Target和Retention, 与MyAnnotation相同
  *
+ *  6.2 类型注解:
+ *      - TYPE_PARAMETER:
+ *      - TYPE_USE:
+ *
  */
 
 public class AnnotationTest {
@@ -98,4 +102,8 @@ class Student extends Person implements Info{
     public void show() {
         System.out.println("这是一个学生");
     }
+}
+
+class Generic<@MyAnnotation T> {
+
 }
