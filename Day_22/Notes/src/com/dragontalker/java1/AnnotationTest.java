@@ -17,6 +17,8 @@ package com.dragontalker.java1;
  *  3.2 内部定义成员, 通常用value表示
  *  3.3 可以指定成员的默认值, 使用default定义
  *  3.4 如果自定义注解没有成员, 表明是一个表示作用
+ *
+ * 如果注解有成员, 在使用注解时, 需指定成员的值
  */
 
 public class AnnotationTest {
