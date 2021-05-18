@@ -13,6 +13,12 @@ package com.dragontalker.java;
  */
 
 public class SeasonTest {
+    public static void main(String[] args) {
+        Season spring = Season.SPRING;
+        System.out.println(spring.getSeasonName());
+        System.out.println(spring.getSeasonDesc());
+        System.out.println(spring);
+    }
 }
 
 //自定义枚举类
