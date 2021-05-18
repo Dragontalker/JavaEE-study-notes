@@ -1,5 +1,11 @@
 package com.dragontalker.java2;
 
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
+
 /**
  * 一、集合框架的概述
  *
@@ -27,8 +33,23 @@ package com.dragontalker.java2;
  *
  *      |----Map接口: 双列结合, 用来存储一对(key--value)一对的数据 ---> 类似数学的函数: y=f(x)
  *              |----HashMap, LinkedHashMap, TreeMap, HashTable, Properties
+ *
+ *
+ * 三、Collection接口中的方法的使用
  */
 
 
 public class CollectionTest {
+
+    @Test
+    public void test1() {
+        Collection col = new ArrayList();
+
+        //add(Object obj)
+        col.add("AA");
+        col.add("BB");
+        col.add("CC");
+        col.add(123); //自动装箱
+        col.add(new Date());
+    }
 }
