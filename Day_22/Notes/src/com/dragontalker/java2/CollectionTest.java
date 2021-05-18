@@ -55,7 +55,7 @@ public class CollectionTest {
         //size(): 获取添加的元素的个数
         System.out.println(col.size());
 
-        //addAll():
+        //addAll(Collection col): 将col集合中的元素添加到当前的集合中
         Collection col1 = new ArrayList();
         col1.add(456);
         col1.add("CC");
@@ -63,5 +63,8 @@ public class CollectionTest {
 
         System.out.println(col1.size());
         System.out.println(col1);
+
+        //isEmpty(): 判断当前集合是否为空
+        System.out.println(col.isEmpty());
     }
 }
