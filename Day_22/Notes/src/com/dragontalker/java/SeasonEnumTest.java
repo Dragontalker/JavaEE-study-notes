@@ -15,9 +15,11 @@ enum EnumSeason {
     AUTUMN ("秋天", "秋高气爽"),
     WINTER ("冬天", "冰天雪地");
 
+    //2. 声明Season对象的属性: private final 修饰
     private final String seasonName;
     private final String seasonDesc;
 
+    //3. 私有化类的构造器, 并给对象属性初始化
     private EnumSeason(String seasonName, String seasonDesc) {
         this.seasonName = seasonName;
         this.seasonDesc = seasonDesc;
