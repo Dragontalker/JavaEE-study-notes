@@ -27,6 +27,10 @@ public class SeasonEnumTest {
             System.out.println(state);
         }
 
+        //valuesOf(String objName): 返回枚举类中对象名是objName的对象
+        EnumSeason winter = EnumSeason.valueOf("WINTER");
+        System.out.println(winter);
+
     }
 }
 
