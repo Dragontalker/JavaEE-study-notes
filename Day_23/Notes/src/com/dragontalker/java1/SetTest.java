@@ -54,6 +54,7 @@ public class SetTest {
 
         - 总结: 七上八下
 
+        HashSet底层: 数组 + 链表的结构
      */
     @Test
     public void test1() {
