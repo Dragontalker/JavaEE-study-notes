@@ -41,7 +41,7 @@ public class CollectionTest {
 
     @Test
     public void test2() {
-        //3. remove(Object obj)
+        //3. remove(Object obj): 从当前集合中移除obj元素
         Collection collection = new ArrayList();
         collection.add(new Person("Jerry", 20));
         collection.add(123);
@@ -51,5 +51,7 @@ public class CollectionTest {
 
         System.out.println(collection.remove(123));
         System.out.println(collection);
+
+        collection.remove(new Person("Jerry", 20)); //重写equals()之后才能移除
     }
 }
