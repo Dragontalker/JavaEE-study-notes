@@ -107,5 +107,10 @@ public class ArrayListTest {
         for(Object obj : list) {
             System.out.println(obj);
         }
+
+        //方式三: 普通循环
+        for(int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
     }
 }
