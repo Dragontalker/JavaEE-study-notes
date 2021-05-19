@@ -23,7 +23,7 @@ import java.util.Set;
 
 public class SetTest {
     /*
-    Set: 存储无序的, 不可重复的数据
+    一、Set: 存储无序的, 不可重复的数据
      - 以HashSet为例说明:
     1. 无序性:
         - 不等于随机性.
@@ -33,6 +33,21 @@ public class SetTest {
     2. 不可重复性:
         - 保证添加的元素按照equals()判断时, 不能返回true.
         - 即: 相同的元素只能添加一个.
+
+
+    二、添加元素的过程: 以HashSet为例:
+        - 我们向HashSet中添加元素a,
+        - 首先调用元素a的所在类的hashCode()方法, 计算元素a的哈希值
+        - 此哈希值接着通过某种算法计算出在HashSet底层数组中的存放位置(即为: 索引位置)
+        - 判断数组此位置上是否已经有元素:
+            如果此位置上没有其他元素, 则元素a添加成功
+            如果此位置上有其他元素b(或以链表形式存在的多个元素)
+                - 则比较元素a与元素b的哈希值:
+                    如果hash值不相同, 则元素a添加成功
+                    如果hash值相同, 进而需要调用元素a所在类的equals()方法:
+                        - equals()返回true, 元素a添加失败
+                        - equals()返回false, 则元素a添加成功
+
      */
     @Test
     public void test1() {
