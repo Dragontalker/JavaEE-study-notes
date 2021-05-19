@@ -7,6 +7,8 @@ import java.util.Collection;
 
 /**
  * Collection接口中声明的方法的测试
+ *
+ * 向Collection接口的实现类的对象中添加数据obj时, 要求obj的所在类要重写equals()方法
  */
 
 public class CollectionTest {
@@ -24,6 +26,7 @@ public class CollectionTest {
 
 
         //contains(Object obj): 判断当前集合中是否包含obj
+        //我们在判断时会调用obj对象所在类的equals()
         boolean contains = collection.contains(123);
         System.out.println(contains);
         System.out.println(collection.contains(new String("Tom"))); //true
