@@ -1,5 +1,11 @@
 package com.dragontalker.java1;
 
+import com.dragontalker.java.Person;
+import org.junit.Test;
+
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Set接口的框架:
  *
@@ -21,4 +27,14 @@ public class SetTest {
 
     2. 不可重复性
      */
+    @Test
+    public void test1() {
+        Set set = new HashSet();
+        set.add(456);
+        set.add(123);
+        set.add("AA");
+        set.add("CC");
+        set.add(new Person("Tom", 12));
+        set.add(129);
+    }
 }
