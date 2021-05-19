@@ -57,6 +57,7 @@ public class CollectionTest {
         collection.remove(new Person("Jerry", 20)); //重写equals()之后才能移除
 
         //4. removeAll(Collection collection): 从当前集合中移除所有collection集合中的元素
+        //类似数学中的差集 A \ B
         Collection collection1 = Arrays.asList(123, 4567);
         System.out.println(collection.removeAll(collection1)); //false 但是equals()返回true的元素还是被删除了
         System.out.println(collection);
