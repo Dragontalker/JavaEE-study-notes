@@ -4,9 +4,10 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 
 /**
- * 集合元素的遍历操作, 使用Iterator接口
+ * 集合元素的遍历操作, 使用迭代器Iterator接口
  */
 
 public class IteratorTest {
@@ -19,6 +20,12 @@ public class IteratorTest {
         collection.add(new String("Tom"));
         collection.add(false);
 
+        Iterator iterator = collection.iterator();
 
+        System.out.println(iterator.next());
+        System.out.println(iterator.next());
+        System.out.println(iterator.next());
+        System.out.println(iterator.next());
+        System.out.println(iterator.next());
     }
 }
