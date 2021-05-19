@@ -119,5 +119,8 @@ public class CollectionTest {
 
         List list3 = Arrays.asList(new Integer[]{123, 456});
         System.out.println(list3.size()); //2 使用包装类的对象, asList()就会分别识别里面单个的元素
+
+        //9. iterator(): 返回Iterator接口的实例, 用于遍历集合元素.
+        //放在IteratorTest中
     }
 }
