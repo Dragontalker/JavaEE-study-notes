@@ -8,7 +8,8 @@ package com.dragontalker.java;
  * 不同:
  *  - ArrayList: 作为List接口的主要实现类, 执行效率高(线程不安全的),
  *      - 底层结构: 使用Object[]存储, 用elementData变量存储
- *  - LinkedList:
+ *  - LinkedList: 对于频繁的插入、删除操作, 使用此类效率比ArrayList高
+ *      - 底层使用的双向链表存储
  *  - Vector: 作为List接口的古老实现类, 执行效率低(线程安全的)
  */
 
