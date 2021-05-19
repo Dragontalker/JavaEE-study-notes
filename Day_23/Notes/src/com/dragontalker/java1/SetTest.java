@@ -19,6 +19,9 @@ import java.util.Set;
  * *******
  *
  * 1. Set接口中没有额外定义的方法, 都是Collection中的方法
+ *
+ * 2. 要求: 向set中添加的数据, 其所在的类一定要重写hashCode()和 equals()
+ *    要求: 重写的hashCode()和 equals()尽可能保持一致性
  */
 
 public class SetTest {
