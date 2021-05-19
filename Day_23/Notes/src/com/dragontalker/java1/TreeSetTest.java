@@ -8,6 +8,8 @@ import java.util.TreeSet;
 /**
  * 1. 向TreeSet中添加的数据, 要求是先同类的对象.
  * 2. 两种排序方式: 自然排序 和 定制排序
+ *
+ * 3. 自然排序中, 比较两个对象是否相同的标准为: compareTo()返回值为0. 不再是equals()
  */
 
 public class TreeSetTest {
