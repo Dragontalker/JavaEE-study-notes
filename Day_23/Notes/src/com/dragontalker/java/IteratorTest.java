@@ -8,6 +8,7 @@ import java.util.Iterator;
 
 /**
  * 集合元素的遍历操作, 使用迭代器Iterator接口
+ * 内部的方法: next()和 hasNext()
  */
 
 public class IteratorTest {
@@ -36,5 +37,10 @@ public class IteratorTest {
 //        for(int i = 0; i < collection.size(); i++) {
 //            System.out.println(iterator.next());
 //        }
+
+        //方式三: 推荐
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
