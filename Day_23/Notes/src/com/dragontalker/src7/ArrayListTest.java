@@ -1,5 +1,10 @@
 package com.dragontalker.src7;
 
+import com.dragontalker.java.Person;
+import org.junit.Test;
+
+import java.util.ArrayList;
+
 /**
  * 1. 数组存储在 private transient Object[] elementData;
  * 2. 构造器里: this.elementDate = new Object[initialCapacity];
@@ -11,5 +16,16 @@ package com.dragontalker.src7;
  *  - 可以有效避免频繁扩容
  */
 
-public class ArrayList {
+public class ArrayListTest {
+
+    @Test
+    public void test1() {
+        ArrayList list = new ArrayList();
+        list.add(123);
+        list.add(456);
+        list.add("AA");
+        list.add(new Person("Tom", 12));
+        list.add(456);
+
+    }
 }
