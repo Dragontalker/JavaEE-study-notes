@@ -72,5 +72,9 @@ public class CollectionTest {
         collection.add(new String("Tom"));
         collection.add(false);
 
+        //5. retainAll(Collection collection): 获取当前集合和collection集合的交集
+        Collection collection1 = Arrays.asList(123, 456, 789);
+        System.out.println(collection1.retainAll(collection1));
+        System.out.println(collection1);
     }
 }
