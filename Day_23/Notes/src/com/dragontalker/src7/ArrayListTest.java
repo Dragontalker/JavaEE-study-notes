@@ -44,4 +44,14 @@ public class ArrayListTest {
         //Object get(int index): 获取index位置的元素
         System.out.println(list.get(1));
     }
+
+    @Test
+    public void test2() {
+        ArrayList list = new ArrayList();
+        list.add(123);
+        list.add(456);
+        list.add("AA");
+        list.add(new Person("Tom", 12));
+        list.add(456);
+    }
 }
