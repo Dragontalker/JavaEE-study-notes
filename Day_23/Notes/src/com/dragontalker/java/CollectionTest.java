@@ -73,8 +73,19 @@ public class CollectionTest {
         collection.add(false);
 
         //5. retainAll(Collection collection): 获取当前集合和collection集合的交集
-        Collection collection1 = Arrays.asList(123, 456, 789);
-        System.out.println(collection1.retainAll(collection1));
-        System.out.println(collection1);
+//        Collection collection1 = Arrays.asList(123, 456, 789);
+//        System.out.println(collection1.retainAll(collection1));
+//        System.out.println(collection1);
+
+        //6. equals(Object obj):
+        Collection collection1 = new ArrayList();
+        collection1.add(new Person("Jerry", 20));
+        collection1.add(123);
+        collection1.add(456);
+        collection1.add(new String("Tom"));
+        collection1.add(false);
+
+        System.out.println(collection.equals(collection1));
+
     }
 }
