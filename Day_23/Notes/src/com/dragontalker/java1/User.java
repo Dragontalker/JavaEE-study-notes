@@ -2,7 +2,7 @@ package com.dragontalker.java1;
 
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable{
     private String name;
     private int age;
 
@@ -49,5 +49,16 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(name, age);
+    }
+
+    //按照姓名从小到大排列
+    @Override
+    public int compareTo(Object o) {
+        if(o instanceof User) {
+            User user = (User)o;
+            return this.name.compareTo(user.name);
+        } else {
+            throw new RuntimeException("输入类型不匹配");
+        }
     }
 }
