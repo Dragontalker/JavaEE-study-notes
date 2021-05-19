@@ -61,5 +61,10 @@ public class IteratorTest {
 //        while((iterator.next()) != null) {
 //            System.out.println(iterator.next());
 //        }
+
+        //错误方法二: 死循环, 不断的输出第一个元素, 因为指针每次都会创造新的迭代器, 指针都在开头
+//        while(collection.iterator().hasNext()) {
+//            System.out.println(collection.iterator().next());
+//        }
     }
 }
