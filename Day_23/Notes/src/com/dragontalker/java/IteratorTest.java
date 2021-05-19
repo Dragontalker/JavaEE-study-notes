@@ -12,6 +12,7 @@ import java.util.Iterator;
  * 1. 内部的方法: next()和 hasNext()
  * 2. 集合对象每次调用iterator()方法都得到一个全新的迭代器对象
  * 3. 默认Pointer都在集合的第一个元素之前
+ * 4. 内部定义了remove(), 可以在遍历的时候, 删除集合中的元素. 此方法不同于集合直接调用remove()
  */
 
 public class IteratorTest {
