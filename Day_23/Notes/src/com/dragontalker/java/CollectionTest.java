@@ -77,7 +77,7 @@ public class CollectionTest {
 //        System.out.println(collection1.retainAll(collection1));
 //        System.out.println(collection1);
 
-        //6. equals(Object obj):
+        //6. equals(Object obj): 要想返回true, 需要当前集合和形参中的集合中的元素相同
         Collection collection1 = new ArrayList();
         collection1.add(new Person("Jerry", 20));
         collection1.add(123);
@@ -85,7 +85,7 @@ public class CollectionTest {
         collection1.add(new String("Tom"));
         collection1.add(false);
 
-        System.out.println(collection.equals(collection1));
+        System.out.println(collection.equals(collection1)); //如果交换顺序就是false, 因为list是有序的
 
     }
 }
