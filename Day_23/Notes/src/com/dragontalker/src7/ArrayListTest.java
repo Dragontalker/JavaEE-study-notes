@@ -29,6 +29,7 @@ public class ArrayListTest {
      * 长度: size()
      * 遍历: 1. Iterator()迭代器
      *      2. 增强for循环
+     *      3. 普通的循环, 使用索引
      */
 
     @Test
@@ -86,5 +87,10 @@ public class ArrayListTest {
         List subList = list.subList(2, 4);
         System.out.println(subList);
         System.out.println(list);
+    }
+
+    @Test
+    public void test3() {
+
     }
 }
