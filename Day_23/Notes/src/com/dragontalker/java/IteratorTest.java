@@ -84,13 +84,16 @@ public class IteratorTest {
 
         Iterator iterator = collection.iterator();
 
+        //删除集合中的"Tom"
         while(iterator.hasNext()) {
             Object obj = iterator.next();
             if ("Tom".equals(obj)) {
+                //注意: remove()不会移动指针！
                 iterator.remove();
             }
         }
 
+        //想要再遍历, 必须回到起点, 重新定义声明一个新的迭代器
         Iterator iterator1 = collection.iterator();
 
         while(iterator1.hasNext()) {
