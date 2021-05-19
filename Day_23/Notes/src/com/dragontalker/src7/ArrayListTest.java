@@ -53,5 +53,9 @@ public class ArrayListTest {
         list.add("AA");
         list.add(new Person("Tom", 12));
         list.add(456);
+
+        //int indexOf(Object obj): 返回obj在集合中首次出现的位置, 如果不存在, 返回-1
+        int index = list.indexOf(4567);
+        System.out.println(index);
     }
 }
