@@ -20,10 +20,11 @@ public class TreeSetTest {
         //set.add("AA"); 报错: ClassCastException
         //set.add(new User("Tom", 12));
 
-        set.add(34);
-        set.add(-34);
-        set.add(37);
-        set.add(43);
+        //举例一:
+//        set.add(34);
+//        set.add(-34);
+//        set.add(37);
+//        set.add(43);
 
         Iterator iterator = set.iterator();
         while(iterator.hasNext()) {
