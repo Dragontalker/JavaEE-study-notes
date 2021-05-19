@@ -102,5 +102,10 @@ public class ArrayListTest {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+
+        //方式二: 增强for循环
+        for(Object obj : list) {
+            System.out.println(obj);
+        }
     }
 }
