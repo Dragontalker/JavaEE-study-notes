@@ -76,4 +76,10 @@ public class SetTest {
             System.out.println(iterator.next());
         };
     }
+
+    //LinkedHashSet的使用
+    @Test
+    public void test2() {
+
+    }
 }
