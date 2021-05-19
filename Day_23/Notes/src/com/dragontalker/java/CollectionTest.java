@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 /**
  * Collection接口中声明的方法的测试
@@ -105,5 +106,9 @@ public class CollectionTest {
         for (Object obj : arr) {
             System.out.println(obj);
         }
+
+        //拓展: 数组 ---> 集合: 调用Arrays类的静态方法asList()
+        List<String> list = Arrays.asList(new String[]{"AA", "BB", "CC", "DD"});
+        System.out.println(list);
     }
 }
