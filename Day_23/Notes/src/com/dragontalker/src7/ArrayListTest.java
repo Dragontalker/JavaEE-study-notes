@@ -66,5 +66,9 @@ public class ArrayListTest {
         Object obj = list.remove(0);
         System.out.println(obj);
         System.out.println(list);
+
+        //Object set(int index, Object ele): 设置指定index位置的元素为ele
+        list.set(1, "CC");
+        System.out.println(list);
     }
 }
