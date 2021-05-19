@@ -59,11 +59,16 @@ public class TreeSetTest {
             }
         };
 
-        TreeSet set = new TreeSet();
+        TreeSet set = new TreeSet(com);
         set.add(new User("Tom", 12));
         set.add(new User("Jerry", 21));
         set.add(new User("Jack", 52));
         set.add(new User("Jack", 56));
         set.add(new User("Rose", 70));
+
+        Iterator iterator = set.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
