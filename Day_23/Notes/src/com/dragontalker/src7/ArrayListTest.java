@@ -70,5 +70,11 @@ public class ArrayListTest {
         //Object set(int index, Object ele): 设置指定index位置的元素为ele
         list.set(1, "CC");
         System.out.println(list);
+
+        //List subList(int fromIndex, int toIndex): 返回左闭右开区间的集合
+        List subList = list.subList(2, 4);
+        System.out.println(subList);
+        System.out.println(list);
+
     }
 }
