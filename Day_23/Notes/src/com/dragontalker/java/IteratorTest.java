@@ -45,4 +45,18 @@ public class IteratorTest {
             System.out.println(iterator.next());
         }
     }
+
+    @Test
+    public void test2() {
+        Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("Tom"));
+        collection.add(false);
+
+        Iterator iterator = collection.iterator();
+
+
+    }
 }
