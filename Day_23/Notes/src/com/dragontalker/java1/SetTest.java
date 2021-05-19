@@ -80,6 +80,7 @@ public class SetTest {
     //LinkedHashSet的使用
     //LinkedHashSet作为HashSet的子类, 在添加数据的同时, 还维护了一对Node引用
     //用以记录此数据的前一个数据和后一个数据
+    //优点: 对于频繁的遍历操作, LinkedHashSet效率高于HashSet
     @Test
     public void test2() {
         Set set = new LinkedHashSet();
