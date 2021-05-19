@@ -7,6 +7,8 @@ package com.dragontalker.src7;
  * 4. 所以, ArrayList list = new ArrayList(); 创建了长度是10的数组elementData
  * 5. 如果添加导致底层的elementData数组容量不够, 则扩容
  * 6. 默认情况下, 扩容为原来容量的1.5倍, 同时需要将原有数组中的数据复制到新的数组中
+ * 结论: 建议开发中使用带参的构造器public ArrayList(int initialCapacity)
+ *  - 可以有效避免频繁扩容
  */
 
 public class ArrayList {
