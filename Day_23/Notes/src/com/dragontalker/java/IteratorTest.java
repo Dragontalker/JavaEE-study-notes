@@ -1,6 +1,7 @@
 package com.dragontalker.java;
 
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -68,5 +69,18 @@ public class IteratorTest {
 //        while(collection.iterator().hasNext()) {
 //            System.out.println(collection.iterator().next());
 //        }
+    }
+
+    //测试Iterator中的remove()
+    @Test
+    public void test3() {
+        Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("Tom"));
+        collection.add(false);
+
+        Iterator iterator = collection.iterator();
     }
 }
