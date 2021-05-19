@@ -110,5 +110,14 @@ public class CollectionTest {
         //拓展: 数组 ---> 集合: 调用Arrays类的静态方法asList()
         List<String> list = Arrays.asList(new String[]{"AA", "BB", "CC", "DD"});
         System.out.println(list);
+
+        List<int[]> list1 = Arrays.asList(new int[]{123, 456});
+        System.out.println(list1);
+
+        List list2 = Arrays.asList(new int[]{123, 456});
+        System.out.println(list2.size()); //1
+
+        List list3 = Arrays.asList(new Integer[]{123, 456});
+        System.out.println(list3.size()); //2 使用包装类的对象, asList()就会分别识别里面单个的元素
     }
 }
