@@ -19,6 +19,17 @@ import java.util.List;
  */
 
 public class ArrayListTest {
+    /**
+     * 总结: 常用方法
+     * 增: add(Object obj)
+     * 删: remove(int index) / remove(Object obj)
+     * 改: set(int index, Object ele)
+     * 查: get(int index)
+     * 插: add(int index, Object ele)
+     * 长度: size()
+     * 遍历: 1. Iterator()迭代器
+     *      2. 增强for循环
+     */
 
     @Test
     public void test1() {
@@ -75,6 +86,5 @@ public class ArrayListTest {
         List subList = list.subList(2, 4);
         System.out.println(subList);
         System.out.println(list);
-
     }
 }
