@@ -20,6 +20,7 @@ public class EnhancedForTest {
         collection.add(false);
 
         //for(集合中元素的类型 局部变量 : 集合对象) {}
+        //内部仍然调用了迭代器
         for(Object obj : collection) {
             System.out.println(obj);
         }
