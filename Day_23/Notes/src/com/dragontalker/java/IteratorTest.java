@@ -82,5 +82,12 @@ public class IteratorTest {
         collection.add(false);
 
         Iterator iterator = collection.iterator();
+
+        while(iterator.hasNext()) {
+            Object obj = iterator.next();
+            if ("Tom".equals(obj)) {
+                iterator.remove();
+            }
+        }
     }
 }
