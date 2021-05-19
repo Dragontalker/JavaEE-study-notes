@@ -86,6 +86,18 @@ public class CollectionTest {
         collection1.add(false);
 
         System.out.println(collection.equals(collection1)); //如果交换顺序就是false, 因为list是有序的
+    }
 
+    @Test
+    public void test4() {
+        Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("Tom"));
+        collection.add(false);
+
+        //7. hashCode():
+        System.out.println(collection.hashCode());
     }
 }
