@@ -89,5 +89,11 @@ public class IteratorTest {
                 iterator.remove();
             }
         }
+
+        Iterator iterator1 = collection.iterator();
+
+        while(iterator1.hasNext()) {
+            System.out.println(iterator1.next());
+        }
     }
 }
