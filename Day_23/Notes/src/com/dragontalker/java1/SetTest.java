@@ -4,6 +4,7 @@ import com.dragontalker.java.Person;
 import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 /**
@@ -36,5 +37,10 @@ public class SetTest {
         set.add("CC");
         set.add(new Person("Tom", 12));
         set.add(129);
+
+        Iterator iterator = set.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        };
     }
 }
