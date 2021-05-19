@@ -49,5 +49,15 @@ public class EnhancedForTest {
 //        for (int i = 0; i < arr.length; i++) {
 //            System.out.println(arr[i]);
 //        }
+
+        //方式二: 增强for循环
+        for (String s: arr) {
+            s = "GG"; //s是局部变量, 不会更改数组内原有的元素
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+        }
+
     }
 }
