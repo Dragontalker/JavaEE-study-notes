@@ -38,4 +38,15 @@ public class CollectionTest {
         Collection collection1 = Arrays.asList(123, 456);
         System.out.println(collection.containsAll(collection1));
     }
+
+    @Test
+    public void test2() {
+        //3. remove(Object obj)
+        Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("Tom"));
+        collection.add(false);
+    }
 }
