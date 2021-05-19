@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.TreeSet;
 
 /**
- *
+ * 1. 向TreeSet中添加的数据, 要求是先同类的对象.
  */
 
 public class TreeSetTest {
@@ -13,8 +13,9 @@ public class TreeSetTest {
     public void test1() {
         TreeSet set = new TreeSet();
 
-        set.add(123);
-        set.add(456);
+        //不能添加不同类的对象
+        //set.add(123);
+        //set.add(456);
         //set.add("AA"); 报错: ClassCastException
         //set.add(new User("Tom", 12));
     }
