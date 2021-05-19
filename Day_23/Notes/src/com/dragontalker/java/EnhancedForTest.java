@@ -25,4 +25,14 @@ public class EnhancedForTest {
             System.out.println(obj);
         }
     }
+
+    @Test
+    public void test2() {
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6};
+
+        //for(数组中元素的类型 局部变量 : 数组对象) {}
+        for(int i : arr) {
+            System.out.println(i);
+        }
+    }
 }
