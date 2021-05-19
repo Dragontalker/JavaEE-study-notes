@@ -91,6 +91,9 @@ public class ArrayListTest {
 
     @Test
     public void test3() {
-
+        ArrayList list = new ArrayList();
+        list.add(123);
+        list.add(456);
+        list.add("AA");
     }
 }
