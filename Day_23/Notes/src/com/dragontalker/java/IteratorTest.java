@@ -57,6 +57,9 @@ public class IteratorTest {
 
         Iterator iterator = collection.iterator();
 
-
+        //错误方法一: 判断的时候指针就会移动, 所以输出是跳着的
+//        while((iterator.next()) != null) {
+//            System.out.println(iterator.next());
+//        }
     }
 }
