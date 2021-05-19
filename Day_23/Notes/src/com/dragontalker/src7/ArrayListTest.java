@@ -27,5 +27,10 @@ public class ArrayListTest {
         list.add(new Person("Tom", 12));
         list.add(456);
 
+        System.out.println(list);
+
+        //void add(int index, Object ele): 在index位置插入ele元素
+        list.add(1, "BB");
+        System.out.println(list);
     }
 }
