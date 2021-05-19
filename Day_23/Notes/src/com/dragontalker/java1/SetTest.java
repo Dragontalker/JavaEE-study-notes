@@ -22,6 +22,7 @@ import java.util.Set;
  *
  * 2. 要求: 向set中添加的数据, 其所在的类一定要重写hashCode()和 equals()
  *    要求: 重写的hashCode()和 equals()尽可能保持一致性
+ *      - 重写两个方法的小技巧: 对象中用作equals()方法比较的Field, 都应该用来计算 hashCode()
  */
 
 public class SetTest {
