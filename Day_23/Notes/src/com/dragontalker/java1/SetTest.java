@@ -52,6 +52,8 @@ public class SetTest {
         jdk7: 元素a放到数组中, 指向原来的元素
         jdk8: 原来的元素在数组中, 指向元素a
 
+        - 总结: 七上八下
+
      */
     @Test
     public void test1() {
