@@ -11,6 +11,9 @@ package com.dragontalker.java;
  *  - LinkedList: 对于频繁的插入、删除操作, 使用此类效率比ArrayList高
  *      - 底层使用的双向链表存储
  *  - Vector: 作为List接口的古老实现类, 执行效率低(线程安全的)
+ *
+ *
+ *  ArrayList的源码分析: jdk7 的情况下
  */
 
 public class ListTest {
