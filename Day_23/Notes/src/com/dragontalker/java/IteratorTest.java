@@ -22,13 +22,19 @@ public class IteratorTest {
 
         Iterator iterator = collection.iterator();
 
-        System.out.println(iterator.next()); //Person{name='Jerry', age=20}
-        System.out.println(iterator.next()); //123
-        System.out.println(iterator.next()); //456
-        System.out.println(iterator.next()); //"Tom"
-        System.out.println(iterator.next()); //false
+        //方式一:
+//        System.out.println(iterator.next()); //Person{name='Jerry', age=20}
+//        System.out.println(iterator.next()); //123
+//        System.out.println(iterator.next()); //456
+//        System.out.println(iterator.next()); //"Tom"
+//        System.out.println(iterator.next()); //false
 
         //报异常: NoSuchElementException
         //System.out.println(iterator.next());
+
+        //方式二: 不推荐
+//        for(int i = 0; i < collection.size(); i++) {
+//            System.out.println(iterator.next());
+//        }
     }
 }
