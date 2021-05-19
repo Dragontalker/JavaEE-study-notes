@@ -31,6 +31,9 @@ package com.dragontalker.java;
  *   - 内部声明了Node类型的first和last属性, 默认值为null
  *   - list.add(123); 将123封装到Node中, 创建了Node对象
  *   - 体现了LinkedList的双向链表的说法
+ *
+ *
+ * 4. Vector的源码分析: jdk7和jdk8中通过Vector()构造器创建对象时, 底层都创建了长度为10的数组
  */
 
 public class ListTest {
