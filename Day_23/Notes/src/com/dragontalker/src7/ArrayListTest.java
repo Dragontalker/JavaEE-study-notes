@@ -61,5 +61,10 @@ public class ArrayListTest {
         //int LastIndexOf(Object obj): 返回obj在当前集合中最后出现的位置, 如果不存在, 返回-1
         int lastIndex = list.lastIndexOf(456);
         System.out.println(lastIndex);
+
+        //int remove(int index): 移除指定index位置的元素, 并返回此元素
+        Object obj = list.remove(0);
+        System.out.println(obj);
+        System.out.println(list);
     }
 }
