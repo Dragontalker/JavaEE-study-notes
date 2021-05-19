@@ -31,6 +31,7 @@ public class TreeSetTest {
         set.add(new User("Tom", 12));
         set.add(new User("Jerry", 21));
         set.add(new User("Jack", 52));
+        set.add(new User("Jack", 56));
         set.add(new User("Rose", 70));
 
         Iterator iterator = set.iterator();

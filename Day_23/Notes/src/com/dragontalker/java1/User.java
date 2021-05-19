@@ -56,7 +56,13 @@ public class User implements Comparable{
     public int compareTo(Object o) {
         if(o instanceof User) {
             User user = (User)o;
-            return this.name.compareTo(user.name);
+            //return this.name.compareTo(user.name);
+            int compare = this.name.compareTo(user.name);
+            if (compare != 0) {
+                return compare;
+            } else {
+                return Integer.compare(this.age, user.age);
+            }
         } else {
             throw new RuntimeException("输入类型不匹配");
         }
