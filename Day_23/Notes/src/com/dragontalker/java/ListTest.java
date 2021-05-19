@@ -30,6 +30,7 @@ package com.dragontalker.java;
  *  LinkedList list = new LinkedList();
  *   - 内部声明了Node类型的first和last属性, 默认值为null
  *   - list.add(123); 将123封装到Node中, 创建了Node对象
+ *   - 体现了LinkedList的双向链表的说法
  */
 
 public class ListTest {
