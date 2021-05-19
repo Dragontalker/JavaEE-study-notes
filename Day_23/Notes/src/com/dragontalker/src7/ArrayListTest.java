@@ -40,5 +40,8 @@ public class ArrayListTest {
         list.addAll(list1);
         System.out.println(list);
         System.out.println(list.size());
+
+        //Object get(int index): 获取index位置的元素
+        System.out.println(list.get(1));
     }
 }
