@@ -62,4 +62,15 @@ public class CollectionTest {
         System.out.println(collection.removeAll(collection1)); //false 但是equals()返回true的元素还是被删除了
         System.out.println(collection);
     }
+
+    @Test
+    public void test3() {
+        Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
+        collection.add(123);
+        collection.add(456);
+        collection.add(new String("Tom"));
+        collection.add(false);
+
+    }
 }
