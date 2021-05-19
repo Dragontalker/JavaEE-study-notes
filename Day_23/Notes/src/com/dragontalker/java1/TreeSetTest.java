@@ -2,6 +2,7 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 /**
@@ -18,5 +19,15 @@ public class TreeSetTest {
         //set.add(456);
         //set.add("AA"); 报错: ClassCastException
         //set.add(new User("Tom", 12));
+
+        set.add(34);
+        set.add(-34);
+        set.add(37);
+        set.add(43);
+
+        Iterator iterator = set.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
