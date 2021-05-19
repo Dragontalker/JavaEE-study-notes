@@ -8,7 +8,9 @@ import java.util.Iterator;
 
 /**
  * 集合元素的遍历操作, 使用迭代器Iterator接口
- * 内部的方法: next()和 hasNext()
+ * 1. 内部的方法: next()和 hasNext()
+ * 2. 集合对象每次调用iterator()方法都得到一个全新的迭代器对象
+ * 3. 默认Pointer都在集合的第一个元素之前
  */
 
 public class IteratorTest {
