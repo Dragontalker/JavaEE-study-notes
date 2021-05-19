@@ -97,7 +97,13 @@ public class CollectionTest {
         collection.add(new String("Tom"));
         collection.add(false);
 
-        //7. hashCode():
+        //7. hashCode(): 返回当前对象的哈希值
         System.out.println(collection.hashCode());
+
+        //8. 集合 ---> 转换为数组: toArray()
+        Object[] arr = collection.toArray();
+        for (Object obj : arr) {
+            System.out.println(obj);
+        }
     }
 }
