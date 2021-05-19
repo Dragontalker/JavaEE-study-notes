@@ -19,6 +19,9 @@ public class EnhancedForTest {
         collection.add(new String("Tom"));
         collection.add(false);
 
-
+        //for(集合中元素的类型 局部变量 : 集合对象) {}
+        for(Object obj : collection) {
+            System.out.println(obj);
+        }
     }
 }
