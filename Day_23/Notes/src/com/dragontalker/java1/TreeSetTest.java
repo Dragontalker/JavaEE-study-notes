@@ -26,6 +26,12 @@ public class TreeSetTest {
 //        set.add(37);
 //        set.add(43);
 
+        //举例二:
+        set.add(new User("Tom", 12));
+        set.add(new User("Jerry", 21));
+        set.add(new User("Jack", 52));
+        set.add(new User("Rose", 70));
+
         Iterator iterator = set.iterator();
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
