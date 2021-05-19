@@ -9,7 +9,9 @@ import java.util.Collection;
 /**
  * Collection接口中声明的方法的测试
  *
+ * 结论:
  * 向Collection接口的实现类的对象中添加数据obj时, 要求obj的所在类要重写equals()方法
+ *
  */
 
 public class CollectionTest {
@@ -53,5 +55,10 @@ public class CollectionTest {
         System.out.println(collection);
 
         collection.remove(new Person("Jerry", 20)); //重写equals()之后才能移除
+
+        //4. removeAll(Collection collection): 从当前集合中移除所有collection集合中的元素
+        Collection collection1 = Arrays.asList(123, 4567);
+        System.out.println(collection.removeAll(collection1)); //false 但是equals()返回true的元素还是被删除了
+        System.out.println(collection);
     }
 }
