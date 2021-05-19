@@ -13,6 +13,7 @@ public class CollectionTest {
     @Test
     public void test1() {
         Collection collection = new ArrayList();
+        collection.add(new Person("Jerry", 20));
         collection.add(123);
         collection.add(456);
         collection.add(new String("Tom"));
@@ -20,7 +21,7 @@ public class CollectionTest {
 
         //Person p = new Person("Jerry", 20);
         //collection.add(p);
-        collection.add(new Person("Jerry", 20));
+
 
         //contains(Object obj): 判断当前集合中是否包含obj
         boolean contains = collection.contains(123);
