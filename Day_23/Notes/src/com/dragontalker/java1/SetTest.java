@@ -39,7 +39,8 @@ public class SetTest {
         set.add(123);
         set.add("AA");
         set.add("CC");
-        set.add(new Person("Tom", 12));
+        set.add(new User("Tom", 12));
+        set.add(new User("Tom", 12));
         set.add(129);
 
         Iterator iterator = set.iterator();

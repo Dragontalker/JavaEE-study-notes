@@ -1,5 +1,7 @@
 package com.dragontalker.java1;
 
+import java.util.Objects;
+
 public class User {
     private String name;
     private int age;
@@ -34,4 +36,18 @@ public class User {
                 ", age=" + age +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        System.out.println("User equals()....");
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return age == user.age && Objects.equals(name, user.name);
+    }
+
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, age);
+//    }
 }
