@@ -2,12 +2,13 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
 
 /**
  * 1. 向TreeSet中添加的数据, 要求是先同类的对象.
- * 2. 两种排序方式: 自然排序 和 定制排序
+ * 2. 两种排序方式: 自然排序(实现Comparable接口) 和 定制排序(Comparator接口)
  *
  * 3. 自然排序中, 比较两个对象是否相同的标准为: compareTo()返回值为0. 不再是equals()
  */
@@ -40,5 +41,17 @@ public class TreeSetTest {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+    }
+
+    @Test
+    public void test2() {
+        Comparator com = new Comparator() {
+            @Override
+            public int compare(Object o1, Object o2) {
+                return 0;
+            }
+        };
+
+        TreeSet set = new TreeSet();
     }
 }
