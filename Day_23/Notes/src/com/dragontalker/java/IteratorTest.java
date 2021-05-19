@@ -39,7 +39,9 @@ public class IteratorTest {
 //        }
 
         //方式三: 推荐
+        //hasNext(): 判断是否还有下一个元素
         while(iterator.hasNext()) {
+            //next(): 1. 指针下移 2. 讲下移位置上的元素放回
             System.out.println(iterator.next());
         }
     }
