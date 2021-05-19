@@ -26,6 +26,8 @@ package com.dragontalker.java;
  *  - jdk8中的ArrayList的对象的创建类似于单例模式的懒汉式, 延时了数组的创建, 节省了内存
  *
  *
+ * 3. LinkedList的源码分析
+ *  LinkedList list = new LinkedList();
  */
 
 public class ListTest {
