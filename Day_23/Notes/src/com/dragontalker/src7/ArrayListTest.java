@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -95,5 +96,11 @@ public class ArrayListTest {
         list.add(123);
         list.add(456);
         list.add("AA");
+
+        //方式一: Iterator迭代器方式
+        Iterator iterator = list.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
