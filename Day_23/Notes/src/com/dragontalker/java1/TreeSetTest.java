@@ -46,9 +46,16 @@ public class TreeSetTest {
     @Test
     public void test2() {
         Comparator com = new Comparator() {
+            //按照年龄从小到大排列
             @Override
             public int compare(Object o1, Object o2) {
-                return 0;
+                if (o1 instanceof User && o2 instanceof User) {
+                    User u1 = (User)o1;
+                    User u2 = (User)o2;
+                    return Integer.compare(u1.getAge(), u2.getAge());
+                } else {
+                    throw new RuntimeException("输入的类型不匹配");
+                }
             }
         };
 
