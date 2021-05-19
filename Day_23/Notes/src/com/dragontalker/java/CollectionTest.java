@@ -17,10 +17,14 @@ public class CollectionTest {
         collection.add(456);
         collection.add(new String("Tom"));
         collection.add(false);
-        collection.add(new Person("Jerry", 20));
+
+        Person p = new Person("Jerry", 20);
+        collection.add(p);
 
         //contains(Object obj): 判断当前集合中是否包含obj
         boolean contains = collection.contains(123);
         System.out.println(contains);
+        System.out.println(collection.contains(new String("Tom")));
+        System.out.println(collection.contains(p));
     }
 }
