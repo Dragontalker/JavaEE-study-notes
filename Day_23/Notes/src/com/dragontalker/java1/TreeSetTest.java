@@ -11,6 +11,7 @@ import java.util.TreeSet;
  * 2. 两种排序方式: 自然排序(实现Comparable接口) 和 定制排序(Comparator接口)
  *
  * 3. 自然排序中, 比较两个对象是否相同的标准为: compareTo()返回值为0. 不再是equals()
+ * 4. 定制排序中, 比较两个对象是否相同的标准为: compare()返回值为0, 不再是equals()
  */
 
 public class TreeSetTest {
