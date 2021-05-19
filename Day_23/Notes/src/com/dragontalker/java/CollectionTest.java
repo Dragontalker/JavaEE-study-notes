@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 
 /**
@@ -25,12 +26,16 @@ public class CollectionTest {
         //collection.add(p);
 
 
-        //contains(Object obj): 判断当前集合中是否包含obj
+        //1. contains(Object obj): 判断当前集合中是否包含obj
         //我们在判断时会调用obj对象所在类的equals()
         boolean contains = collection.contains(123);
         System.out.println(contains);
         System.out.println(collection.contains(new String("Tom"))); //true
         //System.out.println(collection.contains(p)); //true
         System.out.println(collection.contains(new Person("Jerry", 20))); //false 没有重写equals()
+
+        //2. containsAll(Collection collection): 判断形参collection中的所有元素是否都存在于当前的集合之中
+        Collection collection1 = Arrays.asList(123, 456);
+        System.out.println(collection.containsAll(collection1));
     }
 }
