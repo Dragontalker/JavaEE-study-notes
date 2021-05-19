@@ -48,5 +48,8 @@ public class CollectionTest {
         collection.add(456);
         collection.add(new String("Tom"));
         collection.add(false);
+
+        System.out.println(collection.remove(123));
+        System.out.println(collection);
     }
 }
