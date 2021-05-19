@@ -1,6 +1,5 @@
 package com.dragontalker.java1;
 
-import com.dragontalker.java.Person;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -79,6 +78,8 @@ public class SetTest {
     }
 
     //LinkedHashSet的使用
+    //LinkedHashSet作为HashSet的子类, 在添加数据的同时, 还维护了一对Node引用
+    //用以记录此数据的前一个数据和后一个数据
     @Test
     public void test2() {
         Set set = new LinkedHashSet();
@@ -89,6 +90,7 @@ public class SetTest {
         set.add(new User("Tom", 12));
         set.add(new User("Tom", 12));
         set.add(129);
+
 
         Iterator iterator = set.iterator();
         while (iterator.hasNext()) {
