@@ -51,5 +51,9 @@ public class HashSetTest {
 
         set.add(new Person(1001, "CC"));
         System.out.println(set);
+
+        set.add(p1); //可以加进去
+        set.add(p2); //不可以加进去
+        System.out.println(set);
     }
 }
