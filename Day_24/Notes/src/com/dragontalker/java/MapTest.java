@@ -16,11 +16,18 @@ import java.util.Map;
  *      - 此时考虑key的自然排序或定制排序
  *      - 底层使用的红黑树
  *  |----Hashtable: 作为Map的古老实现类, 线程安全, 效率低: 不能存储null的key和value
- *          |----Properties:
+ *          |----Properties: 常用来处理配置文件, key和value都是String类型
  *
  *
  * HashMap的底层: 数组 + 链表 (jdk7.0及之前)
  *               数组 + 链表 + 红黑树 (jdk8.0之后)
+ *
+ * 面试题:
+ * 1. HashMap的底层实现原理?
+ * 2. HashMap 和 HashTable的异同?
+ * 3. CurrentHashMap 与 Hashtable的异同? (暂时不讲)
+ *  - 涉及到多线程访问map
+ *  - 涉及到分段锁的技术
  */
 
 public class MapTest {
