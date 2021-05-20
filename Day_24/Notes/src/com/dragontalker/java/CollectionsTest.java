@@ -36,5 +36,9 @@ public class CollectionsTest {
         //Collections.shuffle()
         Collections.shuffle(list);
         System.out.println(list);
+
+        //Collections.sort()
+        Collections.sort(list);
+        System.out.println(list);
     }
 }
