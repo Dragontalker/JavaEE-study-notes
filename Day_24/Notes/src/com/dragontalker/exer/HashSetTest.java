@@ -52,7 +52,7 @@ public class HashSetTest {
         set.add(new Person(1001, "CC"));
         System.out.println(set);
 
-        set.add(p1); //可以加进去
+        set.add(p1); //可以加进去, hash值一样, 但是equals()返回不为0, 所以可以加进去
         set.add(p2); //不可以加进去
         System.out.println(set);
     }
