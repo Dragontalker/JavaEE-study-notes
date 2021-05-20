@@ -33,9 +33,18 @@ import java.util.Map;
  *
  * 二、Map结构的理解：
  *  Map中的key: 无序的, 不可重复的, 使用Set存储所有的key
+ *      ---> 要求key所在的类重写equals()和 hashCode() (以HashMap为例)
  *  Map中的value: 无序的, 可重复的, 使用Collection存储所有的value
+ *      ---> value所在的类要重写equals()
  *  一个键值对: key-value构成一个Entry对象
  *  Map中的entry: 无序的, 不可重复的, 使用Set存储所有的entry
+ *
+ *
+ * 三、HashMap的底层实现原理? 以jdk7为例说明:
+ *  HashMap map = new HashMap();
+ *  在实例化以后, 底层创建了长度为16的一维数组Entry[] table
+ *  ...可能已经执行过多次put...
+ *  map.put(key1, value1);
  */
 
 public class MapTest {
