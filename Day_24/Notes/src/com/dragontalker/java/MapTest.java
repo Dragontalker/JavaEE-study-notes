@@ -149,5 +149,12 @@ public class MapTest {
         //containsKey(Object key)
         boolean exist = map.containsKey(45);
         System.out.println(exist);
+
+        //
+        exist = map.containsValue(123);
+        System.out.println(exist);
+
+        map.clear();
+        System.out.println(map.isEmpty());
     }
 }
