@@ -69,6 +69,12 @@ import java.util.Map;
  *          5. jdk8底层结构: 数组 + 链表 + 红黑树
  *          6. 当数组的某一个索引位置上的元素以链表形式存在的数据个数 > 8, 且当前数组的长度 > 64时
  *              ---> 此时此索引位置上的所有数据改为使用红黑树存储
+ *
+ *
+ *          DEFAULT_INITIAL_CAPACITY:
+ *          DEFAULT_LOAD_FACTOR:
+ *          threshold
+ *          TREEIFY_THRESHOLD:
  */
 
 public class MapTest {
