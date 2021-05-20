@@ -33,6 +33,8 @@ public class CollectionsTest {
         Collections.reverse(list);
         System.out.println(list);
 
-
+        //Collections.shuffle()
+        Collections.shuffle(list);
+        System.out.println(list);
     }
 }
