@@ -129,5 +129,9 @@ public class MapTest {
         Object value = map.remove("CC");
         System.out.println(value);
         System.out.println(map);
+
+        //clear()
+        map.clear(); //map不是null, 只是清理了其中的元素
+        System.out.println(map.size());
     }
 }
