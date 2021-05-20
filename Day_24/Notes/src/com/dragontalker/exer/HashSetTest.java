@@ -44,5 +44,9 @@ public class HashSetTest {
         set.add(p1);
         set.add(p2);
         System.out.println(set);
+
+        p1.name = "CC";
+        set.remove(p1);
+        System.out.println(set);
     }
 }
