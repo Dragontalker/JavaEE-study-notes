@@ -117,5 +117,12 @@ public class MapTest {
         map.put("AA", 87);
 
         System.out.println(map);
+
+        Map map1 = new HashMap();
+        map.put("CC", 123);
+        map.put("DD", 123);
+
+        map.putAll(map1);
+        System.out.println(map);
     }
 }
