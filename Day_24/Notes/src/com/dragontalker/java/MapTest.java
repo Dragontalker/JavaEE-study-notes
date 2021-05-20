@@ -17,6 +17,10 @@ import java.util.Map;
  *      - 底层使用的红黑树
  *  |----Hashtable: 作为Map的古老实现类, 线程安全, 效率低: 不能存储null的key和value
  *          |----Properties:
+ *
+ *
+ * HashMap的底层: 数组 + 链表 (jdk7.0及之前)
+ *               数组 + 链表 + 红黑树 (jdk8.0之后)
  */
 
 public class MapTest {
