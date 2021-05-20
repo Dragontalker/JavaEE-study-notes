@@ -124,5 +124,10 @@ public class MapTest {
 
         map.putAll(map1);
         System.out.println(map);
+
+        //remove(Object obj)
+        Object value = map.remove("CC");
+        System.out.println(value);
+        System.out.println(map);
     }
 }
