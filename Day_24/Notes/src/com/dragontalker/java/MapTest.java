@@ -109,10 +109,13 @@ public class MapTest {
     @Test
     public void test3() {
         Map map = new HashMap();
-        map = new LinkedHashMap();
+        //添加操作
+        map.put("AA", 123);
+        map.put(45, 123);
+        map.put("BB", 56);
+        //修改操作
+        map.put("AA", 87);
 
-        map.put(123, "AA");
-        map.put(345, "BB");
-        map.put(12, "CC");
+        System.out.println(map);
     }
 }
