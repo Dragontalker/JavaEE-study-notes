@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -26,7 +27,11 @@ public class HashSetTest {
         list.add(new Integer(4));
         list.add(new Integer(4));
 
+        List list2 = duplicateList(list);
+        Iterator iterator = list2.iterator();
 
-
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
