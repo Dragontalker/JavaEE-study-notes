@@ -2,6 +2,7 @@ package com.dragontalker.exer;
 
 import org.junit.Test;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class EmployeeTest {
@@ -22,5 +23,10 @@ public class EmployeeTest {
         set.add(e3);
         set.add(e4);
         set.add(e5);
+
+        Iterator iterator = set.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
