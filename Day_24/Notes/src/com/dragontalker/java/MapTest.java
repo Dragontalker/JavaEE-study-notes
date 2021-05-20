@@ -7,6 +7,7 @@ import java.util.Hashtable;
 import java.util.Map;
 
 /**
+ * 一、Map的实现类的结构
  * Map: 双列数据, 存储key-value对的数据 --- 类似数学中的函数: y = f(X)
  *  |----HashMap: 作为Map的主要实现类(1.2之后才出现), 线程不安全的, 效率高: 可以存储null的key和value
  *          |----LinkedHashMap: (1.4之后才出现), 保证遍历map元素时, 可以按照添加的顺序实现遍历
@@ -28,6 +29,9 @@ import java.util.Map;
  * 3. CurrentHashMap 与 Hashtable的异同? (暂时不讲)
  *  - 涉及到多线程访问map
  *  - 涉及到分段锁的技术
+ *
+ *
+ * 二、Map结构的理解
  */
 
 public class MapTest {
