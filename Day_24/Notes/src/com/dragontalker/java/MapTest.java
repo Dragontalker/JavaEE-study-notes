@@ -2,10 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * 一、Map的实现类的结构
@@ -156,5 +153,26 @@ public class MapTest {
 
         map.clear();
         System.out.println(map.isEmpty());
+    }
+
+    /*
+    元视图操作的方法:
+    Set keySet():
+    Collection values():
+    Set entrySet():
+     */
+    @Test
+    public void test5() {
+        Map map = new HashMap();
+        map.put("AA", 123);
+        map.put(45, 123);
+        map.put("BB", 56);
+
+        //遍历所有的key集: keySet()
+        Set set = map.keySet();
+        Iterator iterator = set.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
