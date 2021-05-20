@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.Map;
 
 /**
@@ -18,8 +19,10 @@ public class MapTest {
     @Test
     public void test1() {
         Map map = new HashMap();
-
         map.put(null, 123);
+
+        //map = new Hashtable();
+        //map.put(null, null); 报错, 健壮性低
     }
 
 }
