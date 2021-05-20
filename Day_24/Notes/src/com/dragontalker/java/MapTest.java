@@ -164,7 +164,7 @@ public class MapTest {
     @Test
     public void test5() {
         Map map = new HashMap();
-        map.put("AA", 123);
+        map.put("AA", 1234);
         map.put(45, 123);
         map.put("BB", 56);
 
@@ -179,6 +179,17 @@ public class MapTest {
         Collection values = map.values();
         for (Object obj : values) {
             System.out.println(obj);
+        }
+
+        //遍历所有的key-value: Set entrySet()
+        //方式一:
+        Set entrySet = map.entrySet();
+        Iterator iterator1 = entrySet.iterator();
+        while(iterator1.hasNext()) {
+            Object obj = iterator1.next();
+            //entrySet集合中的元素都是entry
+            Map.Entry entry = (Map.Entry) obj;
+            System.out.println(entry.getKey() + "----->" + entry.getValue());
         }
     }
 }
