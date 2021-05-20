@@ -44,22 +44,23 @@ public class EmployeeTest {
                     MyDate b1 = e1.getBirthday();
                     MyDate b2 = e2.getBirthday();
 
-                    //比较年
-                    int yearDiff = b1.getYear() - b2.getYear();
-
-                    if (yearDiff != 0) {
-                        return yearDiff;
-                    }
-
-                    //比较月
-                    int monthDiff = b1.getMonth() - b2.getMonth();
-
-                    if (monthDiff != 0) {
-                        return monthDiff;
-                    }
-
-                    //比较日
-                    return b1.getDay() - b2.getDay();
+//                    //比较年
+//                    int yearDiff = b1.getYear() - b2.getYear();
+//
+//                    if (yearDiff != 0) {
+//                        return yearDiff;
+//                    }
+//
+//                    //比较月
+//                    int monthDiff = b1.getMonth() - b2.getMonth();
+//
+//                    if (monthDiff != 0) {
+//                        return monthDiff;
+//                    }
+//
+//                    //比较日
+//                    return b1.getDay() - b2.getDay();
+                    return b1.compareTo(b2);
                 }
                 throw new RuntimeException("传入的数据类型不一致");
             }
