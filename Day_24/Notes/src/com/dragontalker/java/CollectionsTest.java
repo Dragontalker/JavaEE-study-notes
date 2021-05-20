@@ -64,5 +64,12 @@ public class CollectionsTest {
         Collections.copy(dest, list);
         System.out.println(list);
         System.out.println(dest);
+
+        /*
+        Collections类中提供了多个synchronizedXxx()方法
+            - 该方法可使指定集合包装成线程同步的结合
+            - 从而可以解决多线程并发访问集合时的线程安全问题
+         */
+
     }
 }
