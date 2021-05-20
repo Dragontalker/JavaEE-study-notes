@@ -71,5 +71,8 @@ public class CollectionsTest {
             - 从而可以解决多线程并发访问集合时的线程安全问题
          */
 
+        //返回的list1即为线程安全的List
+        List list1 = Collections.synchronizedList(list);
+
     }
 }
