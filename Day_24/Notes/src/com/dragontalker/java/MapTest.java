@@ -135,4 +135,15 @@ public class MapTest {
         System.out.println(map);
         System.out.println(map.size());
     }
+
+    @Test
+    public void test4() {
+        Map map = new HashMap();
+        map.put("AA", 123);
+        map.put(45, 123);
+        map.put("BB", 56);
+
+        //Object get(Object key)
+        System.out.println(map.get(45));
+    }
 }
