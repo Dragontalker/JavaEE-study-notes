@@ -31,7 +31,11 @@ import java.util.Map;
  *  - 涉及到分段锁的技术
  *
  *
- * 二、Map结构的理解
+ * 二、Map结构的理解：
+ *  Map中的key: 无序的, 不可重复的, 使用Set存储所有的key
+ *  Map中的value: 无序的, 可重复的, 使用Collection存储所有的value
+ *  一个键值对: key-value构成一个Entry对象
+ *  Map中的entry: 无序的, 不可重复的, 使用Set存储所有的entry
  */
 
 public class MapTest {
