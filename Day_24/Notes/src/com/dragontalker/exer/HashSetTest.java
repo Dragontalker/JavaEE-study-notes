@@ -1,5 +1,7 @@
 package com.dragontalker.exer;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -13,5 +15,18 @@ public class HashSetTest {
         HashSet set = new HashSet();
         set.addAll(list);
         return new ArrayList(set);
+    }
+
+    @Test
+    public void test() {
+        List list = new ArrayList();
+        list.add(new Integer(1));
+        list.add(new Integer(2));
+        list.add(new Integer(2));
+        list.add(new Integer(4));
+        list.add(new Integer(4));
+
+
+
     }
 }
