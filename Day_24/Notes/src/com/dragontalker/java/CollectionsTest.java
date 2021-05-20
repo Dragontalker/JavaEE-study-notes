@@ -44,6 +44,21 @@ public class CollectionsTest {
         //Collections.swap(int index1, int index2)
         Collections.swap(list, 2, 4);
         System.out.println(list);
+    }
 
+    @Test
+    public void test2() {
+        //Collections.copy()
+        List list = new ArrayList();
+        list.add(123);
+        list.add(43);
+        list.add(56);
+        list.add(458);
+        list.add(750);
+        list.add(124);
+
+        //报异常: IndexOutOfBoundsException
+        //List dest = new ArrayList();
+        //Collections.copy(dest, list);
     }
 }
