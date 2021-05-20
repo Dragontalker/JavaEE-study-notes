@@ -36,4 +36,13 @@ public class Employee {
     public void setBirthday(MyDate birthday) {
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", birthday=" + birthday +
+                '}';
+    }
 }
