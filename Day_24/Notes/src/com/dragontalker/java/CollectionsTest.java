@@ -40,5 +40,10 @@ public class CollectionsTest {
         //Collections.sort()
         Collections.sort(list);
         System.out.println(list);
+
+        //Collections.swap(int index1, int index2)
+        Collections.swap(list, 2, 4);
+        System.out.println(list);
+
     }
 }
