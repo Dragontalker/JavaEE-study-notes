@@ -19,7 +19,7 @@ public class HashSetTest {
     }
 
     @Test
-    public void test() {
+    public void test1() {
         List list = new ArrayList();
         list.add(new Integer(1));
         list.add(new Integer(2));
@@ -33,5 +33,10 @@ public class HashSetTest {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+    }
+
+    @Test
+    public void test2() {
+
     }
 }
