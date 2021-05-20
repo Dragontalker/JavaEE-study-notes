@@ -46,7 +46,10 @@ public class HashSetTest {
         System.out.println(set);
 
         p1.name = "CC";
-        set.remove(p1);
+        set.remove(p1); //根据(1001, "CC")的hash值去找, 并没有定位到原有的位置, 所以没有remove
+        System.out.println(set);
+
+        set.add(new Person(1001, "CC"));
         System.out.println(set);
     }
 }
