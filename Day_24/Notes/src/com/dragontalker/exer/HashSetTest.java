@@ -37,6 +37,12 @@ public class HashSetTest {
 
     @Test
     public void test2() {
+        HashSet set = new HashSet();
+        Person p1 = new Person(1001, "AA");
+        Person p2 = new Person(1002, "BB");
 
+        set.add(p1);
+        set.add(p2);
+        System.out.println(set);
     }
 }
