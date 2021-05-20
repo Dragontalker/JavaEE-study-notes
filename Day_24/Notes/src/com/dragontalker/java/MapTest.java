@@ -47,6 +47,10 @@ import java.util.Map;
  *  map.put(key1, value1):
  *      - 首先, 调用key1所在类的hashCode()方法, 计算key1的哈希值,
  *      - 此哈希值经过某种算法之后, 得到在Entry数组中的存放位置
+ *      - 如果此位置上的数据为空, 此时key1-value1添加成功
+ *      - 如果此位置上的数据不为空(意味着此位置上存在一个或多个数据, 以链表的形式存在),
+ *          - 比较key1和已经存在的数据的哈希值
+ *          - 如果key1的哈希值与已经存在的数据的哈希值都不相同, 此时key1-value1添加成功
  */
 
 public class MapTest {
