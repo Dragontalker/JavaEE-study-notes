@@ -47,13 +47,18 @@ import java.util.Map;
  *  map.put(key1, value1):
  *      - 首先, 调用key1所在类的hashCode()方法, 计算key1的哈希值,
  *      - 此哈希值经过某种算法之后, 得到在Entry数组中的存放位置
- *      - 如果此位置上的数据为空, 此时key1-value1添加成功
+ *      - 如果此位置上的数据为空, 此时key1-value1添加成功 (情况1)
  *      - 如果此位置上的数据不为空(意味着此位置上存在一个或多个数据, 以链表的形式存在),
  *          - 比较key1和已经存在的数据的哈希值
- *          - 如果key1的哈希值与已经存在的数据的哈希值都不相同, 此时key1-value1添加成功
- *          - 如果key1的哈希值和已经存在的某一个哈希值相同, 调用key1所在类的equals()继续比较
- *              - 如果equals()返回false: 此时key1-value1添加成功
- *              - 如果equals()返回true: 使用value1替换相同key的value值
+ *          - 如果key1的哈希值与已经存在的数据的哈希值都不相同, 此时key1-value1添加成功 (情况2)
+ *          - 如果key1的哈希值和已经存在的某一个数据(key2-value2)哈希值相同, 调用key1所在类的equals()继续比较
+ *              - 如果equals()返回false: 此时key1-value1添加成功 (情况3)
+ *              - 如果equals()返回true: 使用value1替换相同key的value2
+ *
+ *      补充: 关于情况2和情况3: 此时key1-value1和原来的数据以链表的方式存储
+ *
+ *      在不断的添加过程中, 会涉及到扩容问题,
+ *          - 默认的扩容方式: 扩容为原来容量的2倍, 并将所有的数据复制过来
  */
 
 public class MapTest {
