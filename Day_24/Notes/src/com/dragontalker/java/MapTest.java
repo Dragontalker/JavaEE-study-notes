@@ -75,6 +75,7 @@ import java.util.Map;
  *          DEFAULT_LOAD_FACTOR: HashMap的默认加载因子: 0.75
  *          threshold: 扩容的临界值 = 容量 * 填充因子 = 16 * 0.75 = 12
  *          TREEIFY_THRESHOLD: Bucket中链表长度长于该默认值, 转化为红黑树: 8
+ *          MIN_TREEIFY_CAPACITY: 桶中的Node被树化时最小的hash表容量: 64
  */
 
 public class MapTest {
