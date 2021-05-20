@@ -12,7 +12,7 @@ import java.util.Map;
  *          |----LinkedHashMap: (1.4之后才出现), 保证遍历map元素时, 可以按照添加的顺序实现遍历
  *              - 原因: 在原有的HashMap底层结构基础上, 添加了一对指针, 指向前一个和后一个元素.
  *              - 对于频繁的遍历操作, 此类执行效率高于HashMap.
-*   |----TreeMap:
+*   |----TreeMap: 保证按照添加的key-value对进行排序, 实现排序遍历
  *  |----Hashtable: 作为Map的古老实现类, 线程安全, 效率低: 不能存储null的key和value
  *          |----Properties:
  */
