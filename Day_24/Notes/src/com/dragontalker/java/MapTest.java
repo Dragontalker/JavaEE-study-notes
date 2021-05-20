@@ -76,6 +76,8 @@ import java.util.Map;
  *          threshold: 扩容的临界值 = 容量 * 填充因子 = 16 * 0.75 = 12
  *          TREEIFY_THRESHOLD: Bucket中链表长度长于该默认值, 转化为红黑树: 8
  *          MIN_TREEIFY_CAPACITY: 桶中的Node被树化时最小的hash表容量: 64
+ *
+ * 四、LinkedHashMap的底层实现原理(了解)
  */
 
 public class MapTest {
@@ -86,6 +88,17 @@ public class MapTest {
 
         //map = new Hashtable();
         //map.put(null, null); 报错, 健壮性低
+    }
+
+    @Test
+    public void test2() {
+        Map map = new HashMap();
+
+        map.put(123, "AA");
+        map.put(345, "BB");
+        map.put(12, "CC");
+
+        System.out.println(map);
     }
 
 }
