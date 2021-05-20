@@ -44,7 +44,9 @@ import java.util.Map;
  *  HashMap map = new HashMap();
  *  在实例化以后, 底层创建了长度为16的一维数组Entry[] table
  *  ...可能已经执行过多次put...
- *  map.put(key1, value1);
+ *  map.put(key1, value1):
+ *      - 首先, 调用key1所在类的hashCode()方法, 计算key1的哈希值,
+ *      - 此哈希值经过某种算法之后, 得到在Entry数组中的存放位置
  */
 
 public class MapTest {
