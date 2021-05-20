@@ -174,5 +174,11 @@ public class MapTest {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+
+        //遍历所有的value集: values()
+        Collection values = map.values();
+        for (Object obj : values) {
+            System.out.println(obj);
+        }
     }
 }
