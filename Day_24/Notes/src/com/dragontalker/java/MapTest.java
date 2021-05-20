@@ -145,5 +145,9 @@ public class MapTest {
 
         //Object get(Object key)
         System.out.println(map.get(45));
+
+        //containsKey(Object key)
+        boolean exist = map.containsKey(45);
+        System.out.println(exist);
     }
 }
