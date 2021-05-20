@@ -131,7 +131,8 @@ public class MapTest {
         System.out.println(map);
 
         //clear()
-        map.clear(); //map不是null, 只是清理了其中的元素
+        map.clear(); //不是map = null; 只是清理了其中的元素
+        System.out.println(map);
         System.out.println(map.size());
     }
 }
