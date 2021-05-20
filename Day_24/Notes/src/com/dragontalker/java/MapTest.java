@@ -71,10 +71,10 @@ import java.util.Map;
  *              ---> 此时此索引位置上的所有数据改为使用红黑树存储
  *
  *
- *          DEFAULT_INITIAL_CAPACITY:
- *          DEFAULT_LOAD_FACTOR:
- *          threshold
- *          TREEIFY_THRESHOLD:
+ *          DEFAULT_INITIAL_CAPACITY: HashMap的默认容量, 16
+ *          DEFAULT_LOAD_FACTOR: HashMap的默认加载因子: 0.75
+ *          threshold: 扩容的临界值 = 容量 * 填充因子 = 16 * 0.75 = 12
+ *          TREEIFY_THRESHOLD: Bucket中链表长度长于该默认值, 转化为红黑树: 8
  */
 
 public class MapTest {
