@@ -51,6 +51,9 @@ import java.util.Map;
  *      - 如果此位置上的数据不为空(意味着此位置上存在一个或多个数据, 以链表的形式存在),
  *          - 比较key1和已经存在的数据的哈希值
  *          - 如果key1的哈希值与已经存在的数据的哈希值都不相同, 此时key1-value1添加成功
+ *          - 如果key1的哈希值和已经存在的某一个哈希值相同, 调用key1所在类的equals()继续比较
+ *              - 如果equals()返回false: 此时key1-value1添加成功
+ *              - 如果equals()返回true: 使用value1替换相同key的value值
  */
 
 public class MapTest {
