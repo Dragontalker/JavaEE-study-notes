@@ -2,10 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * Collections: 操作Collection、Map的工具类
@@ -60,5 +57,12 @@ public class CollectionsTest {
         //报异常: IndexOutOfBoundsException
         //List dest = new ArrayList();
         //Collections.copy(dest, list);
+
+        List dest = Arrays.asList(new Object[list.size()]);
+        System.out.println(dest);
+
+        Collections.copy(dest, list);
+        System.out.println(list);
+        System.out.println(dest);
     }
 }
