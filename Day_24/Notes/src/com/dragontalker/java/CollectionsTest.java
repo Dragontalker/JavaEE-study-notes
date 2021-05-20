@@ -3,6 +3,8 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -26,5 +28,11 @@ public class CollectionsTest {
         list.add(124);
 
         System.out.println(list);
+
+        //Collections.reverse()
+        Collections.reverse(list);
+        System.out.println(list);
+
+
     }
 }
