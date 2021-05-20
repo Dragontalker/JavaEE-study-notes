@@ -44,7 +44,19 @@ public class EmployeeTest {
                     MyDate b1 = e1.getBirthday();
                     MyDate b2 = e2.getBirthday();
 
-                    int diffYear = b1.getYear() - b2.getYear();
+                    int yearDiff = b1.getYear() - b2.getYear();
+
+                    if (yearDiff != 0) {
+                        return yearDiff;
+                    }
+
+                    int monthDiff = b1.getMonth() - b2.getMonth();
+
+                    if (monthDiff != 0) {
+                        return monthDiff;
+                    }
+
+                    return b1.getDay() - b2.getDay();
                 }
                 throw new RuntimeException("传入的数据类型不一致");
             }
