@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -78,6 +79,9 @@ import java.util.Map;
  *          MIN_TREEIFY_CAPACITY: 桶中的Node被树化时最小的hash表容量: 64
  *
  * 四、LinkedHashMap的底层实现原理(了解)
+ *
+ * 五、Map中定义的方法:
+ *
  */
 
 public class MapTest {
@@ -93,6 +97,7 @@ public class MapTest {
     @Test
     public void test2() {
         Map map = new HashMap();
+        map = new LinkedHashMap();
 
         map.put(123, "AA");
         map.put(345, "BB");
@@ -101,4 +106,13 @@ public class MapTest {
         System.out.println(map);
     }
 
+    @Test
+    public void test3() {
+        Map map = new HashMap();
+        map = new LinkedHashMap();
+
+        map.put(123, "AA");
+        map.put(345, "BB");
+        map.put(12, "CC");
+    }
 }
