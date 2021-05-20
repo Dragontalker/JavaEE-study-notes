@@ -17,5 +17,10 @@ public class EmployeeTest {
         Employee e4 = new Employee("liming", 51, new MyDate(1954, 8, 12));
         Employee e5 = new Employee("liangchaowei", 21, new MyDate(1978, 12, 4));
 
+        set.add(e1);
+        set.add(e2);
+        set.add(e3);
+        set.add(e4);
+        set.add(e5);
     }
 }
