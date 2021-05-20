@@ -59,6 +59,7 @@ import java.util.Map;
  *
  *      在不断的添加过程中, 会涉及到扩容问题,
  *          - 默认的扩容方式: 扩容为原来容量的2倍, 并将所有的数据复制过来
+ *          - 超出threshold时, 且bucketIndex不为null时
  *
  *      jdk8相较于jdk7在底层实现方面的不同:
  *          1. new HashMap(): 底层没有创建一个长度为16的数组
