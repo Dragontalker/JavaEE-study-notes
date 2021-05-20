@@ -79,6 +79,14 @@ import java.util.*;
  *
  * 五、Map中定义的方法:
  *
+ *
+ * 总结: 常用方法:
+ * 添加: put()
+ * 删除: remove()
+ * 修改: put()
+ * 查询: get()
+ * 长度: size()
+ * 遍历: keySet() / values() / entrySet()
  */
 
 public class MapTest {
