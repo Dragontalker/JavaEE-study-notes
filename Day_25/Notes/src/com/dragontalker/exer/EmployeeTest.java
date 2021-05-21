@@ -1,9 +1,6 @@
 package com.dragontalker.exer;
 
 import org.junit.Test;
-
-import java.util.Comparator;
-import java.util.Iterator;
 import java.util.TreeSet;
 
 public class EmployeeTest {
@@ -34,36 +31,10 @@ public class EmployeeTest {
     //问题二: 按生日日期的先后排序
     @Test
     public void test2() {
-        TreeSet<Employee> set = new TreeSet<>(new Comparator() {
-            @Override
-            public int compare(Object o1, Object o2) {
-                if (o1 instanceof Employee && o2 instanceof Employee) {
-                    Employee e1 = (Employee) o1;
-                    Employee e2 = (Employee) o2;
-
-                    MyDate b1 = e1.getBirthday();
-                    MyDate b2 = e2.getBirthday();
-
-//                    //比较年
-//                    int yearDiff = b1.getYear() - b2.getYear();
-//
-//                    if (yearDiff != 0) {
-//                        return yearDiff;
-//                    }
-//
-//                    //比较月
-//                    int monthDiff = b1.getMonth() - b2.getMonth();
-//
-//                    if (monthDiff != 0) {
-//                        return monthDiff;
-//                    }
-//
-//                    //比较日
-//                    return b1.getDay() - b2.getDay();
-                    return b1.compareTo(b2);
-                }
-                throw new RuntimeException("传入的数据类型不一致");
-            }
+        TreeSet<Employee> set = new TreeSet<>((e1, e2) -> {
+            MyDate b1 = e1.getBirthday();
+            MyDate b2 = e2.getBirthday();
+            return b1.compareTo(b2);
         });
 
         Employee e1 = new Employee("liudehua", 55, new MyDate(1965, 5, 4));
