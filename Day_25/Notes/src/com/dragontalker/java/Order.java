@@ -40,4 +40,13 @@ public class Order<T> {
 //    public static void show(T orderT) {
 //        System.out.println(orderT);
 //    }
+
+    //也不可以, 编译不通过
+//    public void show() {
+//        try {
+//
+//        }catch (T t) {
+//
+//        }
+//    }
 }
