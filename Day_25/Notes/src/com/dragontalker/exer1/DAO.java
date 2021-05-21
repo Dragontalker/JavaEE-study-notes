@@ -27,4 +27,7 @@ public class DAO<T> {
     public List<T> list() {
         return null;
     }
+
+    //删除指定id对象
+    public void delete(String id) {}
 }
