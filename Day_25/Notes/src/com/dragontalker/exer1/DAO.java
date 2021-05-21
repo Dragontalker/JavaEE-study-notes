@@ -1,5 +1,6 @@
 package com.dragontalker.exer1;
 
+import java.util.List;
 import java.util.Map;
 
 public class DAO<T> {
@@ -10,6 +11,11 @@ public class DAO<T> {
 
     //从map中获取id对应的对象
     public T get(String id) {
+        return null;
+    }
+
+    //返回map中存放的所有T对象
+    public List<T> list() {
         return null;
     }
 }
