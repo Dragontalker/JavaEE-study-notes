@@ -105,8 +105,8 @@ public class GenericTest {
 
     /*
     3. 有限制条件的通配符的使用
-        ? extends Person:
-        ? super Person:
+        ? extends A: G<? extends A>可以作为G<A>和G<B>的父类的, 其中B是A的子类
+        ? super A: G<? super B> 可以作为G<A>和G<B>的父类的, 其中B是A的子类
      */
     @Test
     public void test4() {
@@ -116,5 +116,13 @@ public class GenericTest {
         List<Student> list3 = null;
         List<Person> list4 = null;
         List<Object> list5 = null;
+
+        list1 = list3;
+        list1 = list4;
+        //list1 = list5;
+
+        //list2 = list3;
+        list2 = list4;
+        list2 = list5;
     }
 }
