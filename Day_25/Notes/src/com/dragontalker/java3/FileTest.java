@@ -122,4 +122,19 @@ public class FileTest {
         System.out.println(file2.canWrite());
         System.out.println(file2.isHidden());
     }
+
+    /*
+    创建硬盘中对应的文件或文件目录
+        - createNewFile()
+        - mkdir()
+        - mkdirs()
+
+    删除磁盘文件中的文件或文件目录
+        - delete()
+        - 注意事项: Java中的删除不走回收站
+     */
+    @Test
+    public void test6() {
+
+    }
 }
