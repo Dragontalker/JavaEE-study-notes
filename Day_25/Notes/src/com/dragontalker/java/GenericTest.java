@@ -2,6 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.sql.Array;
 import java.util.ArrayList;
 
 /**
@@ -28,5 +29,11 @@ public class GenericTest {
             int studentScore = score; //ClassCastException
             System.out.println(studentScore);
         }
+    }
+
+    //在集合中使用泛型的情况:
+    @Test
+    public void test2() {
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
     }
 }
