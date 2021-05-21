@@ -14,6 +14,9 @@ public class DAO<T> {
         return null;
     }
 
+    //替换map中key为id的内容, 改为entity对象
+    public void update(String id, T entity) {}
+
     //返回map中存放的所有T对象
     public List<T> list() {
         return null;
