@@ -35,4 +35,9 @@ public class Order<T> {
                 ", orderT=" + orderT +
                 '}';
     }
+
+    //静态方法中不能使用类的泛型
+//    public static void show(T orderT) {
+//        System.out.println(orderT);
+//    }
 }
