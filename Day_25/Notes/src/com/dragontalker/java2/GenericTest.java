@@ -78,6 +78,18 @@ public class GenericTest {
 
         print(list1);
         print(list2);
+
+        //
+        List<String> list3 = new ArrayList<>();
+        list3.add("AA");
+        list3.add("BB");
+        list3.add("CC");
+        list = list3;
+
+        //添加: 对于List<?>, 就不能向其内部添加数据
+        //除了添加null之外, 因为不论任何类型的对象, 都可以赋值null
+        //list.add("DD");
+        //list.add("?");
     }
 
     public void print(List<?> list) {
