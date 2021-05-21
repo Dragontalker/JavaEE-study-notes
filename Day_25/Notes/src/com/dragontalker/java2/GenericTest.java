@@ -2,6 +2,7 @@ package com.dragontalker.java2;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,8 +29,14 @@ public class GenericTest {
         arr1 = arr2;
 
         List<Object> list1 = null;
-        List<String> list2 = null;
+        List<String> list2 = new ArrayList<String>();
         //此时的list1和list2的类型不具有子父类的关系
+        //编译不通过
         //list1 = list2;
+
+        /*
+        反证法: 假设list1 = list2
+            list.add(123); 导致混入非String的数据, 出错, 违反了泛型的初衷
+         */
     }
 }
