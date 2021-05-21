@@ -7,6 +7,10 @@ import java.util.*;
 /**
  * 泛型的使用
  * 1. jdk5.0新增的特性
+ *
+ * 2. 在集合中使用泛型:
+ *  - 总结:
+ *      1. 集合接口或集合类在jdk5.0时都修改为带泛型的结构
  */
 
 public class GenericTest {
