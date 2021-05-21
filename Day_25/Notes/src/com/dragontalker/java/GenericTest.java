@@ -15,9 +15,12 @@ public class GenericTest {
     @Test
     public void test1() {
         ArrayList list = new ArrayList();
+        //需求: 存放学生的成绩
         list.add(78);
         list.add(76);
         list.add(89);
         list.add(96);
+        //问题一: 类型不安全
+        list.add("Tom");
     }
 }
