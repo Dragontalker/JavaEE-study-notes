@@ -113,9 +113,9 @@ public class GenericTest {
         List<? extends Person> list1 = null;
         List<? super Person> list2 = null;
 
-        List<Student> list3 = null;
-        List<Person> list4 = null;
-        List<Object> list5 = null;
+        List<Student> list3 = new ArrayList<Student>();
+        List<Person> list4 = new ArrayList<Person>();
+        List<Object> list5 = new ArrayList<Object>();
 
         list1 = list3;
         list1 = list4;
@@ -124,5 +124,14 @@ public class GenericTest {
         //list2 = list3;
         list2 = list4;
         list2 = list5;
+
+        //读取数据:
+        list1 = list4;
+        //Person p = list1.get(0);
+        //编译不通过
+        //Student s = list1.get(0);
+
+        list2 = list4;
+        Object obj = list2.get(0);
     }
 }
