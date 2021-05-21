@@ -18,6 +18,7 @@ import java.util.*;
  *      5. 如果实例化时, 没有指明泛型类的类型, 默认类型为java.lang.Object类
  *
  * 3. 如何自定义泛型结构: 泛型类、泛型接口; 泛型方法
+ *  - 见GenericTest1
  */
 
 public class GenericTest {
