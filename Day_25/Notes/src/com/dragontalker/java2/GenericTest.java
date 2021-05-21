@@ -112,5 +112,9 @@ public class GenericTest {
     public void test4() {
         List<? extends Person> list1 = null;
         List<? super Person> list2 = null;
+
+        List<Student> list3 = null;
+        List<Person> list4 = null;
+        List<Object> list5 = null;
     }
 }
