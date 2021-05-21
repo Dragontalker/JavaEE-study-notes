@@ -3,6 +3,7 @@ package com.dragontalker.java3;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.IOException;
 
 /**
  * File类的使用
@@ -134,7 +135,11 @@ public class FileTest {
         - 注意事项: Java中的删除不走回收站
      */
     @Test
-    public void test6() {
-
+    public void test6() throws IOException {
+        File file1 = new File("hi.txt");
+        if (!file1.exists()) {
+            file1.createNewFile();
+            System.out.println("创建成功");
+        }
     }
 }
