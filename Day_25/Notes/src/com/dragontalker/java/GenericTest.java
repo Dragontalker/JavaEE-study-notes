@@ -16,6 +16,8 @@ import java.util.*;
  *          - 比如: add(E e) ---> 实例化以后: add(Integer e)
  *      4. 注意点: 泛型的类型必须是类, 不能是基本数据类型, 需要用到基本数据类型的位置
  *      5. 如果实例化时, 没有指明泛型类的类型, 默认类型为java.lang.Object类
+ *
+ * 3. 如何自定义泛型结构: 泛型类、泛型接口; 泛型方法
  */
 
 public class GenericTest {
