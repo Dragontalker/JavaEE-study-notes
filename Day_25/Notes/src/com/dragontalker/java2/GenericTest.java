@@ -58,4 +58,20 @@ public class GenericTest {
 
         List<String> list4 = new ArrayList<>();
     }
+
+    /*
+    2. 通配符的使用
+        - 通配符: ?
+     */
+
+    @Test
+    public void test3() {
+        List<Object> list1 = null;
+        List<String> list2 = null;
+
+        List<?> list = null;
+
+        list = list1;
+        list = list2;
+    }
 }
