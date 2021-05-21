@@ -29,4 +29,12 @@ public class DAO<T> { //表的共性操作的DAO
         return null;
     }
 
+    //泛型方法
+    //举例:
+    // - 获取表中一共有多少条记录?
+    // - 获取最大的员工入职时间?
+    public <E> E getValue() {
+        return null;
+    }
+
 }
