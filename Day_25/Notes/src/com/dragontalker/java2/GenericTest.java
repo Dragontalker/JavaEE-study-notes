@@ -76,8 +76,8 @@ public class GenericTest {
         list = list1;
         list = list2;
 
-        print(list1);
-        print(list2);
+        //print(list1);
+        //print(list2);
 
         //
         List<String> list3 = new ArrayList<>();
@@ -90,6 +90,10 @@ public class GenericTest {
         //除了添加null之外, 因为不论任何类型的对象, 都可以赋值null
         //list.add("DD");
         //list.add("?");
+
+        //获取(读取):
+        Object o = list.get(0);
+        System.out.println(o);
     }
 
     public void print(List<?> list) {
