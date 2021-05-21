@@ -1,5 +1,9 @@
 package com.dragontalker.exer1;
 
+import com.dragontalker.java2.Person;
+
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -25,7 +29,17 @@ public class DAO<T> {
 
     //返回map中存放的所有T对象
     public List<T> list() {
-        return null;
+        //错误的写法
+        //Collection<T> values = map.values();
+        //return (List<T>) values;
+
+        //正确的:
+        ArrayList<T> list = new ArrayList<>();
+        Collection<T> values = map.values();
+        for (T t : values) {
+            list.add(t);
+        }
+        return list;
     }
 
     //删除指定id对象
