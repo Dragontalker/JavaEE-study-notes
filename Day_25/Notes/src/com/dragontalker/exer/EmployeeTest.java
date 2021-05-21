@@ -34,7 +34,7 @@ public class EmployeeTest {
     //问题二: 按生日日期的先后排序
     @Test
     public void test2() {
-        TreeSet set = new TreeSet(new Comparator() {
+        TreeSet<Employee> set = new TreeSet<>(new Comparator() {
             @Override
             public int compare(Object o1, Object o2) {
                 if (o1 instanceof Employee && o2 instanceof Employee) {

@@ -1,6 +1,6 @@
 package com.dragontalker.exer;
 
-public class Employee implements Comparable{
+public class Employee implements Comparable<Employee>{
     private String name;
     private int age;
     private MyDate birthday;
@@ -47,11 +47,7 @@ public class Employee implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        if (o instanceof Employee) {
-            Employee e = (Employee) o;
-            return this.name.compareTo(e.name);
-        }
-        throw new RuntimeException("传入数据类型不一致");
+    public int compareTo(Employee e) {
+        return this.name.compareTo(e.name);
     }
 }
