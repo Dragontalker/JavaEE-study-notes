@@ -24,4 +24,11 @@ public class GenericTest1 {
         subOrder.setOrderT(1122);
         System.out.println(subOrder.getOrderT());
     }
+
+    @Test
+    public void test3() {
+        SubOrder1<String> subOrder1 = new SubOrder1<>();
+        subOrder1.setOrderT("Hello world!");
+        System.out.println(subOrder1.getOrderT());
+    }
 }
