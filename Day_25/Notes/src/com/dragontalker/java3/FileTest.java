@@ -140,6 +140,9 @@ public class FileTest {
         if (!file1.exists()) {
             file1.createNewFile();
             System.out.println("创建成功");
+        } else {//文件存在
+            file1.delete();
+            System.out.println("删除成功");
         }
     }
 }
