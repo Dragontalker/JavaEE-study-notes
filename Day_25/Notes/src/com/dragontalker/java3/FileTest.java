@@ -78,4 +78,17 @@ public class FileTest {
             System.out.println(f);
         }
     }
+
+    /*
+    public boolean renameTo(File dest): 把文件重命名为指定的文件路径
+        - 比如: file1.renameTo(file2)为例:
+     */
+    @Test
+    public void test4() {
+        File file1 = new File("hello.txt");
+        File file2 = new File("C:\\Users\\richa\\Desktop\\GitHubRepos\\java-enterprise-edition\\Day_25\\Notes\\src\\com\\dragontalker\\java3\\hello.txt");
+
+        boolean renameTo = file1.renameTo(file2);
+        System.out.println(renameTo);
+    }
 }
