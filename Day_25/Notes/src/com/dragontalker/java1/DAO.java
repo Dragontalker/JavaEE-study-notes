@@ -4,7 +4,7 @@ package com.dragontalker.java1;
  * DAO: Data(base) Access Object
  */
 
-public class DAO {
+public class DAO<T> {
 
     //添加一条记录
 
