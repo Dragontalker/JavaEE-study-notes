@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.sql.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * 泛型的使用
@@ -41,5 +42,18 @@ public class GenericTest {
         list.add(86);
         list.add(100);
         list.add(99);
+
+        //方式一:
+        for (Integer score : list) {
+            //避免了强转操作
+            int studentScore = score + 50;
+            System.out.println(studentScore);
+        }
+
+        //方式二:
+        Iterator<Integer> iterator = list.iterator();
+        while(iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
     }
 }
