@@ -91,7 +91,7 @@ public class GenericTest {
         //list.add("DD");
         //list.add("?");
 
-        //获取(读取):
+        //获取(读取): 允许读取数据, 读取的数据类型为Object
         Object o = list.get(0);
         System.out.println(o);
     }
