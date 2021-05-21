@@ -14,4 +14,12 @@ public class Order<T> {
         this.orderId = orderId;
         this.orderT = orderT;
     }
+
+    public T getOrderT() {
+        return orderT;
+    }
+
+    public void setOrderT(T orderT) {
+        this.orderT = orderT;
+    }
 }
