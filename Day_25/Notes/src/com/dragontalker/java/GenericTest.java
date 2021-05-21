@@ -1,8 +1,6 @@
 package com.dragontalker.java;
 
 import org.junit.Test;
-
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -16,7 +14,7 @@ public class GenericTest {
     //在集合中使用泛型之前的情况:
     @Test
     public void test1() {
-        ArrayList<Integer> list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList<>();
         //需求: 存放学生的成绩
         list.add(78);
         list.add(76);
@@ -35,7 +33,7 @@ public class GenericTest {
     //在集合中使用泛型的情况:
     @Test
     public void test2() {
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         //编译时就会进行类型检查, 保证数据的安全
         list.add(78);
