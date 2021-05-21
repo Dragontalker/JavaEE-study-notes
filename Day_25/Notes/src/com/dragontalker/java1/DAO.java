@@ -6,7 +6,7 @@ import java.util.List;
  * DAO: Data(base) Access Object
  */
 
-public class DAO<T> {
+public class DAO<T> { //表的共性操作的DAO
 
     //添加一条记录
     public void add(T t) {}
