@@ -2,6 +2,8 @@ package com.dragontalker.java2;
 
 import org.junit.Test;
 
+import java.util.List;
+
 /**
  * 1. 泛型在继承方面的体现
  *
@@ -21,5 +23,10 @@ public class GenericTest {
         Object[] arr1 = null;
         String[] arr2 = null;
         arr1 = arr2;
+
+        List<Object> list1 = null;
+        List<String> list2 = null;
+        //此时的list1和list2的类型不具有子父类的关系
+        //list1 = list2;
     }
 }
