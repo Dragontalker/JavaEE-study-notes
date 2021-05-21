@@ -17,7 +17,11 @@ public class DAO<T> {
     }
 
     //替换map中key为id的内容, 改为entity对象
-    public void update(String id, T entity) {}
+    public void update(String id, T entity) {
+        if (map.containsKey(id)) {
+            map.put(id, entity);
+        }
+    }
 
     //返回map中存放的所有T对象
     public List<T> list() {
