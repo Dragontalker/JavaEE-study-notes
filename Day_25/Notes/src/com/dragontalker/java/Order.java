@@ -1,5 +1,9 @@
 package com.dragontalker.java;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 自定义泛型类
  */
@@ -25,6 +29,7 @@ public class Order<T> {
         this.orderT = orderT;
     }
 
+    //如下的三个方法都不是泛型方法
     public T getOrderT() {
         return orderT;
     }
@@ -55,4 +60,11 @@ public class Order<T> {
 //
 //        }
 //    }
+
+    //泛型方法: 在方法中出现了泛型的结构, 泛型参数与类的泛型参数没有任何关系
+    //换句话说: 泛型方法所属的类是不是泛型类都没有关系
+
+    public <E> List<E> copyFromArrayToList(E[] arr) {
+        return new ArrayList<>(Arrays.asList(arr));
+    }
 }
