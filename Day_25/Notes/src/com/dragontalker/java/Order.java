@@ -11,7 +11,13 @@ public class Order<T> {
     //类的内部结构就可以使用类的泛型
     T orderT;
 
-    public Order() {}
+    public Order() {
+        //编译不通过
+        //T[] arr = new T[10];
+
+        //编译通过
+        //T[] arr = (T[]) new Object[10];
+    }
 
     public Order(String orderName, int orderId, T orderT) {
         this.orderName = orderName;
