@@ -150,5 +150,18 @@ public class FileTest {
     @Test
     public void test7() {
         //文件目录的创建
+        File file1 = new File("d:\\io\\io3");
+
+        boolean mkdir1 = file1.mkdirs();
+        if(mkdir1) {
+            System.out.println("目录1创建成功");
+        }
+
+        File file2 = new File("d:\\io\\io4");
+
+        boolean mkdir2 = file2.mkdir();
+        if(mkdir2) {
+            System.out.println("目录2创建成功");
+        }
     }
 }
