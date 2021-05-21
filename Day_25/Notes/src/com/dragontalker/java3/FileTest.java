@@ -14,17 +14,23 @@ import java.io.File;
 public class FileTest {
     /*
     1. 如何创建File类的实例
-        new File(String filePath)
+        - new File(String filePath)
+        - new File(String parentPath, String childPath)
     2.
         - 相对路径: 相较于某个路径下, 指明的路径
         - 绝对路径: 包含盘符在内的文件或文件目录的路径
      */
     @Test
     public void test1() {
+        //构造器1:
         File file1 = new File("hello.txt"); //相对于当前module
         File file2 = new File("C:\\Users\\richa\\Desktop\\GitHubRepos\\java-enterprise-edition\\Day_25\\Notes\\src\\com\\dragontalker\\java3\\world.txt");
 
-        System.out.println(file1);
+        System.out.println(file1); //不需要有这个文件, 现在只是内存层面的对象
         System.out.println(file2);
+
+        //构造器2:
+        File file3 = new File("\"C:\\\\Users\\\\richa\\\\Desktop\\\\GitHubRepos", "java-enterprise-edition");
+        System.out.println(file3);
     }
 }
