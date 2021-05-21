@@ -15,4 +15,13 @@ public class GenericTest1 {
         Order<String> order = new Order<>("AA", 1001, "orderAA");
         order.setOrderT("Order: AA");
     }
+
+    @Test
+    public void test2() {
+        //由于子类在继承带泛型的父类时, 指明了泛型类型.
+        //则实例化子类对象时, 不再指明泛型类型.
+        SubOrder subOrder = new SubOrder();
+        subOrder.setOrderT(1122);
+        System.out.println(subOrder.getOrderT());
+    }
 }
