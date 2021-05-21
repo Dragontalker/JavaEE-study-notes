@@ -21,7 +21,7 @@ public class GenericTest {
         list.add(89);
         list.add(96);
         //问题一: 类型不安全
-        list.add("Tom");
+        //list.add("Tom");
 
         for (Object score : list) {
             //问题二: 强转时, 有可能出现类型转换异常
