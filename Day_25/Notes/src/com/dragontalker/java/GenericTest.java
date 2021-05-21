@@ -14,7 +14,7 @@ public class GenericTest {
     //在集合中使用泛型之前的情况:
     @Test
     public void test1() {
-        ArrayList list = new ArrayList();
+        ArrayList<Integer> list = new ArrayList();
         //需求: 存放学生的成绩
         list.add(78);
         list.add(76);
@@ -23,9 +23,9 @@ public class GenericTest {
         //问题一: 类型不安全
         //list.add("Tom");
 
-        for (Object score : list) {
+        for (Integer score : list) {
             //问题二: 强转时, 有可能出现类型转换异常
-            int studentScore = (int) score; //ClassCastException
+            int studentScore = score; //ClassCastException
             System.out.println(studentScore);
         }
     }
