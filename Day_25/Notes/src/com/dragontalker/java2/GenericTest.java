@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.AbstractList;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -73,5 +74,14 @@ public class GenericTest {
 
         list = list1;
         list = list2;
+
+        print(list1);
+        print(list2);
+    }
+
+    public void print(List<?> list) {
+        for (Object obj : list) {
+            System.out.println(obj);
+        }
     }
 }
