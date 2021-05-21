@@ -11,7 +11,7 @@ public class EmployeeTest {
     //问题一: 使用自然排序
     @Test
     public void test1() {
-        TreeSet set = new TreeSet();
+        TreeSet<Employee> set = new TreeSet<Employee>();
 
         Employee e1 = new Employee("liudehua", 55, new MyDate(1965, 5, 4));
         Employee e2 = new Employee("zhangxueyou", 43, new MyDate(1987, 5, 4));
