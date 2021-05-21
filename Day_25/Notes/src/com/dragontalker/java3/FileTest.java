@@ -82,6 +82,7 @@ public class FileTest {
     /*
     public boolean renameTo(File dest): 把文件重命名为指定的文件路径
         - 比如: file1.renameTo(file2)为例:
+            - 要想保证返回true, 需要file1在硬盘中是存在的, 且file2不能在硬盘中存在
      */
     @Test
     public void test4() {
