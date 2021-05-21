@@ -101,4 +101,16 @@ public class GenericTest {
             System.out.println(obj);
         }
     }
+
+
+    /*
+    3. 有限制条件的通配符的使用
+        ? extends Person:
+        ? super Person:
+     */
+    @Test
+    public void test4() {
+        List<? extends Person> list1 = null;
+        List<? super Person> list2 = null;
+    }
 }
