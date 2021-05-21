@@ -2,7 +2,9 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 /**
  * 泛型的使用
@@ -30,7 +32,7 @@ public class GenericTest {
         }
     }
 
-    //在集合中使用泛型的情况:
+    //在集合中使用泛型的情况: 以ArrayList为例
     @Test
     public void test2() {
         ArrayList<Integer> list = new ArrayList<>();
@@ -53,5 +55,11 @@ public class GenericTest {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
+    }
+
+    //在集合中使用泛型的情况: 以HashMap为例
+    @Test
+    public void test3() {
+        Map<String, Integer> map = new HashMap<>();
     }
 }
