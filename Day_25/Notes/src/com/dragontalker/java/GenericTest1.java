@@ -2,6 +2,9 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 如何自定义泛型结构:
  */
@@ -30,5 +33,16 @@ public class GenericTest1 {
         SubOrder1<String> subOrder1 = new SubOrder1<>();
         subOrder1.setOrderT("Hello world!");
         System.out.println(subOrder1.getOrderT());
+    }
+
+    //测试泛型方法
+    @Test
+    public void test4() {
+        Order<String> order = new Order<>();
+        Integer[] arr = new Integer[]{1, 2, 3, 4};
+        //泛型方法在调用时, 指定泛型参数的类型
+        List<Integer> list = order.copyFromArrayToList(arr);
+        System.out.println(Arrays.toString(arr));
+        System.out.println(list);
     }
 }
