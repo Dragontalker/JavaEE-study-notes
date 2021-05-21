@@ -43,5 +43,7 @@ public class DAO<T> {
     }
 
     //删除指定id对象
-    public void delete(String id) {}
+    public void delete(String id) {
+        map.remove(id);
+    }
 }
