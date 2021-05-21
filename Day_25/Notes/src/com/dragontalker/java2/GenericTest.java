@@ -14,6 +14,12 @@ public class GenericTest {
      */
     @Test
     public void test1() {
+        Object obj = null;
+        String str = null;
+        obj = str;
 
+        Object[] arr1 = null;
+        String[] arr2 = null;
+        arr1 = arr2;
     }
 }
