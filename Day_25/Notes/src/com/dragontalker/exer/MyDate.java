@@ -1,6 +1,6 @@
 package com.dragontalker.exer;
 
-public class MyDate implements Comparable{
+public class MyDate implements Comparable<MyDate>{
     private int year;
     private int month;
     private int day;
@@ -47,10 +47,7 @@ public class MyDate implements Comparable{
     }
 
     @Override
-    public int compareTo(Object o) {
-        if (o instanceof MyDate) {
-            MyDate d = (MyDate) o;
-
+    public int compareTo(MyDate d) {
             //比较年
             int yearDiff = this.getYear() - d.getYear();
 
@@ -68,7 +65,5 @@ public class MyDate implements Comparable{
             //比较日
             return this.getDay() - d
                     .getDay();
-        }
-        throw new RuntimeException("传入的数据类型不一致");
     }
 }
