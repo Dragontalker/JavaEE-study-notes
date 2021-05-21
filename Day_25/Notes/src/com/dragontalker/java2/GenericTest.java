@@ -1,5 +1,7 @@
 package com.dragontalker.java2;
 
+import org.junit.Test;
+
 /**
  * 1. 泛型在继承方面的体现
  *
@@ -7,4 +9,11 @@ package com.dragontalker.java2;
  */
 
 public class GenericTest {
+    /*
+    1. 泛型在继承方面的体现
+     */
+    @Test
+    public void test1() {
+
+    }
 }
