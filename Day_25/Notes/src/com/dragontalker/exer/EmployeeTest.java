@@ -78,9 +78,8 @@ public class EmployeeTest {
         set.add(e4);
         set.add(e5);
 
-        Iterator iterator = set.iterator();
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (Employee employee : set) {
+            System.out.println(employee);
         }
     }
 }
