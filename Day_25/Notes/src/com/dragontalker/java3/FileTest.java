@@ -136,6 +136,7 @@ public class FileTest {
      */
     @Test
     public void test6() throws IOException {
+        //文件的创建
         File file1 = new File("hi.txt");
         if (!file1.exists()) {
             file1.createNewFile();
@@ -144,5 +145,10 @@ public class FileTest {
             file1.delete();
             System.out.println("删除成功");
         }
+    }
+
+    @Test
+    public void test7() {
+        //文件目录的创建
     }
 }
