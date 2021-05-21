@@ -133,5 +133,8 @@ public class GenericTest {
 
         list2 = list4;
         Object obj = list2.get(0);
+
+        //写入数据:
+        //list1.add(new Student()); ? super限制不能赋值子类
     }
 }
