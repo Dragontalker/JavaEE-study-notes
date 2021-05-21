@@ -16,6 +16,7 @@ public class FileTest {
     1. 如何创建File类的实例
         - new File(String filePath)
         - new File(String parentPath, String childPath)
+        - new File(File file, String childPath)
     2.
         - 相对路径: 相较于某个路径下, 指明的路径
         - 绝对路径: 包含盘符在内的文件或文件目录的路径
@@ -30,7 +31,11 @@ public class FileTest {
         System.out.println(file2);
 
         //构造器2:
-        File file3 = new File("\"C:\\\\Users\\\\richa\\\\Desktop\\\\GitHubRepos", "java-enterprise-edition");
+        File file3 = new File("C:\\\\Users\\\\richa\\\\Desktop\\\\GitHubRepos", "java-enterprise-edition\\Day_25\\Notes\\src\\com\\dragontalker\\java3");
         System.out.println(file3);
+
+        //构造器3:
+        File file4 = new File(file3, "hi.txt");
+        System.out.println(file4);
     }
 }
