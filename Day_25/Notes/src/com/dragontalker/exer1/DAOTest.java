@@ -12,6 +12,8 @@ public class DAOTest {
 
         dao.update("1003", new User(1003, 30, "方文山"));
 
+        dao.delete("1002");
+
         List<User> list = dao.list();
         list.forEach(System.out::println);
     }
