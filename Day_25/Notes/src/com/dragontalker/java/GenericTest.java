@@ -1,10 +1,8 @@
 package com.dragontalker.java;
 
 import org.junit.Test;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+
+import java.util.*;
 
 /**
  * 泛型的使用
@@ -64,7 +62,10 @@ public class GenericTest {
         map.put("Jerry", 87);
         map.put("Jack", 67);
 
+        //泛型的嵌套
         Set<Map.Entry<String, Integer>> entries = map.entrySet();
-        System.out.println(entries);
+        for (Map.Entry<String, Integer> entry : entries) {
+            System.out.println(entry);
+        }
     }
 }
