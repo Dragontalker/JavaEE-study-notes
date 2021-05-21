@@ -63,4 +63,14 @@ public class FileTest {
         System.out.println(file2.length());
         System.out.println(file2.lastModified());
     }
+
+    @Test
+    public void test3() {
+        //如下的方式只适用于文件目录
+        File file = new File("C:\\Users\\richa\\Desktop\\GitHubRepos");
+        String[] list = file.list();
+        for(String s : list) {
+            System.out.println(s);
+        }
+    }
 }
