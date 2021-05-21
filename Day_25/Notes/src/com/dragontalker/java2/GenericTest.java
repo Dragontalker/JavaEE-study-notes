@@ -38,5 +38,11 @@ public class GenericTest {
         反证法: 假设list1 = list2
             list.add(123); 导致混入非String的数据, 出错, 违反了泛型的初衷
          */
+
+        //show(list1);
+        //show(list2);
+
     }
+
+    //public void show(List<Object> list) {}
 }
