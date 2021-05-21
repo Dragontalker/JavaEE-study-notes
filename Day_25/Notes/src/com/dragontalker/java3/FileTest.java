@@ -72,5 +72,10 @@ public class FileTest {
         for(String s : list) {
             System.out.println(s);
         }
+
+        File[] files = file.listFiles();
+        for (File f : files) {
+            System.out.println(f);
+        }
     }
 }
