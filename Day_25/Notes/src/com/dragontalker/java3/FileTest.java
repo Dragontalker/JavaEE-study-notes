@@ -38,4 +38,12 @@ public class FileTest {
         File file4 = new File(file3, "hi.txt");
         System.out.println(file4);
     }
+
+    /*
+    File类的方法:
+     */
+    @Test
+    public void test2() {
+
+    }
 }
