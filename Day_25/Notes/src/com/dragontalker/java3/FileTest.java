@@ -89,7 +89,37 @@ public class FileTest {
         File file1 = new File("hello.txt");
         File file2 = new File("C:\\Users\\richa\\Desktop\\GitHubRepos\\java-enterprise-edition\\Day_25\\Notes\\src\\com\\dragontalker\\java3\\hello.txt");
 
-        boolean renameTo = file1.renameTo(file2);
+        boolean renameTo = file2.renameTo(file1);
         System.out.println(renameTo);
+    }
+
+    /*
+    更多的常用方法
+        - isDirectory()
+        - isFile()
+        - exists()
+        - canRead()
+        - canWrite()
+        - isHidden()
+     */
+    @Test
+    public void test5() {
+//        File file1 = new File("hello.ext");
+//
+//        System.out.println(file1.isDirectory());
+//        System.out.println(file1.isFile());
+//        System.out.println(file1.exists());
+//        System.out.println(file1.canRead());
+//        System.out.println(file1.canWrite());
+//        System.out.println(file1.isHidden());
+
+        File file2 = new File("C:\\Users");
+
+        System.out.println(file2.isDirectory());
+        System.out.println(file2.isFile());
+        System.out.println(file2.exists());
+        System.out.println(file2.canRead());
+        System.out.println(file2.canWrite());
+        System.out.println(file2.isHidden());
     }
 }
