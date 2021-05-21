@@ -63,6 +63,7 @@ public class GenericTest {
     /*
     2. 通配符的使用
         - 通配符: ?
+        - G<A>和G<B>的共同父类是G<?>
      */
 
     @Test
