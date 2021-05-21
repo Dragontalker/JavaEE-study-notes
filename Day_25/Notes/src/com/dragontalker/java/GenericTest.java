@@ -3,8 +3,8 @@ package com.dragontalker.java;
 import org.junit.Test;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 泛型的使用
@@ -51,9 +51,8 @@ public class GenericTest {
         }
 
         //方式二:
-        Iterator<Integer> iterator = list.iterator();
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (Integer integer : list) {
+            System.out.println(integer);
         }
     }
 
@@ -61,5 +60,11 @@ public class GenericTest {
     @Test
     public void test3() {
         Map<String, Integer> map = new HashMap<>();
+        map.put("Tom", 87);
+        map.put("Jerry", 87);
+        map.put("Jack", 67);
+
+        Set<Map.Entry<String, Integer>> entries = map.entrySet();
+        System.out.println(entries);
     }
 }
