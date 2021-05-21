@@ -13,6 +13,9 @@ import java.util.List;
 public class GenericTest {
     /*
     1. 泛型在继承方面的体现
+        - 类A是类B的父类
+        - G<A>和G<B>二者不具备子父类关系
+        - 二者是并列关系
      */
     @Test
     public void test1() {
