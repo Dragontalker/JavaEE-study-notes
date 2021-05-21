@@ -34,6 +34,12 @@ public class GenericTest {
     //在集合中使用泛型的情况:
     @Test
     public void test2() {
-        ArrayList<Integer> arrayList = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<Integer>();
+
+        //编译时就会进行类型检查, 保证数据的安全
+        list.add(78);
+        list.add(86);
+        list.add(100);
+        list.add(99);
     }
 }
