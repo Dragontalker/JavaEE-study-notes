@@ -22,4 +22,13 @@ public class Order<T> {
     public void setOrderT(T orderT) {
         this.orderT = orderT;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderName='" + orderName + '\'' +
+                ", orderId=" + orderId +
+                ", orderT=" + orderT +
+                '}';
+    }
 }
