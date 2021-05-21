@@ -1,5 +1,9 @@
 package com.dragontalker.java;
 
+/**
+ * 自定义泛型类
+ */
+
 public class Order<T> {
     String orderName;
     int orderId;
