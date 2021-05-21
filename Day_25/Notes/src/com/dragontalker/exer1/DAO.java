@@ -2,13 +2,10 @@ package com.dragontalker.exer1;
 
 import com.dragontalker.java2.Person;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class DAO<T> {
-    private Map<String, T> map;
+    private Map<String, T> map = new HashMap<>();
 
     //保存T类型的对象到Map的成员变量中
     public void save(String id, T entity) {
