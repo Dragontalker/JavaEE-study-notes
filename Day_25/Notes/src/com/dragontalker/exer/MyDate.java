@@ -50,20 +50,15 @@ public class MyDate implements Comparable<MyDate>{
     public int compareTo(MyDate d) {
             //比较年
             int yearDiff = this.getYear() - d.getYear();
-
             if (yearDiff != 0) {
                 return yearDiff;
             }
-
             //比较月
             int monthDiff = this.getMonth() - d.getMonth();
-
             if (monthDiff != 0) {
                 return monthDiff;
             }
-
             //比较日
-            return this.getDay() - d
-                    .getDay();
+            return this.getDay() - d.getDay();
     }
 }
