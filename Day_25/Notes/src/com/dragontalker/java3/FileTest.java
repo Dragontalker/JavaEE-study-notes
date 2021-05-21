@@ -44,6 +44,23 @@ public class FileTest {
      */
     @Test
     public void test2() {
+        File file1 = new File("hello.txt");
+        File file2 = new File("C:\\Users\\richa\\Desktop\\GitHubRepos\\java-enterprise-edition\\Day_25\\Notes\\src\\com\\dragontalker\\java3\\world.txt");
 
+        System.out.println(file1.getAbsolutePath());
+        System.out.println(file1.getPath());
+        System.out.println(file1.getName());
+        System.out.println(file1.getParent());
+        System.out.println(file1.length());
+        System.out.println(file1.lastModified());
+
+        System.out.println("========");
+
+        System.out.println(file2.getAbsolutePath());
+        System.out.println(file2.getPath());
+        System.out.println(file2.getName());
+        System.out.println(file2.getParent());
+        System.out.println(file2.length());
+        System.out.println(file2.lastModified());
     }
 }
