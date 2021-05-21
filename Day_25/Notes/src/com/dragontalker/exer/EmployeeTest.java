@@ -11,7 +11,8 @@ public class EmployeeTest {
     //问题一: 使用自然排序
     @Test
     public void test1() {
-        TreeSet<Employee> set = new TreeSet<Employee>();
+        //jdk7.0以后的新特性: 类型推断
+        TreeSet<Employee> set = new TreeSet<>();
 
         Employee e1 = new Employee("liudehua", 55, new MyDate(1965, 5, 4));
         Employee e2 = new Employee("zhangxueyou", 43, new MyDate(1987, 5, 4));
@@ -25,9 +26,8 @@ public class EmployeeTest {
         set.add(e4);
         set.add(e5);
 
-        Iterator iterator = set.iterator();
-        while(iterator.hasNext()) {
-            System.out.println(iterator.next());
+        for (Employee employee : set) {
+            System.out.println(employee);
         }
     }
 
