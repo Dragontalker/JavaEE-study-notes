@@ -142,7 +142,15 @@ public class FileReaderWriterTest {
         FileWriter fw = new FileWriter(destFile);
 
         //3. 数据的读入和写出操作
+        char[] cbuf = new char[5];
+        int len; //记录每次读入到cbuf数组中的数据的字符的个数
+        while((len = fr.read(cbuf)) != -1) {
+            //每次写出len个字符
+            fw.write(cbuf, 0, len);
+        }
 
         //4. 关闭流资源
+        fr.close();
+        fw.close();
     }
 }
