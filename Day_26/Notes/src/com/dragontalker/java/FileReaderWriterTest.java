@@ -62,15 +62,37 @@ public class FileReaderWriterTest {
 
     //对read()操作升级: 使用read的重载方法
     @Test
-    public void testFileReader1() throws FileNotFoundException {
-        //1. File类的实例化
-        File file = new File("hello.txt");
+    public void testFileReader1() {
+       FileReader fr = null;
 
-        //2. FileReader流的实例化
-        FileReader fr = new FileReader(file);
+       try {
+           //1. File类的实例化
+           File file = new File("hello.txt");
 
-        //3. 读入的操作
+           //2. FileReader流的实例化
+           fr = new FileReader(file);
 
-        //4. 资源的关闭
+           //3. 读入的操作
+           //read(char[] cbuf): 返回每次读入cbuf数组中的字符的个数
+           //如果达到文件末尾, 返回-1
+           char[] charBuffer = new char[5];
+           int len;
+           while((len = fr.read(charBuffer)) != -1) {
+               for (int i = 0; i < len; i++) {
+                   System.out.print(charBuffer[i]);
+               }
+           }
+       } catch (IOException e) {
+           e.printStackTrace();
+       } finally {
+           if (fr != null) {
+               //4. 资源的关闭
+               try {
+                   fr.close();
+               } catch (IOException e) {
+                   e.printStackTrace();
+               }
+           }
+       }
     }
 }
