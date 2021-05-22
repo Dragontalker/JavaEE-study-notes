@@ -2,10 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 
 /**
  * 处理流之二: 转换流的使用
@@ -40,5 +37,19 @@ public class InputStreamReaderTest {
         }
 
         isr.close();
+    }
+
+
+    /*
+    综合使用InputStreamReader和 OutputStreamWriter
+     */
+    @Test
+    public void test2() throws FileNotFoundException {
+        File file1 = new File("hello.txt");
+        File file2 = new File("hello_gbk.txt");
+
+        FileInputStream fis = new FileInputStream(file1);
+        FileOutputStream fos = new FileOutputStream(file2);
+
     }
 }
