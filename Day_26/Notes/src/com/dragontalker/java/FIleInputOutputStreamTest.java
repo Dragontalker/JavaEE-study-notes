@@ -92,4 +92,44 @@ public class FIleInputOutputStreamTest {
             }
         }
     }
+
+    //指定路径下文件的复制
+    public void copyFile(String srcPath, String destPath) {
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
+
+        try {
+            //
+            File srcFile = new File(srcPath);
+            File destFile= new File(destPath);
+
+            //
+            fis = new FileInputStream(srcFile);
+            fos = new FileOutputStream(destFile);
+
+            //
+            byte[] buffer = new byte[5];
+            int len;
+            while((len = fis.read(buffer)) != -1) {
+                fos.write(buffer, 0 , len);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fis != null) {
+                try {
+                    fis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 }
