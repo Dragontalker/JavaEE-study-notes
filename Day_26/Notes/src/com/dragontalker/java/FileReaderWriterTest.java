@@ -93,4 +93,12 @@ public class FileReaderWriterTest {
            }
        }
     }
+
+    /*
+    从内存中写出数据到硬盘的文件里
+     */
+    @Test
+    public void testFileWriter() {
+
+    }
 }
