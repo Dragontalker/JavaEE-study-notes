@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -61,10 +62,12 @@ public class FileReaderWriterTest {
 
     //对read()操作升级: 使用read的重载方法
     @Test
-    public void testFileReader1() {
+    public void testFileReader1() throws FileNotFoundException {
         //1. File类的实例化
+        File file = new File("hello.txt");
 
         //2. FileReader流的实例化
+        FileReader fr = new FileReader(file);
 
         //3. 读入的操作
 
