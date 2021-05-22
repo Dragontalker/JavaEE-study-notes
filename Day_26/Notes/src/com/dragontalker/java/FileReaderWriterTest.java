@@ -78,9 +78,13 @@ public class FileReaderWriterTest {
            char[] charBuffer = new char[5];
            int len;
            while((len = fr.read(charBuffer)) != -1) {
-               for (int i = 0; i < len; i++) {
-                   System.out.print(charBuffer[i]);
-               }
+//               for (int i = 0; i < len; i++) {
+//                   System.out.print(charBuffer[i]);
+//               }
+               //方式二:
+               //错误的写法
+               String str = new String(charBuffer);
+               System.out.print(str);
            }
        } catch (IOException e) {
            e.printStackTrace();
