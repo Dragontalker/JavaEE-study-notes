@@ -27,8 +27,12 @@ public class FileReaderWriterTest {
         System.out.println(file1.getAbsolutePath());
     }
 
+    /*
+    将Notes下的hello.txt文件内容读入程序中, 并输出到控制台
+     */
     @Test
     public void testFileReader() {
+        //1. 实例化File类的对象, 指明要操作的文件
         File file = new File("hello.txt"); //相较于当前Module下
     }
 }
