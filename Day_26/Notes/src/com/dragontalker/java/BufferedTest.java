@@ -23,9 +23,6 @@ public class BufferedTest {
      */
     @Test
     public void BufferedStreamTest() {
-
-        FileInputStream fis = null;
-        FileOutputStream fos = null;
         BufferedInputStream bis = null;
         BufferedOutputStream bos = null;
 
@@ -33,8 +30,8 @@ public class BufferedTest {
             File srcFile = new File("myPicture.jpg");
             File destFile = new File("newPicture.jpg");
 
-            fis = new FileInputStream(srcFile);
-            fos = new FileOutputStream(destFile);
+            FileInputStream fis = new FileInputStream(srcFile);
+            FileOutputStream fos = new FileOutputStream(destFile);
 
             bis = new BufferedInputStream(fis);
             bos = new BufferedOutputStream(fos);
@@ -50,6 +47,7 @@ public class BufferedTest {
         } finally {
 
             //要求: 先关闭外层的流, 再关闭内层的流
+            //说明: 关闭外层六的同时, 内层流也会自动的进行关闭.
             if (bis != null) {
                 try {
                     bis.close();
@@ -64,20 +62,61 @@ public class BufferedTest {
                     e.printStackTrace();
                 }
             }
-            if (fis != null) {
+        }
+    }
+
+    //实现文件复制的方法
+    public void copyFileWithBuffered(String srcPath, String destPath) {
+        BufferedInputStream bis = null;
+        BufferedOutputStream bos = null;
+
+        try {
+            File srcFile = new File(srcPath);
+            File destFile = new File(destPath);
+
+            FileInputStream fis = new FileInputStream(srcFile);
+            FileOutputStream fos = new FileOutputStream(destFile);
+
+            bis = new BufferedInputStream(fis);
+            bos = new BufferedOutputStream(fos);
+
+            byte[] buffer = new byte[10];
+            int len;
+            while((len = bis.read(buffer)) != -1) {
+                bos.write(buffer, 0, len);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+
+            //要求: 先关闭外层的流, 再关闭内层的流
+            //说明: 关闭外层六的同时, 内层流也会自动的进行关闭.
+            if (bis != null) {
                 try {
-                    fis.close();
+                    bis.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
-            if (fos != null) {
+            if (bos != null) {
                 try {
-                    fos.close();
+                    bos.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
         }
+    }
+
+    @Test
+    public void testCopyFileWithBuffered() {
+        long start = System.currentTimeMillis();
+
+        copyFileWithBuffered("myPicture", "bufferedPicture");
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("复制操作花费的时间为: " + (end - start) + "ms");
     }
 }
