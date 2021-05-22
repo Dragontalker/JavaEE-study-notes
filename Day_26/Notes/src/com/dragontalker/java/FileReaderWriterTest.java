@@ -122,4 +122,9 @@ public class FileReaderWriterTest {
         //4. 流资源的关闭
         fw.close();
     }
+
+    @Test
+    public void testFileReaderFileWriter() {
+
+    }
 }
