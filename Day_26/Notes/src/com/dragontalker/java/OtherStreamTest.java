@@ -16,6 +16,12 @@ public class OtherStreamTest {
             System.out: 标准的输出流, 默认从控制台输出
 
         1.2 System类的setIn(InputStream is)/setOut(PrintStream ps)方式重新指定输入和输入的流
+
+        1.3
+            - 从键盘输入字符串
+            - 要求将读取到的整行字符串转成大写输入
+            - 然后继续进行输入操作
+            - 直至当输入"e"或者"exit"时, 退出程序
      */
     @Test
     public void test1() {
