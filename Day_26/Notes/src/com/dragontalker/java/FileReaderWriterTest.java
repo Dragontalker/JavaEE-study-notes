@@ -142,6 +142,7 @@ public class FileReaderWriterTest {
             File destFile = new File("hello2.txt");
 
             //2. 创建输入流和输出流的对象
+            //不能使用字符流来处理字节数据
             fr = new FileReader(srcFile);
             fw = new FileWriter(destFile);
 
