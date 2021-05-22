@@ -22,6 +22,9 @@ public class FileReaderWriterTest {
     public static void main(String[] args) {
         File file = new File("hello.txt"); // 相较于当前工程
         System.out.println(file.getAbsoluteFile());
+
+        File file1 = new File("Notes\\hello.txt");
+        System.out.println(file1.getAbsolutePath());
     }
 
     @Test
