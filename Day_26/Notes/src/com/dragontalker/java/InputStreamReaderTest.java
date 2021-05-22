@@ -1,5 +1,10 @@
 package com.dragontalker.java;
 
+import org.junit.Test;
+
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
 /**
  * 处理流之二: 转换流的使用
  *
@@ -11,7 +16,15 @@ package com.dragontalker.java;
  *
  * 3. 解码: 字节、字节数组 ---> 字符数组、字符串
  *    编码: 字符数组、字符串 ---> 字节、字节数组
+ *
+ * 4. 字符集:
  */
 
 public class InputStreamReaderTest {
+
+    @Test
+    public void test1() {
+        FileInputStream fis = new FileInputStream("dbcp.txt");
+        InputStreamReader isr = new InputStreamReader(fis); //使用默认的字符集, utf-8
+    }
 }
