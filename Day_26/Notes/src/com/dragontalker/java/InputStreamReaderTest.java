@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.io.*;
+import java.nio.charset.StandardCharsets;
 
 /**
  * 处理流之二: 转换流的使用
@@ -44,17 +45,23 @@ public class InputStreamReaderTest {
     综合使用InputStreamReader和 OutputStreamWriter
      */
     @Test
-    public void test2() throws FileNotFoundException, UnsupportedEncodingException {
+    public void test2() throws IOException {
         File file1 = new File("hello.txt");
         File file2 = new File("hello_gbk.txt");
 
         FileInputStream fis = new FileInputStream(file1);
         FileOutputStream fos = new FileOutputStream(file2);
 
-        InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+        InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8);
         OutputStreamWriter osw = new OutputStreamWriter(fos, "gbk");
 
+        char[] cbuf = new char[20];
+        int len;
+        while((len = isr.read(cbuf)) != -1) {
+            osw.write(cbuf, 0, len);
+        }
 
-
+        isr.close();
+        osw.close();
     }
 }
