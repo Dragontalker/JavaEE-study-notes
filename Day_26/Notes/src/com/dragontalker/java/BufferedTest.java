@@ -26,6 +26,8 @@ public class BufferedTest {
 
         FileInputStream fis = null;
         FileOutputStream fos = null;
+        BufferedInputStream bis = null;
+        BufferedOutputStream bos = null;
 
         try {
             File srcFile = new File("myPicture.jpg");
@@ -34,8 +36,8 @@ public class BufferedTest {
             fis = new FileInputStream(srcFile);
             fos = new FileOutputStream(destFile);
 
-            BufferedInputStream bis = new BufferedInputStream(fis);
-            BufferedOutputStream bos = new BufferedOutputStream(fos);
+            bis = new BufferedInputStream(fis);
+            bos = new BufferedOutputStream(fos);
 
             byte[] buffer = new byte[10];
             int len;
@@ -46,6 +48,22 @@ public class BufferedTest {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+
+            //要求: 先关闭外层的流, 再关闭内层的流
+            if (bis != null) {
+                try {
+                    bis.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (bos != null) {
+                try {
+                    bos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
             if (fis != null) {
                 try {
                     fis.close();
