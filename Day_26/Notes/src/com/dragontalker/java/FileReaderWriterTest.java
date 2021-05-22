@@ -50,6 +50,12 @@ public class FileReaderWriterTest {
 //            data = fr.read();
 //        }
 
+        //方式二: 语法上针对于方式一的修改
+        int data;
+        while((data = fr.read()) != -1) {
+            System.out.print((char) data);
+        }
+
         //4. 流的关闭操作
         fr.close();
     }
