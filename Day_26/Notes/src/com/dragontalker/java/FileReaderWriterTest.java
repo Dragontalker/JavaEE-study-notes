@@ -19,6 +19,10 @@ import java.io.File;
  */
 
 public class FileReaderWriterTest {
+    public static void main(String[] args) {
+        File file = new File("hello.txt"); // 相较于当前工程
+        System.out.println(file.getAbsoluteFile());
+    }
 
     @Test
     public void testFileReader() {
