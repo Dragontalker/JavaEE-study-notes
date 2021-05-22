@@ -2,6 +2,8 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.io.File;
+
 /**
  * 一、流的分类:
  * 1. 操作数据单位: 字节流, 字符流
@@ -20,6 +22,6 @@ public class FileReaderWriterTest {
 
     @Test
     public void testFileReader() {
-
+        File file = new File("hello.txt"); //相较于当前Module下
     }
 }
