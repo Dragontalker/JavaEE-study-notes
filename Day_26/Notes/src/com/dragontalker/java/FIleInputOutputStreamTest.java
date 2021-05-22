@@ -132,4 +132,15 @@ public class FIleInputOutputStreamTest {
             }
         }
     }
+
+    @Test
+    public void testCopyFile() {
+        long start = System.currentTimeMillis();
+
+        copyFile("myPicture.jpg", "newPicture.jpg");
+
+        long end = System.currentTimeMillis();
+
+        System.out.println("复制操作花费的时间为: " + (end - start) + "ms");
+    }
 }
