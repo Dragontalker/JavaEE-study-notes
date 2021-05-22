@@ -2,10 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * 一、流的分类:
@@ -124,12 +121,14 @@ public class FileReaderWriterTest {
     }
 
     @Test
-    public void testFileReaderFileWriter() {
+    public void testFileReaderFileWriter() throws IOException {
         //1. 创建File类的对象, 指明读入和写出的文件
         File srcFile = new File("hello.txt");
         File destFile = new File("hello2.txt");
 
         //2. 创建输入流和输出流的对象
+        FileReader fr = new FileReader(srcFile);
+        FileWriter fw = new FileWriter(destFile);
 
         //3. 数据的读入和写出操作
 
