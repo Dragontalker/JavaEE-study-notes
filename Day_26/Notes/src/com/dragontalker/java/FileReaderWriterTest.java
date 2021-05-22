@@ -126,6 +126,8 @@ public class FileReaderWriterTest {
     @Test
     public void testFileReaderFileWriter() {
         //1. 创建File类的对象, 指明读入和写出的文件
+        File srcFile = new File("hello.txt");
+        File destFile = new File("hello2.txt");
 
         //2. 创建输入流和输出流的对象
 
