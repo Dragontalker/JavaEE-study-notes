@@ -6,7 +6,12 @@ package com.dragontalker.java;
  * 2. 数据的流向: 输入流, 输出流
  * 3. 流的角色: 节点流, 处理流
  *
- * 二、
+ * 二、流的体系结构
+ * 抽象基类             节点流(或文件流)
+ * InputStream          FileInputStream
+ * OutputStream         FileOutputStream
+ * Reader               FileReader
+ * Writer               FileWriter
  */
 
 public class FileReaderWriterTest {
