@@ -34,29 +34,43 @@ public class FileReaderWriterTest {
     将Notes下的hello.txt文件内容读入程序中, 并输出到控制台
      */
     @Test
-    public void testFileReader() throws IOException {
-        //1. 实例化File类的对象, 指明要操作的文件
-        File file = new File("hello.txt"); //相较于当前Module下
+    public void testFileReader() {
+        FileReader fr = null;
 
-        //2. 提供具体的流
-        FileReader fr = new FileReader(file);
+        try {
+            //1. 实例化File类的对象, 指明要操作的文件
+            File file = new File("hello.txt"); //相较于当前Module下
 
-        //3. 数据的读入
-        //read(): 返回读入的一个字符, 如果达到文件末尾, 返回-1
-        //方式一:
+            //2. 提供具体的流
+            fr = new FileReader(file);
+
+            //3. 数据的读入
+            //read(): 返回读入的一个字符, 如果达到文件末尾, 返回-1
+            //方式一:
 //        int data = fr.read();
 //        while(data != -1) {
 //            System.out.print((char) data);
 //            data = fr.read();
 //        }
 
-        //方式二: 语法上针对于方式一的修改
-        int data;
-        while((data = fr.read()) != -1) {
-            System.out.print((char) data);
+            //方式二: 语法上针对于方式一的修改
+            int data;
+            while((data = fr.read()) != -1) {
+                System.out.print((char) data);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            //4. 流的关闭操作
+            try {
+                if (fr != null) {
+                    fr.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
-        //4. 流的关闭操作
-        fr.close();
+
     }
 }
