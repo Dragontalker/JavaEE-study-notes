@@ -44,12 +44,17 @@ public class InputStreamReaderTest {
     综合使用InputStreamReader和 OutputStreamWriter
      */
     @Test
-    public void test2() throws FileNotFoundException {
+    public void test2() throws FileNotFoundException, UnsupportedEncodingException {
         File file1 = new File("hello.txt");
         File file2 = new File("hello_gbk.txt");
 
         FileInputStream fis = new FileInputStream(file1);
         FileOutputStream fos = new FileOutputStream(file2);
+
+        InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+        OutputStreamWriter osw = new OutputStreamWriter(fos, "gbk");
+
+
 
     }
 }
