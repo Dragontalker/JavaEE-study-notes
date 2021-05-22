@@ -107,6 +107,8 @@ public class FileReaderWriterTest {
         FileWriter fw = new FileWriter(file);
 
         //3. 写出的操作
+        fw.write("I have a dream!\n".toCharArray());
+        fw.write("You need to have a dream as well!".toCharArray());
 
         //4. 流资源的关闭
         fw.close();
