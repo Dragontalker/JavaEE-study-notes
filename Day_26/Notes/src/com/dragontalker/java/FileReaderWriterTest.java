@@ -43,11 +43,12 @@ public class FileReaderWriterTest {
 
         //3. 数据的读入
         //read(): 返回读入的一个字符, 如果达到文件末尾, 返回-1
-        int data = fr.read();
-        while(data != -1) {
-            System.out.print((char) data);
-            data = fr.read();
-        }
+        //方式一:
+//        int data = fr.read();
+//        while(data != -1) {
+//            System.out.print((char) data);
+//            data = fr.read();
+//        }
 
         //4. 流的关闭操作
         fr.close();
