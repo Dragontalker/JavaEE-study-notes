@@ -25,6 +25,9 @@ public class InputStreamReaderTest {
     @Test
     public void test1() {
         FileInputStream fis = new FileInputStream("dbcp.txt");
-        InputStreamReader isr = new InputStreamReader(fis); //使用默认的字符集, utf-8
+        //InputStreamReader isr = new InputStreamReader(fis); //使用默认的字符集, utf-8
+        //参数2指明了字符集
+        //具体使用了哪个字符集, 取决于文件保存时使用的字符集
+        InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
     }
 }
