@@ -45,15 +45,6 @@ public class FileReaderWriterTest {
             fr = new FileReader(file);
 
             //3. 数据的读入
-            //read(): 返回读入的一个字符, 如果达到文件末尾, 返回-1
-            //方式一:
-//        int data = fr.read();
-//        while(data != -1) {
-//            System.out.print((char) data);
-//            data = fr.read();
-//        }
-
-            //方式二: 语法上针对于方式一的修改
             int data;
             while((data = fr.read()) != -1) {
                 System.out.print((char) data);
@@ -70,7 +61,5 @@ public class FileReaderWriterTest {
                 e.printStackTrace();
             }
         }
-
-
     }
 }
