@@ -2,6 +2,9 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 /**
  * 其他流的使用
  * 1. 标准的输入、输出流
@@ -29,7 +32,15 @@ public class OtherStreamTest {
      */
     @Test
     public void test1() {
-
+        InputStreamReader isr = new InputStreamReader(System.in);
+        BufferedReader br = new BufferedReader(isr);
+        while(true) {
+            String data = br.readLine();
+            if ("e".equalsIgnoreCase(data) || "exit".equalsIgnoreCase(data)) {
+                System.out.println("程序结束");
+                break;
+            }
+        }
     }
 
 }
