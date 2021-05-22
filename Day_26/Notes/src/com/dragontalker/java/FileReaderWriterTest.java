@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 /**
@@ -98,7 +99,16 @@ public class FileReaderWriterTest {
     从内存中写出数据到硬盘的文件里
      */
     @Test
-    public void testFileWriter() {
+    public void testFileWriter() throws IOException {
+        //1. 提供File类的对象, 指明写出到的文件
+        File file = new File("hello1.txt");
 
+        //2. 提供FileWriter的对象, 用于数据的写出
+        FileWriter fw = new FileWriter(file);
+
+        //3. 写出的操作
+
+        //4. 流资源的关闭
+        fw.close();
     }
 }
