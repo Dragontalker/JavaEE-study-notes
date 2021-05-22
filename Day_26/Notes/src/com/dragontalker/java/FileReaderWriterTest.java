@@ -105,19 +105,30 @@ public class FileReaderWriterTest {
             不会对原有文件覆盖, 而是在原有文件基础上追加内容
      */
     @Test
-    public void testFileWriter() throws IOException {
-        //1. 提供File类的对象, 指明写出到的文件
-        File file = new File("hello1.txt");
+    public void testFileWriter() {
+        FileWriter fw = null;
+        try {
+            //1. 提供File类的对象, 指明写出到的文件
+            File file = new File("hello1.txt");
 
-        //2. 提供FileWriter的对象, 用于数据的写出
-        FileWriter fw = new FileWriter(file, true);
+            //2. 提供FileWriter的对象, 用于数据的写出
+            fw = new FileWriter(file, true);
 
-        //3. 写出的操作
-        fw.write("I have a dream!\n".toCharArray());
-        fw.write("You need to have a dream as well!\n".toCharArray());
-
-        //4. 流资源的关闭
-        fw.close();
+            //3. 写出的操作
+            fw.write("I have a dream!\n".toCharArray());
+            fw.write("You need to have a dream as well!\n".toCharArray());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fw != null) {
+                //4. 流资源的关闭
+                try {
+                    fw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     @Test
