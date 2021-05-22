@@ -12,8 +12,10 @@ import org.junit.Test;
 public class OtherStreamTest {
     /*
     1. 标准的输入、输出流
-        - System.in: 标准的输入流, 默认从键盘输入
-        - System.out: 标准的输出流, 默认从控制台输出
+        1.1 System.in: 标准的输入流, 默认从键盘输入
+            System.out: 标准的输出流, 默认从控制台输出
+
+        1.2 System类的setIn(InputStream is)/setOut(PrintStream ps)方式重新指定输入和输入的流
      */
     @Test
     public void test1() {
