@@ -97,6 +97,11 @@ public class FileReaderWriterTest {
 
     /*
     从内存中写出数据到硬盘的文件里
+
+    说明:
+    1. 输出操作, 对应的File可以不存在.
+    2. 如果不存在, 在输出的过程中, 会自动创建此文件
+    3. 如果存在:
      */
     @Test
     public void testFileWriter() throws IOException {
@@ -104,11 +109,11 @@ public class FileReaderWriterTest {
         File file = new File("hello1.txt");
 
         //2. 提供FileWriter的对象, 用于数据的写出
-        FileWriter fw = new FileWriter(file);
+        FileWriter fw = new FileWriter(file, true);
 
         //3. 写出的操作
         fw.write("I have a dream!\n".toCharArray());
-        fw.write("You need to have a dream as well!".toCharArray());
+        fw.write("You need to have a dream as well!\n".toCharArray());
 
         //4. 流资源的关闭
         fw.close();
