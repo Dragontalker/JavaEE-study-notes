@@ -16,6 +16,7 @@ import java.io.IOException;
 
 public class FIleInputOutputStreamTest {
 
+    //使用字节流FileInputStream处理文本文件, 可能出现乱码
     @Test
     public void testFIleInputStream() {
         FileInputStream fis = null;
@@ -46,5 +47,16 @@ public class FIleInputOutputStreamTest {
                 }
             }
         }
+    }
+
+    /*
+    实现对图片的一个复制
+     */
+    @Test
+    public void testFileInputOutputStream() {
+        //
+        File srcFile = new File("myPicture.jpg");
+        File destFile= new File("copiedPicture.jpg");
+
     }
 }
