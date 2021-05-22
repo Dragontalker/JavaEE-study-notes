@@ -3,6 +3,8 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 
 /**
  * 一、流的分类:
@@ -31,8 +33,11 @@ public class FileReaderWriterTest {
     将Notes下的hello.txt文件内容读入程序中, 并输出到控制台
      */
     @Test
-    public void testFileReader() {
+    public void testFileReader() throws FileNotFoundException {
         //1. 实例化File类的对象, 指明要操作的文件
         File file = new File("hello.txt"); //相较于当前Module下
+
+        //2. 提供具体的流
+        FileReader fr = new FileReader(file);
     }
 }
