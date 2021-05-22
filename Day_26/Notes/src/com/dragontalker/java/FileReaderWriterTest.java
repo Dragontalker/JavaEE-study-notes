@@ -125,6 +125,12 @@ public class FileReaderWriterTest {
 
     @Test
     public void testFileReaderFileWriter() {
+        //1. 创建File类的对象, 指明读入和写出的文件
 
+        //2. 创建输入流和输出流的对象
+
+        //3. 数据的读入和写出操作
+
+        //4. 关闭流资源
     }
 }
