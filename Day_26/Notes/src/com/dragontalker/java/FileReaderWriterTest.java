@@ -22,13 +22,13 @@ import java.io.IOException;
  */
 
 public class FileReaderWriterTest {
-    public static void main(String[] args) {
-        File file = new File("hello.txt"); // 相较于当前工程
-        System.out.println(file.getAbsoluteFile());
-
-        File file1 = new File("Notes\\hello.txt");
-        System.out.println(file1.getAbsolutePath());
-    }
+//    public static void main(String[] args) {
+//        File file = new File("hello.txt"); // 相较于当前工程
+//        System.out.println(file.getAbsoluteFile());
+//
+//        File file1 = new File("Notes\\hello.txt");
+//        System.out.println(file1.getAbsolutePath());
+//    }
 
     /*
     将Notes下的hello.txt文件内容读入程序中, 并输出到控制台
@@ -45,7 +45,7 @@ public class FileReaderWriterTest {
         //read(): 返回读入的一个字符, 如果达到文件末尾, 返回-1
         int data = fr.read();
         while(data != -1) {
-            System.out.println((char) data);
+            System.out.print((char) data);
             data = fr.read();
         }
 
