@@ -9,6 +9,8 @@ package com.dragontalker.java;
  *
  * 2. 作用: 提供字节流和字符流之间的转换
  *
+ * 3. 解码: 字节、字节数组 ---> 字符数组、字符串
+ *    编码: 字符数组、字符串 ---> 字节、字节数组
  */
 
 public class InputStreamReaderTest {
