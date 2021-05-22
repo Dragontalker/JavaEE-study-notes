@@ -1,5 +1,7 @@
 package com.dragontalker.java;
 
+import org.junit.Test;
+
 /**
  * 一、流的分类:
  * 1. 操作数据单位: 字节流, 字符流
@@ -15,4 +17,9 @@ package com.dragontalker.java;
  */
 
 public class FileReaderWriterTest {
+
+    @Test
+    public void testFileReader() {
+
+    }
 }
