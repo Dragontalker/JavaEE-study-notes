@@ -14,6 +14,7 @@ import java.io.*;
  * BufferedWriter
  *
  * 2. 作用: 提供流的读取、写入的速度
+ *  - 提高读写速度的原因: 内部提供了缓冲区
  */
 
 public class BufferedTest {
