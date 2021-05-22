@@ -62,6 +62,12 @@ public class FileReaderWriterTest {
     //对read()操作升级: 使用read的重载方法
     @Test
     public void testFileReader1() {
-        //1.
+        //1. File类的实例化
+
+        //2. FileReader流的实例化
+
+        //3. 读入的操作
+
+        //4. 资源的关闭
     }
 }
