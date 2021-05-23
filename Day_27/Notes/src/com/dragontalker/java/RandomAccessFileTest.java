@@ -88,5 +88,7 @@ public class RandomAccessFileTest {
         raf1.write(builder.toString().getBytes());
 
         raf1.close();
+
+        //思考: 将StringBuilder替换为ByteArrayOutputStream
     }
 }
