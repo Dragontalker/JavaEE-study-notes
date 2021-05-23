@@ -25,6 +25,7 @@ import java.net.UnknownHostException;
  * 4. 域名: www.baidu.com  www.mi.com  www.sina.com
  * 5. 本地回路地址: 127.0.0.1 对应着: Localhost
  * 6. 如何实例化InetAddress: 两个方法: getByName(String host), getLocalHost()
+ *  - 两个常用方法: getHostName() / getHostAddress()
  */
 
 public class InetAddressTest {
