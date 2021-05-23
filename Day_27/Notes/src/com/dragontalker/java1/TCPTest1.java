@@ -55,10 +55,13 @@ public class TCPTest1 {
         ServerSocket ss = null;
         InputStream is = null;
         try {
+            //1. 创建服务器端的ServerSocket, 指明自己的端口号
             ss = new ServerSocket(8899);
+            //2. 调用accept()表示接收来自于客户端的socket
             Socket socket = ss.accept();
+            //3. 获取输入流
             is = socket.getInputStream();
-
+            //4. 读取输入流中的数据
             byte[] buffer = new byte[1024];
             int len;
             while((len = is.read(buffer)) != -1) {
@@ -67,6 +70,7 @@ public class TCPTest1 {
             }
             System.out.println("收到了来自于: " + socket.getInetAddress().getHostName());
         } catch (IOException e) {
+            //5. 资源的关闭
             e.printStackTrace();
         } finally {
             if (is != null) {
