@@ -56,8 +56,34 @@ public class RandomAccessFileTest {
     public void test2() throws IOException {
         RandomAccessFile raf1 = new RandomAccessFile("hello.txt", "rw");
 
-        raf1.seek(raf1.length()); //将指针调到角标为3的位置
+        raf1.seek(raf1.length()); //将指针调到最后的角标的位置
         raf1.write("xyz".getBytes());
+
+        raf1.close();
+    }
+
+    /*
+    使用RandomAccessFile实现数据的插入效果
+     */
+    @Test
+    public void test3() throws IOException {
+        RandomAccessFile raf1 = new RandomAccessFile("hello.txt", "rw");
+
+        raf1.seek(3); //将指针角标3的位置
+
+        StringBuilder builder = new StringBuilder((int) new File("hello.txt").length());
+
+        byte[] buffer = new byte[20];
+        int len;
+        while((len = raf1.read(buffer)) != -1) {
+            builder.append(new String(buffer, 0, len));
+        }
+
+        //调回指针, 写入"xyz"
+        raf1.seek(3);
+        raf1.write("xyz".getBytes());
+
+        raf1.write(builder.toString().getBytes());
 
         raf1.close();
     }
