@@ -8,6 +8,13 @@ import java.io.Serializable;
  * 2. 当前类提供一个全局常量: serialVersionUID
  * 3. 除了当前Person类许需要实现Serializable接口之外, 还需要保证其内部所有属性
  *  也必须是可序列化的(默认情况下, 基础数据类型都是可序列化的)
+ *
+ * 4. 序列化机制:
+ *
+ *
+ *
+ * 补充: ObjectInputStream/ObjectOutputStream不能序列化static和transient修饰的成员变量
+ *
  */
 
 public class Person implements Serializable {
