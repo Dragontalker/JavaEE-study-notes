@@ -2,9 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 /**
  * 对象流的使用
@@ -38,5 +36,30 @@ public class ObjectInputOutputStreamTest {
                 }
             }
         }
+    }
+
+    @Test
+    public void testObjectInputStream() {
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(new FileInputStream("object.dat"));
+
+            Object obj = ois.readObject();
+
+            String str = (String) obj;
+            System.out.println(str);
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            if (ois != null) {
+                try {
+                    ois.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+
     }
 }
