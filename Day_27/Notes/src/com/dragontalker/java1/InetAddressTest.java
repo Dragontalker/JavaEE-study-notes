@@ -23,6 +23,8 @@ import java.net.UnknownHostException;
  * 2. 在Java中使用InetAddress类代表IP
  * 3. IP分类: IPv4和IPv6; 万维网和局域网
  * 4. 域名: www.baidu.com  www.mi.com  www.sina.com
+ * 5. 本地回路地址: 127.0.0.1 对应着: Localhost
+ *
  */
 
 public class InetAddressTest {
@@ -33,6 +35,9 @@ public class InetAddressTest {
 
             InetAddress inet2 = InetAddress.getByName("www.atguigu.com");
             System.out.println(inet2);
+
+            InetAddress inet3 = InetAddress.getByName("127.0.0.1");
+            System.out.println(inet3);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
