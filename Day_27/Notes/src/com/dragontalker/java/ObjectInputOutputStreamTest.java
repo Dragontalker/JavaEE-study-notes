@@ -22,7 +22,7 @@ public class ObjectInputOutputStreamTest {
         try {
             oos = new ObjectOutputStream(new FileOutputStream("object.dat"));
 
-            oos.writeObject(new String("我爱北京天安门"));
+            oos.writeObject("我爱北京天安门");
 
             oos.flush(); //刷新操作
         } catch (IOException e) {
