@@ -32,7 +32,6 @@ public class TCPTest3 {
 
             //接受服务器段返回的数据, 并输出到控制台上
             InputStream is = socket.getInputStream();
-            OutputStream outputStream =
 
             //
             byte[] buffer1 = new byte[20];
