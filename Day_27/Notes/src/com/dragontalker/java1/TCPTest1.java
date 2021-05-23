@@ -3,10 +3,11 @@ package com.dragontalker.java1;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetAddress;
+import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 /**
  * 实现TCP的网络编程
@@ -48,6 +49,16 @@ public class TCPTest1 {
     //服务端
     @Test
     public void server() {
+        ServerSocket ss = new ServerSocket(8899);
+        Socket socket = ss.accept();
+        InputStream is = socket.getInputStream();
 
+        //不建议这样写, 可能会有乱码
+//        byte[] buffer = new byte[1024];
+//        int len;
+//        while((len = is.read(buffer)) != -1) {
+//            String str = new String(buffer, 0, len);
+//            System.out.print(str);
+//        }
     }
 }
