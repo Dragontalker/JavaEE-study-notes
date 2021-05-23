@@ -13,6 +13,12 @@ package com.dragontalker.java1;
  *          2. 传输层
  *          3. 网络层
  *          4. 物理 + 数据链路层
+ *
+ * 三、通信要素一: IP和端口号
+ *
+ * 1. IP: 唯一的标识Internet上的计算机(通信实体)
+ * 2. 在Java中使用InetAddress类代表IP
+ * 3. IP分类: IPv4和IPv6; 万维网和局域网
  */
 
 public class InetAddressTest {
