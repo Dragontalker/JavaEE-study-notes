@@ -14,7 +14,9 @@ import java.io.RandomAccessFile;
  * 2. RandomAccessFile既可以作为一个输入流, 又可以作为一个输出流
  *
  * 3. 如果RandomAccessFile作为输出流时, 写出到的文件如果不存在, 则在执行过程中自动创建
- *  如果写出到的文件
+ *  如果写出到的文件存在, 则会对原有文件内容进行覆盖(默认情况下, 从头覆盖)
+ *
+ * 4. 可以通过相关的操作, 实现RandomAccessFile"插入"数据的效果
  */
 
 public class RandomAccessFileTest {
