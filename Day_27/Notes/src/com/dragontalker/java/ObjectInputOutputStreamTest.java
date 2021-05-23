@@ -70,8 +70,10 @@ public class ObjectInputOutputStreamTest {
         try {
             oos = new ObjectOutputStream(new FileOutputStream("object.dat"));
 
-            oos.writeObject(new Person("Tom", 12));
+            oos.writeObject("我爱北京天安门");
+            oos.flush(); //刷新操作
 
+            oos.writeObject(new Person("Tom", 12));
             oos.flush(); //刷新操作
         } catch (IOException e) {
             e.printStackTrace();
@@ -96,8 +98,11 @@ public class ObjectInputOutputStreamTest {
             ois = new ObjectInputStream(new FileInputStream("object.dat"));
 
             Object obj = ois.readObject();
+            String str = (String) obj;
 
-            Person p = (Person) obj;
+            Person p = (Person) ois.readObject();
+
+            System.out.println(str);
             System.out.println(p);
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
