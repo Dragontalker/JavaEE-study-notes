@@ -2,11 +2,9 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.InetAddress;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
@@ -61,6 +59,47 @@ public class TCPTest2 {
 
     @Test
     public void server() {
+        ServerSocket ss = null;
+        InputStream is = null;
+        FileOutputStream fos = null;
+        try {
+            ss = new ServerSocket(9090);
 
+            Socket socket = ss.accept();
+
+            is = socket.getInputStream();
+
+            fos = new FileOutputStream(new File("newPicture1.jpg"));
+
+            byte[] buffer = new byte[1024];
+            int len;
+            while((len = is.read(buffer)) != -1) {
+                fos.write(buffer, 0, len);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (fos != null) {
+                try {
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (ss != null) {
+                try {
+                    ss.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
