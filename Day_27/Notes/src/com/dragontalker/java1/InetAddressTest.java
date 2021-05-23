@@ -1,5 +1,8 @@
 package com.dragontalker.java1;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
 /**
  * 一、网络编程又两个主要的问题:
  * 1. 如何准确的定位网络上一台或多态主机; 定位主机上的特定应用
@@ -22,4 +25,12 @@ package com.dragontalker.java1;
  */
 
 public class InetAddressTest {
+    public static void main(String[] args) {
+        try {
+            InetAddress inet1 = InetAddress.getByName("192.168.10.14");
+            System.out.println(inet1);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+    }
 }
