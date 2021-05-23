@@ -38,6 +38,10 @@ public class InetAddressTest {
 
             InetAddress inet3 = InetAddress.getByName("127.0.0.1");
             System.out.println(inet3);
+
+            //获取本地主机地址
+            InetAddress inet4 = InetAddress.getLocalHost();
+            System.out.println(inet4);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
