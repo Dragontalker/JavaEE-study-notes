@@ -1,6 +1,16 @@
 package com.dragontalker.java;
 
-public class Person {
+import java.io.Serializable;
+
+/**
+ * Person需要满足如下的要求, 方可序列化
+ * 1. 需要实现接口: Serializable
+ * 2. 当前类提供一个全局常量: serialVersionUID
+ */
+
+public class Person implements Serializable {
+    public static final long serialVersionUID = 475463534532L;
+
     private String name;
     private int age;
 
