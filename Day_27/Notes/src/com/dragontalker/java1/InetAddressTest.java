@@ -26,6 +26,12 @@ import java.net.UnknownHostException;
  * 5. 本地回路地址: 127.0.0.1 对应着: Localhost
  * 6. 如何实例化InetAddress: 两个方法: getByName(String host), getLocalHost()
  *  - 两个常用方法: getHostName() / getHostAddress()
+ *
+ * 7. 端口号: 正在计算机上运行的进程
+ *  要求: 不同的进程有不同的端口号
+ *  范围: 被规定为一个16为的整数0~65545
+ *
+ * 8. IP地址和端口号的组合得出一个网络套接字: Socket
  */
 
 public class InetAddressTest {
