@@ -22,6 +22,7 @@ import java.net.UnknownHostException;
  * 1. IP: 唯一的标识Internet上的计算机(通信实体)
  * 2. 在Java中使用InetAddress类代表IP
  * 3. IP分类: IPv4和IPv6; 万维网和局域网
+ * 4. 域名: www.baidu.com  www.mi.com  www.sina.com
  */
 
 public class InetAddressTest {
@@ -29,6 +30,9 @@ public class InetAddressTest {
         try {
             InetAddress inet1 = InetAddress.getByName("192.168.10.14");
             System.out.println(inet1);
+
+            InetAddress inet2 = InetAddress.getByName("www.atguigu.com");
+            System.out.println(inet2);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
