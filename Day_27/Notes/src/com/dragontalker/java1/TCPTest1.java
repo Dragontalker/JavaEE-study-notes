@@ -22,14 +22,17 @@ public class TCPTest1 {
         Socket socket = null;
         OutputStream os = null;
         try {
+            //1. 创建Socket对象, 指明服务器端的ip和端口号
             InetAddress inet = InetAddress.getByName("127.0.0.1");
             socket = new Socket(inet, 8899);
-
+            //2. 获取一个输出流, 用于输出数据
             os = socket.getOutputStream();
+            //3. 写出数据的操作
             os.write("您好, 我是客户端MM".getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            //4. 资源的关闭
             if (os != null) {
                 try {
                     os.close();
@@ -62,6 +65,7 @@ public class TCPTest1 {
                 String str = new String(buffer, 0, len);
                 System.out.print(str);
             }
+            System.out.println("收到了来自于: " + socket.getInetAddress().getHostName());
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
