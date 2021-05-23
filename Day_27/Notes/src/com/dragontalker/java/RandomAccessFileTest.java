@@ -56,7 +56,7 @@ public class RandomAccessFileTest {
     public void test2() throws IOException {
         RandomAccessFile raf1 = new RandomAccessFile("hello.txt", "rw");
 
-        raf1.seek(3); //将指针调到角标为3的位置
+        raf1.seek(raf1.length()); //将指针调到角标为3的位置
         raf1.write("xyz".getBytes());
 
         raf1.close();
