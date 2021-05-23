@@ -49,16 +49,36 @@ public class TCPTest1 {
     //服务端
     @Test
     public void server() {
-        ServerSocket ss = new ServerSocket(8899);
-        Socket socket = ss.accept();
-        InputStream is = socket.getInputStream();
+        ServerSocket ss = null;
+        InputStream is = null;
+        try {
+            ss = new ServerSocket(8899);
+            Socket socket = ss.accept();
+            is = socket.getInputStream();
 
-        //不建议这样写, 可能会有乱码
-//        byte[] buffer = new byte[1024];
-//        int len;
-//        while((len = is.read(buffer)) != -1) {
-//            String str = new String(buffer, 0, len);
-//            System.out.print(str);
-//        }
+            byte[] buffer = new byte[1024];
+            int len;
+            while((len = is.read(buffer)) != -1) {
+                String str = new String(buffer, 0, len);
+                System.out.print(str);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (is != null) {
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (ss != null) {
+                try {
+                    ss.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 }
