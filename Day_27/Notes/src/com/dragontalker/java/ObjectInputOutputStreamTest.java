@@ -38,6 +38,9 @@ public class ObjectInputOutputStreamTest {
         }
     }
 
+    /*
+    反序列化: 将磁盘文件中的对象还原为内存中的一个java对象
+     */
     @Test
     public void testObjectInputStream() {
         ObjectInputStream ois = null;
