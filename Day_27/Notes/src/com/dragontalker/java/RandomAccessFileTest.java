@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
@@ -47,5 +48,14 @@ public class RandomAccessFileTest {
                 }
             }
         }
+    }
+
+    @Test
+    public void test2() throws IOException {
+        RandomAccessFile raf1 = new RandomAccessFile("hello.txt", "rw");
+
+        raf1.write("xyz".getBytes());
+
+        raf1.close();
     }
 }
