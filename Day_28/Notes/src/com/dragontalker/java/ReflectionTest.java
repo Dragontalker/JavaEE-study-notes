@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class ReflectionTest {
@@ -64,4 +63,10 @@ public class ReflectionTest {
         Object nation = showNation.invoke(p1, "中国");//相当于String nation = p1.showNation("中国");
         System.out.println(nation);
     }
+
+    //疑问1: 通过直接new的方式或反射的方式都可以调用公共的结构, 开发中到底用哪个?
+    //建议: 直接new的方式
+    //什么时候会使用: 反射的方式 ---> 反射的特征: 动态性
+
+    //疑问2: 反射机制与面向对象中的封装性是不是矛盾的? 如何看待两个技术?
 }
