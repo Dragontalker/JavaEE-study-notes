@@ -4,7 +4,9 @@ public class Person {
     private String name;
     public int age;
 
-    public Person() {}
+    public Person() {
+        System.out.println("Person()....");
+    }
 
     public Person(String name, int age) {
         this.name = name;
