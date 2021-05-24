@@ -27,8 +27,8 @@ public class Person
         return nation;
     }
 
-    public String display(String interests) {
-        return interests;
+    public String display(String interests, int age) {
+        return interests + age;
     }
 
     @Override
