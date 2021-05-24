@@ -50,6 +50,8 @@ public class OtherTest {
 
     /*
     获取运行时类带泛型的父类的泛型
+
+    代码: 逻辑性 vs 功能性
      */
     @Test
     public void test4() {
@@ -59,5 +61,17 @@ public class OtherTest {
         //获取泛型类型
         Type[] actualTypeArguments = paramType.getActualTypeArguments();
         System.out.println(((Class) actualTypeArguments[0]).getName());
+    }
+
+    /*
+    获取运行时类的接口
+     */
+    @Test
+    public void test5() {
+        Class clazz = Person.class;
+        Class[] interfaces = clazz.getInterfaces();
+        for (Class c : interfaces) {
+            System.out.println(c);
+        }
     }
 }
