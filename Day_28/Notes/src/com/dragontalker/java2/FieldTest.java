@@ -20,5 +20,13 @@ public class FieldTest {
             System.out.println(f);
         }
 
+        System.out.println("***");
+
+        //getDeclaredFields(): 获取当前运行时类中声明的所有属性(不包含父类中声明的属性)
+        Field[] declaredFields = clazz.getDeclaredFields();
+        for (Field df : declaredFields) {
+            System.out.println(df);
+        }
+
     }
 }
