@@ -87,7 +87,8 @@ public class ReflectionTest {
     //获取Class的实例方式
     @Test
     public void test3() {
-
+        //方式一:
+        Class<Person> clazz1 = Person.class;
     }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
