@@ -3,6 +3,7 @@ package com.dragontalker.java;
 import org.junit.Test;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 public class ReflectionTest {
@@ -24,12 +25,17 @@ public class ReflectionTest {
 
     //反射之后, 对于Person类的操作
     @Test
-    public void test2() throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public void test2() throws Exception {
         Class clazz = Person.class;
+        //1. 通过反射, 创建Person类的对象
         Constructor cons = clazz.getConstructor(String.class, int.class);
 
         Object obj = cons.newInstance("Tom", 12);
         Person p = (Person) obj;
         System.out.println(p);
+
+        //2. 通过反射, 调用对象指定的属性、方法
+        Field age = clazz.getDeclaredField("age");
+        age.set(p, 10);
     }
 }
