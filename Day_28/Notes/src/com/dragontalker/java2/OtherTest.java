@@ -82,4 +82,14 @@ public class OtherTest {
             System.out.println(c);
         }
     }
+
+    /*
+    获取运行时类所在的包
+     */
+    @Test
+    public void test6() {
+        Class clazz = Person.class;
+        Package pack = clazz.getPackage();
+        System.out.println(pack);
+    }
 }
