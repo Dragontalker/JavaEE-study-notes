@@ -2,13 +2,17 @@ package com.dragontalker.java;
 
 public class Person {
     private String name;
-    private int age;
+    public int age;
 
     public Person() {}
 
     public Person(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    private Person(String name) {
+        this.name = name;
     }
 
     public String getName() {
