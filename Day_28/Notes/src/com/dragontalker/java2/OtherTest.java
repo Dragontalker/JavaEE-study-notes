@@ -3,6 +3,7 @@ package com.dragontalker.java2;
 import com.dragontalker.java1.Person;
 import org.junit.Test;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -91,5 +92,17 @@ public class OtherTest {
         Class clazz = Person.class;
         Package pack = clazz.getPackage();
         System.out.println(pack);
+    }
+
+    /*
+    获取运行时类的注解
+     */
+    @Test
+    public void test7() {
+        Class clazz = Person.class;
+        Annotation[] annotations = clazz.getAnnotations();
+        for (Annotation a : annotations) {
+            System.out.println(a);
+        }
     }
 }
