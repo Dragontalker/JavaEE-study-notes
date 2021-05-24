@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.util.Properties;
 
 /**
@@ -39,7 +40,9 @@ public class ClassLoaderTest {
 //        FileInputStream fis = new FileInputStream("jdbc.properties");
 //        props.load(fis);
 
-
+        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
+        InputStream is = classLoader.getResourceAsStream("jdbc1.properties");
+        props.load(is);
 
         String user = props.getProperty("user");
         String password = props.getProperty("password");
