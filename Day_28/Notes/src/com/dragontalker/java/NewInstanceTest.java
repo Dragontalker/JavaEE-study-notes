@@ -31,6 +31,7 @@ public class NewInstanceTest {
         System.out.println(obj);
     }
 
+    //体会反射的动态性
     @Test
     public void test2() {
 
