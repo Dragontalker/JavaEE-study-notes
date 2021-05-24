@@ -48,6 +48,26 @@ public class MethodTest {
 
             //2. 权限修饰符
             System.out.print(Modifier.toString(m.getModifiers()) + "\t");
+
+            //3. 返回值类型
+            System.out.print(m.getReturnType().getName() + "\t");
+
+            //4. 方法名
+            System.out.print(m.getName());
+            System.out.print("(");
+            //5. 形参列表
+            Class<?>[] parameterTypes = m.getParameterTypes();
+            if (!(parameterTypes == null && parameterTypes.length == 0)) {
+                for (int i = 0; i< parameterTypes.length; i++) {
+                    if (i == parameterTypes.length - 1) {
+                        System.out.print(parameterTypes[i].getName() + " args_" + i);
+                        break;
+                    }
+                    System.out.print(parameterTypes[i].getName() + " args_" + i + ",");
+                }
+            }
+
+            System.out.print(")");
             System.out.println();
         }
 
