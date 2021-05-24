@@ -9,7 +9,13 @@ import org.junit.Test;
 public class NewInstanceTest {
 
     @Test
-    public void test1() {
+    public void test1() throws InstantiationException, IllegalAccessException {
 
+        Class clazz = Person.class;
+        /*
+        newInstance(): 调用此方法, 创建对应的运行时类的对象
+         */
+        Person obj = (Person) clazz.newInstance();
+        System.out.println(obj);
     }
 }
