@@ -39,11 +39,17 @@ public class FieldTest {
         for (Field df : declaredFields) {
             //1. 权限修饰符
             int modifiers = df.getModifiers();
-            System.out.println(Modifier.toString(modifiers));
+            System.out.print(Modifier.toString(modifiers) + "\t");
 
             //2. 数据类型
+            Class type = df.getType();
+            System.out.print(type + "\t");
 
             //3. 变量名
+            String fName = df.getName();
+            System.out.println(fName + "\t");
+
+            System.out.println();
         }
     }
 }
