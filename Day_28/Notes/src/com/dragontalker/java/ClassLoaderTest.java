@@ -34,8 +34,12 @@ public class ClassLoaderTest {
     @Test
     public void test2() throws Exception {
         Properties props = new Properties();
-        FileInputStream fis = new FileInputStream("jdbc.properties");
-        props.load(fis);
+        //此时的问题件默认在当前的module下
+        //读取配置文件的方式一:
+//        FileInputStream fis = new FileInputStream("jdbc.properties");
+//        props.load(fis);
+
+
 
         String user = props.getProperty("user");
         String password = props.getProperty("password");
