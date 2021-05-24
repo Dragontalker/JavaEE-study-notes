@@ -40,6 +40,8 @@ public class ClassLoaderTest {
 //        FileInputStream fis = new FileInputStream("jdbc.properties");
 //        props.load(fis);
 
+        //读取配置文件的方式二: 使用ClassLoader
+        //配置文件默认识别为: 当前module的src下
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         InputStream is = classLoader.getResourceAsStream("jdbc1.properties");
         props.load(is);
