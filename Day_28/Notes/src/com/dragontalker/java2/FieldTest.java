@@ -3,12 +3,14 @@ package com.dragontalker.java2;
 import com.dragontalker.java1.Person;
 import org.junit.Test;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 
 /**
  * 获取当前运行时类的属性结构
  */
 
 public class FieldTest {
+
     @Test
     public void test1() {
         Class clazz = Person.class;
@@ -27,6 +29,21 @@ public class FieldTest {
         for (Field df : declaredFields) {
             System.out.println(df);
         }
+    }
 
+    //权限修饰符 数据类型 变量名 = ....
+    @Test
+    public void test2() {
+        Class clazz = Person.class;
+        Field[] declaredFields = clazz.getDeclaredFields();
+        for (Field df : declaredFields) {
+            //1. 权限修饰符
+            int modifiers = df.getModifiers();
+            System.out.println(Modifier.toString(modifiers));
+
+            //2. 数据类型
+
+            //3. 变量名
+        }
     }
 }
