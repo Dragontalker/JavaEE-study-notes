@@ -113,5 +113,14 @@ public class ReflectionTest {
         System.out.println(clazz1 == clazz4);
     }
 
+    @Test
+    public void test4() {
+        Class c1 = Object.class;
+        Class c2 = Comparable.class;
+        Class c6 = Override.class;
+        Class c8 = void.class;
+        Class c9 = Class.class;
+    }
+
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
 }
