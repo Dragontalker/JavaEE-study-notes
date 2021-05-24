@@ -9,6 +9,7 @@ import org.junit.Test;
 public class ClassLoaderTest {
     @Test
     public void test1() {
-
+        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
+        System.out.println(classLoader);
     }
 }
