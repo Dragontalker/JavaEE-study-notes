@@ -81,4 +81,6 @@ public class ReflectionTest {
         - 加载到内存中的类就称为运行时类
         - 此运行时类就作为Class的一个实例
      */
+
+    //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
 }
