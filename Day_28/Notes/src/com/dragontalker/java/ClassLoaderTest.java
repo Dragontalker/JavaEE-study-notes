@@ -2,6 +2,10 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
 /**
  * 了解类的加载器
  */
@@ -28,7 +32,11 @@ public class ClassLoaderTest {
     Properties: 用来读取配置文件
      */
     @Test
-    public void test2() {
+    public void test2() throws Exception {
+        Properties props = new Properties();
+        FileInputStream fis = new FileInputStream("jdbc.properties");
+        props.load(fis);
+
 
     }
 }
