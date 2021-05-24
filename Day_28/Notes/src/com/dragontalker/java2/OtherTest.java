@@ -4,6 +4,7 @@ import com.dragontalker.java1.Person;
 import org.junit.Test;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
 public class OtherTest {
@@ -45,5 +46,18 @@ public class OtherTest {
         Class<Person> clazz = Person.class;
         Type genericSuperclass = clazz.getGenericSuperclass();
         System.out.println(genericSuperclass);
+    }
+
+    /*
+    获取运行时类带泛型的父类的泛型
+     */
+    @Test
+    public void test4() {
+        Class<Person> clazz = Person.class;
+        Type genericSuperclass = clazz.getGenericSuperclass();
+        ParameterizedType paramType = (ParameterizedType) genericSuperclass;
+        //获取泛型类型
+        Type[] actualTypeArguments = paramType.getActualTypeArguments();
+        System.out.println(actualTypeArguments[0].getTypeName());
     }
 }
