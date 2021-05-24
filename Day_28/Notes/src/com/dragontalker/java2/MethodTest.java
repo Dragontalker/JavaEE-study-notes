@@ -22,6 +22,7 @@ public class MethodTest {
 
         System.out.println("***");
 
+        //getDeclaredMethods(): 获取当前运行时类中声明的所有方法(不包含父类中声明的)
         Method[] declaredMethods = clazz.getDeclaredMethods();
         for(Method m : declaredMethods) {
             System.out.println(m);
