@@ -73,5 +73,13 @@ public class OtherTest {
         for (Class c : interfaces) {
             System.out.println(c);
         }
+
+        System.out.println();
+
+        //获取运行时类的父类实现的接口
+        Class[] interfaces1 = clazz.getSuperclass().getInterfaces();
+        for (Class c : interfaces1) {
+            System.out.println(c);
+        }
     }
 }
