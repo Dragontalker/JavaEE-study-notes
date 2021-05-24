@@ -4,6 +4,7 @@ package com.dragontalker.java1;
 public class Person
         extends Creature<String>
         implements Comparable<String>, MyInterface {
+
     private String name;
     int age;
     public int id;
