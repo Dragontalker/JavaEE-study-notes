@@ -82,6 +82,8 @@ public class ReflectionTest {
         - 此运行时类就作为Class的一个实例
 
     2. 换句话说, Class的实例就对应着一个运行时类
+    3. 加载到内存中的运行时类, 会缓存一定的时间,
+        在此时间之类, 我们可以通过不同的方式来获取此运行时类
      */
 
     //获取Class的实例方式
@@ -99,6 +101,9 @@ public class ReflectionTest {
         //方式三: 调用Class的静态方法: forName(String classPath)
         Class clazz3 = Class.forName("com.dragontalker.java.Person");
         System.out.println(clazz3);
+
+        System.out.println(clazz1 == clazz2); //true
+        System.out.println(clazz1 == clazz3); //true
     }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
