@@ -67,6 +67,20 @@ public class MethodTest {
                 }
             }
 
+            //6. 抛出的异常
+            Class<?>[] exceptionTypes = m.getExceptionTypes();
+            System.out.println("{");
+            if (!(exceptionTypes == null && exceptionTypes.length == 0)) {
+                System.out.println("throws ");
+                for (int i = 0; i < exceptionTypes.length; i++) {
+                    if (i == exceptionTypes.length - 1) {
+                        System.out.print(exceptionTypes[i].getName());
+                    }
+                    System.out.print(exceptionTypes[i].getName() + ",");
+                }
+            }
+            System.out.println("}");
+
             System.out.print(")");
             System.out.println();
         }
