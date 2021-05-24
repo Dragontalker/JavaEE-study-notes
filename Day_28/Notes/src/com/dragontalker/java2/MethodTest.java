@@ -14,9 +14,16 @@ public class MethodTest {
     public void test1() {
         Class<Person> clazz = Person.class;
 
-        //
+        //getMethods(): 获取当前运行时类及其所有父类中声明为public权限的方法
         Method[] methods = clazz.getMethods();
         for (Method m : methods) {
+            System.out.println(m);
+        }
+
+        System.out.println("***");
+
+        Method[] declaredMethods = clazz.getDeclaredMethods();
+        for(Method m : declaredMethods) {
             System.out.println(m);
         }
     }
