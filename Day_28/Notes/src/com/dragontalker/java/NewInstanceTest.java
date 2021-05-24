@@ -41,7 +41,7 @@ public class NewInstanceTest {
                 classPath = "java.util.Date";
                 break;
             case 1:
-                classPath = "java.sql.Date";
+                classPath = "java.lang.Object";
                 break;
             case 2:
                 classPath = "com.dragontalker.java.Person";
