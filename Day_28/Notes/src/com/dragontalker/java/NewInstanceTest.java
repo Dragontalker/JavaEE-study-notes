@@ -28,4 +28,18 @@ public class NewInstanceTest {
         Person obj = clazz.newInstance();
         System.out.println(obj);
     }
+
+    @Test
+    public void test2() {
+
+    }
+
+    /*
+    创建一个指定类的对象
+    classPath: 指定类的全类名
+     */
+    public Object getInstance(String classPath) throws Exception {
+        Class clazz = Class.forName(classPath);
+        return clazz.newInstance();
+    }
 }
