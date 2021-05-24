@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 @Target({ElementType.TYPE, ElementType.FIELD,
         ElementType.PARAMETER, ElementType.CONSTRUCTOR,
-        ElementType.LOCAL_VARIABLE})
+        ElementType.LOCAL_VARIABLE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MyAnnotation {
     String value() default "hello";

@@ -1,5 +1,6 @@
 package com.dragontalker.java1;
 
+@MyAnnotation(value="class")
 public class Person extends Creature<String> implements Comparable<String>, MyInterface{
     private String name;
     int age;
@@ -7,6 +8,7 @@ public class Person extends Creature<String> implements Comparable<String>, MyIn
 
     public Person() {}
 
+    @MyAnnotation(value="constructor")
     private Person(String name) {
         this.name = name;
     }
@@ -16,6 +18,7 @@ public class Person extends Creature<String> implements Comparable<String>, MyIn
         this.age = age;
     }
 
+    @MyAnnotation(value="method")
     private String show(String nation) {
         System.out.println("我的国籍是: " + nation);
         return nation;
