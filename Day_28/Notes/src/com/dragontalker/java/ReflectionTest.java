@@ -46,9 +46,16 @@ public class ReflectionTest {
         show.invoke(p);
 
         //通过反射, 可以调用Person类的私有结构的, 比如: 私有的构造器, 方法, 属性
+        //调用私有的属性和方法
         Constructor cons1 = clazz.getDeclaredConstructor(String.class);
         cons1.setAccessible(true);
         Object p1 = (Person) cons1.newInstance("Jerry");
+        System.out.println(p1);
+
+        //调用私有的属性
+        Field name = clazz.getDeclaredField("name");
+        name.setAccessible(true);
+        name.set(p1, "HanMeiMei");
         System.out.println(p1);
     }
 }
