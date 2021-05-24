@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 public class ReflectionTest {
     //反射之前, 对于Person类的操作
@@ -35,7 +36,13 @@ public class ReflectionTest {
         System.out.println(p);
 
         //2. 通过反射, 调用对象指定的属性、方法
+        //调用属性
         Field age = clazz.getDeclaredField("age");
         age.set(p, 10);
+        System.out.println(p);
+
+        //调用方法
+        Method show = clazz.getDeclaredMethod("show");
+        show.invoke(p);
     }
 }
