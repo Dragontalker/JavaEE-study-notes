@@ -80,7 +80,15 @@ public class ReflectionTest {
         - 此过程就称为类的加载
         - 加载到内存中的类就称为运行时类
         - 此运行时类就作为Class的一个实例
+
+    2. 换句话说, Class的实例就对应着一个运行时类
      */
+
+    //获取Class的实例方式
+    @Test
+    public void test3() {
+
+    }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
 }
