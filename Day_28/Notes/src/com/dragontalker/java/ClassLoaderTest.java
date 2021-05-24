@@ -23,4 +23,12 @@ public class ClassLoaderTest {
         ClassLoader classLoader3 = String.class.getClassLoader();
         System.out.println(classLoader3);
     }
+
+    /*
+    Properties: 用来读取配置文件
+     */
+    @Test
+    public void test2() {
+
+    }
 }
