@@ -1,6 +1,8 @@
 package com.dragontalker.java;
 
 import org.junit.Test;
+
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
@@ -35,13 +37,14 @@ public class ClassLoaderTest {
         //此时的问题件默认在当前的module下
         //读取配置文件的方式一:
 //        FileInputStream fis = new FileInputStream("jdbc.properties");
-//        props.load(fis);
+        FileInputStream fis = new FileInputStream("src\\jdbc1.properties");
+        props.load(fis);
 
         //读取配置文件的方式二: 使用ClassLoader
         //配置文件默认识别为: 当前module的src下
-        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
-        InputStream is = classLoader.getResourceAsStream("jdbc1.properties");
-        props.load(is);
+//        ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
+//        InputStream is = classLoader.getResourceAsStream("jdbc1.properties");
+//        props.load(is);
 
         String user = props.getProperty("user");
         String password = props.getProperty("password");
