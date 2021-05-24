@@ -57,5 +57,10 @@ public class ReflectionTest {
         name.setAccessible(true);
         name.set(p1, "HanMeiMei");
         System.out.println(p1);
+
+        //调用私有的方法
+        Method showNation = clazz.getDeclaredMethod("showNation", String.class);
+        showNation.setAccessible(true);
+        showNation.invoke(p1, "中国"); //相当于p1.showNation("中国");
     }
 }
