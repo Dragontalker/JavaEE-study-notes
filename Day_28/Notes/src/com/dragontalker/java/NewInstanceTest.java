@@ -36,18 +36,12 @@ public class NewInstanceTest {
     public void test2() {
 
         int num = new Random().nextInt(3); //0, 1, 2\
-        String classPath = "";
-        switch(num) {
-            case 0:
-                classPath = "java.util.Date";
-                break;
-            case 1:
-                classPath = "java.lang.Object";
-                break;
-            case 2:
-                classPath = "com.dragontalker.java.Person";
-                break;
-        }
+        String classPath = switch (num) {
+            case 0 -> "java.util.Date";
+            case 1 -> "java.lang.Object";
+            case 2 -> "com.dragontalker.java.Person";
+            default -> "";
+        };
         try {
             Object instance = getInstance(classPath);
             System.out.println(instance);
@@ -62,7 +56,7 @@ public class NewInstanceTest {
     classPath: 指定类的全类名
      */
     public Object getInstance(String classPath) throws Exception {
-        Class clazz = Class.forName(classPath);
+        Class<?> clazz = Class.forName(classPath);
         return clazz.newInstance();
     }
 }
