@@ -28,4 +28,13 @@ public class MethodTest {
             System.out.println(m);
         }
     }
+
+    /*
+    @Xxx
+    权限修饰符 返回值类型 方法名(参数类型1 形参名1, ...) throws XxxException{}
+     */
+    @Test
+    public void test2() {
+
+    }
 }
