@@ -87,8 +87,14 @@ public class ReflectionTest {
     //获取Class的实例方式
     @Test
     public void test3() {
-        //方式一:
+        //方式一: 调用运行时类的属性
         Class<Person> clazz1 = Person.class;
+        System.out.println(clazz1);
+
+        //方式二: 通过运行时类的对象, 调用getClass()
+        Person p1 = new Person();
+        Class clazz2 = p1.getClass();
+        System.out.println(clazz2);
     }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
