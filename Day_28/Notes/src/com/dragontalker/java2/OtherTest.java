@@ -25,4 +25,14 @@ public class OtherTest {
             System.out.println(c);
         }
     }
+
+    /*
+    获取运行时类的父类
+     */
+    @Test
+    public void test2() {
+        Class<Person> clazz = Person.class;
+        Class<? super Person> superclass = clazz.getSuperclass();
+        System.out.println(superclass);
+    }
 }
