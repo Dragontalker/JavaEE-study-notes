@@ -125,6 +125,8 @@ public class ReflectionTest {
         int[] b = new int[100];
         Class c10 = a.getClass();
         Class c11 = b.getClass();
+
+        //只要元素类型与维度一样, 就是同一个Class
         System.out.println(c10 == c11);
     }
 
