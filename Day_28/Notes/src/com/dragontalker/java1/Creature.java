@@ -3,7 +3,7 @@ package com.dragontalker.java1;
 import java.io.Serializable;
 
 public class Creature<T> implements Serializable {
-    public char gender;
+    private char gender;
     public double weight;
 
     private void breath() {
