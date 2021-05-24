@@ -16,6 +16,11 @@ public class Person extends Creature<String> implements Comparable<String>, MyIn
         this.age = age;
     }
 
+    private String show(String nation) {
+        System.out.println("我的国籍是: " + nation);
+        return nation;
+    }
+
     @Override
     public int compareTo(String o) {
         return 0;
