@@ -2,6 +2,8 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.util.Random;
+
 /**
  * 通过反射创建对应的运行时类的对象
  */
@@ -32,6 +34,26 @@ public class NewInstanceTest {
     @Test
     public void test2() {
 
+        int num = new Random().nextInt(3); //0, 1, 2\
+        String classPath = "";
+        switch(num) {
+            case 0:
+                classPath = "java.util.Date";
+                break;
+            case 1:
+                classPath = "java.sql.Date";
+                break;
+            case 2:
+                classPath = "com.dragontalker.java.Person";
+                break;
+        }
+        try {
+            Object instance = getInstance(classPath);
+            System.out.println(instance);
+            System.out.println(instance.getClass());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /*
