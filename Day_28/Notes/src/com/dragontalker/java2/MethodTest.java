@@ -3,7 +3,9 @@ package com.dragontalker.java2;
 import com.dragontalker.java1.Person;
 import org.junit.Test;
 
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 
 /**
  * 获取运行时类的方法结构
@@ -35,6 +37,19 @@ public class MethodTest {
      */
     @Test
     public void test2() {
+        Class<Person> clazz = Person.class;
+        Method[] methods = clazz.getDeclaredMethods();
+        for (Method m : methods) {
+            //1. 获取方法声明的注解
+            Annotation[] annotations = m.getAnnotations();
+            for(Annotation a : annotations) {
+                System.out.println(a);
+            }
+
+            //2. 权限修饰符
+            System.out.print(Modifier.toString(m.getModifiers()) + "\t");
+            System.out.println();
+        }
 
     }
 }
