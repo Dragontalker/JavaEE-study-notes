@@ -1,7 +1,9 @@
 package com.dragontalker.java1;
 
 @MyAnnotation(value="class")
-public class Person extends Creature<String> implements Comparable<String>, MyInterface{
+public class Person
+        extends Creature<String>
+        implements Comparable<String>, MyInterface {
     private String name;
     int age;
     public int id;
