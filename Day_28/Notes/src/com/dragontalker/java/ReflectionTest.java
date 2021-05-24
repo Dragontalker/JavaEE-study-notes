@@ -28,6 +28,8 @@ public class ReflectionTest {
         Class clazz = Person.class;
         Constructor cons = clazz.getConstructor(String.class, int.class);
 
-        cons.newInstance("Tom", 12);
+        Object obj = cons.newInstance("Tom", 12);
+        Person p = (Person) obj;
+        System.out.println(p);
     }
 }
