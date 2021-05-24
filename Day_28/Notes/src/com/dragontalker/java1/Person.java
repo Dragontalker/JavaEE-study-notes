@@ -21,6 +21,10 @@ public class Person extends Creature<String> implements Comparable<String>, MyIn
         return nation;
     }
 
+    public String display(String interests) {
+        return interests;
+    }
+
     @Override
     public int compareTo(String o) {
         return 0;
