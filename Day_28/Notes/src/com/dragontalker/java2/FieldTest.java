@@ -13,7 +13,7 @@ public class FieldTest {
 
     @Test
     public void test1() {
-        Class clazz = Person.class;
+        Class<Person> clazz = Person.class;
 
         //获取属性结构
         //getFields(): 获取当前运行时类及其父类中声明为public访问权限的属性
@@ -34,7 +34,7 @@ public class FieldTest {
     //权限修饰符 数据类型 变量名 = ....
     @Test
     public void test2() {
-        Class clazz = Person.class;
+        Class<Person> clazz = Person.class;
         Field[] declaredFields = clazz.getDeclaredFields();
         for (Field df : declaredFields) {
             //1. 权限修饰符
@@ -42,7 +42,7 @@ public class FieldTest {
             System.out.print(Modifier.toString(modifiers) + "\t");
 
             //2. 数据类型
-            Class type = df.getType();
+            Class<?> type = df.getType();
             System.out.print(type + "\t");
 
             //3. 变量名
