@@ -27,7 +27,7 @@ public class Person
         return nation;
     }
 
-    public String display(String interests, int age) {
+    public String display(String interests, int age) throws NullPointerException{
         return interests + age;
     }
 

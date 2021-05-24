@@ -69,9 +69,9 @@ public class MethodTest {
 
             //6. 抛出的异常
             Class<?>[] exceptionTypes = m.getExceptionTypes();
-            System.out.println("{");
+            System.out.print("{");
             if (!(exceptionTypes == null && exceptionTypes.length == 0)) {
-                System.out.println("throws ");
+                System.out.print("throws ");
                 for (int i = 0; i < exceptionTypes.length; i++) {
                     if (i == exceptionTypes.length - 1) {
                         System.out.print(exceptionTypes[i].getName());
@@ -79,7 +79,7 @@ public class MethodTest {
                     System.out.print(exceptionTypes[i].getName() + ",");
                 }
             }
-            System.out.println("}");
+            System.out.print("}");
 
             System.out.print(")");
             System.out.println();
