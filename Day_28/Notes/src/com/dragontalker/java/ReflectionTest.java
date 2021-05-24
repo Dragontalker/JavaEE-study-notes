@@ -86,7 +86,7 @@ public class ReflectionTest {
         在此时间之类, 我们可以通过不同的方式来获取此运行时类
      */
 
-    //获取Class的实例方式
+    //获取Class的实例方式(前三种方式需要掌握)
     @Test
     public void test3() throws ClassNotFoundException {
         //方式一: 调用运行时类的属性
@@ -104,6 +104,13 @@ public class ReflectionTest {
 
         System.out.println(clazz1 == clazz2); //true
         System.out.println(clazz1 == clazz3); //true
+
+        //方式四: 使用类的加载器: ClassLoader
+        ClassLoader classLoader = ReflectionTest.class.getClassLoader();
+        Class clazz4 = classLoader.loadClass("com.dragontalker.java.Person");
+        System.out.println(clazz4);
+
+        System.out.println(clazz1 == clazz4);
     }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
