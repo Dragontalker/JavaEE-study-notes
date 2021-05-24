@@ -37,6 +37,9 @@ public class ClassLoaderTest {
         FileInputStream fis = new FileInputStream("jdbc.properties");
         props.load(fis);
 
-
+        String user = props.getProperty("user");
+        String password = props.getProperty("password");
+        System.out.println(user);
+        System.out.println(password);
     }
 }
