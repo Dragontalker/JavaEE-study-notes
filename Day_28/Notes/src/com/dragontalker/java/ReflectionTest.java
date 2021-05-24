@@ -105,7 +105,7 @@ public class ReflectionTest {
         System.out.println(clazz1 == clazz2); //true
         System.out.println(clazz1 == clazz3); //true
 
-        //方式四: 使用类的加载器: ClassLoader
+        //方式四: 使用类的加载器: ClassLoader(了解就可以)
         ClassLoader classLoader = ReflectionTest.class.getClassLoader();
         Class clazz4 = classLoader.loadClass("com.dragontalker.java.Person");
         System.out.println(clazz4);
