@@ -120,6 +120,12 @@ public class ReflectionTest {
         Class c6 = Override.class;
         Class c8 = void.class;
         Class c9 = Class.class;
+
+        int[] a = new int[10];
+        int[] b = new int[100];
+        Class c10 = a.getClass();
+        Class c11 = b.getClass();
+        System.out.println(c10 == c11);
     }
 
     //万事万物皆对象? 对象.xxx, File, URL, 反射, 前端, 数据库操作
