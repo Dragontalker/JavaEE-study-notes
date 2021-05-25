@@ -52,7 +52,8 @@ public class LambdaTest2 {
         });
         System.out.println(filterStrings);
 
-        //List<String> filterStrings1 = filterStrings(list, s -> s.contains("京"));
+        List<String> filterStrings1 = filterString(list, s -> s.contains("京"));
+        System.out.println(filterStrings1);
     }
 
     //根据给定的规则, 过滤集合中的字符串, 此规则由Predicate的方法决定
