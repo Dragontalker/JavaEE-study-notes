@@ -20,7 +20,12 @@ public class LambdaTest2 {
 
     @Test
     public void test1() {
-
+        happyTime(500, new Consumer<Double>() {
+            @Override
+            public void accept(Double aDouble) {
+                System.out.println("学习太累了, 去天上人间买了平矿泉水, 价格为￥" + aDouble);
+            }
+        });
     }
 
     public void happyTime(double money, Consumer<Double> con) {
