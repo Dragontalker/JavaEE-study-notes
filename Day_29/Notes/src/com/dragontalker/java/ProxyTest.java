@@ -71,4 +71,8 @@ class MyInvocationHandler implements InvocationHandler {
 }
 
 public class ProxyTest {
+    public static void main(String[] args) {
+        SuperMan superMan = new SuperMan();
+        Human proxyInstance = (Human) ProxyFactory.getProxyInstance(superMan);
+    }
 }
