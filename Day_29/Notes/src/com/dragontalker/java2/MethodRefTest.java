@@ -2,6 +2,7 @@ package com.dragontalker.java2;
 
 import org.junit.Test;
 
+import java.io.PrintStream;
 import java.util.function.Consumer;
 
 /**
@@ -29,6 +30,8 @@ public class MethodRefTest {
 
         System.out.println("************");
 
-        Consumer<String> con2 = System.out :: println;
+        PrintStream ps = System.out;
+        Consumer<String> con2 = ps :: println;
+        con2.accept("北京");
     }
 }
