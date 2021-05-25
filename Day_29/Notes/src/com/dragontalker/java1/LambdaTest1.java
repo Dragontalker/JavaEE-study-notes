@@ -24,6 +24,8 @@ import java.util.function.Consumer;
  * 4. Lambda表达式的本质: 作为函数式接口的实例
  *
  * 5. 如果一个接口中, 只声明了一个抽象方法, 那么这个接口称为函数式接口
+ *
+ * 6. 所以以前使用匿名方式构建的类都可以用Lambda表达式
  */
 
 public class LambdaTest1 {
