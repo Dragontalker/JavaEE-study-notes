@@ -62,7 +62,7 @@ class MyInvocationHandler implements InvocationHandler {
     //将被代理类要执行的方法a的功能就声明在invoke()中
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-
+        System.out.println("调用动态代理方法啦~~");
         //method: 即为代理类对象调用的方法, 此方法也就作为了被代理对象类中的同名方法
         //obj: 被代理类的对象
         //上述方法的返回值就作为当前类的invoke()的返回值
@@ -74,6 +74,8 @@ public class ProxyTest {
     public static void main(String[] args) {
         SuperMan superMan = new SuperMan();
         Human proxyInstance = (Human) ProxyFactory.getProxyInstance(superMan);
+
+        //当通过代理类对象调用方法时, 会自动的调用被代理类中同名的方法
         System.out.println(proxyInstance.getBelief());
         proxyInstance.eat("四川麻辣烫");
     }
