@@ -17,6 +17,12 @@ import java.util.function.Supplier;
  * 3. 使用格式: 类(或对象) :: 方法名
  *
  * 4. 具体分为如下的三种情况
+ *  - 对象 :: 非静态方法
+ *  - 类 :: 静态方法
+ *  - 类 :: 非静态方法
+ *
+ * 5. 方法引用的要求:
+ *  - 要求接口中的抽象方法的形参列表和返回值类型与方法引用的方法的形参列表的返回值相同！
  */
 
 public class MethodRefTest {
@@ -41,6 +47,9 @@ public class MethodRefTest {
     @Test
     public void test2() {
         Employee emp = new Employee(1001, "Tom", 5000);
-        Supplier<String> sup1 = emp::getName;
+        Supplier<String> sup1 = () -> emp.getName();
+        sup1.get();
+
+
     }
 }
