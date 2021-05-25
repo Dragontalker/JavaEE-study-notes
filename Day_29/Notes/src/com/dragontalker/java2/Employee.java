@@ -3,7 +3,7 @@ package com.dragontalker.java2;
 public class Employee {
     private int id;
     private String name;
-    private int salary;
+    private double salary;
 
     public Employee() {
         System.out.println("Employee()...");
@@ -42,7 +42,7 @@ public class Employee {
         this.name = name;
     }
 
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
 

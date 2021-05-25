@@ -1,5 +1,7 @@
 package com.dragontalker.java3;
 
+import org.junit.Test;
+
 /**
  * 1. Stream关注的是对数据的运算, 与CPU打交道
  *    集合关注的是数据的存储, 和内存打交道
@@ -20,4 +22,10 @@ package com.dragontalker.java3;
  */
 
 public class StreamAPITest {
+
+    //创建Stream方式之一: 通过集合
+    @Test
+    public void test1() {
+
+    }
 }
