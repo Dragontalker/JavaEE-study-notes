@@ -96,7 +96,7 @@ public class MethodRefTest {
 
         System.out.println("************");
 
-        Comparator<String> com2 = String :: compareTo;
+        Comparator<String> com2 = String::compareTo;
         System.out.println(com2.compare("abc", "abd"));
     }
 
@@ -109,6 +109,7 @@ public class MethodRefTest {
 
         System.out.println("************");
 
-
+        BiPredicate<String, String> pre2 = String::equals;
+        System.out.println(pre2.test("abc", "abd"));
     }
 }
