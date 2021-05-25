@@ -3,7 +3,6 @@ package com.dragontalker.java3;
 import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
