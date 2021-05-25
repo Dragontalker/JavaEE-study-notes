@@ -15,6 +15,7 @@ import java.util.function.Supplier;
  *      - 抽象方法的返回值类型即为构造器所属的类的类型
  *
  * 二、数组引用
+ *      - 大家可以把数组看作是一个特殊的类, 则写法与构造器就一致了
  */
 
 public class ConstructorRefTest {
