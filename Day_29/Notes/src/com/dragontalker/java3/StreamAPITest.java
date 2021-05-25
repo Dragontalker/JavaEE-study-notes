@@ -71,5 +71,7 @@ public class StreamAPITest {
         Stream.iterate(0, t -> t + 2).limit(10).forEach(System.out::println);
 
         //生成
+        //public static<T> Stream<T> generate(Supplier<T> s)
+        Stream.generate(Math::random).limit(10).forEach(System.out::println);
     }
 }
