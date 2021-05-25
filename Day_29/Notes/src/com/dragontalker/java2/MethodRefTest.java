@@ -19,9 +19,9 @@ import java.util.function.Supplier;
  * 3. 使用格式: 类(或对象) :: 方法名
  *
  * 4. 具体分为如下的三种情况
- *  - 对象 :: 非静态方法
- *  - 类 :: 静态方法
- *  - 类 :: 非静态方法
+ *  - 情况1 --- 对象 :: 非静态方法
+ *  - 情况2 --- 类 :: 静态方法
+ *  - 情况3 --- 类 :: 非静态方法
  *
  * 5. 方法引用的要求:
  *  - 要求接口中的抽象方法的形参列表和返回值类型与方法引用的方法的形参列表的返回值相同！
@@ -84,4 +84,8 @@ public class MethodRefTest {
         Function<Double, Long> func2 = Math::round;
         System.out.println(func2.apply(33.3));
     }
+
+    //情况三: 类 :: 实例方法(有难度)
+    //Comparator中的int compare(T t1, T t2)
+    //String中的int t1.compareTo(t2)
 }
