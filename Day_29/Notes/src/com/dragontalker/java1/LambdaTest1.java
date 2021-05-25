@@ -144,4 +144,17 @@ public class LambdaTest1 {
         Comparator<Integer> com2 = (o1, o2) -> o1.compareTo(o2);
         System.out.println(com2.compare(12, 6));
     }
+
+    @Test
+    public void test7() {
+        Consumer<String> con1 = (String s) -> {
+            System.out.println(s);
+        };
+        con1.accept("一个是听的人当真了, 一个是说的人当真了");
+
+        System.out.println("*****************");
+
+        Consumer<String> con2 = System.out::println;
+        con2.accept("一个是听的人当真了, 一个是说的人当真了");
+    }
 }
