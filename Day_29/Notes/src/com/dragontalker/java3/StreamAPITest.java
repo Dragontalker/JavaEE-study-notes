@@ -42,7 +42,7 @@ public class StreamAPITest {
         Stream<Employee> parallelStream = employees.parallelStream();
     }
 
-    //创建Stream方式至二: 通过数组
+    //创建Stream方式之二: 通过数组
     @Test
     public void test2() {
         int[] arr = new int[]{1, 2, 3, 4, 5, 6};
@@ -54,5 +54,11 @@ public class StreamAPITest {
         Employee[] arr1 = new Employee[]{e1, e2};
 
         Stream<Employee> stream1 = Arrays.stream(arr1);
+    }
+
+    //创建Stream方式之三: 通过Stream的of()
+    @Test
+    public void test3() {
+        Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6);
     }
 }
