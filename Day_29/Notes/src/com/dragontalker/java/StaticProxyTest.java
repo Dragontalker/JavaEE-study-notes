@@ -2,6 +2,8 @@ package com.dragontalker.java;
 
 /**
  * 静态代理举例
+ *
+ * 特点: 代理类和被代理类在编译期间, 就确定下来了
  */
 
 interface ClothFactory {
