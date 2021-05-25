@@ -40,4 +40,8 @@ public class Person
     public void info() {
         System.out.println("我是一个人~~");
     }
+
+    private static void showDesc() {
+        System.out.println("我是一个可爱的人~~");
+    }
 }

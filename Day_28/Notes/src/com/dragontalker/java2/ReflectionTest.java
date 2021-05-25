@@ -84,5 +84,9 @@ public class ReflectionTest {
         //invoke()方法的返回值即为对应类中调用的方法的返回值
         Object returnValue = show.invoke(p, "CHN"); //String nation = p.show("CHN");
         System.out.println(returnValue);
+
+        System.out.println("*********如何调用静态方法*********");
+
+
     }
 }
