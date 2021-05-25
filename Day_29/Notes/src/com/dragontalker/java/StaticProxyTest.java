@@ -40,5 +40,7 @@ public class StaticProxyTest {
         NikeClothFactory nike = new NikeClothFactory();
         //创建代理类的对象
         ProxyClothFactory proxy = new ProxyClothFactory(nike);
+
+        proxy.produceCloth();
     }
 }
