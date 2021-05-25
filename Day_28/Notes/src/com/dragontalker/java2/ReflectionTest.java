@@ -21,7 +21,8 @@ public class ReflectionTest {
         //创建运行时类的对象
         Person p = clazz.newInstance();
 
-        //获取指定的属性
+        //获取指定的属性: 要求运行时类中属性声明为public
+        //通常不采用此方法
         Field id = clazz.getField("id");
 
         /*
