@@ -3,7 +3,10 @@ package com.dragontalker.java3;
 import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -37,5 +40,19 @@ public class StreamAPITest {
 
         //default Stream<E> parallelStream(): 返回一个并行流
         Stream<Employee> parallelStream = employees.parallelStream();
+    }
+
+    //创建Stream方式至二: 通过数组
+    @Test
+    public void test2() {
+        int[] arr = new int[]{1, 2, 3, 4, 5, 6};
+        //调用Array类的static <T> Stream<T> stream(T[] array): 返回一个流
+        IntStream stream = Arrays.stream(arr);
+
+        Employee e1 = new Employee(1001, "Tom");
+        Employee e2 = new Employee(1002, "Jerry");
+        Employee[] arr1 = new Employee[]{e1, e2};
+
+        Stream<Employee> stream1 = Arrays.stream(arr1);
     }
 }
