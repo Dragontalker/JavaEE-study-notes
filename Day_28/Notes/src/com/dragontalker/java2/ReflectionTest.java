@@ -65,7 +65,9 @@ public class ReflectionTest {
     如何操作运行时类中的指定的方法 --->需要掌握
      */
     @Test
-    public void testMethod() {
-
+    public void testMethod() throws Exception{
+        Class<Person> clazz = Person.class;
+        //创建运行时类的对象
+        Person p = clazz.newInstance();
     }
 }
