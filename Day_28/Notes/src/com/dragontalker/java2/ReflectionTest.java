@@ -3,6 +3,7 @@ package com.dragontalker.java2;
 import com.dragontalker.java1.Person;
 import org.junit.Test;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -94,5 +95,21 @@ public class ReflectionTest {
         //Object returnVal = showDesc.invoke(clazz);
         Object returnVal = showDesc.invoke(null);
         System.out.println(returnVal);
+    }
+
+    /*
+    如何调用运行时类中的指定的构造器
+     */
+    @Test
+    public void testConstructor() throws Exception{
+        Class clazz = Person.class;
+
+        //private Person(String name)
+        /*
+        1. 获取指定的构造器
+        getDeclaredConstructor():
+            参数: 指明构造器的参数列表
+         */
+        Constructor constructor = clazz.getDeclaredConstructor();
     }
 }
