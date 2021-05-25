@@ -12,7 +12,7 @@ import java.lang.reflect.Field;
 public class ReflectionTest {
 
     /*
-
+    不需要掌握
      */
     @Test
     public void testFiled() throws Exception{
@@ -59,5 +59,13 @@ public class ReflectionTest {
         //3. 获取、设置指定对象的此属性值
         name.set(p, "Tom");
         System.out.println(name.get(p));
+    }
+
+    /*
+    如何操作运行时类中的指定的方法 --->需要掌握
+     */
+    @Test
+    public void testMethod() {
+
     }
 }
