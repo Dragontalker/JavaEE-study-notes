@@ -78,5 +78,11 @@ public class ProxyTest {
         //当通过代理类对象调用方法时, 会自动的调用被代理类中同名的方法
         System.out.println(proxyInstance.getBelief());
         proxyInstance.eat("四川麻辣烫");
+
+        System.out.println("************");
+
+        NikeClothFactory nike = new NikeClothFactory();
+        ClothFactory proxyNike = (ClothFactory) ProxyFactory.getProxyInstance(nike);
+        proxyNike.produceCloth();
     }
 }
