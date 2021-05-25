@@ -110,6 +110,13 @@ public class ReflectionTest {
         getDeclaredConstructor():
             参数: 指明构造器的参数列表
          */
-        Constructor constructor = clazz.getDeclaredConstructor();
+        Constructor constructor = clazz.getDeclaredConstructor(String.class);
+
+        //2. 保证此构造器是可访问的
+        constructor.setAccessible(true);
+
+        //3. 调用此构造器创建运行时类的对象
+        Person p = (Person) constructor.newInstance("Tom");
+        System.out.println(p);
     }
 }
