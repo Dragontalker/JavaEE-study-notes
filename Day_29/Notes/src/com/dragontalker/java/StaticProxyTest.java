@@ -18,7 +18,11 @@ class ProxyClothFactory implements ClothFactory {
     }
 
     @Override
-    public void produceCloth() {}
+    public void produceCloth() {
+        System.out.println("代理工厂做一些准备工作");
+        factory.produceCloth();
+        System.out.println("代理工厂做一些后续的收尾工作");
+    }
 }
 
 public class StaticProxyTest {
