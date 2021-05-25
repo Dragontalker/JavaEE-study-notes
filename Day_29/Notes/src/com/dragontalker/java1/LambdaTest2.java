@@ -1,6 +1,7 @@
 package com.dragontalker.java1;
 
 import org.junit.Test;
+import org.w3c.dom.ls.LSOutput;
 
 import java.util.function.Consumer;
 
@@ -26,7 +27,13 @@ public class LambdaTest2 {
                 System.out.println("学习太累了, 去天上人间买了平矿泉水, 价格为￥" + aDouble);
             }
         });
+
+        System.out.println("************************");
+
+        happyTime(400, money -> System.out.println("学习太累了, 去天上人间买了平矿泉水, 价格为￥" + money));
     }
+
+
 
     public void happyTime(double money, Consumer<Double> con) {
         con.accept(money);
