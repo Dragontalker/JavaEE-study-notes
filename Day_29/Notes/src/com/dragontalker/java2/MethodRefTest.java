@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 /**
  * 方法引用的使用
@@ -33,5 +34,13 @@ public class MethodRefTest {
         PrintStream ps = System.out;
         Consumer<String> con2 = ps :: println;
         con2.accept("北京");
+    }
+
+    //Supplier中的T get()
+    //Employee中的String getName()
+    @Test
+    public void test2() {
+        Employee emp = new Employee(1001, "Tom", 5000);
+        Supplier<String> sup1 = emp::getName;
     }
 }
