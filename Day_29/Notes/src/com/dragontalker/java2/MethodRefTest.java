@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 import java.util.Comparator;
+import java.util.function.BiPredicate;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Supplier;
@@ -97,5 +98,17 @@ public class MethodRefTest {
 
         Comparator<String> com2 = String :: compareTo;
         System.out.println(com2.compare("abc", "abd"));
+    }
+
+    //BiPredicate中的boolean (T t1, T t2);
+    //String中的boolean t1.equals(t2);
+    @Test
+    public void test6() {
+        BiPredicate<String, String> pre1 = (s1, s2) -> s1.equals(s2);
+        System.out.println(pre1.test("abc", "abd"));
+
+        System.out.println("************");
+
+
     }
 }
