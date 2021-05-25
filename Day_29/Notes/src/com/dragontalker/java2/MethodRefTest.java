@@ -120,5 +120,10 @@ public class MethodRefTest {
         Employee emp = new Employee(1001, "Tom", 5000);
         Function<Employee, String> func1 = e -> e.getName();
         System.out.println(func1.apply(emp));
+
+        System.out.println("************");
+
+        Function<Employee, String> func2 = Employee::getName;
+        System.out.println(func2.apply(emp));
     }
 }
