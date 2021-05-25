@@ -77,4 +77,25 @@ public class LambdaTest1 {
         };
         con1.accept("一个是听的人当真了, 一个是说的人当真了");
     }
+
+    //语法格式4: Lambda或需要一个参数时, 参数的小括号也可以省略
+    //称为"类型推断"
+    @Test
+    public void test4() {
+        Consumer<String> con = new Consumer<String>() {
+
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+        con.accept("谎言和誓言的区别时什么?");
+
+        System.out.println("*****************");
+
+        Consumer<String> con1 = s -> {
+            System.out.println(s);
+        };
+        con1.accept("一个是听的人当真了, 一个是说的人当真了");
+    }
 }
