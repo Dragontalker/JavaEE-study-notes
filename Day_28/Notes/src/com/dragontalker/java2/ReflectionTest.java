@@ -43,13 +43,21 @@ public class ReflectionTest {
         System.out.println(pId);
     }
 
+    /*
+    如何操作运行时类中指定的属性 ---> 需要掌握
+     */
     @Test
     public void testFiled1() throws Exception{
         Class<Person> clazz = Person.class;
         //创建运行时类的对象
         Person p = clazz.newInstance();
 
-        //getDeclaredField(String fieldName): 获取运行时类中指定变量名的属性
+        //1. getDeclaredField(String fieldName): 获取运行时类中指定变量名的属性
         Field name = clazz.getDeclaredField("name");
+        //2. 保证当前属性是可访问的
+        name.setAccessible(true);
+        //3. 获取、设置指定对象的此属性值
+        name.set(p, "Tom");
+        System.out.println(name.get(p));
     }
 }
