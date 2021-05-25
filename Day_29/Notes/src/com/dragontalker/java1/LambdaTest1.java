@@ -2,6 +2,8 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
+import java.util.function.Consumer;
+
 /**
  * Lambda表达式的使用
  *
@@ -38,6 +40,13 @@ public class LambdaTest1 {
     //语法格式二: Lambda需要一个参数, 但是没有返回值
     @Test
     public void test2() {
+        Consumer<String> con = new Consumer<String>() {
 
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+        con.accept("谎言和誓言的区别时什么?");
     }
 }
