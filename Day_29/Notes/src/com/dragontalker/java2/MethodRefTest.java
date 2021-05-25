@@ -1,5 +1,7 @@
 package com.dragontalker.java2;
 
+import org.junit.Test;
+
 /**
  * 方法引用的使用
  *
@@ -8,5 +10,11 @@ package com.dragontalker.java2;
 
 public class MethodRefTest {
 
+    //情况一: 对象 :: 实例方法
+    //Consumer中的void accept(T t)
+    //PrintStream中的void println(T t)
+    @Test
+    public void test1() {
 
+    }
 }
