@@ -40,6 +40,8 @@ class ProxyFactory {
     public static Object getProxyInstance(Object obj) {
 
         MyInvocationHandler handler = new MyInvocationHandler();
+        handler.bind(obj);
+
         return Proxy.newProxyInstance(
                 obj.getClass().getClassLoader(),
                 obj.getClass().getInterfaces(),
@@ -60,7 +62,11 @@ class MyInvocationHandler implements InvocationHandler {
     //将被代理类要执行的方法a的功能就声明在invoke()中
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        return null;
+
+        //method: 即为代理类对象调用的方法, 此方法也就作为了被代理对象类中的同名方法
+        //obj: 被代理类的对象
+        Object returnVal = method.invoke(obj, args);
+        return returnVal;
     }
 }
 
