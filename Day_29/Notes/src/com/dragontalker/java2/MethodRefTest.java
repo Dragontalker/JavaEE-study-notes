@@ -48,8 +48,12 @@ public class MethodRefTest {
     public void test2() {
         Employee emp = new Employee(1001, "Tom", 5000);
         Supplier<String> sup1 = () -> emp.getName();
-        sup1.get();
+        System.out.println(sup1.get());
 
+        System.out.println("************");
+
+        Supplier<String> sup2 = emp::getName;
+        System.out.println(sup2.get());
 
     }
 }
