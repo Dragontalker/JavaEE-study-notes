@@ -34,4 +34,10 @@ public class LambdaTest1 {
         Runnable r2 = () -> System.out.println("我爱北京故宫");
         r2.run();
     }
+
+    //语法格式二: Lambda需要一个参数, 但是没有返回值
+    @Test
+    public void test2() {
+
+    }
 }
