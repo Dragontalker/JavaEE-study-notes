@@ -87,6 +87,10 @@ public class ReflectionTest {
 
         System.out.println("*********如何调用静态方法*********");
 
-
+        //private static void showDesc()
+        Method showDesc = clazz.getDeclaredMethod("showDesc");
+        showDesc.setAccessible(true);
+        Object returnVal = showDesc.invoke(clazz);
+        System.out.println(returnVal);
     }
 }
