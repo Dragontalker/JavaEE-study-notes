@@ -47,5 +47,11 @@ public class ConstructorRefTest {
         BiFunction<Integer, String, Employee> func1 = (id, name) -> new Employee(id, name);
         Employee employee1 = func1.apply(1001, "Tom");
         System.out.println(employee1);
+
+        System.out.println("************");
+
+        BiFunction<Integer, String, Employee> func2 = Employee::new;
+        Employee employee2 = func1.apply(1001, "Tom");
+        System.out.println(employee2);
     }
 }
