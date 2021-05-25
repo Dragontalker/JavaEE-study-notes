@@ -13,6 +13,8 @@ import org.junit.Test;
  *  ->的右边: Lambda体(其实就是重写的抽象方法的方法体)
  *
  * 3. Lambda表达式的使用: (分为6种情况)
+ *
+ * 4. Lambda表达式的本质: 作为接口的实例
  */
 
 public class LambdaTest1 {
@@ -28,6 +30,7 @@ public class LambdaTest1 {
         r1.run();
 
         //使用Lambda表达式重写
+        //作为Runnable接口的实例
         Runnable r2 = () -> System.out.println("我爱北京故宫");
         r2.run();
     }
