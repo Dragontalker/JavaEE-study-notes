@@ -35,4 +35,10 @@ class NikeClothFactory implements ClothFactory {
 }
 
 public class StaticProxyTest {
+    public static void main(String[] args) {
+        //创建被代理类的对象
+        NikeClothFactory nike = new NikeClothFactory();
+        //创建代理类的对象
+        ProxyClothFactory proxy = new ProxyClothFactory(nike);
+    }
 }
