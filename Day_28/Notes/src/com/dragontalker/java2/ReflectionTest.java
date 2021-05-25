@@ -42,4 +42,9 @@ public class ReflectionTest {
         int pId = (int) id.get(p);
         System.out.println(pId);
     }
+
+    @Test
+    public void testFiled1() throws Exception{
+        Class<Person> clazz = Person.class;
+    }
 }
