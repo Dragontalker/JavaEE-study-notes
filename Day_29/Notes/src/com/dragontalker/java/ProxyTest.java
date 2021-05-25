@@ -65,8 +65,8 @@ class MyInvocationHandler implements InvocationHandler {
 
         //method: 即为代理类对象调用的方法, 此方法也就作为了被代理对象类中的同名方法
         //obj: 被代理类的对象
-        Object returnVal = method.invoke(obj, args);
-        return returnVal;
+        //上述方法的返回值就作为当前类的invoke()的返回值
+        return method.invoke(obj, args);
     }
 }
 
