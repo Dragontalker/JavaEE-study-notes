@@ -1,7 +1,6 @@
 package com.dragontalker.java2;
 
 import org.junit.Test;
-import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.Arrays;
 import java.util.function.BiFunction;
