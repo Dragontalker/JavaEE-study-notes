@@ -1,5 +1,9 @@
 package com.dragontalker.java1;
 
+import org.junit.Test;
+
+import java.util.function.Consumer;
+
 /**
  * Java内置的4大核心函数式接口
  *
@@ -13,4 +17,13 @@ package com.dragontalker.java1;
  */
 
 public class LambdaTest2 {
+
+    @Test
+    public void test1() {
+
+    }
+
+    public void happyTime(double money, Consumer<Double> con) {
+        con.accept(money);
+    }
 }
