@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.io.PrintStream;
 import java.util.Comparator;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
@@ -69,5 +70,15 @@ public class MethodRefTest {
 
         Comparator<Integer> com2 = Integer::compare;
         System.out.println(com2.compare(12, 21));
+    }
+
+    //Function中的R apply(T t)
+    //Math中的long round(Double d)
+    @Test
+    public void test4() {
+        Function<Double, Long> func1 = d -> Math.round(d);
+        System.out.println(func1.apply(33.3));
+
+        System.out.println("************");
     }
 }
