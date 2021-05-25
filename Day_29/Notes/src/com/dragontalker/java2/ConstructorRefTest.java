@@ -1,7 +1,9 @@
 package com.dragontalker.java2;
 
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
+import java.util.function.Function;
 import java.util.function.Supplier;
 
 /**
@@ -22,5 +24,19 @@ public class ConstructorRefTest {
 
         Supplier<Employee> sup2 = Employee::new;
         System.out.println(sup2.get());
+    }
+
+    //Function中的R apply(T t)
+    @Test
+    public void test2() {
+        Function<Integer, Employee> func1 = id -> new Employee(id);
+        Employee employee1 = func1.apply(1001);
+        System.out.println(employee1);
+
+        System.out.println("************");
+
+        Function<Integer, Employee> func2 = Employee::new;
+        Employee employee2 = func1.apply(1001);
+        System.out.println(employee2);
     }
 }

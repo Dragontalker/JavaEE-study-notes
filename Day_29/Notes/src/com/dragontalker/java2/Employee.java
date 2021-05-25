@@ -5,7 +5,14 @@ public class Employee {
     private String name;
     private int salary;
 
-    public Employee() {}
+    public Employee() {
+        System.out.println("Employee()...");
+    }
+
+    public Employee(int id) {
+        System.out.println("Employee(int id)...");
+        this.id = id;
+    }
 
     public Employee(int id, String name, int salary) {
         this.id = id;
