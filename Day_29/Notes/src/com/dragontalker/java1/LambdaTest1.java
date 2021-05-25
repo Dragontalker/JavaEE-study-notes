@@ -19,6 +19,16 @@ public class LambdaTest1 {
     //语法格式1: 无参, 无返回值
     @Test
     public void test1() {
+        Runnable r1 = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("我爱北京天安门");
+            }
+        };
+        r1.run();
 
+        //使用Lambda表达式重写
+        Runnable r2 = () -> System.out.println("我爱北京故宫");
+        r2.run();
     }
 }
