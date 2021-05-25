@@ -46,5 +46,10 @@ public class ReflectionTest {
     @Test
     public void testFiled1() throws Exception{
         Class<Person> clazz = Person.class;
+        //创建运行时类的对象
+        Person p = clazz.newInstance();
+
+        //getDeclaredField(String fieldName): 获取运行时类中指定变量名的属性
+        Field name = clazz.getDeclaredField("name");
     }
 }
