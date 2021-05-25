@@ -9,7 +9,7 @@ import org.junit.Test;
 public class LambdaTest {
 
     @Test
-    public void test1() {
+    public void testOriginal() {
         Runnable r1 = new Runnable() {
             @Override
             public void run() {
@@ -17,6 +17,13 @@ public class LambdaTest {
             }
         };
 
+        r1.run();
+    }
+
+    //使用Lambda表达式重写
+    @Test
+    public void testLambda() {
+        Runnable r1 = () -> System.out.println("我爱北京故宫");
         r1.run();
     }
 }
