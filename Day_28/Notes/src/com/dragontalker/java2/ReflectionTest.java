@@ -4,6 +4,7 @@ import com.dragontalker.java1.Person;
 import org.junit.Test;
 
 import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * 调用运行时类中指定的结构: 属性、方法、构造器
@@ -74,6 +75,12 @@ public class ReflectionTest {
         //getDeclaredMethod():
         //参数1: 指定获取的方法的名称
         //参数2: 指明获取的方法的参数列表
-        clazz.getDeclaredMethod("show", String.class);
+        Method show = clazz.getDeclaredMethod("show", String.class);
+        show.setAccessible(true);
+
+        //invoke():
+        //参数1: 方法的调用者
+        //参数2: 给方法形参赋值的实参
+        show.invoke(p, "CHN");
     }
 }
