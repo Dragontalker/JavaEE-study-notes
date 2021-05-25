@@ -1,5 +1,7 @@
 package com.dragontalker.java1;
 
+import org.junit.Test;
+
 /**
  * Lambda表达式的使用
  *
@@ -9,7 +11,14 @@ package com.dragontalker.java1;
  *  -> : Lambda操作符 或 箭头操作符
  *  ->的左边: Lambda形参列表(其实就是接口中的抽象方法的形参列表)
  *  ->的右边: Lambda体(其实就是重写的抽象方法的方法体)
+ *
+ * 3. Lambda表达式的使用: (分为6种情况)
  */
 
 public class LambdaTest1 {
+    //语法格式1: 无参, 无返回值
+    @Test
+    public void test1() {
+
+    }
 }
