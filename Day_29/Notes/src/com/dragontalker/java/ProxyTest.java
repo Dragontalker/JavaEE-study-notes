@@ -10,5 +10,19 @@ interface Human {
     void eat(String food);
 }
 
+//被代理类
+class SuperMan implements Human{
+
+    @Override
+    public String getBelief() {
+        return null;
+    }
+
+    @Override
+    public void eat(String food) {
+
+    }
+}
+
 public class ProxyTest {
 }
