@@ -93,6 +93,9 @@ public class MethodRefTest {
         Comparator<String> com1 = (s1, s2) -> s1.compareTo(s2);
         System.out.println(com1.compare("abc", "abd"));
 
+        System.out.println("************");
 
+        Comparator<String> com2 = String :: compareTo;
+        System.out.println(com2.compare("abc", "abd"));
     }
 }
