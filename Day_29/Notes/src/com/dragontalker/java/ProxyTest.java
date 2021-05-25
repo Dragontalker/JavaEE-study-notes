@@ -33,6 +33,10 @@ class HumanUtil {
     public void method1() {
         System.out.println("调用通用方法1啦~~");
     }
+
+    public void method2() {
+        System.out.println("调用通用方法2啦~~");
+    }
 }
 
 /*
