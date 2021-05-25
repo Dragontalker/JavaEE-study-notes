@@ -67,5 +67,10 @@ public class ConstructorRefTest {
     public void test4() {
         Function<Integer, String[]> func1 = length -> new String[length];
         System.out.println(Arrays.toString(func1.apply(5)));
+
+        System.out.println("************");
+
+        Function<Integer, String[]> func2 = String[]::new;
+        System.out.println(Arrays.toString(func2.apply(5)));
     }
 }
