@@ -78,9 +78,11 @@ public class ReflectionTest {
         Method show = clazz.getDeclaredMethod("show", String.class);
         show.setAccessible(true);
 
-        //invoke():
+        //2. 调用方法的invoke():
         //参数1: 方法的调用者
         //参数2: 给方法形参赋值的实参
-        show.invoke(p, "CHN");
+        //invoke()方法的返回值即为对应类中调用的方法的返回值
+        Object returnValue = show.invoke(p, "CHN"); //String nation = p.show("CHN");
+        System.out.println(returnValue);
     }
 }
