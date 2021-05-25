@@ -48,5 +48,33 @@ public class LambdaTest1 {
             }
         };
         con.accept("谎言和誓言的区别时什么?");
+
+        System.out.println("*****************");
+
+        Consumer<String> con1 = (String s) -> {
+            System.out.println(s);
+        };
+        con1.accept("一个是听的人当真了, 一个是说的人当真了");
+    }
+
+    //语法格式3: 数据类型可以省略, 因为可由编译器推断得出
+    //称为"类型推断"
+    @Test
+    public void test3() {
+        Consumer<String> con = new Consumer<String>() {
+
+            @Override
+            public void accept(String s) {
+                System.out.println(s);
+            }
+        };
+        con.accept("谎言和誓言的区别时什么?");
+
+        System.out.println("*****************");
+
+        Consumer<String> con1 = (s) -> {
+            System.out.println(s);
+        };
+        con1.accept("一个是听的人当真了, 一个是说的人当真了");
     }
 }
