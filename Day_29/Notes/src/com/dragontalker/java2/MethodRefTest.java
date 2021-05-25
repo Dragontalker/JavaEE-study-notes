@@ -88,4 +88,11 @@ public class MethodRefTest {
     //情况三: 类 :: 实例方法(有难度)
     //Comparator中的int compare(T t1, T t2)
     //String中的int t1.compareTo(t2)
+    @Test
+    public void test5() {
+        Comparator<String> com1 = (s1, s2) -> s1.compareTo(s2);
+        System.out.println(com1.compare("abc", "abd"));
+
+
+    }
 }
