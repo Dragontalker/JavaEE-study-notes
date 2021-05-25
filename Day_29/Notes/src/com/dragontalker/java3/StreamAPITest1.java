@@ -27,5 +27,14 @@ public class StreamAPITest1 {
         //若元素不足n个, 则返回一个空流
         //与limit(n)互补
         list.stream().skip(3).forEach(System.out::println);
+
+        //distinct() - 筛选, 通过
+        list.add(new Employee(1010, "高圆圆", 16, 8000));
+        list.add(new Employee(1010, "高圆圆", 16, 8000));
+        list.add(new Employee(1010, "高圆圆", 16, 8000));
+        list.add(new Employee(1010, "高圆圆", 16, 8000));
+        System.out.println(list);
+
+        list.stream().distinct().forEach(System.out::println);
     }
 }
