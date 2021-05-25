@@ -17,6 +17,10 @@ import java.util.function.Consumer;
  *
  * 3. Lambda表达式的使用: (分为6种情况)
  *
+ *  总结:
+ *    -> 左边: Lambda形参列表的参数类型, 如果只有一个参数可以省略小括号
+ *    -> 右边: Lambda体应该使用一对{}包裹, 如果只有一条执行语句可以省略{}和return
+ *
  * 4. Lambda表达式的本质: 作为接口的实例
  */
 
