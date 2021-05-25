@@ -1,6 +1,10 @@
 package com.dragontalker.java3;
 
+import com.dragontalker.java2.Employee;
 import org.junit.Test;
+
+import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * 1. Stream关注的是对数据的运算, 与CPU打交道
@@ -26,6 +30,10 @@ public class StreamAPITest {
     //创建Stream方式之一: 通过集合
     @Test
     public void test1() {
-
+        List<Employee> employees = EmployeeData.getEmployees();
+        //default Stream<E> stream(): 返回一个顺序流
+        Stream<Employee> stream = employees.stream();
+        //default Stream<E> parallelStream(): 返回一个并行流
+        Stream<Employee> paraStream = employees.parallelStream();
     }
 }
