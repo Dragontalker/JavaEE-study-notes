@@ -69,5 +69,11 @@ public class ReflectionTest {
         Class<Person> clazz = Person.class;
         //创建运行时类的对象
         Person p = clazz.newInstance();
+
+        //1. 获取指定的某个方法
+        //getDeclaredMethod():
+        //参数1: 指定获取的方法的名称
+        //参数2: 指明获取的方法的参数列表
+        clazz.getDeclaredMethod("show", String.class);
     }
 }
