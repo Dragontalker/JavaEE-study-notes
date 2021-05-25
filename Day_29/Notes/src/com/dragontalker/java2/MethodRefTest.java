@@ -112,4 +112,13 @@ public class MethodRefTest {
         BiPredicate<String, String> pre2 = String::equals;
         System.out.println(pre2.test("abc", "abd"));
     }
+
+    //Function中的R apply(T t)
+    //Employee中的String getName()
+    @Test
+    public void test7() {
+        Employee emp = new Employee(1001, "Tom", 5000);
+        Function<Employee, String> func1 = e -> e.getName();
+        System.out.println(func1.apply(emp));
+    }
 }
