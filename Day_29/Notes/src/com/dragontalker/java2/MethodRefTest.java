@@ -80,5 +80,8 @@ public class MethodRefTest {
         System.out.println(func1.apply(33.3));
 
         System.out.println("************");
+
+        Function<Double, Long> func2 = Math::round;
+        System.out.println(func2.apply(33.3));
     }
 }
