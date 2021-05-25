@@ -22,5 +22,10 @@ public class StreamAPITest1 {
 
         //limit(n) - 截断流, 使其元素不超过给定数量
         list.stream().limit(3).forEach(System.out::println);
+
+        //skip(n) - 跳过元素, 返回一个扔掉了前n个元素的流
+        //若元素不足n个, 则返回一个空流
+        //与limit(n)互补
+        list.stream().skip(3).forEach(System.out::println);
     }
 }
