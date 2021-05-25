@@ -61,4 +61,15 @@ public class StreamAPITest {
     public void test3() {
         Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5, 6);
     }
+
+    //创建Stream方式之四: 创建无限流
+    @Test
+    public void test4() {
+        //迭代
+        //public static<T> Stream<T> iterate(final T seed, final UnaryOperator<T> f)
+        //遍历前10个偶数
+        Stream.iterate(0, t -> t + 2).limit(10).forEach(System.out::println);
+
+        //生成
+    }
 }
