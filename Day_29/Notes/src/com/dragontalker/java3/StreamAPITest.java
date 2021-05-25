@@ -31,9 +31,11 @@ public class StreamAPITest {
     @Test
     public void test1() {
         List<Employee> employees = EmployeeData.getEmployees();
+
         //default Stream<E> stream(): 返回一个顺序流
         Stream<Employee> stream = employees.stream();
+
         //default Stream<E> parallelStream(): 返回一个并行流
-        Stream<Employee> paraStream = employees.parallelStream();
+        Stream<Employee> parallelStream = employees.parallelStream();
     }
 }
