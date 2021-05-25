@@ -14,6 +14,12 @@ public class Employee {
         this.id = id;
     }
 
+    public Employee(int id, String name) {
+        System.out.println("Employee(int id, String name)....");
+        this.id = id;
+        this.name = name;
+    }
+
     public Employee(int id, String name, int salary) {
         this.id = id;
         this.name = name;

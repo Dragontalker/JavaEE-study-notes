@@ -3,6 +3,7 @@ package com.dragontalker.java2;
 import org.junit.Test;
 import org.junit.experimental.theories.suppliers.TestedOn;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -38,5 +39,13 @@ public class ConstructorRefTest {
         Function<Integer, Employee> func2 = Employee::new;
         Employee employee2 = func1.apply(1001);
         System.out.println(employee2);
+    }
+
+    //BiFunction中的R apply(T t, U u)
+    @Test
+    public void test3() {
+        BiFunction<Integer, String, Employee> func1 = (id, name) -> new Employee(id, name);
+        Employee employee1 = func1.apply(1001, "Tom");
+        System.out.println(employee1);
     }
 }
