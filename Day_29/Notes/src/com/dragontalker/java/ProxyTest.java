@@ -28,6 +28,13 @@ class SuperMan implements Human{
     }
 }
 
+class HumanUtil {
+
+    public void method1() {
+        System.out.println("调用通用方法1啦~~");
+    }
+}
+
 /*
 要想实现动态代理, 需要解决的问题?
  - 问题1: 如何根据加载到内存中的被代理类, 动态的创建一个代理类及其对象?
