@@ -17,6 +17,7 @@ public class StreamAPITest1 {
         List<Employee> list = EmployeeData.getEmployees();
         //filter(Predicate p) - 接收Lambda, 从流中排除某些元素
         Stream<Employee> stream = list.stream();
+        //练习: 查询员工表中薪资大于7000的员工信息
         stream.filter(e -> e.getSalary() > 7000).forEach(System.out::println);
     }
 }
