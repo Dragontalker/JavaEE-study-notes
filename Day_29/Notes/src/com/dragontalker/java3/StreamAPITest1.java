@@ -19,5 +19,8 @@ public class StreamAPITest1 {
         Stream<Employee> stream = list.stream();
         //练习: 查询员工表中薪资大于7000的员工信息
         stream.filter(e -> e.getSalary() > 7000).forEach(System.out::println);
+
+        //limit(n) - 截断流, 使其元素不超过给定数量
+        list.stream().limit(3).forEach(System.out::println);
     }
 }
