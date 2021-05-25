@@ -11,6 +11,10 @@ import java.util.function.Consumer;
  *
  * 2. 方法引用, 本质上就是Lambda表达式, 而Lambda表达式作为函数式接口的实例
  *     所以方法引用, 也是函数式接口的实例
+ *
+ * 3. 使用格式: 类(或对象) :: 方法名
+ *
+ * 4. 具体分为如下的三种情况
  */
 
 public class MethodRefTest {
