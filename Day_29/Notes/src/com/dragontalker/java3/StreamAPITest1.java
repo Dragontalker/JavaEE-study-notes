@@ -28,7 +28,7 @@ public class StreamAPITest1 {
         //与limit(n)互补
         list.stream().skip(3).forEach(System.out::println);
 
-        //distinct() - 筛选, 通过
+        //distinct() - 筛选, 通过流所生成元素的hashCode()和equals()去除重复元素
         list.add(new Employee(1010, "高圆圆", 16, 8000));
         list.add(new Employee(1010, "高圆圆", 16, 8000));
         list.add(new Employee(1010, "高圆圆", 16, 8000));
