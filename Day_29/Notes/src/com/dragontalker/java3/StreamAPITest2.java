@@ -66,4 +66,10 @@ public class StreamAPITest2 {
         //使用集合的遍历操作
         employees.forEach(System.out::println);
     }
+
+    //2 - 规约
+    @Test
+    public void test3() {
+
+    }
 }
