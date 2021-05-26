@@ -59,5 +59,8 @@ public class StreamAPITest2 {
         //练习2: 返回最低工资的员工
         Optional<Employee> minSalaryEmployee = employees.stream().min((e1, e2) -> Double.compare(e1.getSalary(), e2.getSalary()));
         System.out.println(minSalaryEmployee);
+
+        //forEach(Consumer c) - 内部迭代
+        employees.forEach(System.out::println);
     }
 }
