@@ -3,6 +3,7 @@ package com.dragontalker.java3;
 import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
@@ -53,11 +54,25 @@ public class StreamAPITest1 {
                 .map(Employee::getName)
                 .filter(name -> name.length() >3)
                 .forEach(System.out::println);
+    }
 
-        //flatMap(Function f)
-        //接收一个函数作为参数
-        //将流中的每个值都换成另一个流
-        //然后把所有流连接成一个流
+    //flatMap(Function f)
+    //接收一个函数作为参数
+    //将流中的每个值都换成另一个流
+    //然后把所有流连接成一个流
+    @Test
+    public void test3() {
+        ArrayList list1 = new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
 
+        ArrayList list2 = new ArrayList<>();
+        list2.add(4);
+        list2.add(5);
+        list2.add(6);
+
+        list1.addAll(list2);
+        System.out.println(list1);
     }
 }
