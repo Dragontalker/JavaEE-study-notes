@@ -60,5 +60,16 @@ public class Java9Test {
 //        }
 
         //java 9中资源关闭操作
+        InputStreamReader reader = new InputStreamReader(System.in);
+        try(reader) {
+            char[] cbuf = new char[20];
+            int len;
+            if ((len = reader.read(cbuf)) != -1) {
+                String str = new String(cbuf, 0, len);
+                System.out.println(str);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
