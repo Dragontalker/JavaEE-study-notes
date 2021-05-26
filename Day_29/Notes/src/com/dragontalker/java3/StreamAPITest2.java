@@ -86,4 +86,10 @@ public class StreamAPITest2 {
         Optional<Double> totalSalary = employees.stream().map(Employee::getSalary).reduce(Double::sum);
         System.out.println(totalSalary);
     }
+
+    //3 - 收集
+    @Test
+    public void test4() {
+
+    }
 }
