@@ -32,11 +32,15 @@ public class Java9Test1 {
     @Test
     public void test4() {
         List<Integer> list = List.of(1, 2, 3, 4, 5);
-        //list.add(6);
+        //list.add(6); 只读, 不能添加
         System.out.println(list);
 
         Set<Integer> set = Set.of(23, 343, 42345, 3, 2423, 43324);
-        //set.add(12)
+        //set.add(12) 只读, 不能添加
         System.out.println(set);
+
+        Map<String, Integer> map = Map.of("Tom", 23, "Jerry", 43);
+        //map.put("HanMeiMei", 23); 只读, 不能添加
+        System.out.println(map);
     }
 }
