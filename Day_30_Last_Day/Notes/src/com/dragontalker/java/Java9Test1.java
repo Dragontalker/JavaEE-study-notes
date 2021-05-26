@@ -22,4 +22,9 @@ public class Java9Test1 {
         //nameList.add("Tom"); 报异常: UnsupportedOperationException
         System.out.println(nameList);
     }
+
+    @Test
+    public void test2() {
+
+    }
 }
