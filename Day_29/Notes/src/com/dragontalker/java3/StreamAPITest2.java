@@ -4,6 +4,7 @@ import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
 import java.util.List;
+import java.util.Optional;
 
 /**
  * 测试Stream的终止操作
@@ -30,5 +31,9 @@ public class StreamAPITest2 {
         //练习3: 是否存在员工姓"雷"
         boolean noneMatch = employees.stream().noneMatch(e -> e.getName().startsWith("雷"));
         System.out.println(noneMatch);
+
+        //findFirst - 返回第一个元素
+        Optional<Employee> firstEmployee = employees.stream().findFirst();
+        System.out.println(firstEmployee);
     }
 }
