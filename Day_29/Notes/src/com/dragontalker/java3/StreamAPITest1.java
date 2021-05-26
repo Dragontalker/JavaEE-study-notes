@@ -46,5 +46,12 @@ public class StreamAPITest1 {
         //map(Function f) - 接收一个函数作为参数, 将元素转换成其他形式或提取信息
         List<String> list = Arrays.asList("aa", "bb", "cc", "dd");
         list.stream().map(String::toUpperCase).forEach(System.out::println);
+
+        //练习: 获取员工姓名长度大于3的员工的姓名
+        List<Employee> employees = EmployeeData.getEmployees();
+        employees.stream()
+                .map(Employee::getName)
+                .filter(name -> name.length() >3)
+                .forEach(System.out::println);
     }
 }
