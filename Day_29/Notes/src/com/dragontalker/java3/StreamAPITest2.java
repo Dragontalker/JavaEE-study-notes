@@ -4,8 +4,10 @@ import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
@@ -90,6 +92,11 @@ public class StreamAPITest2 {
     //3 - 收集
     @Test
     public void test4() {
-
+        //collect(Collector c)
+        //将流转换为其他形式, 接收一个Collector接口的实现
+        //练习1: 查找工资大于6000的员工, 结果返回一个List或Set
+        List<Employee> employees = EmployeeData.getEmployees();
+        Collection<Employee> collection = employees.stream().filter(e -> e.getSalary() > 6000).collect(Collectors.toList());
+        collection.forEach(System.out::println);
     }
 }
