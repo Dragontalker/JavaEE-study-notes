@@ -77,5 +77,13 @@ public class StreamAPITest2 {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         Integer sum = list.stream().reduce(0, Integer::sum);
         System.out.println(sum);
+
+        //reduce(BinaryOperator)
+        //可以将流中元素反复结合起来, 得到一个值
+        //返回Optional<T>
+        //练习2: 计算公司所有员工工资的总和
+        List<Employee> employees = EmployeeData.getEmployees();
+        Optional<Double> totalSalary = employees.stream().map(Employee::getSalary).reduce(Double::sum);
+        System.out.println(totalSalary);
     }
 }
