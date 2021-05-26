@@ -25,6 +25,6 @@ public class Java9Test1 {
     public void test3() {
         //此时得到的集合list也是一个只读集合
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5);
-        //list.add(6);
+        //list.add(6); 报异常: UnsupportedOperationException
     }
 }
