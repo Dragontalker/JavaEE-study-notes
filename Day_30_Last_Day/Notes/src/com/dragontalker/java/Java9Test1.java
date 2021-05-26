@@ -42,5 +42,9 @@ public class Java9Test1 {
         Map<String, Integer> map = Map.of("Tom", 23, "Jerry", 43);
         //map.put("HanMeiMei", 23); 只读, 不能添加
         System.out.println(map);
+
+        Map<String, Integer> map1 = Map.ofEntries(Map.entry("Tom", 34), Map.entry("Jerry", 21));
+        //map1.put("HanMeiMei", 23); 只读, 不能添加
+        System.out.println(map1);
     }
 }
