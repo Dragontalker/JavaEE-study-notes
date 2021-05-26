@@ -8,7 +8,7 @@ public class MyInterfaceImpl implements MyInterface{
 
     @Override
     public void defaultMethod() {
-        MyInterface.super.defaultMethod();
+        System.out.println("实现类重写了接口中的默认方法");
     }
 
     public static void main(String[] args) {
@@ -17,5 +17,8 @@ public class MyInterfaceImpl implements MyInterface{
 
         //接口的实现类不能调用接口的静态方法
 //        MyInterfaceImpl.staticMethod();
+
+        MyInterfaceImpl impl = new MyInterfaceImpl();
+        impl.defaultMethod();
     }
 }
