@@ -3,7 +3,9 @@ package com.dragontalker.java3;
 import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Stream;
 
 /**
@@ -36,5 +38,13 @@ public class StreamAPITest1 {
         System.out.println(list);
 
         list.stream().distinct().forEach(System.out::println);
+    }
+
+    //映射
+    @Test
+    public void test2() {
+        //map(Function f) - 接收一个函数作为参数, 将元素转换成其他形式或提取信息
+        List<String> list = Arrays.asList("aa", "bb", "cc", "dd");
+        list.stream().map(String::toUpperCase).forEach(System.out::println);
     }
 }
