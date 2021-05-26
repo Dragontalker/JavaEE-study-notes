@@ -45,4 +45,13 @@ public class OptionalTest {
         }
         return null;
     }
+
+    @Test
+    public void test4() {
+        Boy boy = new Boy();
+        String girlName = improvedGetGirlName(boy);
+        System.out.println(girlName);
+    }
+
+    //
 }
