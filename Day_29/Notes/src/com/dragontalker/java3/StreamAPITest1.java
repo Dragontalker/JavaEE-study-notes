@@ -6,7 +6,6 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Stream;
 
 /**
@@ -20,7 +19,7 @@ public class StreamAPITest1 {
         List<Employee> list = EmployeeData.getEmployees();
         //filter(Predicate p) - 接收Lambda, 从流中排除某些元素
         Stream<Employee> stream = list.stream();
-        //练习: 查询员工表中薪资大于7000的员工信息
+        //练习1: 查询员工表中薪资大于7000的员工信息
         stream.filter(e -> e.getSalary() > 7000).forEach(System.out::println);
 
         //limit(n) - 截断流, 使其元素不超过给定数量
@@ -39,6 +38,9 @@ public class StreamAPITest1 {
         System.out.println(list);
 
         list.stream().distinct().forEach(System.out::println);
+
+        //练习2:
+        //list.stream().flatMap(StreamAPITest1::fromStringToStream);
     }
 
     //映射
@@ -78,7 +80,7 @@ public class StreamAPITest1 {
     }
 
     //将字符串中的多个字符构成的集合转换为对应的Stream的实例
-    public Stream<Character> fromStringToStream(String str) {
+    public static Stream<Character> fromStringToStream(String str) {
         ArrayList<Character> list = new ArrayList<>();
         for (Character c : str.toCharArray()) {
             list.add(c);
