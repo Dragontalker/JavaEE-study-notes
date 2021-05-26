@@ -87,4 +87,18 @@ public class StreamAPITest1 {
         }
         return list.stream();
     }
+
+    //3 - 排序
+    @Test
+    public void test4() {
+        //sorted() - 自然排序
+        List<Integer> list = Arrays.asList(12, 43, 65, 34, 87, 0, -98, 7);
+        list.stream().sorted().forEach(System.out::println);
+
+        //抛异常, 原因: Employee没有实现Comparable接口
+//        List<Employee> employees = EmployeeData.getEmployees();
+//        employees.stream().sorted().forEach(System.out::println);
+
+        //sorted(Comparator com) - 定制排序
+    }
 }
