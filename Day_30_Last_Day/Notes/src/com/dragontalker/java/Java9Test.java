@@ -61,6 +61,7 @@ public class Java9Test {
 
         //java 9中资源关闭操作
         //需要自动关闭的资源的实例化可以放在try的一对小括号外
+        //此时的资源属性是常量, 不可修改
         InputStreamReader reader = new InputStreamReader(System.in);
         try(reader) {
             char[] cbuf = new char[20];
