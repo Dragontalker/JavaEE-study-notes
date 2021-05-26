@@ -35,5 +35,9 @@ public class StreamAPITest2 {
         //findFirst - 返回第一个元素
         Optional<Employee> firstEmployee = employees.stream().findFirst();
         System.out.println(firstEmployee);
+
+        //findAny - 返回当前流中的任意元素
+        Optional<Employee> anyEmployee = employees.parallelStream().findAny();
+        System.out.println(anyEmployee);
     }
 }
