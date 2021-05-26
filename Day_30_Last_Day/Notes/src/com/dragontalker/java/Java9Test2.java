@@ -28,5 +28,9 @@ public class Java9Test2 {
         //of()不能只存储单个null, 会出现空指针异常
 //        Stream<Object> stream2 = Stream.of(null);
 //        stream2.forEach(System.out::println);
+
+        //但只有一个元素时, ofNullable可有效防止空指针异常
+        Stream<Object> stream3 = Stream.ofNullable(null);
+        stream3.forEach(System.out::println);
     }
 }
