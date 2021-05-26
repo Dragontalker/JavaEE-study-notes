@@ -72,7 +72,17 @@ public class StreamAPITest1 {
         list2.add(5);
         list2.add(6);
 
+        //list1.add(list2);
         list1.addAll(list2);
         System.out.println(list1);
+    }
+
+    //将字符串中的多个字符构成的集合转换为对应的Stream的实例
+    public Stream<Character> fromStringToStream(String str) {
+        ArrayList<Character> list = new ArrayList<>();
+        for (Character c : str.toCharArray()) {
+            list.add(c);
+        }
+        return list.stream();
     }
 }
