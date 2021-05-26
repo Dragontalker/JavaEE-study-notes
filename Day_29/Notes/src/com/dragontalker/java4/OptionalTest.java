@@ -67,4 +67,17 @@ public class OptionalTest {
 
         return elseGirl.getName();
     }
+
+    @Test
+    public void test5() {
+        Boy boy = null;
+        String girlName = optionalGetGirlName(boy);
+        System.out.println(girlName);
+
+        Boy boy1 = new Boy();
+        String girlName1 = optionalGetGirlName(boy1);
+        System.out.println(girlName1);
+
+
+    }
 }
