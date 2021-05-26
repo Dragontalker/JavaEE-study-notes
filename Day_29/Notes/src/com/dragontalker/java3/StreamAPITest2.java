@@ -60,7 +60,10 @@ public class StreamAPITest2 {
         Optional<Employee> minSalaryEmployee = employees.stream().min((e1, e2) -> Double.compare(e1.getSalary(), e2.getSalary()));
         System.out.println(minSalaryEmployee);
 
-        //forEach(Consumer c) - 内部迭代
+        //forEach(Consumer c) - 内部迭代 (Iterator则是外部迭代)
+        employees.stream().forEach(System.out::println);
+
+        //使用集合的遍历操作
         employees.forEach(System.out::println);
     }
 }
