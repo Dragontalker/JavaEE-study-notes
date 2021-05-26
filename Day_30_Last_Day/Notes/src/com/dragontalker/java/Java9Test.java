@@ -47,15 +47,18 @@ public class Java9Test {
 //        }
 
         //java 8中资源关闭操作
-        try(InputStreamReader reader = new InputStreamReader(System.in)) {
-            char[] cbuf = new char[20];
-            int len;
-            if ((len = reader.read(cbuf)) != -1) {
-                String str = new String(cbuf, 0, len);
-                System.out.println(str);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //要求执行后必须关闭的所有资源必须在try中初始化
+//        try(InputStreamReader reader = new InputStreamReader(System.in)) {
+//            char[] cbuf = new char[20];
+//            int len;
+//            if ((len = reader.read(cbuf)) != -1) {
+//                String str = new String(cbuf, 0, len);
+//                System.out.println(str);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+
+        //java 9中资源关闭操作
     }
 }
