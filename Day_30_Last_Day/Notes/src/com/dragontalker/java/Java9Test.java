@@ -28,22 +28,34 @@ public class Java9Test {
     //java9 特性六: try操作的升级
     public static void main(String[] args) {
         //java8之前的资源关闭的操作
-        InputStreamReader reader = new InputStreamReader(System.in);
-        char[] cbuf = new char[20];
-        int len;
-        try {
+//        InputStreamReader reader = new InputStreamReader(System.in);
+//        char[] cbuf = new char[20];
+//        int len;
+//        try {
+//            if ((len = reader.read(cbuf)) != -1) {
+//                String str = new String(cbuf, 0, len);
+//                System.out.println(str);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                reader.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+
+        //java 8中资源关闭操作
+        try(InputStreamReader reader = new InputStreamReader(System.in)) {
+            char[] cbuf = new char[20];
+            int len;
             if ((len = reader.read(cbuf)) != -1) {
                 String str = new String(cbuf, 0, len);
                 System.out.println(str);
             }
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
     }
 }
