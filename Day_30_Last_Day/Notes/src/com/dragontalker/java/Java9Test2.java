@@ -31,6 +31,7 @@ public class Java9Test2 {
 
         //但只有一个元素时, ofNullable可有效防止空指针异常
         Stream<Object> stream3 = Stream.ofNullable(null);
-        stream3.forEach(System.out::println);
+        long count = stream3.count();
+        System.out.println(count);
     }
 }
