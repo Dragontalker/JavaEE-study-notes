@@ -58,6 +58,13 @@ public class OptionalTest {
 
     //使用Optional类的getGirlName()
     public String optionalGetGirlName(Boy boy) {
-        return  null;
+        Optional<Boy> boyOptional = Optional.ofNullable(boy);
+        Boy elseBoy = boyOptional.orElse(new Boy(new Girl("迪丽热巴")));
+
+        Girl girl = elseBoy.getGirl();
+        Optional<Girl> girlOptional = Optional.ofNullable(girl);
+        Girl elseGirl = girlOptional.orElse(new Girl("古力娜扎"));
+
+        return elseGirl.getName();
     }
 }
