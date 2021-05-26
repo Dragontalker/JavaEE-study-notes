@@ -2,6 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.io.InputStream;
 import java.lang.reflect.InaccessibleObjectException;
 import java.util.*;
 
@@ -46,5 +47,12 @@ public class Java9Test1 {
         Map<String, Integer> map1 = Map.ofEntries(Map.entry("Tom", 34), Map.entry("Jerry", 21));
         //map1.put("HanMeiMei", 23); 只读, 不能添加
         System.out.println(map1);
+    }
+
+    //java9新特性九: InputStream的新方法: transferTo()
+    @Test
+    public void test5() {
+        ClassLoader cl = this.getClass().getClassLoader();
+
     }
 }
