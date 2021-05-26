@@ -12,6 +12,9 @@ public interface MyInterface {
         System.out.println("我是接口中的默认方法");
     }
 
-
+    //jdk 9中允许接口中定义私有的方法
+    private void privateMethod() {
+        System.out.println("我是接口中的私有方法");
+    }
 }
 
