@@ -3,6 +3,7 @@ package com.dragontalker.java3;
 import com.dragontalker.java2.Employee;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -70,6 +71,11 @@ public class StreamAPITest2 {
     //2 - 规约
     @Test
     public void test3() {
-
+        //reduce(T identity, BinaryOperator)
+        //可以将流中元素反复结合起来, 得到一个值
+        //练习1: 计算1-10自然数的和
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        Integer sum = list.stream().reduce(0, Integer::sum);
+        System.out.println(sum);
     }
 }
