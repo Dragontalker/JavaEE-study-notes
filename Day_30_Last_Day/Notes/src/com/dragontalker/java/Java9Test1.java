@@ -31,8 +31,12 @@ public class Java9Test1 {
     //java9新特性八: 集合工厂方法: 创建只读集合
     @Test
     public void test4() {
-        List<Integer> list1 = List.of(1, 2, 3, 4, 5);
+        List<Integer> list = List.of(1, 2, 3, 4, 5);
         //list.add(6);
-        System.out.println(list1);
+        System.out.println(list);
+
+        Set<Integer> set = Set.of(23, 343, 42345, 3, 2423, 43324);
+        //set.add(12)
+        System.out.println(set);
     }
 }
