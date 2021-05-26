@@ -100,5 +100,14 @@ public class StreamAPITest1 {
 //        employees.stream().sorted().forEach(System.out::println);
 
         //sorted(Comparator com) - 定制排序
+        List<Employee> employees = EmployeeData.getEmployees();
+        employees.stream().sorted((e1, e2) -> {
+            int ageDiff = Integer.compare(e1.getAge(), e2.getAge());
+            if (ageDiff != 0) {
+                return ageDiff;
+            } else {
+                return Double.compare(e1.getSalary(), e2.getSalary());
+            }
+        }).forEach(System.out::println);
     }
 }
