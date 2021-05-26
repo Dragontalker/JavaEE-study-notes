@@ -23,4 +23,26 @@ public class OptionalTest {
         Optional<Girl> optionalGirl = Optional.ofNullable(girl);
         System.out.println(optionalGirl);
     }
+
+    public String getGirlName(Boy boy) {
+        return boy.getGirl().getName();
+    }
+
+    @Test
+    public void test3() {
+        Boy boy = new Boy();
+        String girlName = getGirlName(boy);
+        System.out.println(girlName);
+    }
+
+    //优化以后的getGirlName():
+    public String improvedGetGirlName(Boy boy) {
+        if (boy != null) {
+            Girl girl = boy.getGirl();
+            if (girl != null) {
+                return girl.getName();
+            }
+        }
+        return null;
+    }
 }
