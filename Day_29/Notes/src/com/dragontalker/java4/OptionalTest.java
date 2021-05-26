@@ -21,7 +21,10 @@ public class OptionalTest {
         girl = null;
         //ofNullable(T t): t可以为null
         Optional<Girl> optionalGirl = Optional.ofNullable(girl);
-        System.out.println(optionalGirl);
+        //orElse(T t): 如果当前的Optional内部封装的t是非空的, 则返回内部t
+        //如果内部的t是空的, 则返回orElse()方法中的参数
+        Girl elseGirl = optionalGirl.orElse(new Girl("赵丽颖"));
+        System.out.println(elseGirl);
     }
 
     public String getGirlName(Boy boy) {
@@ -53,5 +56,8 @@ public class OptionalTest {
         System.out.println(girlName);
     }
 
-    //
+    //使用Optional类的getGirlName()
+    public String optionalGetGirlName(Boy boy) {
+        return  null;
+    }
 }

@@ -5,6 +5,10 @@ public class Girl {
 
     public Girl() {}
 
+    public Girl(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
