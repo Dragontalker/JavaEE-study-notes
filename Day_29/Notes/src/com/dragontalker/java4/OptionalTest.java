@@ -1,5 +1,13 @@
 package com.dragontalker.java4;
 
+/**
+ * Optional类: 为了在程序中避免出现空指针异常而创建的
+ *
+ * 常用的方法:
+ *  - ofNullable(T t)
+ *  - ofElse(T t)
+ */
+
 import org.junit.Test;
 
 import java.util.Optional;
@@ -78,6 +86,8 @@ public class OptionalTest {
         String girlName1 = optionalGetGirlName(boy1);
         System.out.println(girlName1);
 
-
+        Boy boy2 = new Boy(new Girl("高圆圆"));
+        String girlName2 = optionalGetGirlName(boy2);
+        System.out.println(girlName2);
     }
 }
