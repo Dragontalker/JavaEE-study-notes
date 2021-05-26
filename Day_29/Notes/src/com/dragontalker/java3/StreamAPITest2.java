@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * 测试Stream的终止操作
@@ -48,5 +49,10 @@ public class StreamAPITest2 {
         //count - 返回流中元素的总个数
         long count = employees.stream().filter(e -> e.getSalary() > 5000).count();
         System.out.println(count);
+
+        //max(Comparator com) - 返回流中最大值
+        //练习1: 返回最高的工资
+        Optional<Double> maxSalary = employees.stream().map(Employee::getSalary).max(Double::compare);
+        System.out.println(maxSalary);
     }
 }
