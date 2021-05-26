@@ -53,5 +53,11 @@ public class StreamAPITest1 {
                 .map(Employee::getName)
                 .filter(name -> name.length() >3)
                 .forEach(System.out::println);
+
+        //flatMap(Function f)
+        //接收一个函数作为参数
+        //将流中的每个值都换成另一个流
+        //然后把所有流连接成一个流
+
     }
 }
