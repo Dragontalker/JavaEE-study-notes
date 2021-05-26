@@ -15,7 +15,7 @@ public class StreamAPITest2 {
     //1 - 匹配与查找
     @Test
     public void test1() {
-        List<Employee> employees = EmployeeData.getEmployees();
+       List<Employee> employees = EmployeeData.getEmployees();
 
         //allMatch(Predicate p) - 检查是否匹配所有元素
         //练习1: 是否所有的员工的年龄都大于18
@@ -39,5 +39,14 @@ public class StreamAPITest2 {
         //findAny - 返回当前流中的任意元素
         Optional<Employee> anyEmployee = employees.parallelStream().findAny();
         System.out.println(anyEmployee);
+    }
+
+    @Test
+    public void test2() {
+        List<Employee> employees = EmployeeData.getEmployees();
+
+        //count - 返回流中元素的总个数
+        long count = employees.stream().filter(e -> e.getSalary() > 5000).count();
+        System.out.println(count);
     }
 }
