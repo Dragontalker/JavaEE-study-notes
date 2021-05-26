@@ -20,5 +20,8 @@ public class MyInterfaceImpl implements MyInterface{
 
         MyInterfaceImpl impl = new MyInterfaceImpl();
         impl.defaultMethod();
+
+        //接口中的私有方法不能调用
+//        impl.privateMethod();
     }
 }
