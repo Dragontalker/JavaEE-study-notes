@@ -63,4 +63,7 @@ public class Java10Test {
 //    public var method1() {
 //        return 0;
 //    }
+
+    //情况3: 方法的参数类型
+//    public void method2(var num) {}
 }
