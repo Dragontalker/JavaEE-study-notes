@@ -56,7 +56,12 @@ public class Java10Test {
         //情况1: 没有初始化的局部变量声明
         //var s = null;
 
-
+        //情况6: catch快
+//        try {
+//
+//        } catch (var e) {
+//
+//        }
     }
 
     //情况2: 方法的返回值类型
@@ -69,4 +74,7 @@ public class Java10Test {
 
     //情况4: 构造器的参数类型
 //    public Java10Test(var num) {}
+
+    //情况5: 属性
+//    var num = 10;
 }
