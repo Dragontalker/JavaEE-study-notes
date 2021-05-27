@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.function.Supplier;
 
 public class Java10Test {
     /*
@@ -34,5 +35,9 @@ public class Java10Test {
     public void test2() {
         //1. 局部变量不赋值, 就不能实现类型推断
         //var num; 当没有赋值时, 类型推断无法执行, 报错
+
+        //2. Lambda表达式中, 左边的函数式接口不能声明为var
+        Supplier<Double> sup = Math::random;
+        //var sup = Math::random; 无法推断出用的函数式接口是什么
     }
 }
