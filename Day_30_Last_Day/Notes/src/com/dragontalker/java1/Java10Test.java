@@ -44,5 +44,10 @@ public class Java10Test {
         //3. 方法引用中, 左边的函数式接口不能声明为var
         Consumer<String> con = System.out::println;
         //var con = System.out::println;
+
+        //4. 数组的静态初始化中, 注意如下的情况也不可以
+        int[] arr1 = {1, 2, 3};
+        var arr2 = new int[]{1, 2, 3};
+        //var arr3 = {1, 2, 3}
     }
 }
