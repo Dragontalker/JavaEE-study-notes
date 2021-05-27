@@ -50,4 +50,17 @@ public class Java10Test {
         var arr2 = new int[]{1, 2, 3};
         //var arr3 = {1, 2, 3}
     }
+
+    @Test
+    public void test3() {
+        //情况1: 没有初始化的局部变量声明
+        //var s = null;
+
+
+    }
+
+    //情况2: 方法的返回值类型
+//    public var method1() {
+//        return 0;
+//    }
 }
