@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class Java10Test {
@@ -39,5 +40,9 @@ public class Java10Test {
         //2. Lambda表达式中, 左边的函数式接口不能声明为var
         Supplier<Double> sup = Math::random;
         //var sup = Math::random; 无法推断出用的函数式接口是什么
+
+        //3. 方法引用中, 左边的函数式接口不能声明为var
+        Consumer<String> con = System.out::println;
+        //var con = System.out::println;
     }
 }
