@@ -2,8 +2,10 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class Java9Test2 {
@@ -42,4 +44,21 @@ public class Java9Test2 {
         //java9中新增的重载方法
         Stream.iterate(0, x -> x < 100, x-> x + 1).forEach(System.out::println);
     }
+
+    //java9新特性十一: Optional提供了新的方法stream()
+    @Test
+    public void test4() {
+        List<String> list = new ArrayList<>();
+        list.add("Tom");
+        list.add("Jerry");
+        list.add("Tim");
+
+        Optional<List<String>> optional = Optional.ofNullable(list);
+        Stream<List<String>> stream = optional.stream();
+        long count = stream.count();
+        System.out.println(count); //唯一的元素就是list
+
+
+    }
+
 }
