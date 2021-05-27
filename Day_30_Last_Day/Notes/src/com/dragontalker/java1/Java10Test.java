@@ -23,6 +23,11 @@ public class Java10Test {
             System.out.println(i);
             System.out.println(i.getClass());
         }
+
+        //3. 普通的遍历操作
+        for(var i = 0; i < 100; i++) {
+            System.out.println(i);
+        }
     }
 
 }
