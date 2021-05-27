@@ -34,4 +34,12 @@ public class Java9Test2 {
         long count = stream3.count();
         System.out.println(count);
     }
+
+    @Test
+    public void test3() {
+        Stream.iterate(0, x -> x +1).limit(10).forEach(System.out::println);
+
+        //java9中新增的重载方法
+        Stream.iterate(0, x -> x < 100, x-> x + 1).forEach(System.out::println);
+    }
 }
