@@ -11,12 +11,18 @@ public class Java10Test {
      */
     @Test
     public void test1() {
-        //声明变量时, 根据所附的值, 推断变量的类型
+        //1. 声明变量时, 根据所附的值, 推断变量的类型
         var num = 10;
 
         var list = new ArrayList<String>();
         list.add("Hello!");
         System.out.println(list);
+
+        //2. 遍历操作
+        for (var i : list) {
+            System.out.println(i);
+            System.out.println(i.getClass());
+        }
     }
 
 }
