@@ -2,10 +2,7 @@ package com.dragontalker.java;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Stream;
 
 public class Java9Test2 {
@@ -55,10 +52,10 @@ public class Java9Test2 {
 
         Optional<List<String>> optional = Optional.ofNullable(list);
         Stream<List<String>> stream = optional.stream();
-        long count = stream.count();
-        System.out.println(count); //唯一的元素就是list
+//        long count = stream.count();
+//        System.out.println(count); //唯一的元素就是list
 
-
+        stream.flatMap(Collection::stream).forEach(System.out::println);
     }
 
 }
