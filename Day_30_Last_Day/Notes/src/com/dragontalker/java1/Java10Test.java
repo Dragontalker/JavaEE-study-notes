@@ -30,4 +30,9 @@ public class Java10Test {
         }
     }
 
+    @Test
+    public void test2() {
+        //1. 局部变量不赋值, 就不能实现类型推断
+        //var num; 当没有赋值时, 类型推断无法执行, 报错
+    }
 }
