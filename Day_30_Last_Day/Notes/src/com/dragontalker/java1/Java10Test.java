@@ -66,4 +66,7 @@ public class Java10Test {
 
     //情况3: 方法的参数类型
 //    public void method2(var num) {}
+
+    //情况4: 构造器的参数类型
+//    public Java10Test(var num) {}
 }
