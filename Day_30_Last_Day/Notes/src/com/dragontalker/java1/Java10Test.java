@@ -2,6 +2,9 @@ package com.dragontalker.java1;
 
 import org.junit.Test;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.Consumer;
@@ -77,4 +80,15 @@ public class Java10Test {
 
     //情况5: 属性
 //    var num = 10;
+
+    @Test
+    public void test3() {
+        try {
+            var url = new URL("http://www.atguigu.com");
+            var connection = url.openConnection();
+            var reader = new BufferedReader(connection);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
